@@ -50,8 +50,7 @@ Modal.propTypes = {
     id: PropTypes.string.isRequired,
     isRtl: PropTypes.bool,
     onRequestClose: PropTypes.func,
-    onRequestOpen: PropTypes.func,
-    scrollable: PropTypes.bool
+    onRequestOpen: PropTypes.func
 };
 
 const mapStateToProps = state => ({

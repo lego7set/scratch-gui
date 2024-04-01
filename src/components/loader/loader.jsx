@@ -1,16 +1,15 @@
+// credit to  ACat for the tip system
+
 import React from 'react';
 import {defineMessages, FormattedMessage, intlShape, injectIntl} from 'react-intl';
 import classNames from 'classnames';
 import styles from './loader.css';
 import PropTypes from 'prop-types';
 import bindAll from 'lodash.bindall';
-
-import topBlock from './top-block.svg';
-import middleBlock from './middle-block.svg';
-import bottomBlock from './bottom-block.svg';
+import { tip } from '../../lib/randomUnhelpfulTip';
+import snail from './forge.svg'
 
 import * as progressMonitor from './tw-progress-monitor';
-import isScratchDesktop from '../../lib/isScratchDesktop';
 
 // tw:
 // we make some rather large changes here:
@@ -74,6 +73,7 @@ class LoaderComponent extends React.Component {
         this.progress = 0;
         this.complete = 0;
         this.total = 0;
+        this.unhelpfulTip = tip[Math.round(Math.random() * tip.length)];
         bindAll(this, [
             'barInnerRef',
             'handleProgressChange',
@@ -81,9 +81,7 @@ class LoaderComponent extends React.Component {
         ]);
     }
     componentDidMount () {
-        if (!isScratchDesktop()) {
-            progressMonitor.setProgressHandler(this.handleProgressChange);
-        }
+        progressMonitor.setProgressHandler(this.handleProgressChange);
         this.updateMessage();
     }
     componentDidUpdate () {
@@ -103,9 +101,7 @@ class LoaderComponent extends React.Component {
         this.update();
     }
     update () {
-        if (this.barInner) {
-            this.barInner.style.width = `${this.progress * 100}%`;
-        }
+        this.barInner.style.width = `${this.progress * 100}%`;
         if (this._state === 2) {
             this.updateMessage();
         }
@@ -139,36 +135,25 @@ class LoaderComponent extends React.Component {
             >
                 <div className={styles.container}>
                     <div className={styles.blockAnimation}>
-                        <img
-                            className={styles.topBlock}
-                            src={topBlock}
-                        />
-                        <img
-                            className={styles.middleBlock}
-                            src={middleBlock}
-                        />
-                        <img
-                            className={styles.bottomBlock}
-                            src={bottomBlock}
-                        />
+                        <img src={snail} />
                     </div>
                     <div className={styles.title}>
                         {mainMessages[this.props.messageId]}
                     </div>
+                    <p dangerouslySetInnerHTML={{__html: this.unhelpfulTip}}/>
                     <div className={styles.messageContainerOuter}>
                         <div
                             className={styles.messageContainerInner}
                             ref={this.messageRef}
                         />
                     </div>
-                    {!isScratchDesktop() && (
-                        <div className={styles.twProgressOuter}>
-                            <div
-                                className={styles.twProgressInner}
-                                ref={this.barInnerRef}
-                            />
-                        </div>
-                    )}
+                    <div className={styles.twProgressOuter}>
+                        <div
+                            className={styles.twProgressInner}
+                            ref={this.barInnerRef}
+                        />
+                    </div>
+
                 </div>
             </div>
         );
