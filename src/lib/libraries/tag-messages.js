@@ -141,6 +141,11 @@ export default defineMessages({
         description: 'Tag for filtering a library for guns',
         id: 'gui.libraryTags.guns'
     },
+    electramod: {
+        defaultMessage: 'ElectraMod',
+        description: 'Tag for filtering a library by ElectraMod',
+        id: 'gui.libraryTags.electramod'
+    },
     penguinmod: {
         defaultMessage: 'PenguinMod',
         description: 'Tag for filtering a library by PenguinMod',

@@ -9,8 +9,10 @@ const Pixel = require('./Grand9K-Pixel.ttf');
 // Xtraflexidisc is saved as Scratch for backwards-compat, this needs visual renaming
 const Scratch = require('./Xtraflexidisc.otf');
 
-/* PenguinMod Fonts */
+/* PenguinMod/Electramod Fonts */
 const Technological = require('./MonospaceBold.ttf');
+const Minecraft = require('./Minecraft-Regular.otf');
+const MinecraftBold = require('./Minecraft-Bold.otf');
 const Bubbly = require('./QTKooper.otf');
 const Playful = require('./BadComic-Regular.ttf');
 const BitsAndBytes = require('./freecam-v2.ttf');
@@ -30,6 +32,8 @@ const fontSource = {
     // Xtraflexidisc is saved as Scratch for backwards-compat, this needs visual renaming
     'Scratch': Scratch,
     'Technological': Technological,
+    'Minecraft': Minecraft,
+    'Minecraft Bold': MinecraftBold,
     'Bubbly': Bubbly,
     'Bits and Bytes': BitsAndBytes,
     'Playful': Playful,

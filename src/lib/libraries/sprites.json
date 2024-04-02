@@ -3220,6 +3220,36 @@
         "blocks": {}
     },
     {
+        "name": "Snail",
+        "tags": [
+            "animals"
+        ],
+        "isStage": false,
+        "variables": {},
+        "costumes": [
+            {
+                "assetId": "db6466dad187b1ee755cfa21cb87ce4b",
+                "name": "Snail",
+                "bitmapResolution": 1,
+                "md5ext": "db6466dad187b1ee755cfa21cb87ce4b.svg",
+                "dataFormat": "svg",
+                "rotationCenterX": 37.387305,
+                "rotationCenterY": 32.46749548000042
+            },
+            {
+                "assetId": "74043a21ba48559c2673248acbbd84c1",
+                "name": "Snail 2",
+                "bitmapResolution": 1,
+                "md5ext": "74043a21ba48559c2673248acbbd84c1.svg",
+                "dataFormat": "svg",
+                "rotationCenterX": 97.10489266879569,
+                "rotationCenterY": 54.5393334434151
+            }
+        ],
+        "sounds": [],
+        "blocks": {}
+    },
+    {
         "name": "Dani",
         "tags": [
             "people"

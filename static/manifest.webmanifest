@@ -1,7 +1,7 @@
 {
-  "short_name": "PenguinMod",
-  "name": "PenguinMod",
-  "description": "Mod of TurboWarp that was made to allow for really cool projects.",
+  "short_name": "ElectraMod",
+  "name": "ElectraMod",
+  "description": "Mod of Penguinmod that was made to allow for really cool projects.",
   "icons": [
     {
       "src": "images/192.png",
@@ -15,7 +15,7 @@
     }
   ],
   "start_url": "editor",
-  "background_color": "#333333",
+  "background_color": "#625E97",
   "display": "standalone",
-  "theme_color": "#333333"
+  "theme_color": "#625E97"
 }

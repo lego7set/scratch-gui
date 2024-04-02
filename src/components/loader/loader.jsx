@@ -7,7 +7,7 @@ import styles from './loader.css';
 import PropTypes from 'prop-types';
 import bindAll from 'lodash.bindall';
 import { tip } from '../../lib/randomUnhelpfulTip';
-import snail from './forge.svg'
+import forge from './forge.svg'
 
 import * as progressMonitor from './tw-progress-monitor';
 
@@ -135,7 +135,7 @@ class LoaderComponent extends React.Component {
             >
                 <div className={styles.container}>
                     <div className={styles.blockAnimation}>
-                        <img src={snail} />
+                        <img src={forge} />
                     </div>
                     <div className={styles.title}>
                         {mainMessages[this.props.messageId]}
