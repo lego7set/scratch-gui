@@ -146,6 +146,16 @@ export default defineMessages({
         description: 'Tag for filtering a library by ElectraMod',
         id: 'gui.libraryTags.electramod'
     },
+    dinosaurmod: {
+        defaultMessage: 'DinosaurMod',
+        description: 'Tag for filtering a library by DinosaurMod',
+        id: 'gui.libraryTags.dinosaurmod'
+    },
+    snailide: {
+        defaultMessage: 'Snail IDE',
+        description: 'Tag for filtering a library by Snail IDE',
+        id: 'gui.libraryTags.snailide'
+    },
     penguinmod: {
         defaultMessage: 'PenguinMod',
         description: 'Tag for filtering a library by PenguinMod',
@@ -170,6 +180,11 @@ export default defineMessages({
         defaultMessage: 'Category Expansions',
         description: 'Tag for filtering a library by categoryexpansion',
         id: 'gui.libraryTags.categoryexpansion'
+    },
+    deskutil: {
+        defaultMessage: 'Desktop Utility',
+        description: 'Tag for filtering a library by deskutil',
+        id: 'gui.libraryTags.deskutil'
     },
     ui: {
         defaultMessage: 'UI',
