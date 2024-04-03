@@ -21,3 +21,5 @@ yarn.lock
 /locale
 src/lib/tw-translations/new-generated-translations.json
 src/lib/tw-translations/merged-translations.json
+
+.vercel
