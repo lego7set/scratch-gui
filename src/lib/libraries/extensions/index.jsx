@@ -58,8 +58,11 @@ import customExtensionIcon from './custom/custom.svg';
 import turbowarpIcon from './penguinmod/extensions/turbowarp_icon.svg';
 import penguinmodLibraryExtensionIcon from './penguinmod/library.svg';
 import sharkpoolGalleryIcon from './penguinmod/sharkpool-library.svg';
+import rubyIcon from './snail-ide/ruby.png';
 
 import turboBuilderIcon from './penguinmod/turbobuilder.png';
+import extCreateIcon from './ext-create/logo.svg';
+import extCreateInset from './ext-create/inset.svg';
 
 import filesExtensionIcon from './penguinmod/extensions/files.png';
 import jgJSONExtensionIcon from './penguinmod/extensions/json.png';
@@ -142,6 +145,8 @@ import jgAdvancedTextExtensionIcon from './penguinmod/extensions/advancedtext.pn
 import jgJavascriptExtensionIcon from './penguinmod/extensions/javascript.png';
 import jgPathfindingExtensionIcon from './penguinmod/extensions/pathfinding.png';
 import jgAnimationExtensionIcon from './penguinmod/extensions/animation.png';
+import typeScratchExtensionIcon from './snail-ide/typescript.svg';
+import blocklyIconURL from './blockly/blockly.png';
 
 // category expansions
 import pmMotionExpansionExtensionIcon from './penguinmod/extensions/motion_expanded.png';
@@ -798,6 +803,32 @@ const menuItems = [
         description: 'Run your own custom code written in JavaScript!',
         featured: true
     },
+    /*{
+        name: 'TypeScript',
+        extensionId: 'typeScratch',
+        iconURL: typeScratchExtensionIcon,
+        tags: ['snailide', 'programminglanguage'],
+        description: 'Run your own custom code written in JavaScript!',
+        featured: true
+    }, */
+    {
+        name: 'Blockly2Math',
+        extensionId: 'blockly2math',
+        iconURL: blocklyIconURL,
+        collaborator: 'Google',
+        tags: ['snailide'],
+        description: "Blockly math blocks.",
+        featured: true
+    },
+    {
+        name: 'Minecraft Utils',
+        extensionId: 'minecraftUtils',
+        iconURL: blocklyIconURL,
+        collaborator: 'Aness6040',
+        tags: ['electramod'],
+        description: "Adds detections to the Minecraft game for example if the player is a premium account or get the icon of a Minecraft server in URI etc...",
+        featured: true
+    },
     {
         name: 'micro:bit',
         extensionId: 'microbit',
@@ -1006,6 +1037,17 @@ const menuItems = [
         featured: true
     },
     {
+        name: 'Ruby Extension Gallery',
+        href: 'https://rubyteam.tech/gallery',
+        extensionId: 'rubyextension',
+        iconURL: rubyIcon,
+        insetIconURL: 'https://rubyteam.tech/logo.svg',
+        description: 'View Other Useful Ruby Team Extensions!',
+        credits: 'Ruby Team',
+        tags: ['library'],
+        featured: true
+    },
+    {
         name: 'SharkPool\'s Extension Collection',
         href: 'https://sharkpools-extensions.vercel.app/?originPM=true',
         extensionId: 'special_sharkpoolExtensionLibrary',
@@ -1024,8 +1066,57 @@ const menuItems = [
         description: 'Create your own amazing extensions using a scratch-based UI!',
         credits: 'Started by JeremyGamer13, continued by jwklong',
         tags: ['extcreate'],
-        featured: true,
-        disabled: !(IsLocal || IsLiveTests)
+        featured: true
+    },
+    {
+        name: 'ExtCreate',
+        href: 'https://extcreate.snail-ide.com/',
+        extensionId: 'special_ExtCreate',
+        iconURL: extCreateIcon,
+        insetIconURL: extCreateInset,
+        description: 'Snail IDE version of TurboBuilder',
+        collaborator: 'Started by JeremyGamer13, continued by jwklong, modified by nmsderp',
+        tags: ['builders', 'extcreate', 'snailide'],
+        featured: true
+    },
+    {
+        name: '3D',
+        extensionId: 'jg3d',
+        iconURL: jg3dExtensionIcon,
+        tags: ['penguinmod', '3d'],
+        customInsetColor: '#B200FF',
+        insetIconURL: jg3dInsetExtensionIcon,
+        description: 'Use the magic of 3D to spice up your project.',
+        featured: true
+    },
+    {
+        name: '3D Physics',
+        extensionId: 'fr3d',
+        iconURL: fr3dPhysicsExtensionIcon,
+        tags: ['penguinmod', '3d'],
+        customInsetColor: '#D066FE',
+        insetIconURL: fr3dPhysicsInsetExtensionIcon,
+        description: 'Physics for the 3D extension.',
+        featured: true
+    },
+    {
+        name: '3D Virtual Reality',
+        extensionId: 'jg3dVr',
+        iconURL: jg3dVrExtensionIcon,
+        tags: ['penguinmod', 'hardware', '3d'],
+        customInsetColor: '#B200FF',
+        insetIconURL: jg3dVrInsetExtensionIcon,
+        description: 'In development. May break compatibility. Allow players to really jump into your world!',
+        featured: true
+    },
+    {
+        name: 'Virtual Reality',
+        extensionId: 'jgVr',
+        iconURL: jgVrExtensionIcon,
+        tags: ['penguinmod', 'hardware'],
+        description: 'In development.',
+        credits: 'Vadik1',
+        featured: true
     },
     {
         // not really an extension, but it's easiest to present it as one
@@ -1213,36 +1304,6 @@ if (IsLocal || IsLiveTests) {
             featured: true
         },
         {
-            name: '3D',
-            extensionId: 'jg3d',
-            iconURL: jg3dExtensionIcon,
-            tags: ['penguinmod', '3d'],
-            customInsetColor: '#B200FF',
-            insetIconURL: jg3dInsetExtensionIcon,
-            description: 'Use the magic of 3D to spice up your project.',
-            featured: true
-        },
-        {
-            name: '3D Physics',
-            extensionId: 'fr3d',
-            iconURL: fr3dPhysicsExtensionIcon,
-            tags: ['penguinmod', '3d'],
-            customInsetColor: '#D066FE',
-            insetIconURL: fr3dPhysicsInsetExtensionIcon,
-            description: 'Physics for the 3D extension.',
-            featured: true
-        },
-        {
-            name: '3D Virtual Reality',
-            extensionId: 'jg3dVr',
-            iconURL: jg3dVrExtensionIcon,
-            tags: ['penguinmod', 'hardware', '3d'],
-            customInsetColor: '#B200FF',
-            insetIconURL: jg3dVrInsetExtensionIcon,
-            description: 'In development. May break compatibility. Allow players to really jump into your world!',
-            featured: true
-        },
-        {
             name: 'Interfaces',
             extensionId: 'jgInterfaces',
             iconURL: jgsilvxrcatInterfacesExtensionIcon,
@@ -1312,15 +1373,6 @@ if (IsLocal || IsLiveTests) {
             iconURL: jgAnimationExtensionIcon,
             tags: ['penguinmod'],
             description: 'In development. Currently buggy and missing features.',
-            featured: true
-        },
-        {
-            name: 'Virtual Reality',
-            extensionId: 'jgVr',
-            iconURL: jgVrExtensionIcon,
-            tags: ['penguinmod', 'hardware'],
-            description: 'In development.',
-            credits: 'Vadik1',
             featured: true
         }
     ];

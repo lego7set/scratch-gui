@@ -147,8 +147,8 @@ export default defineMessages({
         id: 'gui.libraryTags.electramod'
     },
     dinosaurmod: {
-        defaultMessage: 'DinosaurMod',
-        description: 'Tag for filtering a library by DinosaurMod',
+        defaultMessage: 'DinosaurMod & Other Scratch Mods',
+        description: 'Tag for filtering a library by DinosaurMod and Other Scratch Mods',
         id: 'gui.libraryTags.dinosaurmod'
     },
     snailide: {

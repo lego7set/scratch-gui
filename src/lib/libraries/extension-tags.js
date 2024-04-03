@@ -1,7 +1,7 @@
 import messages from './tag-messages.js';
 export default [
-    { tag: 'electramod', intlLabel: messages.electramod },
     { tag: 'dinosaurmod', intlLabel: messages.dinosaurmod },
+    { tag: 'electramod', intlLabel: messages.electramod },
     { tag: 'snailide', intlLabel: messages.snailide },
     { tag: 'penguinmod', intlLabel: messages.penguinmod },
     { tag: 'turbowarp', intlLabel: messages.turbowarp },
