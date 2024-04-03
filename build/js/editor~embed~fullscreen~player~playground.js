@@ -40063,6 +40063,13 @@ const menuItems = [{
   tags: ['penguinmod', 'programminglanguage'],
   description: 'Run your own custom code written in JavaScript!',
   featured: true
+}, {
+  name: 'Lpp',
+  extensionId: 'lpp',
+  iconURL: _penguinmod_extensions_javascript_png__WEBPACK_IMPORTED_MODULE_91___default.a,
+  tags: ['penguinmod', 'programminglanguage'],
+  description: 'Run your own custom code written in JavaScript!',
+  featured: true
 },
 /*{
     name: 'TypeScript',
@@ -40079,14 +40086,6 @@ const menuItems = [{
   collaborator: 'Google',
   tags: ['snailide'],
   description: "Blockly math blocks.",
-  featured: true
-}, {
-  name: 'Minecraft Utils',
-  extensionId: 'minecraftUtils',
-  iconURL: _blockly_blockly_png__WEBPACK_IMPORTED_MODULE_95___default.a,
-  collaborator: 'Aness6040',
-  tags: ['electramod'],
-  description: "Adds detections to the Minecraft game for example if the player is a premium account or get the icon of a Minecraft server in URI etc...",
   featured: true
 }, {
   name: 'micro:bit',

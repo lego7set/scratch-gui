@@ -803,6 +803,14 @@ const menuItems = [
         description: 'Run your own custom code written in JavaScript!',
         featured: true
     },
+    {
+        name: 'Lpp',
+        extensionId: 'lpp',
+        iconURL: jgJavascriptExtensionIcon,
+        tags: ['penguinmod', 'programminglanguage'],
+        description: 'Run your own custom code written in JavaScript!',
+        featured: true
+    },
     /*{
         name: 'TypeScript',
         extensionId: 'typeScratch',
@@ -818,15 +826,6 @@ const menuItems = [
         collaborator: 'Google',
         tags: ['snailide'],
         description: "Blockly math blocks.",
-        featured: true
-    },
-    {
-        name: 'Minecraft Utils',
-        extensionId: 'minecraftUtils',
-        iconURL: blocklyIconURL,
-        collaborator: 'Aness6040',
-        tags: ['electramod'],
-        description: "Adds detections to the Minecraft game for example if the player is a premium account or get the icon of a Minecraft server in URI etc...",
         featured: true
     },
     {
