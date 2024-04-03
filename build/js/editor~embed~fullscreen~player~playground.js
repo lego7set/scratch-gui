@@ -40081,6 +40081,14 @@ const menuItems = [{
   description: "Blockly math blocks.",
   featured: true
 }, {
+  name: 'Minecraft Utils',
+  extensionId: 'minecraftUtils',
+  iconURL: _blockly_blockly_png__WEBPACK_IMPORTED_MODULE_95___default.a,
+  collaborator: 'Aness6040',
+  tags: ['electramod'],
+  description: "Adds detections to the Minecraft game for example if the player is a premium account or get the icon of a Minecraft server in URI etc...",
+  featured: true
+}, {
   name: 'micro:bit',
   extensionId: 'microbit',
   collaborator: 'micro:bit',
