@@ -1,0 +1,21 @@
+{
+  "short_name": "ElectraMod",
+  "name": "ElectraMod",
+  "description": "Mod of Penguinmod that was made to allow for really cool projects.",
+  "icons": [
+    {
+      "src": "images/192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "images/512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "editor",
+  "background_color": "#625E97",
+  "display": "standalone",
+  "theme_color": "#625E97"
+}
