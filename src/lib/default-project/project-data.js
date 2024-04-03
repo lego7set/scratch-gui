@@ -65,8 +65,8 @@ const projectData = translateFunction => {
                         bitmapResolution: 1,
                         md5ext: 'f02dc12ef367ece5d75fd23937cfc9e6.svg',
                         dataFormat: 'svg',
-                        rotationCenterX: 44.66174126262234,
-                        rotationCenterY: 61.72032826606738
+                        rotationCenterX: 39.49255116613887,
+                        rotationCenterY: 59.76629017660271
                     }
                 ],
                 sounds: [],
