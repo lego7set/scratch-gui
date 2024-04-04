@@ -1,6 +1,6 @@
 import messages from './tag-messages.js';
 export default [
-    { tag: 'dinosaurmod', intlLabel: messages.dinosaurmod },
+    { tag: 'othermod', intlLabel: messages.othermod },
     { tag: 'electramod', intlLabel: messages.electramod },
     { tag: 'snailide', intlLabel: messages.snailide },
     { tag: 'penguinmod', intlLabel: messages.penguinmod },

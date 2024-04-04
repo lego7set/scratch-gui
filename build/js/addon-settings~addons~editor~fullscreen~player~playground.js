@@ -2638,7 +2638,7 @@ const manifest = {
     "id": "default",
     "name": "Enable by default",
     "type": "boolean",
-    "default": false
+    "default": true
   }, {
     "id": "previous",
     "name": "Default previous costumes",
@@ -3409,7 +3409,7 @@ const manifest = {
   }],
   "dynamicDisable": true,
   "tags": [],
-  "enabledByDefault": false
+  "enabledByDefault": true
 };
 /* harmony default export */ __webpack_exports__["default"] = (manifest);
 

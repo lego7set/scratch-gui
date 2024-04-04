@@ -954,9 +954,9 @@ class Interface extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Component {
   }
   handleUpdateProjectTitle(title, isDefault) {
     if (isDefault || !title) {
-      document.title = "PenguinMod - ".concat(this.props.intl.formatMessage(messages.defaultTitle));
+      document.title = "ElectraMod - ".concat(this.props.intl.formatMessage(messages.defaultTitle));
     } else {
-      document.title = "".concat(title, " - PenguinMod");
+      document.title = "".concat(title, " - ElectraMod");
     }
   }
   render() {

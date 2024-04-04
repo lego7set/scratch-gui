@@ -147,6 +147,8 @@ import jgPathfindingExtensionIcon from './penguinmod/extensions/pathfinding.png'
 import jgAnimationExtensionIcon from './penguinmod/extensions/animation.png';
 import typeScratchExtensionIcon from './snail-ide/typescript.svg';
 import blocklyIconURL from './blockly/blockly.png';
+import LppExtensionIcon from './lpp/banner.svg';
+import KukeMCI18nIcon from './kukemc/I18n/banner.png';
 
 // category expansions
 import pmMotionExpansionExtensionIcon from './penguinmod/extensions/motion_expanded.png';
@@ -805,10 +807,20 @@ const menuItems = [
     },
     {
         name: 'Lpp',
-        extensionId: 'lpp',
-        iconURL: jgJavascriptExtensionIcon,
-        tags: ['penguinmod', 'programminglanguage'],
-        description: 'Run your own custom code written in JavaScript!',
+        href: 'https://github.com/FurryR/lpp-scratch/actions/runs/8540515664/artifacts/1381482706',
+        iconURL: LppExtensionIcon,
+        tags: ['othermod', 'programminglanguage'],
+        description: '🛠️ (Experimental) A high-level programming language based on Scratch. Unzip and import the "index.global.js" in ElectraMod (and enable without sandbox else it will not work) for working lpp',
+        credits: 'FurryR',
+        featured: true
+    },
+    {
+        name: 'I18n',
+        extensionId: 'kukeMCI18n',
+        iconURL: KukeMCI18nIcon,
+        tags: ['othermod'],
+        description: 'Your first game\'s multilingual extension, helping you effortlessly implement internationalization support for your game content.',
+        collaborator: '酷可mc, YUEN and FurryR',
         featured: true
     },
     /*{
@@ -1074,7 +1086,7 @@ const menuItems = [
         iconURL: extCreateIcon,
         insetIconURL: extCreateInset,
         description: 'Snail IDE version of TurboBuilder',
-        collaborator: 'Started by JeremyGamer13, continued by jwklong, modified by nmsderp',
+        credits: 'Started by JeremyGamer13, continued by jwklong, modified by nmsderp',
         tags: ['builders', 'extcreate', 'snailide'],
         featured: true
     },

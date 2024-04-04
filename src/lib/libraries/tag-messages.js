@@ -146,10 +146,10 @@ export default defineMessages({
         description: 'Tag for filtering a library by ElectraMod',
         id: 'gui.libraryTags.electramod'
     },
-    dinosaurmod: {
-        defaultMessage: 'DinosaurMod & Other Scratch Mods',
-        description: 'Tag for filtering a library by DinosaurMod and Other Scratch Mods',
-        id: 'gui.libraryTags.dinosaurmod'
+    othermod: {
+        defaultMessage: 'Another Scratch Mod',
+        description: 'Tag for filtering a library by another scartch mod like Gandi IDE, DinosaurMod etc..',
+        id: 'gui.libraryTags.othermod'
     },
     snailide: {
         defaultMessage: 'Snail IDE',
