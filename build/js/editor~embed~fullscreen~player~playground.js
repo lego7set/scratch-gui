@@ -28662,7 +28662,7 @@ const getProjectTitleFromFilename = fileInputFilename => {
   if (!fileInputFilename) return '';
   // only parse title with valid scratch project extensions
   // (.sb, .sb2, .sb3, and .pm)
-  const matches = fileInputFilename.match(/^(.*)(\.sb[23]?|\.pm|\.pmp)$/);
+  const matches = fileInputFilename.match(/^(.*)(\.sb[23]?|\.pm|\.pmp|\.electra\.dino|\.snail)$/);
   if (!matches) return '';
   return matches[1].substring(0, 100); // truncate project title to max 100 chars
 };
@@ -28889,7 +28889,7 @@ const getProjectFilename = (curTitle, defaultTitle) => {
   if (!filenameTitle || filenameTitle.length === 0) {
     filenameTitle = defaultTitle;
   }
-  return "".concat(filenameTitle.substring(0, 100), ".pmp");
+  return "".concat(filenameTitle.substring(0, 100), ".electra");
 };
 SB3Downloader.propTypes = {
   children: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func,
@@ -33589,7 +33589,7 @@ const manuallyTrustExtension = url => {
  */
 const isTrustedExtension = url =>
 // Always trust our official extension repostiory.
-url.startsWith('https://extensions.turbowarp.org/') || url.startsWith('https://extensions.penguinmod.com/') || url.startsWith('https://penguinmod-extensions-gallery.vercel.app/') ||
+url.startsWith('https://extensions.turbowarp.org/') || url.startsWith('https://extensions.penguinmod.com/') || url.startsWith('https://penguinmod-extensions-gallery.vercel.app/') || url.startsWith('https://electramod-extensions-gallery.vercel.app/') ||
 // Trust other people's galleries. These can be removed in the future, they will just show a pop-up on load if they are.
 url.startsWith('https://sharkpools-extensions.vercel.app/') ||
 // SharkPool
@@ -33631,6 +33631,8 @@ isTrustedExtension(parsed.href) ||
 parsed.origin === 'https://turbowarp.org' || parsed.origin.endsWith('.turbowarp.org') || parsed.origin.endsWith('.turbowarp.xyz') ||
 // Any PenguinMod service such as projects
 parsed.origin === 'https://penguinmod.com' || parsed.origin.endsWith('.penguinmod.com') ||
+// Electramod
+parsed.origin === 'https://electramod.vercel.app' || parsed.origin === 'https://electramod-extensions-gallery.vercel.app' ||
 // GitHub
 parsed.origin === 'https://raw.githubusercontent.com' || parsed.origin === 'https://api.github.com' ||
 // GitLab
@@ -43525,7 +43527,7 @@ const SBFileUploaderHOC = function SBFileUploaderHOC(WrappedComponent) {
       } else {
         // create <input> element and add it to DOM
         this.inputElement = document.createElement('input');
-        this.inputElement.accept = '.sb,.sb2,.sb3,.pm,.pmp,.snail,.emx';
+        this.inputElement.accept = '.sb,.sb2,.sb3,.pm,.pmp';
         this.inputElement.style = 'display: none;';
         this.inputElement.type = 'file';
         this.inputElement.onchange = this.handleChange; // connects to step 3
@@ -43600,7 +43602,7 @@ const SBFileUploaderHOC = function SBFileUploaderHOC(WrappedComponent) {
       if (!fileInputFilename) return '';
       // only parse title with valid scratch project extensions
       // (.sb, .sb2, and .sb3)
-      const matches = fileInputFilename.match(/^(.*)(\.sb[23]?|\.pm|\.pmp|\.snail|\.emx)$/);
+      const matches = fileInputFilename.match(/^(.*)(\.sb[23]?|\.pm|\.pmp)$/);
       if (!matches) return '';
       return matches[1].substring(0, 100); // truncate project title to max 100 chars
     }
@@ -44590,9 +44592,29 @@ const available = () => !!window.showSaveFilePicker;
 const showSaveFilePicker = fileName => window.showSaveFilePicker({
   suggestedName: fileName,
   types: [{
+    description: 'ElectraMod Project',
+    accept: {
+      'application/x.scratch.sb3': '.electra'
+    }
+  }, {
+    description: 'DinosaurMod Project',
+    accept: {
+      'application/x.scratch.sb3': '.dino'
+    }
+  }, {
+    description: 'Snail-IDE Project',
+    accept: {
+      'application/x.scratch.sb3': '.snail'
+    }
+  }, {
     description: 'PenguinMod Project',
     accept: {
       'application/x.scratch.sb3': '.pmp'
+    }
+  }, {
+    description: 'Scratch 3.0 Project',
+    accept: {
+      'application/x.scratch.sb3': '.sb3'
     }
   }],
   excludeAcceptAllOption: true
@@ -44601,6 +44623,21 @@ const showOpenFilePicker = async () => {
   const [handle] = await window.showOpenFilePicker({
     multiple: false,
     types: [{
+      description: 'ElectraMod Project',
+      accept: {
+        'application/x.scratch.sb3': ['.electra']
+      }
+    }, {
+      description: 'DinosaurMod Project',
+      accept: {
+        'application/x.scratch.sb3': ['.dino']
+      }
+    }, {
+      description: 'Snail-IDE Project',
+      accept: {
+        'application/x.scratch.sb3': ['.snail']
+      }
+    }, {
       description: 'PenguinMod Project',
       accept: {
         'application/x.scratch.sb3': ['.pmp', '.pm']

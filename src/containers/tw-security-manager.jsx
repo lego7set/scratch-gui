@@ -25,6 +25,7 @@ const isTrustedExtension = url => (
     url.startsWith('https://extensions.turbowarp.org/') ||
     url.startsWith('https://extensions.penguinmod.com/') ||
     url.startsWith('https://penguinmod-extensions-gallery.vercel.app/') ||
+    url.startsWith('https://electramod-extensions-gallery.vercel.app/') ||
 
     // Trust other people's galleries. These can be removed in the future, they will just show a pop-up on load if they are.
     url.startsWith('https://sharkpools-extensions.vercel.app/') || // SharkPool
@@ -68,6 +69,10 @@ const isAlwaysTrustedForFetching = parsed => (
     // Any PenguinMod service such as projects
     parsed.origin === 'https://penguinmod.com' ||
     parsed.origin.endsWith('.penguinmod.com') ||
+
+    // Electramod
+    parsed.origin === 'https://electramod.vercel.app' ||
+    parsed.origin === 'https://electramod-extensions-gallery.vercel.app' ||
 
     // GitHub
     parsed.origin === 'https://raw.githubusercontent.com' ||

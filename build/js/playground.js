@@ -388,8 +388,8 @@ function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) r
 
 
 
-const PACKAGER_URL = 'https://studio.penguinmod.com/PenguinMod-Packager';
-const PACKAGER_ORIGIN = "https://studio.penguinmod.com";
+const PACKAGER_URL = 'https://electramod-packager.vercel.app/';
+const PACKAGER_ORIGIN = "https://electramod.vercel.app/";
 const PackagerIntegrationHOC = function PackagerIntegrationHOC(WrappedComponent) {
   class PackagerIntegrationComponent extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
     constructor(props) {
