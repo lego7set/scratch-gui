@@ -11,9 +11,8 @@ npm-*
 
 # Build
 /.opt-in
+!build/
 !dist/
-!build/.vercel/*
-yarn.lock
 
 # Generated translation files
 /translations
