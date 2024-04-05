@@ -1091,6 +1091,14 @@ const menuItems = [
         featured: true
     },
     {
+        name: 'Inline Blocks',
+        extensionId: 'pmInlineBlocks',
+        iconURL: pmInlineBlocksExtensionIcon,
+        tags: ['penguinmod'],
+        description: 'Create quick blocks for simple tasks. Insert them into any circle spot and have them return any value you want.',
+        featured: true
+    },
+    {
         name: '3D',
         extensionId: 'jg3d',
         iconURL: jg3dExtensionIcon,
@@ -1348,14 +1356,6 @@ if (IsLocal || IsLiveTests) {
             iconURL: defaultExtensionIcon,
             tags: ['penguinmod', 'joke'],
             description: 'dr bob eae',
-            featured: true
-        },
-        {
-            name: 'Inline Blocks',
-            extensionId: 'pmInlineBlocks',
-            iconURL: pmInlineBlocksExtensionIcon,
-            tags: ['penguinmod'],
-            description: 'Create quick blocks for simple tasks. Insert them into any circle spot and have them return any value you want.',
             featured: true
         },
         {
