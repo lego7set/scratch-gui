@@ -816,11 +816,10 @@ const menuItems = [
     },
     {
         name: 'Lpp',
-        extensionId: 'LppExtensionIcon',
-        href: 'https://github.com/FurryR/lpp-scratch/actions/runs/8540515664/artifacts/1381482706',
+        extensionId: 'https://electramod-extensions-gallery.vercel.app/internal_extensions/lpp/index.global.js',
         iconURL: LppExtensionIcon,
         tags: ['othermod', 'programminglanguage'],
-        description: '🛠️ (Experimental) A high-level programming language based on Scratch. Unzip and import the "index.global.js" in ElectraMod (and enable without sandbox else it will not work) for working lpp',
+        description: '🛠️ (Experimental) A high-level programming language based on Scratch.',
         credits: 'FurryR',
         featured: true
     },
