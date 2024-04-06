@@ -823,7 +823,7 @@ const menuItems = [
         credits: 'FurryR',
         featured: true
     },
-    {
+    /* {
         name: 'I18n',
         extensionId: 'kukeMCI18n',
         iconURL: KukeMCI18nIcon,
@@ -831,7 +831,7 @@ const menuItems = [
         description: 'Your first game\'s multilingual extension, helping you effortlessly implement internationalization support for your game content.',
         collaborator: '酷可mc, YUEN and FurryR',
         featured: true
-    },
+    }, */
     {
         name: 'Blockly2Math',
         extensionId: 'blockly2math',

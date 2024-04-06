@@ -40100,15 +40100,17 @@ const menuItems = [{
   description: '🛠️ (Experimental) A high-level programming language based on Scratch.',
   credits: 'FurryR',
   featured: true
-}, {
-  name: 'I18n',
-  extensionId: 'kukeMCI18n',
-  iconURL: _kukemc_I18n_banner_png__WEBPACK_IMPORTED_MODULE_98___default.a,
-  tags: ['othermod'],
-  description: 'Your first game\'s multilingual extension, helping you effortlessly implement internationalization support for your game content.',
-  collaborator: '酷可mc, YUEN and FurryR',
-  featured: true
-}, {
+},
+/* {
+    name: 'I18n',
+    extensionId: 'kukeMCI18n',
+    iconURL: KukeMCI18nIcon,
+    tags: ['othermod'],
+    description: 'Your first game\'s multilingual extension, helping you effortlessly implement internationalization support for your game content.',
+    collaborator: '酷可mc, YUEN and FurryR',
+    featured: true
+}, */
+{
   name: 'Blockly2Math',
   extensionId: 'blockly2math',
   iconURL: _blockly_blockly_png__WEBPACK_IMPORTED_MODULE_96___default.a,
