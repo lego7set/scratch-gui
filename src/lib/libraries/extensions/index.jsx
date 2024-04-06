@@ -820,7 +820,7 @@ const menuItems = [
         iconURL: LppExtensionIcon,
         tags: ['othermod', 'programminglanguage'],
         description: '🛠️ (Experimental) A high-level programming language based on Scratch.',
-        credits: 'FurryR',
+        credits: 'FurryR', 
         featured: true
     },
     /* {
@@ -831,7 +831,7 @@ const menuItems = [
         description: 'Your first game\'s multilingual extension, helping you effortlessly implement internationalization support for your game content.',
         collaborator: '酷可mc, YUEN and FurryR',
         featured: true
-    }, */
+    }, */  // Will be deleted soon for recreation to gallery
     {
         name: 'Blockly2Math',
         extensionId: 'blockly2math',
