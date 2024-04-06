@@ -23339,7 +23339,7 @@ class Blocks extends react__WEBPACK_IMPORTED_MODULE_5___default.a.Component {
     const targetBlock = this.workspace.getBlockById(data.id);
     if (!targetBlock) return; // this happens when we switch sprites
     this.workspace.glowBlock(data.id, false);
-    this.workspace.reportValue(data.id, data.value, true);
+    //this.workspace.reportValue(data.id, data.value, true);
     this.workspace.errorStack(data.id, true);
   }
   getToolboxXML() {
@@ -40096,7 +40096,7 @@ const menuItems = [{
   name: 'Lpp',
   extensionId: 'https://electramod-extensions-gallery.vercel.app/internal_extensions/lpp/index.global.js',
   iconURL: _lpp_banner_svg__WEBPACK_IMPORTED_MODULE_97___default.a,
-  tags: ['othermod', 'programminglanguage'],
+  tags: ['tw', 'turbowarp', 'electramod', 'othermod', 'programminglanguage'],
   description: '🛠️ (Experimental) A high-level programming language based on Scratch.',
   credits: 'FurryR',
   featured: true

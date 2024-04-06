@@ -818,7 +818,7 @@ const menuItems = [
         name: 'Lpp',
         extensionId: 'https://electramod-extensions-gallery.vercel.app/internal_extensions/lpp/index.global.js',
         iconURL: LppExtensionIcon,
-        tags: ['othermod', 'programminglanguage'],
+        tags: ['tw', 'turbowarp', 'electramod', 'othermod', 'programminglanguage'],
         description: '🛠️ (Experimental) A high-level programming language based on Scratch.',
         credits: 'FurryR',
         featured: true
