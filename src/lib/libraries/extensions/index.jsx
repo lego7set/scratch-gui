@@ -820,7 +820,7 @@ const menuItems = [
         iconURL: LppExtensionIcon,
         tags: ['othermod', 'programminglanguage'],
         description: '🛠️ (Experimental) A high-level programming language based on Scratch.',
-        credits: 'FurryR', 
+        credits: 'FurryR',
         featured: true
     },
     /* {
