@@ -807,6 +807,14 @@ const menuItems = [
         featured: true
     },
     {
+        name: 'TypeScript',
+        extensionId: 'typescratch',
+        iconURL: typeScratchExtensionIcon,
+        tags: ['snailide', 'programminglanguage'],
+        description: 'Similar to JavaScript extension but for TypeScript.',
+        featured: true
+    },
+    {
         name: 'Lpp',
         extensionId: 'LppExtensionIcon',
         href: 'https://github.com/FurryR/lpp-scratch/actions/runs/8540515664/artifacts/1381482706',
@@ -823,14 +831,6 @@ const menuItems = [
         tags: ['othermod'],
         description: 'Your first game\'s multilingual extension, helping you effortlessly implement internationalization support for your game content.',
         collaborator: '酷可mc, YUEN and FurryR',
-        featured: true
-    },
-    {
-        name: 'TypeScript',
-        extensionId: 'typescratch',
-        iconURL: typeScratchExtensionIcon,
-        tags: ['snailide', 'programminglanguage'],
-        description: 'Run your own custom code written in JavaScript!',
         featured: true
     },
     {

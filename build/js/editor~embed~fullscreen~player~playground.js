@@ -40086,6 +40086,13 @@ const menuItems = [{
   description: 'Run your own custom code written in JavaScript!',
   featured: true
 }, {
+  name: 'TypeScript',
+  extensionId: 'typescratch',
+  iconURL: _snail_ide_typescript_svg__WEBPACK_IMPORTED_MODULE_95___default.a,
+  tags: ['snailide', 'programminglanguage'],
+  description: 'Similar to JavaScript extension but for TypeScript.',
+  featured: true
+}, {
   name: 'Lpp',
   extensionId: 'LppExtensionIcon',
   href: 'https://github.com/FurryR/lpp-scratch/actions/runs/8540515664/artifacts/1381482706',
@@ -40102,16 +40109,7 @@ const menuItems = [{
   description: 'Your first game\'s multilingual extension, helping you effortlessly implement internationalization support for your game content.',
   collaborator: '酷可mc, YUEN and FurryR',
   featured: true
-},
-/*{
-    name: 'TypeScript',
-    extensionId: 'typeScratch',
-    iconURL: typeScratchExtensionIcon,
-    tags: ['snailide', 'programminglanguage'],
-    description: 'Run your own custom code written in JavaScript!',
-    featured: true
-}, */
-{
+}, {
   name: 'Blockly2Math',
   extensionId: 'blockly2math',
   iconURL: _blockly_blockly_png__WEBPACK_IMPORTED_MODULE_96___default.a,
@@ -40250,7 +40248,7 @@ const menuItems = [{
   href: 'https://electramod-extensions-gallery.vercel.app',
   extensionId: 'special_electramodExtensionLibrary',
   iconURL: _electramod_library_svg__WEBPACK_IMPORTED_MODULE_39___default.a,
-  description: 'see some user-submitted extensions. Opens in a new tab.',
+  description: 'See some user-submitted, ElectraMod External extensions. Opens in a new tab.',
   tags: ['electramod', 'library'],
   featured: true
 }, {
