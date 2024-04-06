@@ -831,7 +831,7 @@ const menuItems = [
         description: 'Your first game\'s multilingual extension, helping you effortlessly implement internationalization support for your game content.',
         collaborator: '酷可mc, YUEN and FurryR',
         featured: true
-    }, */  // Will be deleted soon for recreation to gallery
+    }, */  // Will be deleted soon for recreation to gallery to I18n DX
     {
         name: 'Blockly2Math',
         extensionId: 'blockly2math',
