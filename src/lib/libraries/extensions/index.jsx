@@ -158,6 +158,10 @@ import pmControlsExpansionExtensionIcon from './penguinmod/extensions/controls_e
 import pmSensingExpansionExtensionIcon from './penguinmod/extensions/sensing_expanded.png';
 import pmOperatorsExpansionExtensionIcon from './penguinmod/extensions/operators_expanded.png';
 
+// penguinscript
+
+import penguinscriptExtensionIcon from './penguinmod/extensions/PenguinScript.svg';
+
 // jg: default icon if you are too lazy to make one and you want me to make one instead lololololololol
 // gsa: ololololololo
 import defaultExtensionIcon from './penguinmod/extensions/placeholder.png';
@@ -342,6 +346,15 @@ const menuItems = [
         description: 'An extension to the Pen category! Adds blocks for drawing triangles using textures and tints, drawing images and editing their pixels, etc.',
         featured: true,
         extDeveloper: 'pinksheep2917'
+    },
+    {
+      name: 'PenguinScript',
+      extensionId: 'vgspenguinscript',
+      iconURL: penguinscriptExtensionIcon,
+      tags: ['penguinmod', 'electramod'],
+      description: 'A Turing complete programming language designed to be used alongside regular PenguinMod (forks)',
+      featured: true,
+      extDeveloper: 'Lego7set',
     },
     {
         name: 'Sound Systems',
