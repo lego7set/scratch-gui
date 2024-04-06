@@ -57,6 +57,7 @@ import galleryIcon from './gallery/gallery.svg';
 import customExtensionIcon from './custom/custom.svg';
 import turbowarpIcon from './penguinmod/extensions/turbowarp_icon.svg';
 import penguinmodLibraryExtensionIcon from './penguinmod/library.svg';
+import electramodLibraryExtensionIcon from './electramod/library.svg';
 import sharkpoolGalleryIcon from './penguinmod/sharkpool-library.svg';
 import rubyIcon from './snail-ide/ruby.png';
 
@@ -807,6 +808,7 @@ const menuItems = [
     },
     {
         name: 'Lpp',
+        extensionId: 'LppExtensionIcon',
         href: 'https://github.com/FurryR/lpp-scratch/actions/runs/8540515664/artifacts/1381482706',
         iconURL: LppExtensionIcon,
         tags: ['othermod', 'programminglanguage'],
@@ -823,14 +825,14 @@ const menuItems = [
         collaborator: '酷可mc, YUEN and FurryR',
         featured: true
     },
-    /*{
+    {
         name: 'TypeScript',
-        extensionId: 'typeScratch',
+        extensionId: 'typescratch',
         iconURL: typeScratchExtensionIcon,
         tags: ['snailide', 'programminglanguage'],
         description: 'Run your own custom code written in JavaScript!',
         featured: true
-    }, */
+    },
     {
         name: 'Blockly2Math',
         extensionId: 'blockly2math',
@@ -1000,6 +1002,15 @@ const menuItems = [
             />
         ),
         helpLink: 'https://scratch.mit.edu/vernier'
+    },
+    {
+        name: 'ElectraMod Extra Extensions',
+        href: 'https://electramod-extensions-gallery.vercel.app',
+        extensionId: 'special_electramodExtensionLibrary',
+        iconURL: electramodLibraryExtensionIcon,
+        description: 'See some user-submitted, ElectraMod External extensions. Opens in a new tab.',
+        tags: ['electramod', 'library'],
+        featured: true
     },
     {
         name: (
