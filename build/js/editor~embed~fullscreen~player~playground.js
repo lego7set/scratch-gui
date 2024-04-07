@@ -40301,6 +40301,30 @@ const menuItems = [{
   credits: 'Vadik1',
   featured: true
 }, {
+  name: 'Scratch2WebSerialAPI',
+  extensionId: 'scratch2webserialapi',
+  iconURL: 'https://raw.githubusercontent.com/champierre/scratch2webserialapi/main/scratch-gui/src/lib/libraries/extensions/scratch2webserialapi/scratch2webserialapi.png',
+  insetIconURL: 'https://raw.githubusercontent.com/champierre/scratch2webserialapi/main/scratch-gui/src/lib/libraries/extensions/scratch2webserialapi/Icon.png',
+  collaborator: 'champierre',
+  internetConnectionRequired: true,
+  tags: ['othermod', 'hardware'],
+  description: 'Do more complex things with hardware via the serial ports.',
+  featured: true
+}, {
+  name: 'scratch2maqueen',
+  extensionId: 'scratch2maqueen',
+  // update reference once file names are updated
+  tags: ['othermod', 'hardware'],
+  bluetoothRequired: true,
+  internetConnectionRequired: true,
+  launchPeripheralConnectionFlow: true,
+  useAutoScan: true,
+  iconURL: 'https://raw.githubusercontent.com/champierre/scratch2maqueen/master/scratch-gui/src/lib/libraries/extensions/scratch2maqueen/scratch2maqueen.png',
+  insetIconURL: 'https://raw.githubusercontent.com/champierre/scratch2maqueen/master/scratch-gui/src/lib/libraries/extensions/scratch2maqueen/scratch2maqueen-small.png',
+  description: 'Control DFRobot Maqueen.',
+  featured: true,
+  collaborator: 'Vernier'
+}, {
   name: 'Callum\'s Ultimate Gallery',
   href: 'https://gallery.callumjt.dev/',
   extensionId: 'special_callumExtensionLibrary',
@@ -40361,7 +40385,7 @@ const menuItems = [{
   featured: true
 }, {
   name: 'SharkPool\'s Extension Collection',
-  href: 'https://sharkpools-extensions.vercel.app/?originPM=true',
+  href: 'https://sharkpools-extensions.vercel.app/',
   extensionId: 'special_sharkpoolExtensionLibrary',
   iconURL: _penguinmod_sharkpool_library_svg__WEBPACK_IMPORTED_MODULE_41___default.a,
   description: 'Tons of extensions created by SharkPool.\n\nClick on an extension while this menu is open to add it to your project.',

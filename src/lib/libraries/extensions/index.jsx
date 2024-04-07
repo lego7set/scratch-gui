@@ -163,6 +163,10 @@ import pmOperatorsExpansionExtensionIcon from './penguinmod/extensions/operators
 // gsa: ololololololo
 import defaultExtensionIcon from './penguinmod/extensions/placeholder.png';
 
+// adacraft
+import adabrowserIconURL from './adabrowser/ada.png';
+import adabrowserInsetIconURL from './adabrowser/ada-icon.svg';
+
 const urlParams = new URLSearchParams(location.search);
 
 const IsLocal = String(window.location.href).startsWith(`http://localhost:`);
@@ -309,6 +313,28 @@ const menuItems = [
             />
         ),
         featured: true
+    },
+    {
+        name: (
+            <FormattedMessage
+                defaultMessage="Browser"
+                description="Name for the 'Ada browser' extension"
+                id="gui.extension.adabrowser.name"
+            />
+        ),
+        tags: ['others'],
+        extensionId: 'adabrowser',
+        iconURL: adabrowserIconURL,
+        insetIconURL: adabrowserInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="Some new blocks to interact with the browser"
+                description="Description for the 'Ada Browser' extension"
+                id="gui.extension.adabrowser.description"
+            />
+        ),
+        featured: true,
+        internetConnectionRequired: true
     },
     {
         name: 'Stage Camera',
@@ -1051,6 +1077,31 @@ const menuItems = [
         featured: true
     },
     {
+        name: 'Scratch2WebSerialAPI',
+        extensionId: 'scratch2webserialapi',
+        iconURL: 'https://raw.githubusercontent.com/champierre/scratch2webserialapi/main/scratch-gui/src/lib/libraries/extensions/scratch2webserialapi/scratch2webserialapi.png',
+        insetIconURL: 'https://raw.githubusercontent.com/champierre/scratch2webserialapi/main/scratch-gui/src/lib/libraries/extensions/scratch2webserialapi/Icon.png',
+        collaborator: 'champierre',
+        internetConnectionRequired: true,
+        tags: ['othermod', 'hardware'],
+        description: 'Do more complex things with hardware via the serial ports.',
+        featured: true
+    },
+    {
+        name: 'scratch2maqueen',
+        extensionId: 'scratch2maqueen', // update reference once file names are updated
+        tags: ['othermod', 'hardware'],
+        bluetoothRequired: true,
+        internetConnectionRequired: true,
+        launchPeripheralConnectionFlow: true,
+        useAutoScan: true,
+        iconURL: 'https://raw.githubusercontent.com/champierre/scratch2maqueen/master/scratch-gui/src/lib/libraries/extensions/scratch2maqueen/scratch2maqueen.png',
+        insetIconURL: 'https://raw.githubusercontent.com/champierre/scratch2maqueen/master/scratch-gui/src/lib/libraries/extensions/scratch2maqueen/scratch2maqueen-small.png',
+        description: 'Control DFRobot Maqueen.',
+        featured: true,
+        collaborator: 'Vernier',
+    },
+    {
         name: 'Callum\'s Ultimate Gallery',
         href: 'https://gallery.callumjt.dev/',
         extensionId: 'special_callumExtensionLibrary',
@@ -1127,7 +1178,7 @@ const menuItems = [
     },
     {
         name: 'SharkPool\'s Extension Collection',
-        href: 'https://sharkpools-extensions.vercel.app/?originPM=true',
+        href: 'https://sharkpools-extensions.vercel.app/',
         extensionId: 'special_sharkpoolExtensionLibrary',
         iconURL: sharkpoolGalleryIcon,
         description: 'Tons of extensions created by SharkPool.\n\nClick on an extension while this menu is open to add it to your project.',
