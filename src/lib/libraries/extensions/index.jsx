@@ -58,6 +58,7 @@ import customExtensionIcon from './custom/custom.svg';
 import turbowarpIcon from './penguinmod/extensions/turbowarp_icon.svg';
 import penguinmodLibraryExtensionIcon from './penguinmod/library.svg';
 import electramodLibraryExtensionIcon from './electramod/library.svg';
+import callumLibraryExtensionIcon from './callumjt/library.svg';
 import sharkpoolGalleryIcon from './penguinmod/sharkpool-library.svg';
 import rubyIcon from './snail-ide/ruby.png';
 
@@ -1003,6 +1004,62 @@ const menuItems = [
         helpLink: 'https://scratch.mit.edu/vernier'
     },
     {
+        name: 'Inline Blocks',
+        extensionId: 'pmInlineBlocks',
+        iconURL: pmInlineBlocksExtensionIcon,
+        tags: ['penguinmod'],
+        description: 'Create quick blocks for simple tasks. Insert them into any circle spot and have them return any value you want.',
+        featured: true
+    },
+    {
+        name: '3D',
+        extensionId: 'jg3d',
+        iconURL: jg3dExtensionIcon,
+        tags: ['penguinmod', '3d'],
+        customInsetColor: '#B200FF',
+        insetIconURL: jg3dInsetExtensionIcon,
+        description: 'Use the magic of 3D to spice up your project.',
+        featured: true
+    },
+    {
+        name: '3D Physics',
+        extensionId: 'fr3d',
+        iconURL: fr3dPhysicsExtensionIcon,
+        tags: ['penguinmod', '3d'],
+        customInsetColor: '#D066FE',
+        insetIconURL: fr3dPhysicsInsetExtensionIcon,
+        description: 'Physics for the 3D extension.',
+        featured: true
+    },
+    {
+        name: '3D Virtual Reality',
+        extensionId: 'jg3dVr',
+        iconURL: jg3dVrExtensionIcon,
+        tags: ['penguinmod', 'hardware', '3d'],
+        customInsetColor: '#B200FF',
+        insetIconURL: jg3dVrInsetExtensionIcon,
+        description: 'In development. May break compatibility. Allow players to really jump into your world!',
+        featured: true
+    },
+    {
+        name: 'Virtual Reality',
+        extensionId: 'jgVr',
+        iconURL: jgVrExtensionIcon,
+        tags: ['penguinmod', 'hardware'],
+        description: 'In development.',
+        credits: 'Vadik1',
+        featured: true
+    },
+    {
+        name: 'Callum\'s Ultimate Gallery',
+        href: 'https://gallery.callumjt.dev/',
+        extensionId: 'special_callumExtensionLibrary',
+        iconURL: callumLibraryExtensionIcon,
+        description: 'A massive gallery for all known tw extensions',
+        tags: ['othermod', 'library'],
+        featured: true
+    },
+    {
         name: 'ElectraMod Extra Extensions',
         href: 'https://electramod-extensions-gallery.vercel.app',
         extensionId: 'special_electramodExtensionLibrary',
@@ -1098,53 +1155,6 @@ const menuItems = [
         description: 'Snail IDE version of TurboBuilder',
         credits: 'Started by JeremyGamer13, continued by jwklong, modified by nmsderp',
         tags: ['builders', 'extcreate', 'snailide'],
-        featured: true
-    },
-    {
-        name: 'Inline Blocks',
-        extensionId: 'pmInlineBlocks',
-        iconURL: pmInlineBlocksExtensionIcon,
-        tags: ['penguinmod'],
-        description: 'Create quick blocks for simple tasks. Insert them into any circle spot and have them return any value you want.',
-        featured: true
-    },
-    {
-        name: '3D',
-        extensionId: 'jg3d',
-        iconURL: jg3dExtensionIcon,
-        tags: ['penguinmod', '3d'],
-        customInsetColor: '#B200FF',
-        insetIconURL: jg3dInsetExtensionIcon,
-        description: 'Use the magic of 3D to spice up your project.',
-        featured: true
-    },
-    {
-        name: '3D Physics',
-        extensionId: 'fr3d',
-        iconURL: fr3dPhysicsExtensionIcon,
-        tags: ['penguinmod', '3d'],
-        customInsetColor: '#D066FE',
-        insetIconURL: fr3dPhysicsInsetExtensionIcon,
-        description: 'Physics for the 3D extension.',
-        featured: true
-    },
-    {
-        name: '3D Virtual Reality',
-        extensionId: 'jg3dVr',
-        iconURL: jg3dVrExtensionIcon,
-        tags: ['penguinmod', 'hardware', '3d'],
-        customInsetColor: '#B200FF',
-        insetIconURL: jg3dVrInsetExtensionIcon,
-        description: 'In development. May break compatibility. Allow players to really jump into your world!',
-        featured: true
-    },
-    {
-        name: 'Virtual Reality',
-        extensionId: 'jgVr',
-        iconURL: jgVrExtensionIcon,
-        tags: ['penguinmod', 'hardware'],
-        description: 'In development.',
-        credits: 'Vadik1',
         featured: true
     },
     {
