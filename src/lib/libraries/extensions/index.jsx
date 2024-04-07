@@ -167,6 +167,29 @@ import defaultExtensionIcon from './penguinmod/extensions/placeholder.png';
 import adabrowserIconURL from './adabrowser/ada.png';
 import adabrowserInsetIconURL from './adabrowser/ada-icon.svg';
 
+// onegpio
+
+import onegpioArduinoImage from './onegpioArduino/onegpioArduino.png';
+import onegpioArduinoInsetIconURL from './onegpioArduino/onegpioArduino-small.png';
+
+import onegpioRpiImage from './onegpioRpi/onegpioRpi.png';
+import onegpioRpiInsetIconURL from './onegpioRpi/onegpioRpi-small.png';
+
+import onegpioEspImage from './onegpioEsp/onegpioEsp.png';
+import onegpioEspInsetIconURL from './onegpioEsp/onegpioEsp-small.png';
+
+import onegpioPicoboardImage from './onegpioPicoboard/onegpioPicoboard.jpg';
+import onegpioPicoboardInsetIconURL from './onegpioPicoboard/onegpioPicoboard-small.png';
+
+import onegpioCpxImage from './onegpioCpx/onegpioCpx.jpg';
+import onegpioCpxInsetIconURL from './onegpioCpx/onegpioCpx-small.png';
+
+import onegpioRoboHATImage from './onegpioRoboHAT/onegpioRoboHAT.png';
+import onegpioRoboHATInsetIconURL from './onegpioRoboHAT/onegpioRoboHAT-small.png';
+
+import onegpioRpiPicoImage from './onegpioRpiPico/onegpioRpiPico.png';
+import onegpioRpiPicoInsetIconURL from './onegpioRpiPico/onegpioRpiPico-small.png';
+
 const urlParams = new URLSearchParams(location.search);
 
 const IsLocal = String(window.location.href).startsWith(`http://localhost:`);
@@ -313,28 +336,6 @@ const menuItems = [
             />
         ),
         featured: true
-    },
-    {
-        name: (
-            <FormattedMessage
-                defaultMessage="Browser"
-                description="Name for the 'Ada browser' extension"
-                id="gui.extension.adabrowser.name"
-            />
-        ),
-        tags: ['others'],
-        extensionId: 'adabrowser',
-        iconURL: adabrowserIconURL,
-        insetIconURL: adabrowserInsetIconURL,
-        description: (
-            <FormattedMessage
-                defaultMessage="Some new blocks to interact with the browser"
-                description="Description for the 'Ada Browser' extension"
-                id="gui.extension.adabrowser.description"
-            />
-        ),
-        featured: true,
-        internetConnectionRequired: true
     },
     {
         name: 'Stage Camera',
@@ -826,6 +827,15 @@ const menuItems = [
         featured: true
     },
     {
+        name: 'Ada Browser',
+        tags: ['othermod'],
+        extensionId: 'adabrowser',
+        iconURL: adabrowserIconURL,
+        insetIconURL: adabrowserInsetIconURL,
+        description: 'Some new blocks to interact with the browser',
+        featured: true
+    },
+    {
         name: 'JavaScript',
         extensionId: 'jgJavascript',
         iconURL: jgJavascriptExtensionIcon,
@@ -1099,7 +1109,112 @@ const menuItems = [
         insetIconURL: 'https://raw.githubusercontent.com/champierre/scratch2maqueen/master/scratch-gui/src/lib/libraries/extensions/scratch2maqueen/scratch2maqueen-small.png',
         description: 'Control DFRobot Maqueen.',
         featured: true,
-        collaborator: 'Vernier',
+        collaborator: 'Vernier'
+    },
+    {
+        name: 'OneGpio Arduino',
+        extensionId: 'onegpioArduino',
+        collaborator: "Mr. Y's Lab",
+        iconURL: onegpioArduinoImage,
+        insetIconURL: onegpioArduinoInsetIconURL,
+        description: 'OneGPIOArduino',
+        tags: ['othermod', 'hardware'],
+        featured: true,
+        disabled: false,
+        internetConnectionRequired: true,
+        bluetoothRequired: false,
+        helpLink: 'https://mryslab.github.io/s3-extend/'
+
+    },
+    {
+        name: 'OneGpio Raspberry Pi',
+        extensionId: 'onegpioRpi',
+        collaborator: "Mr. Y's Lab",
+        iconURL: onegpioRpiImage,
+        insetIconURL: onegpioRpiInsetIconURL,
+        description: 'OneGPIORpi',
+        tags: ['othermod', 'hardware'],
+        featured: true,
+        disabled: false,
+        internetConnectionRequired: true,
+        bluetoothRequired: false,
+        helpLink: 'https://mryslab.github.io/s3-extend/'
+
+    },
+    {
+        name: 'OneGpio ESP-8266',
+        extensionId: 'onegpioEsp',
+        collaborator: "Mr. Y's Lab",
+        iconURL: onegpioEspImage,
+        insetIconURL: onegpioEspInsetIconURL,
+        description: 'OneGPIOEsp',
+        tags: ['othermod', 'hardware'],
+        featured: true,
+        disabled: false,
+        internetConnectionRequired: true,
+        bluetoothRequired: false,
+        helpLink: 'https://mryslab.github.io/s3-extend/'
+
+    },
+    {
+        name: 'OneGpio Picoboard',
+        extensionId: 'onegpioPicoboard',
+        collaborator: "Mr. Y's Lab",
+        iconURL: onegpioPicoboardImage,
+        insetIconURL: onegpioPicoboardInsetIconURL,
+        description: 'OneGPIOPicoboard',
+        tags: ['othermod', 'hardware'],
+        featured: true,
+        disabled: false,
+        internetConnectionRequired: true,
+        bluetoothRequired: false,
+        helpLink: 'https://mryslab.github.io/s3-extend/'
+
+    },
+    {
+        name: 'OneGpio Playground Express',
+        extensionId: 'onegpioCpx',
+        collaborator: "Mr. Y's Lab",
+        iconURL: onegpioCpxImage,
+        insetIconURL: onegpioCpxInsetIconURL,
+        description: 'OneGPIOCpx',
+        tags: ['othermod', 'hardware'],
+        featured: true,
+        disabled: false,
+        internetConnectionRequired: true,
+        bluetoothRequired: false,
+        helpLink: 'https://mryslab.github.io/s3-extend/'
+
+    },
+    {
+        name: 'OneGpio RoboHAT MM1',
+        extensionId: 'onegpioRoboHAT',
+        collaborator: "Mr. Y's Lab",
+        iconURL: onegpioRoboHATImage,
+        insetIconURL: onegpioRoboHATInsetIconURL,
+        description: 'OneGPIORoboHAT',
+        tags: ['othermod', 'hardware'],
+        featured: true,
+        disabled: false,
+        internetConnectionRequired: true,
+        bluetoothRequired: false,
+        helpLink: 'https://mryslab.github.io/s3-extend/'
+
+    },
+    {
+        name: 'OneGpio Raspberry Pi Pico',
+        extensionId: 'onegpioRpiPico',
+        collaborator: "Mr. Y's Lab",
+        iconURL: onegpioRpiPicoImage,
+        insetIconURL: onegpioRpiPicoInsetIconURL,
+        description: 'onegpioRpiPico',
+        tags: ['othermod', 'hardware'],
+        featured: true,
+        disabled: false,
+        internetConnectionRequired: true,
+        bluetoothRequired: false,
+        helpLink: 'https://mryslab.github.io/s3-extend/'
+
     },
     {
         name: 'Callum\'s Ultimate Gallery',

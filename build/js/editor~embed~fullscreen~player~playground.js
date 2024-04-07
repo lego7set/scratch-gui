@@ -39020,6 +39020,28 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./src/lib/libraries/extensions/adabrowser/ada-icon.svg":
+/*!**************************************************************!*\
+  !*** ./src/lib/libraries/extensions/adabrowser/ada-icon.svg ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/assets/f1fe0bbe960a0d60c783b111c84b837e.svg";
+
+/***/ }),
+
+/***/ "./src/lib/libraries/extensions/adabrowser/ada.png":
+/*!*********************************************************!*\
+  !*** ./src/lib/libraries/extensions/adabrowser/ada.png ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/assets/40998229311219c2117265d5e4bd9745.png";
+
+/***/ }),
+
 /***/ "./src/lib/libraries/extensions/blockly/blockly.png":
 /*!**********************************************************!*\
   !*** ./src/lib/libraries/extensions/blockly/blockly.png ***!
@@ -39426,6 +39448,38 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _penguinmod_extensions_operators_expanded_png__WEBPACK_IMPORTED_MODULE_104___default = /*#__PURE__*/__webpack_require__.n(_penguinmod_extensions_operators_expanded_png__WEBPACK_IMPORTED_MODULE_104__);
 /* harmony import */ var _penguinmod_extensions_placeholder_png__WEBPACK_IMPORTED_MODULE_105__ = __webpack_require__(/*! ./penguinmod/extensions/placeholder.png */ "./src/lib/libraries/extensions/penguinmod/extensions/placeholder.png");
 /* harmony import */ var _penguinmod_extensions_placeholder_png__WEBPACK_IMPORTED_MODULE_105___default = /*#__PURE__*/__webpack_require__.n(_penguinmod_extensions_placeholder_png__WEBPACK_IMPORTED_MODULE_105__);
+/* harmony import */ var _adabrowser_ada_png__WEBPACK_IMPORTED_MODULE_106__ = __webpack_require__(/*! ./adabrowser/ada.png */ "./src/lib/libraries/extensions/adabrowser/ada.png");
+/* harmony import */ var _adabrowser_ada_png__WEBPACK_IMPORTED_MODULE_106___default = /*#__PURE__*/__webpack_require__.n(_adabrowser_ada_png__WEBPACK_IMPORTED_MODULE_106__);
+/* harmony import */ var _adabrowser_ada_icon_svg__WEBPACK_IMPORTED_MODULE_107__ = __webpack_require__(/*! ./adabrowser/ada-icon.svg */ "./src/lib/libraries/extensions/adabrowser/ada-icon.svg");
+/* harmony import */ var _adabrowser_ada_icon_svg__WEBPACK_IMPORTED_MODULE_107___default = /*#__PURE__*/__webpack_require__.n(_adabrowser_ada_icon_svg__WEBPACK_IMPORTED_MODULE_107__);
+/* harmony import */ var _onegpioArduino_onegpioArduino_png__WEBPACK_IMPORTED_MODULE_108__ = __webpack_require__(/*! ./onegpioArduino/onegpioArduino.png */ "./src/lib/libraries/extensions/onegpioArduino/onegpioArduino.png");
+/* harmony import */ var _onegpioArduino_onegpioArduino_png__WEBPACK_IMPORTED_MODULE_108___default = /*#__PURE__*/__webpack_require__.n(_onegpioArduino_onegpioArduino_png__WEBPACK_IMPORTED_MODULE_108__);
+/* harmony import */ var _onegpioArduino_onegpioArduino_small_png__WEBPACK_IMPORTED_MODULE_109__ = __webpack_require__(/*! ./onegpioArduino/onegpioArduino-small.png */ "./src/lib/libraries/extensions/onegpioArduino/onegpioArduino-small.png");
+/* harmony import */ var _onegpioArduino_onegpioArduino_small_png__WEBPACK_IMPORTED_MODULE_109___default = /*#__PURE__*/__webpack_require__.n(_onegpioArduino_onegpioArduino_small_png__WEBPACK_IMPORTED_MODULE_109__);
+/* harmony import */ var _onegpioRpi_onegpioRpi_png__WEBPACK_IMPORTED_MODULE_110__ = __webpack_require__(/*! ./onegpioRpi/onegpioRpi.png */ "./src/lib/libraries/extensions/onegpioRpi/onegpioRpi.png");
+/* harmony import */ var _onegpioRpi_onegpioRpi_png__WEBPACK_IMPORTED_MODULE_110___default = /*#__PURE__*/__webpack_require__.n(_onegpioRpi_onegpioRpi_png__WEBPACK_IMPORTED_MODULE_110__);
+/* harmony import */ var _onegpioRpi_onegpioRpi_small_png__WEBPACK_IMPORTED_MODULE_111__ = __webpack_require__(/*! ./onegpioRpi/onegpioRpi-small.png */ "./src/lib/libraries/extensions/onegpioRpi/onegpioRpi-small.png");
+/* harmony import */ var _onegpioRpi_onegpioRpi_small_png__WEBPACK_IMPORTED_MODULE_111___default = /*#__PURE__*/__webpack_require__.n(_onegpioRpi_onegpioRpi_small_png__WEBPACK_IMPORTED_MODULE_111__);
+/* harmony import */ var _onegpioEsp_onegpioEsp_png__WEBPACK_IMPORTED_MODULE_112__ = __webpack_require__(/*! ./onegpioEsp/onegpioEsp.png */ "./src/lib/libraries/extensions/onegpioEsp/onegpioEsp.png");
+/* harmony import */ var _onegpioEsp_onegpioEsp_png__WEBPACK_IMPORTED_MODULE_112___default = /*#__PURE__*/__webpack_require__.n(_onegpioEsp_onegpioEsp_png__WEBPACK_IMPORTED_MODULE_112__);
+/* harmony import */ var _onegpioEsp_onegpioEsp_small_png__WEBPACK_IMPORTED_MODULE_113__ = __webpack_require__(/*! ./onegpioEsp/onegpioEsp-small.png */ "./src/lib/libraries/extensions/onegpioEsp/onegpioEsp-small.png");
+/* harmony import */ var _onegpioEsp_onegpioEsp_small_png__WEBPACK_IMPORTED_MODULE_113___default = /*#__PURE__*/__webpack_require__.n(_onegpioEsp_onegpioEsp_small_png__WEBPACK_IMPORTED_MODULE_113__);
+/* harmony import */ var _onegpioPicoboard_onegpioPicoboard_jpg__WEBPACK_IMPORTED_MODULE_114__ = __webpack_require__(/*! ./onegpioPicoboard/onegpioPicoboard.jpg */ "./src/lib/libraries/extensions/onegpioPicoboard/onegpioPicoboard.jpg");
+/* harmony import */ var _onegpioPicoboard_onegpioPicoboard_jpg__WEBPACK_IMPORTED_MODULE_114___default = /*#__PURE__*/__webpack_require__.n(_onegpioPicoboard_onegpioPicoboard_jpg__WEBPACK_IMPORTED_MODULE_114__);
+/* harmony import */ var _onegpioPicoboard_onegpioPicoboard_small_png__WEBPACK_IMPORTED_MODULE_115__ = __webpack_require__(/*! ./onegpioPicoboard/onegpioPicoboard-small.png */ "./src/lib/libraries/extensions/onegpioPicoboard/onegpioPicoboard-small.png");
+/* harmony import */ var _onegpioPicoboard_onegpioPicoboard_small_png__WEBPACK_IMPORTED_MODULE_115___default = /*#__PURE__*/__webpack_require__.n(_onegpioPicoboard_onegpioPicoboard_small_png__WEBPACK_IMPORTED_MODULE_115__);
+/* harmony import */ var _onegpioCpx_onegpioCpx_jpg__WEBPACK_IMPORTED_MODULE_116__ = __webpack_require__(/*! ./onegpioCpx/onegpioCpx.jpg */ "./src/lib/libraries/extensions/onegpioCpx/onegpioCpx.jpg");
+/* harmony import */ var _onegpioCpx_onegpioCpx_jpg__WEBPACK_IMPORTED_MODULE_116___default = /*#__PURE__*/__webpack_require__.n(_onegpioCpx_onegpioCpx_jpg__WEBPACK_IMPORTED_MODULE_116__);
+/* harmony import */ var _onegpioCpx_onegpioCpx_small_png__WEBPACK_IMPORTED_MODULE_117__ = __webpack_require__(/*! ./onegpioCpx/onegpioCpx-small.png */ "./src/lib/libraries/extensions/onegpioCpx/onegpioCpx-small.png");
+/* harmony import */ var _onegpioCpx_onegpioCpx_small_png__WEBPACK_IMPORTED_MODULE_117___default = /*#__PURE__*/__webpack_require__.n(_onegpioCpx_onegpioCpx_small_png__WEBPACK_IMPORTED_MODULE_117__);
+/* harmony import */ var _onegpioRoboHAT_onegpioRoboHAT_png__WEBPACK_IMPORTED_MODULE_118__ = __webpack_require__(/*! ./onegpioRoboHAT/onegpioRoboHAT.png */ "./src/lib/libraries/extensions/onegpioRoboHAT/onegpioRoboHAT.png");
+/* harmony import */ var _onegpioRoboHAT_onegpioRoboHAT_png__WEBPACK_IMPORTED_MODULE_118___default = /*#__PURE__*/__webpack_require__.n(_onegpioRoboHAT_onegpioRoboHAT_png__WEBPACK_IMPORTED_MODULE_118__);
+/* harmony import */ var _onegpioRoboHAT_onegpioRoboHAT_small_png__WEBPACK_IMPORTED_MODULE_119__ = __webpack_require__(/*! ./onegpioRoboHAT/onegpioRoboHAT-small.png */ "./src/lib/libraries/extensions/onegpioRoboHAT/onegpioRoboHAT-small.png");
+/* harmony import */ var _onegpioRoboHAT_onegpioRoboHAT_small_png__WEBPACK_IMPORTED_MODULE_119___default = /*#__PURE__*/__webpack_require__.n(_onegpioRoboHAT_onegpioRoboHAT_small_png__WEBPACK_IMPORTED_MODULE_119__);
+/* harmony import */ var _onegpioRpiPico_onegpioRpiPico_png__WEBPACK_IMPORTED_MODULE_120__ = __webpack_require__(/*! ./onegpioRpiPico/onegpioRpiPico.png */ "./src/lib/libraries/extensions/onegpioRpiPico/onegpioRpiPico.png");
+/* harmony import */ var _onegpioRpiPico_onegpioRpiPico_png__WEBPACK_IMPORTED_MODULE_120___default = /*#__PURE__*/__webpack_require__.n(_onegpioRpiPico_onegpioRpiPico_png__WEBPACK_IMPORTED_MODULE_120__);
+/* harmony import */ var _onegpioRpiPico_onegpioRpiPico_small_png__WEBPACK_IMPORTED_MODULE_121__ = __webpack_require__(/*! ./onegpioRpiPico/onegpioRpiPico-small.png */ "./src/lib/libraries/extensions/onegpioRpiPico/onegpioRpiPico-small.png");
+/* harmony import */ var _onegpioRpiPico_onegpioRpiPico_small_png__WEBPACK_IMPORTED_MODULE_121___default = /*#__PURE__*/__webpack_require__.n(_onegpioRpiPico_onegpioRpiPico_small_png__WEBPACK_IMPORTED_MODULE_121__);
 /* eslint-disable max-len */
 
 
@@ -39568,6 +39622,27 @@ __webpack_require__.r(__webpack_exports__);
 
 // jg: default icon if you are too lazy to make one and you want me to make one instead lololololololol
 // gsa: ololololololo
+
+
+// adacraft
+
+
+
+// onegpio
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 const urlParams = new URLSearchParams(location.search);
 const IsLocal = String(window.location.href).startsWith("http://localhost:");
@@ -40093,6 +40168,14 @@ const menuItems = [{
   description: "Interact with Scratch Authentication to prove the player is a real scratch user.",
   featured: true
 }, {
+  name: 'Ada Browser',
+  tags: ['othermod'],
+  extensionId: 'adabrowser',
+  iconURL: _adabrowser_ada_png__WEBPACK_IMPORTED_MODULE_106___default.a,
+  insetIconURL: _adabrowser_ada_icon_svg__WEBPACK_IMPORTED_MODULE_107___default.a,
+  description: 'Some new blocks to interact with the browser',
+  featured: true
+}, {
   name: 'JavaScript',
   extensionId: 'jgJavascript',
   iconURL: _penguinmod_extensions_javascript_png__WEBPACK_IMPORTED_MODULE_93___default.a,
@@ -40324,6 +40407,97 @@ const menuItems = [{
   description: 'Control DFRobot Maqueen.',
   featured: true,
   collaborator: 'Vernier'
+}, {
+  name: 'OneGpio Arduino',
+  extensionId: 'onegpioArduino',
+  collaborator: "Mr. Y's Lab",
+  iconURL: _onegpioArduino_onegpioArduino_png__WEBPACK_IMPORTED_MODULE_108___default.a,
+  insetIconURL: _onegpioArduino_onegpioArduino_small_png__WEBPACK_IMPORTED_MODULE_109___default.a,
+  description: 'OneGPIOArduino',
+  tags: ['othermod', 'hardware'],
+  featured: true,
+  disabled: false,
+  internetConnectionRequired: true,
+  bluetoothRequired: false,
+  helpLink: 'https://mryslab.github.io/s3-extend/'
+}, {
+  name: 'OneGpio Raspberry Pi',
+  extensionId: 'onegpioRpi',
+  collaborator: "Mr. Y's Lab",
+  iconURL: _onegpioRpi_onegpioRpi_png__WEBPACK_IMPORTED_MODULE_110___default.a,
+  insetIconURL: _onegpioRpi_onegpioRpi_small_png__WEBPACK_IMPORTED_MODULE_111___default.a,
+  description: 'OneGPIORpi',
+  tags: ['othermod', 'hardware'],
+  featured: true,
+  disabled: false,
+  internetConnectionRequired: true,
+  bluetoothRequired: false,
+  helpLink: 'https://mryslab.github.io/s3-extend/'
+}, {
+  name: 'OneGpio ESP-8266',
+  extensionId: 'onegpioEsp',
+  collaborator: "Mr. Y's Lab",
+  iconURL: _onegpioEsp_onegpioEsp_png__WEBPACK_IMPORTED_MODULE_112___default.a,
+  insetIconURL: _onegpioEsp_onegpioEsp_small_png__WEBPACK_IMPORTED_MODULE_113___default.a,
+  description: 'OneGPIOEsp',
+  tags: ['othermod', 'hardware'],
+  featured: true,
+  disabled: false,
+  internetConnectionRequired: true,
+  bluetoothRequired: false,
+  helpLink: 'https://mryslab.github.io/s3-extend/'
+}, {
+  name: 'OneGpio Picoboard',
+  extensionId: 'onegpioPicoboard',
+  collaborator: "Mr. Y's Lab",
+  iconURL: _onegpioPicoboard_onegpioPicoboard_jpg__WEBPACK_IMPORTED_MODULE_114___default.a,
+  insetIconURL: _onegpioPicoboard_onegpioPicoboard_small_png__WEBPACK_IMPORTED_MODULE_115___default.a,
+  description: 'OneGPIOPicoboard',
+  tags: ['othermod', 'hardware'],
+  featured: true,
+  disabled: false,
+  internetConnectionRequired: true,
+  bluetoothRequired: false,
+  helpLink: 'https://mryslab.github.io/s3-extend/'
+}, {
+  name: 'OneGpio Playground Express',
+  extensionId: 'onegpioCpx',
+  collaborator: "Mr. Y's Lab",
+  iconURL: _onegpioCpx_onegpioCpx_jpg__WEBPACK_IMPORTED_MODULE_116___default.a,
+  insetIconURL: _onegpioCpx_onegpioCpx_small_png__WEBPACK_IMPORTED_MODULE_117___default.a,
+  description: 'OneGPIOCpx',
+  tags: ['othermod', 'hardware'],
+  featured: true,
+  disabled: false,
+  internetConnectionRequired: true,
+  bluetoothRequired: false,
+  helpLink: 'https://mryslab.github.io/s3-extend/'
+}, {
+  name: 'OneGpio RoboHAT MM1',
+  extensionId: 'onegpioRoboHAT',
+  collaborator: "Mr. Y's Lab",
+  iconURL: _onegpioRoboHAT_onegpioRoboHAT_png__WEBPACK_IMPORTED_MODULE_118___default.a,
+  insetIconURL: _onegpioRoboHAT_onegpioRoboHAT_small_png__WEBPACK_IMPORTED_MODULE_119___default.a,
+  description: 'OneGPIORoboHAT',
+  tags: ['othermod', 'hardware'],
+  featured: true,
+  disabled: false,
+  internetConnectionRequired: true,
+  bluetoothRequired: false,
+  helpLink: 'https://mryslab.github.io/s3-extend/'
+}, {
+  name: 'OneGpio Raspberry Pi Pico',
+  extensionId: 'onegpioRpiPico',
+  collaborator: "Mr. Y's Lab",
+  iconURL: _onegpioRpiPico_onegpioRpiPico_png__WEBPACK_IMPORTED_MODULE_120___default.a,
+  insetIconURL: _onegpioRpiPico_onegpioRpiPico_small_png__WEBPACK_IMPORTED_MODULE_121___default.a,
+  description: 'onegpioRpiPico',
+  tags: ['othermod', 'hardware'],
+  featured: true,
+  disabled: false,
+  internetConnectionRequired: true,
+  bluetoothRequired: false,
+  helpLink: 'https://mryslab.github.io/s3-extend/'
 }, {
   name: 'Callum\'s Ultimate Gallery',
   href: 'https://gallery.callumjt.dev/',
@@ -40715,6 +40889,160 @@ module.exports = __webpack_require__.p + "static/assets/504d73be1b361b4b9ca7f655
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/assets/7eea42371f5ccb84b4fc7d0ba7331ea3.png";
+
+/***/ }),
+
+/***/ "./src/lib/libraries/extensions/onegpioArduino/onegpioArduino-small.png":
+/*!******************************************************************************!*\
+  !*** ./src/lib/libraries/extensions/onegpioArduino/onegpioArduino-small.png ***!
+  \******************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/assets/b271d058008e58e43bf0f04c4db6416c.png";
+
+/***/ }),
+
+/***/ "./src/lib/libraries/extensions/onegpioArduino/onegpioArduino.png":
+/*!************************************************************************!*\
+  !*** ./src/lib/libraries/extensions/onegpioArduino/onegpioArduino.png ***!
+  \************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/assets/e02278ade9b69850f9112f0f039a113b.png";
+
+/***/ }),
+
+/***/ "./src/lib/libraries/extensions/onegpioCpx/onegpioCpx-small.png":
+/*!**********************************************************************!*\
+  !*** ./src/lib/libraries/extensions/onegpioCpx/onegpioCpx-small.png ***!
+  \**********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/assets/983df5c5f7c9e82a69a5904e5a03d68d.png";
+
+/***/ }),
+
+/***/ "./src/lib/libraries/extensions/onegpioCpx/onegpioCpx.jpg":
+/*!****************************************************************!*\
+  !*** ./src/lib/libraries/extensions/onegpioCpx/onegpioCpx.jpg ***!
+  \****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/assets/a143370353ea213f3eb2ca018f2205dd.jpg";
+
+/***/ }),
+
+/***/ "./src/lib/libraries/extensions/onegpioEsp/onegpioEsp-small.png":
+/*!**********************************************************************!*\
+  !*** ./src/lib/libraries/extensions/onegpioEsp/onegpioEsp-small.png ***!
+  \**********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/assets/770c726dfd709e493bde06c9fd6b9f31.png";
+
+/***/ }),
+
+/***/ "./src/lib/libraries/extensions/onegpioEsp/onegpioEsp.png":
+/*!****************************************************************!*\
+  !*** ./src/lib/libraries/extensions/onegpioEsp/onegpioEsp.png ***!
+  \****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/assets/23258c89260212366a02005f1b4deadb.png";
+
+/***/ }),
+
+/***/ "./src/lib/libraries/extensions/onegpioPicoboard/onegpioPicoboard-small.png":
+/*!**********************************************************************************!*\
+  !*** ./src/lib/libraries/extensions/onegpioPicoboard/onegpioPicoboard-small.png ***!
+  \**********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/assets/3fcb8177b4b08d9ac19f8cf5a0bdca13.png";
+
+/***/ }),
+
+/***/ "./src/lib/libraries/extensions/onegpioPicoboard/onegpioPicoboard.jpg":
+/*!****************************************************************************!*\
+  !*** ./src/lib/libraries/extensions/onegpioPicoboard/onegpioPicoboard.jpg ***!
+  \****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/assets/7ff0420418814a493cb3a9fac4c43f7d.jpg";
+
+/***/ }),
+
+/***/ "./src/lib/libraries/extensions/onegpioRoboHAT/onegpioRoboHAT-small.png":
+/*!******************************************************************************!*\
+  !*** ./src/lib/libraries/extensions/onegpioRoboHAT/onegpioRoboHAT-small.png ***!
+  \******************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/assets/f847d76906912ea9499ee16146437d2b.png";
+
+/***/ }),
+
+/***/ "./src/lib/libraries/extensions/onegpioRoboHAT/onegpioRoboHAT.png":
+/*!************************************************************************!*\
+  !*** ./src/lib/libraries/extensions/onegpioRoboHAT/onegpioRoboHAT.png ***!
+  \************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/assets/d5e41a4426338560168e792cbf895daa.png";
+
+/***/ }),
+
+/***/ "./src/lib/libraries/extensions/onegpioRpi/onegpioRpi-small.png":
+/*!**********************************************************************!*\
+  !*** ./src/lib/libraries/extensions/onegpioRpi/onegpioRpi-small.png ***!
+  \**********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/assets/0ba23a9a5c91a5e95ad8c73567f8cf63.png";
+
+/***/ }),
+
+/***/ "./src/lib/libraries/extensions/onegpioRpi/onegpioRpi.png":
+/*!****************************************************************!*\
+  !*** ./src/lib/libraries/extensions/onegpioRpi/onegpioRpi.png ***!
+  \****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/assets/e22c439bac2069da4d0af8eb46317743.png";
+
+/***/ }),
+
+/***/ "./src/lib/libraries/extensions/onegpioRpiPico/onegpioRpiPico-small.png":
+/*!******************************************************************************!*\
+  !*** ./src/lib/libraries/extensions/onegpioRpiPico/onegpioRpiPico-small.png ***!
+  \******************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/assets/1c7e4cb14ae88f4076f1ab4974677d8e.png";
+
+/***/ }),
+
+/***/ "./src/lib/libraries/extensions/onegpioRpiPico/onegpioRpiPico.png":
+/*!************************************************************************!*\
+  !*** ./src/lib/libraries/extensions/onegpioRpiPico/onegpioRpiPico.png ***!
+  \************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/assets/4f86a86991186fc622c31cf373e0b9d8.png";
 
 /***/ }),
 
