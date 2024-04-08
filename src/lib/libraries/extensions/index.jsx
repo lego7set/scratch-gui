@@ -150,7 +150,8 @@ import jgAnimationExtensionIcon from './penguinmod/extensions/animation.png';
 import typeScratchExtensionIcon from './snail-ide/typescript.svg';
 import blocklyIconURL from './blockly/blockly.png';
 import LppExtensionIcon from './lpp/banner.svg';
-import KukeMCI18nIcon from './kukemc/I18n/banner.png';
+import DiscordIcon from './discord/icon.svg';
+import DiscordRPCIcon from './discord/rpc.png';
 
 // category expansions
 import pmMotionExpansionExtensionIcon from './penguinmod/extensions/motion_expanded.png';
@@ -859,6 +860,19 @@ const menuItems = [
         description: '🛠️ (Experimental) A high-level programming language based on Scratch.',
         credits: 'FurryR',
         featured: true
+    },
+    {
+        name: 'Discord RPC',
+        extensionId: 'em_discordrpc',
+        iconURL: DiscordRPCIcon,
+        insetIconURL: DiscordIcon,
+        customInsetColor: '#5865F2',
+        tags: ['electramod'],
+        description: 'Discord Rich Presence for Scratch.',
+        internetConnectionRequired: true,
+        credits: 'Aness6040',
+        featured: true,
+        disabled: !(IsLocal || IsLiveTests)
     },
     /* {
         name: 'I18n',

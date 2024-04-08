@@ -39119,6 +39119,28 @@ module.exports = __webpack_require__.p + "static/assets/1aa0695f67909940855aad4c
 
 /***/ }),
 
+/***/ "./src/lib/libraries/extensions/discord/icon.svg":
+/*!*******************************************************!*\
+  !*** ./src/lib/libraries/extensions/discord/icon.svg ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/assets/506bfb72e97b2a0b5d0a2ec92fb7732f.svg";
+
+/***/ }),
+
+/***/ "./src/lib/libraries/extensions/discord/rpc.png":
+/*!******************************************************!*\
+  !*** ./src/lib/libraries/extensions/discord/rpc.png ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/assets/f8a2e815f324722297942693294f598e.png";
+
+/***/ }),
+
 /***/ "./src/lib/libraries/extensions/electramod/library.svg":
 /*!*************************************************************!*\
   !*** ./src/lib/libraries/extensions/electramod/library.svg ***!
@@ -39434,52 +39456,54 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _blockly_blockly_png__WEBPACK_IMPORTED_MODULE_97___default = /*#__PURE__*/__webpack_require__.n(_blockly_blockly_png__WEBPACK_IMPORTED_MODULE_97__);
 /* harmony import */ var _lpp_banner_svg__WEBPACK_IMPORTED_MODULE_98__ = __webpack_require__(/*! ./lpp/banner.svg */ "./src/lib/libraries/extensions/lpp/banner.svg");
 /* harmony import */ var _lpp_banner_svg__WEBPACK_IMPORTED_MODULE_98___default = /*#__PURE__*/__webpack_require__.n(_lpp_banner_svg__WEBPACK_IMPORTED_MODULE_98__);
-/* harmony import */ var _kukemc_I18n_banner_png__WEBPACK_IMPORTED_MODULE_99__ = __webpack_require__(/*! ./kukemc/I18n/banner.png */ "./src/lib/libraries/extensions/kukemc/I18n/banner.png");
-/* harmony import */ var _kukemc_I18n_banner_png__WEBPACK_IMPORTED_MODULE_99___default = /*#__PURE__*/__webpack_require__.n(_kukemc_I18n_banner_png__WEBPACK_IMPORTED_MODULE_99__);
-/* harmony import */ var _penguinmod_extensions_motion_expanded_png__WEBPACK_IMPORTED_MODULE_100__ = __webpack_require__(/*! ./penguinmod/extensions/motion_expanded.png */ "./src/lib/libraries/extensions/penguinmod/extensions/motion_expanded.png");
-/* harmony import */ var _penguinmod_extensions_motion_expanded_png__WEBPACK_IMPORTED_MODULE_100___default = /*#__PURE__*/__webpack_require__.n(_penguinmod_extensions_motion_expanded_png__WEBPACK_IMPORTED_MODULE_100__);
-/* harmony import */ var _penguinmod_extensions_events_expanded_png__WEBPACK_IMPORTED_MODULE_101__ = __webpack_require__(/*! ./penguinmod/extensions/events_expanded.png */ "./src/lib/libraries/extensions/penguinmod/extensions/events_expanded.png");
-/* harmony import */ var _penguinmod_extensions_events_expanded_png__WEBPACK_IMPORTED_MODULE_101___default = /*#__PURE__*/__webpack_require__.n(_penguinmod_extensions_events_expanded_png__WEBPACK_IMPORTED_MODULE_101__);
-/* harmony import */ var _penguinmod_extensions_controls_expanded_png__WEBPACK_IMPORTED_MODULE_102__ = __webpack_require__(/*! ./penguinmod/extensions/controls_expanded.png */ "./src/lib/libraries/extensions/penguinmod/extensions/controls_expanded.png");
-/* harmony import */ var _penguinmod_extensions_controls_expanded_png__WEBPACK_IMPORTED_MODULE_102___default = /*#__PURE__*/__webpack_require__.n(_penguinmod_extensions_controls_expanded_png__WEBPACK_IMPORTED_MODULE_102__);
-/* harmony import */ var _penguinmod_extensions_sensing_expanded_png__WEBPACK_IMPORTED_MODULE_103__ = __webpack_require__(/*! ./penguinmod/extensions/sensing_expanded.png */ "./src/lib/libraries/extensions/penguinmod/extensions/sensing_expanded.png");
-/* harmony import */ var _penguinmod_extensions_sensing_expanded_png__WEBPACK_IMPORTED_MODULE_103___default = /*#__PURE__*/__webpack_require__.n(_penguinmod_extensions_sensing_expanded_png__WEBPACK_IMPORTED_MODULE_103__);
-/* harmony import */ var _penguinmod_extensions_operators_expanded_png__WEBPACK_IMPORTED_MODULE_104__ = __webpack_require__(/*! ./penguinmod/extensions/operators_expanded.png */ "./src/lib/libraries/extensions/penguinmod/extensions/operators_expanded.png");
-/* harmony import */ var _penguinmod_extensions_operators_expanded_png__WEBPACK_IMPORTED_MODULE_104___default = /*#__PURE__*/__webpack_require__.n(_penguinmod_extensions_operators_expanded_png__WEBPACK_IMPORTED_MODULE_104__);
-/* harmony import */ var _penguinmod_extensions_placeholder_png__WEBPACK_IMPORTED_MODULE_105__ = __webpack_require__(/*! ./penguinmod/extensions/placeholder.png */ "./src/lib/libraries/extensions/penguinmod/extensions/placeholder.png");
-/* harmony import */ var _penguinmod_extensions_placeholder_png__WEBPACK_IMPORTED_MODULE_105___default = /*#__PURE__*/__webpack_require__.n(_penguinmod_extensions_placeholder_png__WEBPACK_IMPORTED_MODULE_105__);
-/* harmony import */ var _adabrowser_ada_png__WEBPACK_IMPORTED_MODULE_106__ = __webpack_require__(/*! ./adabrowser/ada.png */ "./src/lib/libraries/extensions/adabrowser/ada.png");
-/* harmony import */ var _adabrowser_ada_png__WEBPACK_IMPORTED_MODULE_106___default = /*#__PURE__*/__webpack_require__.n(_adabrowser_ada_png__WEBPACK_IMPORTED_MODULE_106__);
-/* harmony import */ var _adabrowser_ada_icon_svg__WEBPACK_IMPORTED_MODULE_107__ = __webpack_require__(/*! ./adabrowser/ada-icon.svg */ "./src/lib/libraries/extensions/adabrowser/ada-icon.svg");
-/* harmony import */ var _adabrowser_ada_icon_svg__WEBPACK_IMPORTED_MODULE_107___default = /*#__PURE__*/__webpack_require__.n(_adabrowser_ada_icon_svg__WEBPACK_IMPORTED_MODULE_107__);
-/* harmony import */ var _onegpioArduino_onegpioArduino_png__WEBPACK_IMPORTED_MODULE_108__ = __webpack_require__(/*! ./onegpioArduino/onegpioArduino.png */ "./src/lib/libraries/extensions/onegpioArduino/onegpioArduino.png");
-/* harmony import */ var _onegpioArduino_onegpioArduino_png__WEBPACK_IMPORTED_MODULE_108___default = /*#__PURE__*/__webpack_require__.n(_onegpioArduino_onegpioArduino_png__WEBPACK_IMPORTED_MODULE_108__);
-/* harmony import */ var _onegpioArduino_onegpioArduino_small_png__WEBPACK_IMPORTED_MODULE_109__ = __webpack_require__(/*! ./onegpioArduino/onegpioArduino-small.png */ "./src/lib/libraries/extensions/onegpioArduino/onegpioArduino-small.png");
-/* harmony import */ var _onegpioArduino_onegpioArduino_small_png__WEBPACK_IMPORTED_MODULE_109___default = /*#__PURE__*/__webpack_require__.n(_onegpioArduino_onegpioArduino_small_png__WEBPACK_IMPORTED_MODULE_109__);
-/* harmony import */ var _onegpioRpi_onegpioRpi_png__WEBPACK_IMPORTED_MODULE_110__ = __webpack_require__(/*! ./onegpioRpi/onegpioRpi.png */ "./src/lib/libraries/extensions/onegpioRpi/onegpioRpi.png");
-/* harmony import */ var _onegpioRpi_onegpioRpi_png__WEBPACK_IMPORTED_MODULE_110___default = /*#__PURE__*/__webpack_require__.n(_onegpioRpi_onegpioRpi_png__WEBPACK_IMPORTED_MODULE_110__);
-/* harmony import */ var _onegpioRpi_onegpioRpi_small_png__WEBPACK_IMPORTED_MODULE_111__ = __webpack_require__(/*! ./onegpioRpi/onegpioRpi-small.png */ "./src/lib/libraries/extensions/onegpioRpi/onegpioRpi-small.png");
-/* harmony import */ var _onegpioRpi_onegpioRpi_small_png__WEBPACK_IMPORTED_MODULE_111___default = /*#__PURE__*/__webpack_require__.n(_onegpioRpi_onegpioRpi_small_png__WEBPACK_IMPORTED_MODULE_111__);
-/* harmony import */ var _onegpioEsp_onegpioEsp_png__WEBPACK_IMPORTED_MODULE_112__ = __webpack_require__(/*! ./onegpioEsp/onegpioEsp.png */ "./src/lib/libraries/extensions/onegpioEsp/onegpioEsp.png");
-/* harmony import */ var _onegpioEsp_onegpioEsp_png__WEBPACK_IMPORTED_MODULE_112___default = /*#__PURE__*/__webpack_require__.n(_onegpioEsp_onegpioEsp_png__WEBPACK_IMPORTED_MODULE_112__);
-/* harmony import */ var _onegpioEsp_onegpioEsp_small_png__WEBPACK_IMPORTED_MODULE_113__ = __webpack_require__(/*! ./onegpioEsp/onegpioEsp-small.png */ "./src/lib/libraries/extensions/onegpioEsp/onegpioEsp-small.png");
-/* harmony import */ var _onegpioEsp_onegpioEsp_small_png__WEBPACK_IMPORTED_MODULE_113___default = /*#__PURE__*/__webpack_require__.n(_onegpioEsp_onegpioEsp_small_png__WEBPACK_IMPORTED_MODULE_113__);
-/* harmony import */ var _onegpioPicoboard_onegpioPicoboard_jpg__WEBPACK_IMPORTED_MODULE_114__ = __webpack_require__(/*! ./onegpioPicoboard/onegpioPicoboard.jpg */ "./src/lib/libraries/extensions/onegpioPicoboard/onegpioPicoboard.jpg");
-/* harmony import */ var _onegpioPicoboard_onegpioPicoboard_jpg__WEBPACK_IMPORTED_MODULE_114___default = /*#__PURE__*/__webpack_require__.n(_onegpioPicoboard_onegpioPicoboard_jpg__WEBPACK_IMPORTED_MODULE_114__);
-/* harmony import */ var _onegpioPicoboard_onegpioPicoboard_small_png__WEBPACK_IMPORTED_MODULE_115__ = __webpack_require__(/*! ./onegpioPicoboard/onegpioPicoboard-small.png */ "./src/lib/libraries/extensions/onegpioPicoboard/onegpioPicoboard-small.png");
-/* harmony import */ var _onegpioPicoboard_onegpioPicoboard_small_png__WEBPACK_IMPORTED_MODULE_115___default = /*#__PURE__*/__webpack_require__.n(_onegpioPicoboard_onegpioPicoboard_small_png__WEBPACK_IMPORTED_MODULE_115__);
-/* harmony import */ var _onegpioCpx_onegpioCpx_jpg__WEBPACK_IMPORTED_MODULE_116__ = __webpack_require__(/*! ./onegpioCpx/onegpioCpx.jpg */ "./src/lib/libraries/extensions/onegpioCpx/onegpioCpx.jpg");
-/* harmony import */ var _onegpioCpx_onegpioCpx_jpg__WEBPACK_IMPORTED_MODULE_116___default = /*#__PURE__*/__webpack_require__.n(_onegpioCpx_onegpioCpx_jpg__WEBPACK_IMPORTED_MODULE_116__);
-/* harmony import */ var _onegpioCpx_onegpioCpx_small_png__WEBPACK_IMPORTED_MODULE_117__ = __webpack_require__(/*! ./onegpioCpx/onegpioCpx-small.png */ "./src/lib/libraries/extensions/onegpioCpx/onegpioCpx-small.png");
-/* harmony import */ var _onegpioCpx_onegpioCpx_small_png__WEBPACK_IMPORTED_MODULE_117___default = /*#__PURE__*/__webpack_require__.n(_onegpioCpx_onegpioCpx_small_png__WEBPACK_IMPORTED_MODULE_117__);
-/* harmony import */ var _onegpioRoboHAT_onegpioRoboHAT_png__WEBPACK_IMPORTED_MODULE_118__ = __webpack_require__(/*! ./onegpioRoboHAT/onegpioRoboHAT.png */ "./src/lib/libraries/extensions/onegpioRoboHAT/onegpioRoboHAT.png");
-/* harmony import */ var _onegpioRoboHAT_onegpioRoboHAT_png__WEBPACK_IMPORTED_MODULE_118___default = /*#__PURE__*/__webpack_require__.n(_onegpioRoboHAT_onegpioRoboHAT_png__WEBPACK_IMPORTED_MODULE_118__);
-/* harmony import */ var _onegpioRoboHAT_onegpioRoboHAT_small_png__WEBPACK_IMPORTED_MODULE_119__ = __webpack_require__(/*! ./onegpioRoboHAT/onegpioRoboHAT-small.png */ "./src/lib/libraries/extensions/onegpioRoboHAT/onegpioRoboHAT-small.png");
-/* harmony import */ var _onegpioRoboHAT_onegpioRoboHAT_small_png__WEBPACK_IMPORTED_MODULE_119___default = /*#__PURE__*/__webpack_require__.n(_onegpioRoboHAT_onegpioRoboHAT_small_png__WEBPACK_IMPORTED_MODULE_119__);
-/* harmony import */ var _onegpioRpiPico_onegpioRpiPico_png__WEBPACK_IMPORTED_MODULE_120__ = __webpack_require__(/*! ./onegpioRpiPico/onegpioRpiPico.png */ "./src/lib/libraries/extensions/onegpioRpiPico/onegpioRpiPico.png");
-/* harmony import */ var _onegpioRpiPico_onegpioRpiPico_png__WEBPACK_IMPORTED_MODULE_120___default = /*#__PURE__*/__webpack_require__.n(_onegpioRpiPico_onegpioRpiPico_png__WEBPACK_IMPORTED_MODULE_120__);
-/* harmony import */ var _onegpioRpiPico_onegpioRpiPico_small_png__WEBPACK_IMPORTED_MODULE_121__ = __webpack_require__(/*! ./onegpioRpiPico/onegpioRpiPico-small.png */ "./src/lib/libraries/extensions/onegpioRpiPico/onegpioRpiPico-small.png");
-/* harmony import */ var _onegpioRpiPico_onegpioRpiPico_small_png__WEBPACK_IMPORTED_MODULE_121___default = /*#__PURE__*/__webpack_require__.n(_onegpioRpiPico_onegpioRpiPico_small_png__WEBPACK_IMPORTED_MODULE_121__);
+/* harmony import */ var _discord_icon_svg__WEBPACK_IMPORTED_MODULE_99__ = __webpack_require__(/*! ./discord/icon.svg */ "./src/lib/libraries/extensions/discord/icon.svg");
+/* harmony import */ var _discord_icon_svg__WEBPACK_IMPORTED_MODULE_99___default = /*#__PURE__*/__webpack_require__.n(_discord_icon_svg__WEBPACK_IMPORTED_MODULE_99__);
+/* harmony import */ var _discord_rpc_png__WEBPACK_IMPORTED_MODULE_100__ = __webpack_require__(/*! ./discord/rpc.png */ "./src/lib/libraries/extensions/discord/rpc.png");
+/* harmony import */ var _discord_rpc_png__WEBPACK_IMPORTED_MODULE_100___default = /*#__PURE__*/__webpack_require__.n(_discord_rpc_png__WEBPACK_IMPORTED_MODULE_100__);
+/* harmony import */ var _penguinmod_extensions_motion_expanded_png__WEBPACK_IMPORTED_MODULE_101__ = __webpack_require__(/*! ./penguinmod/extensions/motion_expanded.png */ "./src/lib/libraries/extensions/penguinmod/extensions/motion_expanded.png");
+/* harmony import */ var _penguinmod_extensions_motion_expanded_png__WEBPACK_IMPORTED_MODULE_101___default = /*#__PURE__*/__webpack_require__.n(_penguinmod_extensions_motion_expanded_png__WEBPACK_IMPORTED_MODULE_101__);
+/* harmony import */ var _penguinmod_extensions_events_expanded_png__WEBPACK_IMPORTED_MODULE_102__ = __webpack_require__(/*! ./penguinmod/extensions/events_expanded.png */ "./src/lib/libraries/extensions/penguinmod/extensions/events_expanded.png");
+/* harmony import */ var _penguinmod_extensions_events_expanded_png__WEBPACK_IMPORTED_MODULE_102___default = /*#__PURE__*/__webpack_require__.n(_penguinmod_extensions_events_expanded_png__WEBPACK_IMPORTED_MODULE_102__);
+/* harmony import */ var _penguinmod_extensions_controls_expanded_png__WEBPACK_IMPORTED_MODULE_103__ = __webpack_require__(/*! ./penguinmod/extensions/controls_expanded.png */ "./src/lib/libraries/extensions/penguinmod/extensions/controls_expanded.png");
+/* harmony import */ var _penguinmod_extensions_controls_expanded_png__WEBPACK_IMPORTED_MODULE_103___default = /*#__PURE__*/__webpack_require__.n(_penguinmod_extensions_controls_expanded_png__WEBPACK_IMPORTED_MODULE_103__);
+/* harmony import */ var _penguinmod_extensions_sensing_expanded_png__WEBPACK_IMPORTED_MODULE_104__ = __webpack_require__(/*! ./penguinmod/extensions/sensing_expanded.png */ "./src/lib/libraries/extensions/penguinmod/extensions/sensing_expanded.png");
+/* harmony import */ var _penguinmod_extensions_sensing_expanded_png__WEBPACK_IMPORTED_MODULE_104___default = /*#__PURE__*/__webpack_require__.n(_penguinmod_extensions_sensing_expanded_png__WEBPACK_IMPORTED_MODULE_104__);
+/* harmony import */ var _penguinmod_extensions_operators_expanded_png__WEBPACK_IMPORTED_MODULE_105__ = __webpack_require__(/*! ./penguinmod/extensions/operators_expanded.png */ "./src/lib/libraries/extensions/penguinmod/extensions/operators_expanded.png");
+/* harmony import */ var _penguinmod_extensions_operators_expanded_png__WEBPACK_IMPORTED_MODULE_105___default = /*#__PURE__*/__webpack_require__.n(_penguinmod_extensions_operators_expanded_png__WEBPACK_IMPORTED_MODULE_105__);
+/* harmony import */ var _penguinmod_extensions_placeholder_png__WEBPACK_IMPORTED_MODULE_106__ = __webpack_require__(/*! ./penguinmod/extensions/placeholder.png */ "./src/lib/libraries/extensions/penguinmod/extensions/placeholder.png");
+/* harmony import */ var _penguinmod_extensions_placeholder_png__WEBPACK_IMPORTED_MODULE_106___default = /*#__PURE__*/__webpack_require__.n(_penguinmod_extensions_placeholder_png__WEBPACK_IMPORTED_MODULE_106__);
+/* harmony import */ var _adabrowser_ada_png__WEBPACK_IMPORTED_MODULE_107__ = __webpack_require__(/*! ./adabrowser/ada.png */ "./src/lib/libraries/extensions/adabrowser/ada.png");
+/* harmony import */ var _adabrowser_ada_png__WEBPACK_IMPORTED_MODULE_107___default = /*#__PURE__*/__webpack_require__.n(_adabrowser_ada_png__WEBPACK_IMPORTED_MODULE_107__);
+/* harmony import */ var _adabrowser_ada_icon_svg__WEBPACK_IMPORTED_MODULE_108__ = __webpack_require__(/*! ./adabrowser/ada-icon.svg */ "./src/lib/libraries/extensions/adabrowser/ada-icon.svg");
+/* harmony import */ var _adabrowser_ada_icon_svg__WEBPACK_IMPORTED_MODULE_108___default = /*#__PURE__*/__webpack_require__.n(_adabrowser_ada_icon_svg__WEBPACK_IMPORTED_MODULE_108__);
+/* harmony import */ var _onegpioArduino_onegpioArduino_png__WEBPACK_IMPORTED_MODULE_109__ = __webpack_require__(/*! ./onegpioArduino/onegpioArduino.png */ "./src/lib/libraries/extensions/onegpioArduino/onegpioArduino.png");
+/* harmony import */ var _onegpioArduino_onegpioArduino_png__WEBPACK_IMPORTED_MODULE_109___default = /*#__PURE__*/__webpack_require__.n(_onegpioArduino_onegpioArduino_png__WEBPACK_IMPORTED_MODULE_109__);
+/* harmony import */ var _onegpioArduino_onegpioArduino_small_png__WEBPACK_IMPORTED_MODULE_110__ = __webpack_require__(/*! ./onegpioArduino/onegpioArduino-small.png */ "./src/lib/libraries/extensions/onegpioArduino/onegpioArduino-small.png");
+/* harmony import */ var _onegpioArduino_onegpioArduino_small_png__WEBPACK_IMPORTED_MODULE_110___default = /*#__PURE__*/__webpack_require__.n(_onegpioArduino_onegpioArduino_small_png__WEBPACK_IMPORTED_MODULE_110__);
+/* harmony import */ var _onegpioRpi_onegpioRpi_png__WEBPACK_IMPORTED_MODULE_111__ = __webpack_require__(/*! ./onegpioRpi/onegpioRpi.png */ "./src/lib/libraries/extensions/onegpioRpi/onegpioRpi.png");
+/* harmony import */ var _onegpioRpi_onegpioRpi_png__WEBPACK_IMPORTED_MODULE_111___default = /*#__PURE__*/__webpack_require__.n(_onegpioRpi_onegpioRpi_png__WEBPACK_IMPORTED_MODULE_111__);
+/* harmony import */ var _onegpioRpi_onegpioRpi_small_png__WEBPACK_IMPORTED_MODULE_112__ = __webpack_require__(/*! ./onegpioRpi/onegpioRpi-small.png */ "./src/lib/libraries/extensions/onegpioRpi/onegpioRpi-small.png");
+/* harmony import */ var _onegpioRpi_onegpioRpi_small_png__WEBPACK_IMPORTED_MODULE_112___default = /*#__PURE__*/__webpack_require__.n(_onegpioRpi_onegpioRpi_small_png__WEBPACK_IMPORTED_MODULE_112__);
+/* harmony import */ var _onegpioEsp_onegpioEsp_png__WEBPACK_IMPORTED_MODULE_113__ = __webpack_require__(/*! ./onegpioEsp/onegpioEsp.png */ "./src/lib/libraries/extensions/onegpioEsp/onegpioEsp.png");
+/* harmony import */ var _onegpioEsp_onegpioEsp_png__WEBPACK_IMPORTED_MODULE_113___default = /*#__PURE__*/__webpack_require__.n(_onegpioEsp_onegpioEsp_png__WEBPACK_IMPORTED_MODULE_113__);
+/* harmony import */ var _onegpioEsp_onegpioEsp_small_png__WEBPACK_IMPORTED_MODULE_114__ = __webpack_require__(/*! ./onegpioEsp/onegpioEsp-small.png */ "./src/lib/libraries/extensions/onegpioEsp/onegpioEsp-small.png");
+/* harmony import */ var _onegpioEsp_onegpioEsp_small_png__WEBPACK_IMPORTED_MODULE_114___default = /*#__PURE__*/__webpack_require__.n(_onegpioEsp_onegpioEsp_small_png__WEBPACK_IMPORTED_MODULE_114__);
+/* harmony import */ var _onegpioPicoboard_onegpioPicoboard_jpg__WEBPACK_IMPORTED_MODULE_115__ = __webpack_require__(/*! ./onegpioPicoboard/onegpioPicoboard.jpg */ "./src/lib/libraries/extensions/onegpioPicoboard/onegpioPicoboard.jpg");
+/* harmony import */ var _onegpioPicoboard_onegpioPicoboard_jpg__WEBPACK_IMPORTED_MODULE_115___default = /*#__PURE__*/__webpack_require__.n(_onegpioPicoboard_onegpioPicoboard_jpg__WEBPACK_IMPORTED_MODULE_115__);
+/* harmony import */ var _onegpioPicoboard_onegpioPicoboard_small_png__WEBPACK_IMPORTED_MODULE_116__ = __webpack_require__(/*! ./onegpioPicoboard/onegpioPicoboard-small.png */ "./src/lib/libraries/extensions/onegpioPicoboard/onegpioPicoboard-small.png");
+/* harmony import */ var _onegpioPicoboard_onegpioPicoboard_small_png__WEBPACK_IMPORTED_MODULE_116___default = /*#__PURE__*/__webpack_require__.n(_onegpioPicoboard_onegpioPicoboard_small_png__WEBPACK_IMPORTED_MODULE_116__);
+/* harmony import */ var _onegpioCpx_onegpioCpx_jpg__WEBPACK_IMPORTED_MODULE_117__ = __webpack_require__(/*! ./onegpioCpx/onegpioCpx.jpg */ "./src/lib/libraries/extensions/onegpioCpx/onegpioCpx.jpg");
+/* harmony import */ var _onegpioCpx_onegpioCpx_jpg__WEBPACK_IMPORTED_MODULE_117___default = /*#__PURE__*/__webpack_require__.n(_onegpioCpx_onegpioCpx_jpg__WEBPACK_IMPORTED_MODULE_117__);
+/* harmony import */ var _onegpioCpx_onegpioCpx_small_png__WEBPACK_IMPORTED_MODULE_118__ = __webpack_require__(/*! ./onegpioCpx/onegpioCpx-small.png */ "./src/lib/libraries/extensions/onegpioCpx/onegpioCpx-small.png");
+/* harmony import */ var _onegpioCpx_onegpioCpx_small_png__WEBPACK_IMPORTED_MODULE_118___default = /*#__PURE__*/__webpack_require__.n(_onegpioCpx_onegpioCpx_small_png__WEBPACK_IMPORTED_MODULE_118__);
+/* harmony import */ var _onegpioRoboHAT_onegpioRoboHAT_png__WEBPACK_IMPORTED_MODULE_119__ = __webpack_require__(/*! ./onegpioRoboHAT/onegpioRoboHAT.png */ "./src/lib/libraries/extensions/onegpioRoboHAT/onegpioRoboHAT.png");
+/* harmony import */ var _onegpioRoboHAT_onegpioRoboHAT_png__WEBPACK_IMPORTED_MODULE_119___default = /*#__PURE__*/__webpack_require__.n(_onegpioRoboHAT_onegpioRoboHAT_png__WEBPACK_IMPORTED_MODULE_119__);
+/* harmony import */ var _onegpioRoboHAT_onegpioRoboHAT_small_png__WEBPACK_IMPORTED_MODULE_120__ = __webpack_require__(/*! ./onegpioRoboHAT/onegpioRoboHAT-small.png */ "./src/lib/libraries/extensions/onegpioRoboHAT/onegpioRoboHAT-small.png");
+/* harmony import */ var _onegpioRoboHAT_onegpioRoboHAT_small_png__WEBPACK_IMPORTED_MODULE_120___default = /*#__PURE__*/__webpack_require__.n(_onegpioRoboHAT_onegpioRoboHAT_small_png__WEBPACK_IMPORTED_MODULE_120__);
+/* harmony import */ var _onegpioRpiPico_onegpioRpiPico_png__WEBPACK_IMPORTED_MODULE_121__ = __webpack_require__(/*! ./onegpioRpiPico/onegpioRpiPico.png */ "./src/lib/libraries/extensions/onegpioRpiPico/onegpioRpiPico.png");
+/* harmony import */ var _onegpioRpiPico_onegpioRpiPico_png__WEBPACK_IMPORTED_MODULE_121___default = /*#__PURE__*/__webpack_require__.n(_onegpioRpiPico_onegpioRpiPico_png__WEBPACK_IMPORTED_MODULE_121__);
+/* harmony import */ var _onegpioRpiPico_onegpioRpiPico_small_png__WEBPACK_IMPORTED_MODULE_122__ = __webpack_require__(/*! ./onegpioRpiPico/onegpioRpiPico-small.png */ "./src/lib/libraries/extensions/onegpioRpiPico/onegpioRpiPico-small.png");
+/* harmony import */ var _onegpioRpiPico_onegpioRpiPico_small_png__WEBPACK_IMPORTED_MODULE_122___default = /*#__PURE__*/__webpack_require__.n(_onegpioRpiPico_onegpioRpiPico_small_png__WEBPACK_IMPORTED_MODULE_122__);
 /* eslint-disable max-len */
 
 
@@ -39602,6 +39626,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 // events
+
 
 
 
@@ -39794,7 +39819,7 @@ const menuItems = [{
 }, {
   name: 'Motion Expansion',
   extensionId: 'pmMotionExpansion',
-  iconURL: _penguinmod_extensions_motion_expanded_png__WEBPACK_IMPORTED_MODULE_100___default.a,
+  iconURL: _penguinmod_extensions_motion_expanded_png__WEBPACK_IMPORTED_MODULE_101___default.a,
   tags: ['penguinmod', 'categoryexpansion'],
   description: 'More small motion blocks for movement or collision.',
   featured: true,
@@ -39802,7 +39827,7 @@ const menuItems = [{
 }, {
   name: 'Events Expansion',
   extensionId: 'pmEventsExpansion',
-  iconURL: _penguinmod_extensions_events_expanded_png__WEBPACK_IMPORTED_MODULE_101___default.a,
+  iconURL: _penguinmod_extensions_events_expanded_png__WEBPACK_IMPORTED_MODULE_102___default.a,
   tags: ['penguinmod', 'categoryexpansion'],
   description: 'More events for sending & receiving information, notifing specific sprites or better control when things should happen.',
   featured: true,
@@ -39810,7 +39835,7 @@ const menuItems = [{
 }, {
   name: 'Controls Expansion',
   extensionId: 'pmControlsExpansion',
-  iconURL: _penguinmod_extensions_controls_expanded_png__WEBPACK_IMPORTED_MODULE_102___default.a,
+  iconURL: _penguinmod_extensions_controls_expanded_png__WEBPACK_IMPORTED_MODULE_103___default.a,
   tags: ['penguinmod', 'categoryexpansion'],
   description: 'More control blocks for animations, complex systems or cleaner one-time use blocks.',
   featured: true,
@@ -39818,7 +39843,7 @@ const menuItems = [{
 }, {
   name: 'Sensing Expansion',
   extensionId: 'pmSensingExpansion',
-  iconURL: _penguinmod_extensions_sensing_expanded_png__WEBPACK_IMPORTED_MODULE_103___default.a,
+  iconURL: _penguinmod_extensions_sensing_expanded_png__WEBPACK_IMPORTED_MODULE_104___default.a,
   tags: ['penguinmod', 'categoryexpansion'],
   description: "More sensing blocks for specific use cases or interacting with the user's device.",
   credits: 'Some blocks from SharkPool-SP',
@@ -39826,7 +39851,7 @@ const menuItems = [{
 }, {
   name: 'Operators Expansion',
   extensionId: 'pmOperatorsExpansion',
-  iconURL: _penguinmod_extensions_operators_expanded_png__WEBPACK_IMPORTED_MODULE_104___default.a,
+  iconURL: _penguinmod_extensions_operators_expanded_png__WEBPACK_IMPORTED_MODULE_105___default.a,
   tags: ['penguinmod', 'categoryexpansion'],
   description: 'More operators like nand, nor, character code to character, reading multiple lined text line by line, etc.',
   featured: true
@@ -40171,8 +40196,8 @@ const menuItems = [{
   name: 'Ada Browser',
   tags: ['othermod'],
   extensionId: 'adabrowser',
-  iconURL: _adabrowser_ada_png__WEBPACK_IMPORTED_MODULE_106___default.a,
-  insetIconURL: _adabrowser_ada_icon_svg__WEBPACK_IMPORTED_MODULE_107___default.a,
+  iconURL: _adabrowser_ada_png__WEBPACK_IMPORTED_MODULE_107___default.a,
+  insetIconURL: _adabrowser_ada_icon_svg__WEBPACK_IMPORTED_MODULE_108___default.a,
   description: 'Some new blocks to interact with the browser',
   featured: true
 }, {
@@ -40197,6 +40222,18 @@ const menuItems = [{
   description: '🛠️ (Experimental) A high-level programming language based on Scratch.',
   credits: 'FurryR',
   featured: true
+}, {
+  name: 'Discord RPC',
+  extensionId: 'em_discordrpc',
+  iconURL: _discord_rpc_png__WEBPACK_IMPORTED_MODULE_100___default.a,
+  insetIconURL: _discord_icon_svg__WEBPACK_IMPORTED_MODULE_99___default.a,
+  customInsetColor: '#5865F2',
+  tags: ['electramod'],
+  description: 'Discord Rich Presence for Scratch.',
+  internetConnectionRequired: true,
+  credits: 'Aness6040',
+  featured: true,
+  disabled: !(IsLocal || IsLiveTests)
 },
 /* {
     name: 'I18n',
@@ -40411,8 +40448,8 @@ const menuItems = [{
   name: 'OneGpio Arduino',
   extensionId: 'onegpioArduino',
   collaborator: "Mr. Y's Lab",
-  iconURL: _onegpioArduino_onegpioArduino_png__WEBPACK_IMPORTED_MODULE_108___default.a,
-  insetIconURL: _onegpioArduino_onegpioArduino_small_png__WEBPACK_IMPORTED_MODULE_109___default.a,
+  iconURL: _onegpioArduino_onegpioArduino_png__WEBPACK_IMPORTED_MODULE_109___default.a,
+  insetIconURL: _onegpioArduino_onegpioArduino_small_png__WEBPACK_IMPORTED_MODULE_110___default.a,
   description: 'OneGPIOArduino',
   tags: ['othermod', 'hardware'],
   featured: true,
@@ -40424,8 +40461,8 @@ const menuItems = [{
   name: 'OneGpio Raspberry Pi',
   extensionId: 'onegpioRpi',
   collaborator: "Mr. Y's Lab",
-  iconURL: _onegpioRpi_onegpioRpi_png__WEBPACK_IMPORTED_MODULE_110___default.a,
-  insetIconURL: _onegpioRpi_onegpioRpi_small_png__WEBPACK_IMPORTED_MODULE_111___default.a,
+  iconURL: _onegpioRpi_onegpioRpi_png__WEBPACK_IMPORTED_MODULE_111___default.a,
+  insetIconURL: _onegpioRpi_onegpioRpi_small_png__WEBPACK_IMPORTED_MODULE_112___default.a,
   description: 'OneGPIORpi',
   tags: ['othermod', 'hardware'],
   featured: true,
@@ -40437,8 +40474,8 @@ const menuItems = [{
   name: 'OneGpio ESP-8266',
   extensionId: 'onegpioEsp',
   collaborator: "Mr. Y's Lab",
-  iconURL: _onegpioEsp_onegpioEsp_png__WEBPACK_IMPORTED_MODULE_112___default.a,
-  insetIconURL: _onegpioEsp_onegpioEsp_small_png__WEBPACK_IMPORTED_MODULE_113___default.a,
+  iconURL: _onegpioEsp_onegpioEsp_png__WEBPACK_IMPORTED_MODULE_113___default.a,
+  insetIconURL: _onegpioEsp_onegpioEsp_small_png__WEBPACK_IMPORTED_MODULE_114___default.a,
   description: 'OneGPIOEsp',
   tags: ['othermod', 'hardware'],
   featured: true,
@@ -40450,8 +40487,8 @@ const menuItems = [{
   name: 'OneGpio Picoboard',
   extensionId: 'onegpioPicoboard',
   collaborator: "Mr. Y's Lab",
-  iconURL: _onegpioPicoboard_onegpioPicoboard_jpg__WEBPACK_IMPORTED_MODULE_114___default.a,
-  insetIconURL: _onegpioPicoboard_onegpioPicoboard_small_png__WEBPACK_IMPORTED_MODULE_115___default.a,
+  iconURL: _onegpioPicoboard_onegpioPicoboard_jpg__WEBPACK_IMPORTED_MODULE_115___default.a,
+  insetIconURL: _onegpioPicoboard_onegpioPicoboard_small_png__WEBPACK_IMPORTED_MODULE_116___default.a,
   description: 'OneGPIOPicoboard',
   tags: ['othermod', 'hardware'],
   featured: true,
@@ -40463,8 +40500,8 @@ const menuItems = [{
   name: 'OneGpio Playground Express',
   extensionId: 'onegpioCpx',
   collaborator: "Mr. Y's Lab",
-  iconURL: _onegpioCpx_onegpioCpx_jpg__WEBPACK_IMPORTED_MODULE_116___default.a,
-  insetIconURL: _onegpioCpx_onegpioCpx_small_png__WEBPACK_IMPORTED_MODULE_117___default.a,
+  iconURL: _onegpioCpx_onegpioCpx_jpg__WEBPACK_IMPORTED_MODULE_117___default.a,
+  insetIconURL: _onegpioCpx_onegpioCpx_small_png__WEBPACK_IMPORTED_MODULE_118___default.a,
   description: 'OneGPIOCpx',
   tags: ['othermod', 'hardware'],
   featured: true,
@@ -40476,8 +40513,8 @@ const menuItems = [{
   name: 'OneGpio RoboHAT MM1',
   extensionId: 'onegpioRoboHAT',
   collaborator: "Mr. Y's Lab",
-  iconURL: _onegpioRoboHAT_onegpioRoboHAT_png__WEBPACK_IMPORTED_MODULE_118___default.a,
-  insetIconURL: _onegpioRoboHAT_onegpioRoboHAT_small_png__WEBPACK_IMPORTED_MODULE_119___default.a,
+  iconURL: _onegpioRoboHAT_onegpioRoboHAT_png__WEBPACK_IMPORTED_MODULE_119___default.a,
+  insetIconURL: _onegpioRoboHAT_onegpioRoboHAT_small_png__WEBPACK_IMPORTED_MODULE_120___default.a,
   description: 'OneGPIORoboHAT',
   tags: ['othermod', 'hardware'],
   featured: true,
@@ -40489,8 +40526,8 @@ const menuItems = [{
   name: 'OneGpio Raspberry Pi Pico',
   extensionId: 'onegpioRpiPico',
   collaborator: "Mr. Y's Lab",
-  iconURL: _onegpioRpiPico_onegpioRpiPico_png__WEBPACK_IMPORTED_MODULE_120___default.a,
-  insetIconURL: _onegpioRpiPico_onegpioRpiPico_small_png__WEBPACK_IMPORTED_MODULE_121___default.a,
+  iconURL: _onegpioRpiPico_onegpioRpiPico_png__WEBPACK_IMPORTED_MODULE_121___default.a,
+  insetIconURL: _onegpioRpiPico_onegpioRpiPico_small_png__WEBPACK_IMPORTED_MODULE_122___default.a,
   description: 'onegpioRpiPico',
   tags: ['othermod', 'hardware'],
   featured: true,
@@ -40628,14 +40665,14 @@ if (IsLocal || IsLiveTests) {
   }, {
     name: 'Christmas',
     extensionId: 'jgChristmas',
-    iconURL: _penguinmod_extensions_placeholder_png__WEBPACK_IMPORTED_MODULE_105___default.a,
+    iconURL: _penguinmod_extensions_placeholder_png__WEBPACK_IMPORTED_MODULE_106___default.a,
     tags: ['penguinmod', 'joke'],
     description: 'hooraye',
     featured: true
   }, {
     name: 'Legacy Files',
     extensionId: 'jgFiles',
-    iconURL: _penguinmod_extensions_placeholder_png__WEBPACK_IMPORTED_MODULE_105___default.a,
+    iconURL: _penguinmod_extensions_placeholder_png__WEBPACK_IMPORTED_MODULE_106___default.a,
     tags: ['penguinmod', 'datamgmt'],
     description: 'Basic blocks for files. This has been replaced by the TurboWarp files extension.',
     featured: true
@@ -40649,7 +40686,7 @@ if (IsLocal || IsLiveTests) {
   }, {
     name: 'Easy Save',
     extensionId: 'jgEasySave',
-    iconURL: _penguinmod_extensions_placeholder_png__WEBPACK_IMPORTED_MODULE_105___default.a,
+    iconURL: _penguinmod_extensions_placeholder_png__WEBPACK_IMPORTED_MODULE_106___default.a,
     tags: ['penguinmod', 'datamgmt'],
     description: 'Save variables, lists and extra info to a file, then load those things back in.',
     featured: true
@@ -40686,7 +40723,7 @@ if (IsLocal || IsLiveTests) {
   }, {
     name: 'Debugging',
     extensionId: 'jgDebugging',
-    iconURL: _penguinmod_extensions_placeholder_png__WEBPACK_IMPORTED_MODULE_105___default.a,
+    iconURL: _penguinmod_extensions_placeholder_png__WEBPACK_IMPORTED_MODULE_106___default.a,
     tags: ['penguinmod'],
     description: 'Log information and run commands. Good for debugging packaged projects or just easily changing things.',
     featured: true
@@ -40694,7 +40731,7 @@ if (IsLocal || IsLiveTests) {
     name: 'Test Extension Loader',
     href: 'https://studio.penguinmod.com/loadExt.html',
     extensionId: 'special_testExtensionLibrary',
-    iconURL: _penguinmod_extensions_placeholder_png__WEBPACK_IMPORTED_MODULE_105___default.a,
+    iconURL: _penguinmod_extensions_placeholder_png__WEBPACK_IMPORTED_MODULE_106___default.a,
     description: 'Test loading extensions from a library. For developers.',
     featured: true
   }, {
@@ -40727,7 +40764,7 @@ if (IsLocal || IsLiveTests) {
   }, {
     name: 'Jeremys Dev Tools',
     extensionId: 'jgDev',
-    iconURL: _penguinmod_extensions_placeholder_png__WEBPACK_IMPORTED_MODULE_105___default.a,
+    iconURL: _penguinmod_extensions_placeholder_png__WEBPACK_IMPORTED_MODULE_106___default.a,
     tags: ['penguinmod'],
     description: 'Test extension to see if things are possible.\nDO NOT USE THIS IN PRODUCTION as blocks are subject to change and may corrupt your projects.',
     credits: 'Some features added from LilyMakesThings, CubesterYT, TheShovel',
@@ -40743,7 +40780,7 @@ if (IsLocal || IsLiveTests) {
   }, {
     name: 'Scripts',
     extensionId: 'jgScripts',
-    iconURL: _penguinmod_extensions_placeholder_png__WEBPACK_IMPORTED_MODULE_105___default.a,
+    iconURL: _penguinmod_extensions_placeholder_png__WEBPACK_IMPORTED_MODULE_106___default.a,
     tags: ['penguinmod'],
     description: 'In development. Create compiled scripts with blocks while the project is running.',
     featured: true
@@ -40760,7 +40797,7 @@ if (IsLocal || IsLiveTests) {
   }, {
     name: 'the doo doo extension',
     extensionId: 'jgDooDoo',
-    iconURL: _penguinmod_extensions_placeholder_png__WEBPACK_IMPORTED_MODULE_105___default.a,
+    iconURL: _penguinmod_extensions_placeholder_png__WEBPACK_IMPORTED_MODULE_106___default.a,
     tags: ['penguinmod', 'joke'],
     description: 'dr bob eae',
     featured: true
@@ -40790,17 +40827,6 @@ if (IsLocal || IsLiveTests) {
   });
 }
 /* harmony default export */ __webpack_exports__["default"] = (menuItems);
-
-/***/ }),
-
-/***/ "./src/lib/libraries/extensions/kukemc/I18n/banner.png":
-/*!*************************************************************!*\
-  !*** ./src/lib/libraries/extensions/kukemc/I18n/banner.png ***!
-  \*************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/assets/3106c5bb73b24fcbb7a48d26c9259fd7.png";
 
 /***/ }),
 
@@ -51457,6 +51483,50 @@ const updateMetrics = function updateMetrics(metrics) {
 /***/ }),
 
 /***/ 10:
+/*!********************************!*\
+  !*** ./util.inspect (ignored) ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/* (ignored) */
+
+/***/ }),
+
+/***/ 11:
+/*!********************************!*\
+  !*** ./node/self.js (ignored) ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/* (ignored) */
+
+/***/ }),
+
+/***/ 12:
+/*!**********************************!*\
+  !*** ./node/extend.js (ignored) ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/* (ignored) */
+
+/***/ }),
+
+/***/ 13:
+/*!*****************************************!*\
+  !*** ../locale-data/index.js (ignored) ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/* (ignored) */
+
+/***/ }),
+
+/***/ 14:
 /*!*******************************!*\
   !*** ./lib/locales (ignored) ***!
   \*******************************/
@@ -51467,7 +51537,7 @@ const updateMetrics = function updateMetrics(metrics) {
 
 /***/ }),
 
-/***/ 11:
+/***/ 15:
 /*!*******************************!*\
   !*** ./lib/locales (ignored) ***!
   \*******************************/
@@ -51501,9 +51571,9 @@ const updateMetrics = function updateMetrics(metrics) {
 /***/ }),
 
 /***/ 4:
-/*!**********************!*\
-  !*** util (ignored) ***!
-  \**********************/
+/*!**************************!*\
+  !*** electron (ignored) ***!
+  \**************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -51512,6 +51582,39 @@ const updateMetrics = function updateMetrics(metrics) {
 /***/ }),
 
 /***/ 5:
+/*!*********************************!*\
+  !*** register-scheme (ignored) ***!
+  \*********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/* (ignored) */
+
+/***/ }),
+
+/***/ 6:
+/*!*********************!*\
+  !*** net (ignored) ***!
+  \*********************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/* (ignored) */
+
+/***/ }),
+
+/***/ 7:
+/*!********************!*\
+  !*** ws (ignored) ***!
+  \********************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/* (ignored) */
+
+/***/ }),
+
+/***/ 8:
 /*!**********************!*\
   !*** util (ignored) ***!
   \**********************/
@@ -51522,43 +51625,10 @@ const updateMetrics = function updateMetrics(metrics) {
 
 /***/ }),
 
-/***/ 6:
-/*!********************************!*\
-  !*** ./util.inspect (ignored) ***!
-  \********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-/* (ignored) */
-
-/***/ }),
-
-/***/ 7:
-/*!********************************!*\
-  !*** ./node/self.js (ignored) ***!
-  \********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-/* (ignored) */
-
-/***/ }),
-
-/***/ 8:
-/*!**********************************!*\
-  !*** ./node/extend.js (ignored) ***!
-  \**********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-/* (ignored) */
-
-/***/ }),
-
 /***/ 9:
-/*!*****************************************!*\
-  !*** ../locale-data/index.js (ignored) ***!
-  \*****************************************/
+/*!**********************!*\
+  !*** util (ignored) ***!
+  \**********************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
