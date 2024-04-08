@@ -40232,8 +40232,8 @@ const menuItems = [{
   description: 'Discord Rich Presence for Scratch.',
   internetConnectionRequired: true,
   credits: 'Aness6040',
-  featured: true,
-  disabled: !(IsLocal || IsLiveTests)
+  featured: true // ,
+  // disabled: !(IsLocal || IsLiveTests)
 },
 /* {
     name: 'I18n',
