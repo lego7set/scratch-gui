@@ -1,45 +1,114 @@
-import cookie from 'cookie';
+import {BLOCKS_CUSTOM, Theme} from '.';
 
-import {DEFAULT_THEME, HIGH_CONTRAST_THEME} from '.';
+const matchMedia = query => (window.matchMedia ? window.matchMedia(query) : null);
+const PREFERS_HIGH_CONTRAST_QUERY = matchMedia('(prefers-contrast: more)');
+const PREFERS_DARK_QUERY = matchMedia('(prefers-color-scheme: dark)');
 
-const PREFERS_HIGH_CONTRAST_QUERY = '(prefers-contrast: more)';
-const COOKIE_KEY = 'scratchtheme';
+const STORAGE_KEY = 'tw:theme';
 
-// Dark mode isn't enabled yet
-const isValidTheme = theme => [DEFAULT_THEME, HIGH_CONTRAST_THEME].includes(theme);
-
+/**
+ * @returns {Theme} detected theme
+ */
 const systemPreferencesTheme = () => {
-    if (window.matchMedia && window.matchMedia(PREFERS_HIGH_CONTRAST_QUERY).matches) return HIGH_CONTRAST_THEME;
-
-    return DEFAULT_THEME;
+    if (PREFERS_HIGH_CONTRAST_QUERY && PREFERS_HIGH_CONTRAST_QUERY.matches) {
+        return Theme.highContrast;
+    }
+    if (PREFERS_DARK_QUERY && PREFERS_DARK_QUERY.matches) {
+        return Theme.dark;
+    }
+    return Theme.light;
 };
 
+/**
+ * @param {function} onChange callback; no guarantees about arguments
+ * @returns {function} call to remove event listeners to prevent memory leak
+ */
+const onSystemPreferenceChange = onChange => {
+    if (
+        !PREFERS_HIGH_CONTRAST_QUERY ||
+        !PREFERS_DARK_QUERY ||
+        // Some old browsers don't support addEventListener on media queries
+        !PREFERS_HIGH_CONTRAST_QUERY.addEventListener ||
+        !PREFERS_DARK_QUERY.addEventListener
+    ) {
+        return () => {};
+    }
+
+    PREFERS_HIGH_CONTRAST_QUERY.addEventListener('change', onChange);
+    PREFERS_DARK_QUERY.addEventListener('change', onChange);
+
+    return () => {
+        PREFERS_HIGH_CONTRAST_QUERY.removeEventListener('change', onChange);
+        PREFERS_DARK_QUERY.removeEventListener('change', onChange);
+    };
+};
+
+/**
+ * @returns {Theme} the theme
+ */
 const detectTheme = () => {
-    const obj = cookie.parse(document.cookie) || {};
-    const themeCookie = obj.scratchtheme;
+    const systemPreferences = systemPreferencesTheme();
 
-    if (isValidTheme(themeCookie)) return themeCookie;
+    try {
+        const local = localStorage.getItem(STORAGE_KEY);
 
-    // No cookie set. Fall back to system preferences
-    return systemPreferencesTheme();
+        // Migrate legacy preferences
+        if (local === 'dark') {
+            return Theme.dark;
+        }
+        if (local === 'light') {
+            return Theme.light;
+        }
+
+        const parsed = JSON.parse(local);
+        // Any invalid values in storage will be handled by Theme itself
+        return new Theme(
+            parsed.accent || systemPreferences.accent,
+            parsed.gui || systemPreferences.gui,
+            parsed.blocks || systemPreferences.blocks
+        );
+    } catch (e) {
+        // ignore
+    }
+
+    return systemPreferences;
 };
 
+/**
+ * @param {Theme} theme the theme
+ */
 const persistTheme = theme => {
-    if (!isValidTheme(theme)) {
-        throw new Error(`Invalid theme: ${theme}`);
+    const systemPreferences = systemPreferencesTheme();
+    const nonDefaultSettings = {};
+
+    if (theme.accent !== systemPreferences.accent) {
+        nonDefaultSettings.accent = theme.accent;
+    }
+    if (theme.gui !== systemPreferences.gui) {
+        nonDefaultSettings.gui = theme.gui;
+    }
+    // custom blocks are managed by addon at runtime, don't save here
+    if (theme.blocks !== systemPreferences.blocks && theme.blocks !== BLOCKS_CUSTOM) {
+        nonDefaultSettings.blocks = theme.blocks;
     }
 
-    if (systemPreferencesTheme() === theme) {
-        // Clear the cookie to represent using the system preferences
-        document.cookie = `${COOKIE_KEY}=;path=/`;
-        return;
+    if (Object.keys(nonDefaultSettings).length === 0) {
+        try {
+            localStorage.removeItem(STORAGE_KEY);
+        } catch (e) {
+            // ignore
+        }
+    } else {
+        try {
+            localStorage.setItem(STORAGE_KEY, JSON.stringify(nonDefaultSettings));
+        } catch (e) {
+            // ignore
+        }
     }
-
-    const expires = new Date(new Date().setYear(new Date().getFullYear() + 1)).toUTCString();
-    document.cookie = `${COOKIE_KEY}=${theme};expires=${expires};path=/`;
 };
 
 export {
+    onSystemPreferenceChange,
     detectTheme,
     persistTheme
 };
