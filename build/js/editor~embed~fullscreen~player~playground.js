@@ -23339,7 +23339,7 @@ class Blocks extends react__WEBPACK_IMPORTED_MODULE_5___default.a.Component {
     const targetBlock = this.workspace.getBlockById(data.id);
     if (!targetBlock) return; // this happens when we switch sprites
     this.workspace.glowBlock(data.id, false);
-    // this.workspace.reportValue(data.id, data.value, true);
+    this.workspace.reportValue(data.id, data.value, true);
     this.workspace.errorStack(data.id, true);
   }
   getToolboxXML() {
@@ -40222,19 +40222,20 @@ const menuItems = [{
   description: '🛠️ (Experimental) A high-level programming language based on Scratch.',
   credits: 'FurryR',
   featured: true
-}, {
-  name: 'Discord RPC',
-  extensionId: 'em_discordrpc',
-  iconURL: _discord_rpc_png__WEBPACK_IMPORTED_MODULE_100___default.a,
-  insetIconURL: _discord_icon_svg__WEBPACK_IMPORTED_MODULE_99___default.a,
-  customInsetColor: '#5865F2',
-  tags: ['electramod'],
-  description: 'Discord Rich Presence for Scratch.',
-  internetConnectionRequired: true,
-  credits: 'Aness6040',
-  featured: true // ,
-  // disabled: !(IsLocal || IsLiveTests)
 },
+/* {
+    name: 'Discord RPC',
+    extensionId: 'em_discordrpc',
+    iconURL: DiscordRPCIcon,
+    insetIconURL: DiscordIcon,
+    customInsetColor: '#5865F2',
+    tags: ['electramod'],
+    description: 'Discord Rich Presence for Scratch.',
+    internetConnectionRequired: true,
+    credits: 'Aness6040',
+    featured: true // ,
+    // disabled: !(IsLocal || IsLiveTests)
+}, */
 /* {
     name: 'I18n',
     extensionId: 'kukeMCI18n',

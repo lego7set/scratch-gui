@@ -861,7 +861,7 @@ const menuItems = [
         credits: 'FurryR',
         featured: true
     },
-    {
+    /* {
         name: 'Discord RPC',
         extensionId: 'em_discordrpc',
         iconURL: DiscordRPCIcon,
@@ -873,7 +873,7 @@ const menuItems = [
         credits: 'Aness6040',
         featured: true // ,
         // disabled: !(IsLocal || IsLiveTests)
-    },
+    }, */
     /* {
         name: 'I18n',
         extensionId: 'kukeMCI18n',
