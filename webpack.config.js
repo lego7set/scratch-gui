@@ -210,7 +210,7 @@ module.exports = [
                 chunks: ['credits'],
                 template: 'src/playground/simple.ejs',
                 filename: 'credits.html',
-                title: 'ElectraMod, PenguinMod & Turbowarp Credits',
+                title: 'ElectraMod, Snail IDE, PenguinMod & TurboWarp Credits',
                 noSplash: true,
                 ...htmlWebpackPluginCommon
             }),

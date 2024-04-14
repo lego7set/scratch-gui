@@ -36,6 +36,7 @@ const messages = defineMessages({
 const TRUSTED_LOADEXT_ORIGINS = [
     'https://studio.penguinmod.com', // for development
     'https://extensions.penguinmod.com',
+    'https://electramod-extensions-gallery.vercel.app',
     'https://sharkpools-extensions.vercel.app',
     'https://pen-group.github.io',
 ];

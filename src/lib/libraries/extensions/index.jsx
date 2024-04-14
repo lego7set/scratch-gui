@@ -150,6 +150,7 @@ import jgAnimationExtensionIcon from './penguinmod/extensions/animation.png';
 import typeScratchExtensionIcon from './snail-ide/typescript.svg';
 import blocklyIconURL from './blockly/blockly.png';
 import LppExtensionIcon from './lpp/banner.svg';
+import DebuggerConsoleExtensionIcon from './electramod/debuggerconsole.svg';
 import DiscordIcon from './discord/icon.svg';
 import DiscordRPCIcon from './discord/rpc.png';
 
@@ -859,6 +860,15 @@ const menuItems = [
         tags: ['tw', 'turbowarp', 'electramod', 'othermod', 'programminglanguage'],
         description: '🛠️ (Experimental) A high-level programming language based on Scratch.',
         credits: 'FurryR',
+        featured: true
+    },
+    {
+        name: 'Debugger Console',
+        extensionId: 'https://electramod-extensions-gallery.vercel.app/extensions/Aness6040/debuggerconsole.js',
+        iconURL: DebuggerConsoleExtensionIcon,
+        tags: ['electramod'],
+        description: 'Based on Turbowarp CN\'s Debugger by NOname',
+        credits: 'Started by NOname, modified by Aness6040',
         featured: true
     },
     /* {
