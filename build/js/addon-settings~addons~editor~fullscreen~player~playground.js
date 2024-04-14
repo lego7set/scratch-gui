@@ -883,7 +883,7 @@ const manifest = {
     "default": false
   }],
   "tags": ["beta"],
-  "enabledByDefault": true
+  "enabledByDefault": false
 };
 /* harmony default export */ __webpack_exports__["default"] = (manifest);
 
@@ -1991,7 +1991,7 @@ const manifest = {
     "id": "hide"
   }],
   "tags": [],
-  "enabledByDefault": false,
+  "enabledByDefault": true,
   "dynamicDisable": true
 };
 /* harmony default export */ __webpack_exports__["default"] = (manifest);
@@ -2389,7 +2389,7 @@ const manifest = {
   "userstyles": [{
     "url": "style.css"
   }],
-  "enabledByDefault": false
+  "enabledByDefault": true
 };
 
 if (!_environment__WEBPACK_IMPORTED_MODULE_0__["mediaRecorderSupported"]) manifest.unsupported = true;
@@ -2638,7 +2638,7 @@ const manifest = {
     "id": "default",
     "name": "Enable by default",
     "type": "boolean",
-    "default": true
+    "default": false
   }, {
     "id": "previous",
     "name": "Default previous costumes",
@@ -3094,7 +3094,7 @@ const manifest = {
   }],
   "dynamicDisable": true,
   "tags": [],
-  "enabledByDefault": false
+  "enabledByDefault": true
 };
 /* harmony default export */ __webpack_exports__["default"] = (manifest);
 

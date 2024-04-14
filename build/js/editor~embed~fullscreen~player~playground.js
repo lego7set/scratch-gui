@@ -1609,12 +1609,13 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "/* #E5F0FF */ /* #E9F1FC */ /* #D9E3F2 */ /* 90% transparent version of motion-primary */ /* #FFFFFF */ /* 25% transparent version of ui-white */ /* 25% transparent version of ui-white */ /* 25% transparent version of ui-white */ /* 15% transparent version of black */ /* #575E75 */ /* #00c3ff */ /* #007bc7 */ /* 35% transparent version of motion-primary */ /* 15% transparent version of motion-primary */ /* opt-in theme overrides */ /*top bar color when in dark mode*/ /* #00c3ff */ /* #007bc7 */ /* #CF63CF */ /* #BD42BD */ /* #FFAB19 */ /* #FF8C1A */ /* #0FBD8C */ /* #0FBD8C */ /* #FF8C1A */ /* #FFB366 */ /* #FF8C1A */ /* 35% transparent version of extensions-primary */ /* opaque version of extensions-transparent, on white bg */ /* lighter than motion-primary */ /* make sure to keep these in sync with other constants,\ne.g. STAGE_DIMENSION_DEFAULTS in lib/screen-utils.js */ /* layout contants from `layout-constants.js` */ /*\n    Contains constants for the z-index values of elements that are part of the global stack context.\n    In other words, z-index values that are \"inside\" a component are not added here.\n    This prevents conflicts between identical z-index values in different components.\n*/ /* Toolbox z-index: 40; set in scratch-blocks */ /* tooltips should go over add buttons if they overlap */ /* monitors go over add buttons */ /* \"ask\" block text input goes above monitors */ /* menu-bar should go over monitors, alerts and tutorials */ /* tw: show below menu bar normally */ /* Block drag z-index: 1000; default 50 is overriden in blocks.css */ /* so it is draggable into other panes */ /* in most interfaces, the context menu is always on top */ .modal_modal-overlay_2_Dgx {\n    position: fixed;\n    top: 0;\n    left: 0;\n    right: 0;\n    bottom: 0;\n    z-index: 510;\n    background-color: var(--ui-modal-overlay, hsla(244, 23%, 48%, 0.9));\n} .modal_modal-content_3brCX * {\n    box-sizing: border-box;\n} .modal_modal-content_3brCX {\n    margin: 100px auto;\n    outline: none;\n    border: 4px solid hsla(0, 100%, 100%, 0.25);\n    padding: 0;\n    border-radius: 0.5rem;\n    -webkit-user-select: none;\n       -moz-user-select: none;\n        -ms-user-select: none;\n            user-select: none;\n\n    font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n    color: hsla(225, 15%, 40%, 1);\n    overflow: hidden;\n} .modal_modal-content_3brCX.modal_full-screen_3yXCG {\n    position: absolute;\n\n    display: flex;\n    height: 100%;\n    width: 100%;\n\n    overflow-y: auto;\n    -webkit-overflow-scrolling: 'touch';\n    -webkit-user-select: none;\n       -moz-user-select: none;\n        -ms-user-select: none;\n            user-select: none;\n\n    background-color: var(--ui-secondary, hsla(215, 75%, 95%, 1));\n\n    /* Default modal resets */\n    margin: 0;\n    border: none;\n    border-radius: 0;\n} /*\n    Modal header has 3 items:\n    |filter     title       x|\n\n    Use the same width for both side item containers,\n    so that title remains centered\n*/ .modal_header_1dNxf {\n    display: flex;\n    flex-direction: row;\n    flex-wrap: nowrap;\n    justify-content: flex-start;\n    height: 3.125rem;\n\n    box-sizing: border-box;\n    width: 100%;\n    background-color: hsla(244, 23%, 48%, 1);\n    \n    font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n    font-size: 1rem;\n    font-weight: normal;\n} [theme=\"dark\"] .modal_header_1dNxf {\n    background-color: #2A293F;\n} [theme=\"dark\"] .modal_full-screen_3yXCG .modal_header_1dNxf {\n    background-color: hsla(244, 23%, 48%, 1);\n} .modal_header-item_1WbOm {\n    display: flex;\n    align-items: center;\n    padding: 1rem;\n    text-decoration: none;\n    color: hsla(0, 100%, 100%, 1);\n    -webkit-user-select: none;\n       -moz-user-select: none;\n        -ms-user-select: none;\n            user-select: none;\n} [dir=\"ltr\"] .modal_header-image_2c-LK {\n    margin-right: 0.5rem;\n} [dir=\"rtl\"] .modal_header-image_2c-LK {\n    margin-left: 0.5rem;\n} .modal_header-item-filter_slKwM {\n    display: flex;\n    flex-basis: 20rem;\n    justify-content: flex-start;\n} .modal_header-item-title_1N2BE {\n    flex-grow: 1;\n    flex-shrink: 0;\n    justify-content: center;\n    -webkit-user-select: none;\n       -moz-user-select: none;\n        -ms-user-select: none;\n            user-select: none;\n    letter-spacing: 0.4px;\n    cursor: default;\n} [dir=\"ltr\"] .modal_header-item-title_1N2BE {\n    margin: 0 -20rem 0 0;\n} [dir=\"rtl\"] .modal_header-item-title_1N2BE {\n    margin: 0 0 0 -20rem;\n} .modal_full-screen_3yXCG [dir=\"ltr\"] .modal_header-item-title_1N2BE {\n    margin: 0 0 0 -20rem;\n} .modal_full-screen_3yXCG [dir=\"rtl\"] .modal_header-item-title_1N2BE {\n    margin: 0 -20rem 0 0;\n} .modal_header-item-close_4akWi {\n    flex-basis: 20rem;\n    justify-content: flex-end;\n    z-index: 1;\n} .modal_full-screen_3yXCG .modal_header-item-close_4akWi {\n    order: -1;\n    justify-content: flex-start;\n} .modal_back-button_3HvWm {\n    font-weight: normal;\n    padding-right: 0;\n    padding-left: 0;\n} [dir=\"rtl\"] .modal_back-button_3HvWm img {\n    transform: scaleX(-1);\n} .modal_header-item-help_2F4to {\n    padding: 0;\n    z-index: 1;\n} [dir=\"ltr\"] .modal_header-item-help_2F4to {\n    margin-right: -4.75rem;\n} [dir=\"rtl\"] .modal_header-item-help_2F4to {\n    margin-left: -4.75rem;\n} .modal_help-button_1F4rs {\n    font-weight: normal;\n    font-size: 0.75rem;\n} [dir=\"ltr\"] .modal_help-button_1F4rs {\n    padding-right: 0;\n} [dir=\"rtl\"] .modal_help-button_1F4rs {\n    padding-left: 0;\n}\n", ""]);
+exports.push([module.i, "/* #E5F0FF */ /* #E9F1FC */ /* #D9E3F2 */ /* 90% transparent version of motion-primary */ /* #FFFFFF */ /* 25% transparent version of ui-white */ /* 25% transparent version of ui-white */ /* 25% transparent version of ui-white */ /* 15% transparent version of black */ /* #575E75 */ /* #00c3ff */ /* #007bc7 */ /* 35% transparent version of motion-primary */ /* 15% transparent version of motion-primary */ /* opt-in theme overrides */ /*top bar color when in dark mode*/ /* #00c3ff */ /* #007bc7 */ /* #CF63CF */ /* #BD42BD */ /* #FFAB19 */ /* #FF8C1A */ /* #0FBD8C */ /* #0FBD8C */ /* #FF8C1A */ /* #FFB366 */ /* #FF8C1A */ /* 35% transparent version of extensions-primary */ /* opaque version of extensions-transparent, on white bg */ /* lighter than motion-primary */ /* make sure to keep these in sync with other constants,\ne.g. STAGE_DIMENSION_DEFAULTS in lib/screen-utils.js */ /* layout contants from `layout-constants.js` */ /*\n    Contains constants for the z-index values of elements that are part of the global stack context.\n    In other words, z-index values that are \"inside\" a component are not added here.\n    This prevents conflicts between identical z-index values in different components.\n*/ /* Toolbox z-index: 40; set in scratch-blocks */ /* tooltips should go over add buttons if they overlap */ /* monitors go over add buttons */ /* \"ask\" block text input goes above monitors */ /* menu-bar should go over monitors, alerts and tutorials */ /* tw: show below menu bar normally */ /* Block drag z-index: 1000; default 50 is overriden in blocks.css */ /* so it is draggable into other panes */ /* in most interfaces, the context menu is always on top */ .modal_modal-overlay_2_Dgx {\n    position: fixed;\n    top: 0;\n    left: 0;\n    right: 0;\n    bottom: 0;\n    z-index: 510;\n    background-color: var(--ui-modal-overlay, hsla(244, 23%, 48%, 0.9));\n} .modal_scrollable_3U_zv {\n    overflow: auto;\n} .modal_modal-content_3brCX * {\n    box-sizing: border-box;\n} .modal_modal-content_3brCX {\n    margin: 100px auto;\n    outline: none;\n    border: 4px solid hsla(0, 100%, 100%, 0.25);\n    padding: 0;\n    border-radius: 0.5rem;\n    -webkit-user-select: none;\n       -moz-user-select: none;\n        -ms-user-select: none;\n            user-select: none;\n\n    font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n    color: hsla(225, 15%, 40%, 1);\n    overflow: hidden;\n} .modal_modal-content_3brCX.modal_full-screen_3yXCG {\n    position: absolute;\n\n    display: flex;\n    height: 100%;\n    width: 100%;\n\n    overflow-y: auto;\n    -webkit-overflow-scrolling: 'touch';\n    -webkit-user-select: none;\n       -moz-user-select: none;\n        -ms-user-select: none;\n            user-select: none;\n\n    background-color: var(--ui-secondary, hsla(215, 75%, 95%, 1));\n\n    /* Default modal resets */\n    margin: 0;\n    border: none;\n    border-radius: 0;\n} /*\n    Modal header has 3 items:\n    |filter     title       x|\n\n    Use the same width for both side item containers,\n    so that title remains centered\n*/ .modal_header_1dNxf {\n    display: flex;\n    flex-direction: row;\n    flex-wrap: nowrap;\n    justify-content: flex-start;\n    height: 3.125rem;\n\n    box-sizing: border-box;\n    width: 100%;\n    background-color: hsla(244, 23%, 48%, 1);\n    \n    font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n    font-size: 1rem;\n    font-weight: normal;\n} [theme=\"dark\"] .modal_header_1dNxf {\n    background-color: #2A293F;\n} [theme=\"dark\"] .modal_full-screen_3yXCG .modal_header_1dNxf {\n    background-color: hsla(244, 23%, 48%, 1);\n} .modal_header-item_1WbOm {\n    display: flex;\n    align-items: center;\n    padding: 1rem;\n    text-decoration: none;\n    color: hsla(0, 100%, 100%, 1);\n    -webkit-user-select: none;\n       -moz-user-select: none;\n        -ms-user-select: none;\n            user-select: none;\n} [dir=\"ltr\"] .modal_header-image_2c-LK {\n    margin-right: 0.5rem;\n} [dir=\"rtl\"] .modal_header-image_2c-LK {\n    margin-left: 0.5rem;\n} .modal_header-item-filter_slKwM {\n    display: flex;\n    flex-basis: 20rem;\n    justify-content: flex-start;\n} .modal_header-item-title_1N2BE {\n    flex-grow: 1;\n    flex-shrink: 0;\n    justify-content: center;\n    -webkit-user-select: none;\n       -moz-user-select: none;\n        -ms-user-select: none;\n            user-select: none;\n    letter-spacing: 0.4px;\n    cursor: default;\n} [dir=\"ltr\"] .modal_header-item-title_1N2BE {\n    margin: 0 -20rem 0 0;\n} [dir=\"rtl\"] .modal_header-item-title_1N2BE {\n    margin: 0 0 0 -20rem;\n} .modal_full-screen_3yXCG [dir=\"ltr\"] .modal_header-item-title_1N2BE {\n    margin: 0 0 0 -20rem;\n} .modal_full-screen_3yXCG [dir=\"rtl\"] .modal_header-item-title_1N2BE {\n    margin: 0 -20rem 0 0;\n} .modal_header-item-close_4akWi {\n    flex-basis: 20rem;\n    justify-content: flex-end;\n    z-index: 1;\n} .modal_full-screen_3yXCG .modal_header-item-close_4akWi {\n    order: -1;\n    justify-content: flex-start;\n} .modal_back-button_3HvWm {\n    font-weight: normal;\n    padding-right: 0;\n    padding-left: 0;\n} [dir=\"rtl\"] .modal_back-button_3HvWm img {\n    transform: scaleX(-1);\n} .modal_header-item-help_2F4to {\n    padding: 0;\n    z-index: 1;\n} [dir=\"ltr\"] .modal_header-item-help_2F4to {\n    margin-right: -4.75rem;\n} [dir=\"rtl\"] .modal_header-item-help_2F4to {\n    margin-left: -4.75rem;\n} .modal_help-button_1F4rs {\n    font-weight: normal;\n    font-size: 0.75rem;\n} [dir=\"ltr\"] .modal_help-button_1F4rs {\n    padding-right: 0;\n} [dir=\"rtl\"] .modal_help-button_1F4rs {\n    padding-left: 0;\n}\n", ""]);
 
 // exports
 exports.locals = {
 	"modal-overlay": "modal_modal-overlay_2_Dgx",
 	"modalOverlay": "modal_modal-overlay_2_Dgx",
+	"scrollable": "modal_scrollable_3U_zv",
 	"modal-content": "modal_modal-content_3brCX",
 	"modalContent": "modal_modal-content_3brCX",
 	"full-screen": "modal_full-screen_3yXCG",
@@ -13134,7 +13135,9 @@ const ModalComponent = props => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___
     [_modal_css__WEBPACK_IMPORTED_MODULE_10___default.a.fullScreen]: props.fullScreen
   }),
   contentLabel: props.contentLabel,
-  overlayClassName: _modal_css__WEBPACK_IMPORTED_MODULE_10___default.a.modalOverlay,
+  overlayClassName: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_modal_css__WEBPACK_IMPORTED_MODULE_10___default.a.modalOverlay, {
+    [_modal_css__WEBPACK_IMPORTED_MODULE_10___default.a.scrollable]: props.scrollable
+  }),
   onRequestClose: props.onRequestClose
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_5__["default"], {
   dir: props.isRtl ? 'rtl' : 'ltr',
@@ -13178,7 +13181,8 @@ ModalComponent.propTypes = {
   headerImage: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
   isRtl: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.bool,
   onHelp: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func,
-  onRequestClose: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func
+  onRequestClose: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func,
+  scrollable: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.bool
 };
 /* harmony default export */ __webpack_exports__["default"] = (ModalComponent);
 
@@ -27154,28 +27158,67 @@ const MenuBarHOC = function MenuBarHOC(WrappedComponent) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _components_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/menu/menu.jsx */ "./src/components/menu/menu.jsx");
+/* harmony import */ var lodash_bindall__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash.bindall */ "./node_modules/lodash.bindall/index.js");
+/* harmony import */ var lodash_bindall__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash_bindall__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _components_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/menu/menu.jsx */ "./src/components/menu/menu.jsx");
 const _excluded = ["open", "children"];
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
 function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
 
 
 
-const Menu = _ref => {
-  let {
-      open,
-      children
-    } = _ref,
-    props = _objectWithoutProperties(_ref, _excluded);
-  return open ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_2__["default"], props, children) : null;
-};
+
+class Menu extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Component {
+  constructor(props) {
+    super(props);
+    lodash_bindall__WEBPACK_IMPORTED_MODULE_0___default()(this, ['addListeners', 'removeListeners', 'handleClick', 'ref']);
+  }
+  componentDidMount() {
+    if (this.props.open) this.addListeners();
+  }
+  componentDidUpdate(prevProps) {
+    if (this.props.open && !prevProps.open) this.addListeners();
+    if (!this.props.open && prevProps.open) this.removeListeners();
+  }
+  componentWillUnmount() {
+    this.removeListeners();
+  }
+  addListeners() {
+    document.addEventListener('mouseup', this.handleClick);
+  }
+  removeListeners() {
+    document.removeEventListener('mouseup', this.handleClick);
+  }
+  handleClick(e) {
+    if (this.props.open && !this.menu.contains(e.target)) {
+      this.props.onRequestClose();
+    }
+  }
+  ref(c) {
+    this.menu = c;
+  }
+  render() {
+    const _this$props = this.props,
+      {
+        open,
+        children
+      } = _this$props,
+      props = _objectWithoutProperties(_this$props, _excluded);
+    if (!open) return null;
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_menu_menu_jsx__WEBPACK_IMPORTED_MODULE_3__["default"], _extends({
+      componentRef: this.ref
+    }, props), children);
+  }
+}
 Menu.propTypes = {
-  children: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.node,
-  open: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.bool.isRequired
+  children: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.node,
+  onRequestClose: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func.isRequired,
+  open: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.bool.isRequired
 };
 /* harmony default export */ __webpack_exports__["default"] = (Menu);
 
@@ -27242,7 +27285,8 @@ Modal.propTypes = {
   id: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string.isRequired,
   isRtl: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.bool,
   onRequestClose: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func,
-  onRequestOpen: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func
+  onRequestOpen: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func,
+  scrollable: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.bool
 };
 const mapStateToProps = state => ({
   isRtl: state.locales.isRtl

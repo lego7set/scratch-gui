@@ -71,6 +71,6 @@ const manifest = {
   "tags": [
     "beta"
   ],
-  "enabledByDefault": true
+  "enabledByDefault": false
 };
 export default manifest;
