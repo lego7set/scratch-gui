@@ -40215,6 +40215,7 @@ const menuItems = [{
   iconURL: _snail_ide_typescript_svg__WEBPACK_IMPORTED_MODULE_96___default.a,
   tags: ['snailide', 'programminglanguage'],
   description: 'Similar to JavaScript extension but for TypeScript.',
+  credits: 'jwklong',
   featured: true
 }, {
   name: 'Lpp',
@@ -40260,6 +40261,7 @@ const menuItems = [{
   extensionId: 'blockly2math',
   iconURL: _blockly_blockly_png__WEBPACK_IMPORTED_MODULE_97___default.a,
   collaborator: 'Google',
+  credits: 'jwklong',
   tags: ['snailide'],
   description: "Blockly math blocks.",
   featured: true

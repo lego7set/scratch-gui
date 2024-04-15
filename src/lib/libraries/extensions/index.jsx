@@ -851,6 +851,7 @@ const menuItems = [
         iconURL: typeScratchExtensionIcon,
         tags: ['snailide', 'programminglanguage'],
         description: 'Similar to JavaScript extension but for TypeScript.',
+        credits: 'jwklong',
         featured: true
     },
     {
@@ -898,6 +899,7 @@ const menuItems = [
         extensionId: 'blockly2math',
         iconURL: blocklyIconURL,
         collaborator: 'Google',
+        credits: 'jwklong',
         tags: ['snailide'],
         description: "Blockly math blocks.",
         featured: true
