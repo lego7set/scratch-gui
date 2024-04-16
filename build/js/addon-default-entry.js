@@ -7451,9 +7451,19 @@ __webpack_require__.r(__webpack_exports__);
     // Create the new previews
     queryPreviews.length = 0;
     let y = 0;
+    let addedResults = 0;
+    const addedIds = [];
+    const maxSearchResults = addon.settings.get('popup_max_search');
+    const maxVariants = addon.settings.get("popup_max_variants");
     for (let resultIdx = 0; resultIdx < blockList.length; resultIdx++) {
       var _result$autocompleteF;
+      if (addedResults >= maxSearchResults) break;
       const result = blockList[resultIdx];
+      if (maxVariants <= 1) {
+        if (addedIds.includes(result.block.typeInfo.id)) continue;
+      } else {
+        if (addedIds.filter(id => id === result.block.typeInfo.id).length >= maxVariants) continue;
+      }
       const mouseMoveListener = () => {
         updateSelection(resultIdx);
       };
@@ -7486,6 +7496,8 @@ __webpack_require__.r(__webpack_exports__);
         svgBackground
       });
       y += height;
+      addedResults++;
+      addedIds.push(result.block.typeInfo.id);
     }
     const height = (y + 8) * previewScale;
     if (height < previewMinHeight) previewHeight = previewMinHeight;else if (height > previewMaxHeight) previewHeight = previewMaxHeight;else previewHeight = height;

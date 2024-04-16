@@ -716,15 +716,21 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "/* #E5F0FF */ /* #E9F1FC */ /* #D9E3F2 */ /* 90% transparent version of motion-primary */ /* #FFFFFF */ /* 25% transparent version of ui-white */ /* 25% transparent version of ui-white */ /* 25% transparent version of ui-white */ /* 15% transparent version of black */ /* #575E75 */ /* #00c3ff */ /* #007bc7 */ /* 35% transparent version of motion-primary */ /* 15% transparent version of motion-primary */ /* opt-in theme overrides */ /*top bar color when in dark mode*/ /* #00c3ff */ /* #007bc7 */ /* #CF63CF */ /* #BD42BD */ /* #FFAB19 */ /* #FF8C1A */ /* #0FBD8C */ /* #0FBD8C */ /* #FF8C1A */ /* #FFB366 */ /* #FF8C1A */ /* 35% transparent version of extensions-primary */ /* opaque version of extensions-transparent, on white bg */ /* lighter than motion-primary */ /* make sure to keep these in sync with other constants,\ne.g. STAGE_DIMENSION_DEFAULTS in lib/screen-utils.js */ /* layout contants from `layout-constants.js` */ .custom-procedures_modal-content_1wJuI {\n    width: 700px;\n    margin: 50px auto; /* This modal is taller than most, reduce top margin */\n} .custom-procedures_body_1H7Iq {\n    background: hsla(0, 100%, 100%, 1);\n    padding: 1.5rem 2.25rem;\n} [theme=\"dark\"] .custom-procedures_body_1H7Iq {\n    color: var(--text-primary, hsla(225, 15%, 40%, 1));\n    background: var(--ui-secondary, hsla(215, 75%, 95%, 1));\n} .custom-procedures_body_1H7Iq input[type=\"checkbox\"],\n.custom-procedures_body_1H7Iq input[type=\"radio\"] {\n    margin: 3px;\n} /* Color inputs & color swatch */ .custom-procedures_body_1H7Iq input[type=\"color\"] {\n    appearance: none;\n    -moz-appearance: none;\n    -webkit-appearance: none;\n    background: none;\n    border: 1px solid #333;\n    padding: 0;\n    cursor: pointer;\n    border-radius: 2400px;\n    height: 15px;\n} [theme=\"dark\"] .custom-procedures_body_1H7Iq input[type=\"color\"] {\n    border: 1px solid #ddd;\n} ::-webkit-color-swatch-wrapper {\n    padding: 0;\n} ::-webkit-color-swatch {\n    border: 0;\n    border-radius: 2400px;\n} ::-moz-color-swatch,\n::-moz-focus-inner {\n    border: 0;\n} ::-moz-focus-inner {\n    padding: 0;\n} /* Preset color options */ .custom-procedures_preset-color_2S_m5 {\n    border: 1px solid #333;\n    margin: 4px;\n    margin-left: 0px;\n    border-radius: 4px;\n    width: 1em;\n    height: 1em;\n} [theme=\"dark\"] .custom-procedures_preset-color_2S_m5 {\n    border: 1px solid #ddd;\n} /* Blocks workspace for custom procedure declaration editor */ .custom-procedures_workspace_2fBw7 {\n    min-height: 200px;\n    position: relative;\n} .custom-procedures_workspace_2fBw7 .injectionDiv{\n    position: absolute;\n    top: 0;\n    right: 0;\n    bottom: 0;\n    left: 0;\n} .custom-procedures_workspace_2fBw7 .blocklySvg {\n    background-color: var(--ui-primary, hsla(215, 100%, 95%, 1));\n} /* Row of \"card\" buttons for modifying custom procedures */ .custom-procedures_options-row_2qj-y {\n    display: flex;\n    justify-content: space-between;\n} .custom-procedures_option-card_1Gtvt {\n    background: white;\n    border: 2px solid var(--ui-black-transparent, hsla(0, 0%, 0%, 0.15));\n    border-radius: 0.5rem;\n    padding: calc(0.5rem * 2);\n    text-align: center;\n    flex-grow: 1;\n    cursor: pointer;\n    transition: all 0.2s;\n    flex-basis: 100px;\n} [theme=\"dark\"] .custom-procedures_option-card_1Gtvt {\n    background: var(--ui-tertiary, hsla(215, 50%, 90%, 1));\n} .custom-procedures_option-card_1Gtvt:hover {\n    border: 2px solid hsla(244, 23%, 48%, 1);\n    box-shadow: 0px 0px 0px 4px hsla(215, 100%, 11%, 0.35);\n} .custom-procedures_option-card_1Gtvt + .custom-procedures_option-card_1Gtvt {\n    margin-left: 1rem;\n} .custom-procedures_option-icon_1q0dQ {\n    max-height: 48px;\n    margin-bottom: 0.5rem;\n} .custom-procedures_option-title_21_2M {\n    font-weight: bold;\n} /* \"Run without screen refresh\" row */ .custom-procedures_checkbox-row_x0PwF {\n    margin-top: 1rem;\n} /* Confirmation buttons at the bottom of the modal */ .custom-procedures_button-row_3EJDk {\n    margin-top: 1rem;\n    font-weight: bolder;\n    text-align: right;\n} .custom-procedures_button-row_3EJDk button {\n    border: 1px solid var(--ui-black-transparent, hsla(0, 0%, 0%, 0.15));\n    border-radius: 0.25rem;\n    padding: 0.75rem 1rem;\n    background: white;\n    font-weight: bold;\n    font-size: 0.85rem;\n} .custom-procedures_button-row_3EJDk button.custom-procedures_ok-button_3XcwO {\n    background: hsla(244, 23%, 48%, 1);\n    border: hsla(244, 23%, 48%, 1);\n    color: white;\n} [dir=\"ltr\"] .custom-procedures_button-row_3EJDk button + button {\n    margin-left: 0.5rem;\n} [dir=\"rtl\"] .custom-procedures_button-row_3EJDk button + button {\n    margin-right: 0.5rem;\n} .custom-procedures_cancel-button_HKBG7 {\n    color: black;\n}\n", ""]);
+exports.push([module.i, "/* #E5F0FF */ /* #E9F1FC */ /* #D9E3F2 */ /* 90% transparent version of motion-primary */ /* #FFFFFF */ /* 25% transparent version of ui-white */ /* 25% transparent version of ui-white */ /* 25% transparent version of ui-white */ /* 15% transparent version of black */ /* #575E75 */ /* #00c3ff */ /* #007bc7 */ /* 35% transparent version of motion-primary */ /* 15% transparent version of motion-primary */ /* opt-in theme overrides */ /*top bar color when in dark mode*/ /* #00c3ff */ /* #007bc7 */ /* #CF63CF */ /* #BD42BD */ /* #FFAB19 */ /* #FF8C1A */ /* #0FBD8C */ /* #0FBD8C */ /* #FF8C1A */ /* #FFB366 */ /* #FF8C1A */ /* 35% transparent version of extensions-primary */ /* opaque version of extensions-transparent, on white bg */ /* lighter than motion-primary */ /* make sure to keep these in sync with other constants,\ne.g. STAGE_DIMENSION_DEFAULTS in lib/screen-utils.js */ /* layout contants from `layout-constants.js` */ .custom-procedures_modal-content_1wJuI {\n    width: 700px;\n    margin: 50px auto; /* This modal is taller than most, reduce top margin */\n} .custom-procedures_body_1H7Iq {\n    background: hsla(0, 100%, 100%, 1);\n    padding: 1.5rem 2.25rem;\n} [theme=\"dark\"] .custom-procedures_body_1H7Iq {\n    color: var(--text-primary, hsla(225, 15%, 40%, 1));\n    background: var(--ui-secondary, hsla(215, 75%, 95%, 1));\n} .custom-procedures_body_1H7Iq input[type=\"checkbox\"],\n.custom-procedures_body_1H7Iq input[type=\"radio\"] {\n    margin: 3px;\n} .custom-procedures_color-picker-area_2r5jM {\n    width: 100%;\n    padding: 8px;\n\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n} .custom-procedures_color-picker-area_2r5jM > div:nth-child(1),\n.custom-procedures_color-picker-area_2r5jM > div:nth-child(2) {\n    width: 100%;\n    display: flex;\n    flex-direction: row;\n    justify-content: space-evenly;\n} /* .color-picker-area div:nth-child(1) {\n    border-bottom: 1px solid rgba(0, 0, 0, 0.2);\n}\n[theme=\"dark\"] .color-picker-area div:nth-child(1) {\n    border-bottom: 1px solid rgba(255, 255, 255, 0.2);\n} */ /* Color inputs & color swatch */ .custom-procedures_body_1H7Iq input[type=\"color\"] {\n    appearance: none;\n    -moz-appearance: none;\n    -webkit-appearance: none;\n    background: none;\n    padding: 0;\n    border: 0 !important;\n    cursor: pointer;\n} ::-webkit-color-swatch-wrapper {\n    margin: 0;\n    padding: 0;\n} ::-webkit-color-swatch {\n    margin: 0;\n    border-radius: 100%;\n    border: 2px solid rgba(0, 0, 0, 0.2);\n    overflow: none;\n    padding: 0;\n} ::-moz-color-swatch {\n    margin: 0;\n    border-radius: 100%;\n    border: 2px solid rgba(0, 0, 0, 0.2);\n    overflow: none;\n    padding: 0;\n} [theme=\"dark\"] ::-webkit-color-swatch {\n    border-color: white;\n} [theme=\"dark\"] ::-moz-color-swatch {\n    border-color: white;\n} ::-moz-focus-inner {\n    margin: 0;\n    border: 0;\n} ::-moz-focus-inner {\n    margin: 0;\n    padding: 0;\n} /* Preset color options */ .custom-procedures_preset-color_2S_m5 {\n    border: 2px solid rgba(0, 0, 0, 0.2);\n    margin: 4px;\n    border-radius: 100%;\n    width: 2.5em;\n    height: 2.5em;\n} /* prevent soft-looking colors */ [theme=\"dark\"] .custom-procedures_preset-color_2S_m5 {\n    border-color: white;\n} .custom-procedures_parent-custom_1_mgR {\n    margin: 4px;\n    width: 2.5em;\n    height: 2.5em;\n    position: relative;\n} .custom-procedures_parent-custom_1_mgR > .custom-procedures_preset-color_2S_m5 {\n    margin: 0;\n    width: 100%;\n    height: 100%;\n} .custom-procedures_custom-plus_oGZDV {\n    position: absolute;\n    left: 4px;\n    top: 4px;\n    width: calc(100% - 8px);\n    height: calc(100% - 8px);\n    z-index: 500;\n    pointer-events: none;\n} .custom-procedures_preset-color_2S_m5:active {\n    transform: scale(0.7);\n    transition-duration: 0.1s;\n    transition-timing-function: ease-out;\n    transition-property: transform;\n} .custom-procedures_preset-color_2S_m5 {\n    transition-duration: 0.3s;\n    transition-timing-function: cubic-bezier(0, 0, 0.24, 1.83);\n    transition-property: transform;\n} /* Blocks workspace for custom procedure declaration editor */ .custom-procedures_workspace_2fBw7 {\n    min-height: 200px;\n    position: relative;\n} .custom-procedures_workspace_2fBw7 .injectionDiv{\n    position: absolute;\n    top: 0;\n    right: 0;\n    bottom: 0;\n    left: 0;\n} .custom-procedures_workspace_2fBw7 .blocklySvg {\n    background-color: var(--ui-primary, hsla(215, 100%, 95%, 1));\n} /* Row of \"card\" buttons for modifying custom procedures */ .custom-procedures_options-row_2qj-y {\n    display: flex;\n    justify-content: space-between;\n} .custom-procedures_option-card_1Gtvt {\n    background: white;\n    border: 2px solid var(--ui-black-transparent, hsla(0, 0%, 0%, 0.15));\n    border-radius: 0.5rem;\n    padding: calc(0.5rem * 2);\n    text-align: center;\n    flex-grow: 1;\n    cursor: pointer;\n    transition: all 0.2s;\n    flex-basis: 100px;\n} [theme=\"dark\"] .custom-procedures_option-card_1Gtvt {\n    background: var(--ui-tertiary, hsla(215, 50%, 90%, 1));\n} .custom-procedures_option-card_1Gtvt:hover {\n    border: 2px solid hsla(244, 23%, 48%, 1);\n    box-shadow: 0px 0px 0px 4px hsla(215, 100%, 11%, 0.35);\n} .custom-procedures_option-card_1Gtvt + .custom-procedures_option-card_1Gtvt {\n    margin-left: 1rem;\n} .custom-procedures_option-icon_1q0dQ {\n    max-height: 48px;\n    margin-bottom: 0.5rem;\n} .custom-procedures_option-title_21_2M {\n    font-weight: bold;\n} /* \"Run without screen refresh\" row */ /* .checkbox-row {\n    margin-top: 1rem;\n} */ /* Confirmation buttons at the bottom of the modal */ .custom-procedures_button-row_3EJDk {\n    margin-top: 1rem;\n    font-weight: bolder;\n    text-align: right;\n} .custom-procedures_button-row_3EJDk button {\n    border: 1px solid var(--ui-black-transparent, hsla(0, 0%, 0%, 0.15));\n    border-radius: 0.25rem;\n    padding: 0.75rem 1rem;\n    background: white;\n    font-weight: bold;\n    font-size: 0.85rem;\n} .custom-procedures_button-row_3EJDk button.custom-procedures_ok-button_3XcwO {\n    background: hsla(244, 23%, 48%, 1);\n    border: hsla(244, 23%, 48%, 1);\n    color: white;\n} [dir=\"ltr\"] .custom-procedures_button-row_3EJDk button + button {\n    margin-left: 0.5rem;\n} [dir=\"rtl\"] .custom-procedures_button-row_3EJDk button + button {\n    margin-right: 0.5rem;\n} .custom-procedures_cancel-button_HKBG7 {\n    color: black;\n}\n", ""]);
 
 // exports
 exports.locals = {
 	"modal-content": "custom-procedures_modal-content_1wJuI",
 	"modalContent": "custom-procedures_modal-content_1wJuI",
 	"body": "custom-procedures_body_1H7Iq",
+	"color-picker-area": "custom-procedures_color-picker-area_2r5jM",
+	"colorPickerArea": "custom-procedures_color-picker-area_2r5jM",
 	"preset-color": "custom-procedures_preset-color_2S_m5",
 	"presetColor": "custom-procedures_preset-color_2S_m5",
+	"parent-custom": "custom-procedures_parent-custom_1_mgR",
+	"parentCustom": "custom-procedures_parent-custom_1_mgR",
+	"custom-plus": "custom-procedures_custom-plus_oGZDV",
+	"customPlus": "custom-procedures_custom-plus_oGZDV",
 	"workspace": "custom-procedures_workspace_2fBw7",
 	"options-row": "custom-procedures_options-row_2qj-y",
 	"optionsRow": "custom-procedures_options-row_2qj-y",
@@ -734,8 +740,6 @@ exports.locals = {
 	"optionIcon": "custom-procedures_option-icon_1q0dQ",
 	"option-title": "custom-procedures_option-title_21_2M",
 	"optionTitle": "custom-procedures_option-title_21_2M",
-	"checkbox-row": "custom-procedures_checkbox-row_x0PwF",
-	"checkboxRow": "custom-procedures_checkbox-row_x0PwF",
 	"button-row": "custom-procedures_button-row_3EJDk",
 	"buttonRow": "custom-procedures_button-row_3EJDk",
 	"ok-button": "custom-procedures_ok-button_3XcwO",
@@ -4513,6 +4517,7 @@ const Backpack = _ref => {
     showMore,
     onToggle,
     onDelete,
+    onExport,
     onRename,
     onMouseEnter,
     onMouseLeave,
@@ -4564,6 +4569,7 @@ const Backpack = _ref => {
     name: intl.formatMessage(labelMap[item.type]),
     selected: false,
     onClick: noop,
+    onExportButtonClick: item.type === 'script' ? null : onExport,
     onDeleteButtonClick: onDelete
     // Currently, renaming sprites is not supported.
     ,
@@ -4596,6 +4602,7 @@ Backpack.propTypes = {
   intl: react_intl__WEBPACK_IMPORTED_MODULE_3__["intlShape"],
   loading: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.bool,
   onDelete: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func,
+  onExport: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func,
   onRename: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func,
   onMore: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func,
   onMouseEnter: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.func,
@@ -7222,14 +7229,29 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _containers_modal_jsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../containers/modal.jsx */ "./src/containers/modal.jsx");
 /* harmony import */ var _box_box_jsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../box/box.jsx */ "./src/components/box/box.jsx");
 /* harmony import */ var react_intl__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-intl */ "./node_modules/react-intl/lib/index.es.js");
-/* harmony import */ var _icon_boolean_input_svg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./icon--boolean-input.svg */ "./src/components/custom-procedures/icon--boolean-input.svg");
-/* harmony import */ var _icon_boolean_input_svg__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_icon_boolean_input_svg__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _icon_text_input_svg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./icon--text-input.svg */ "./src/components/custom-procedures/icon--text-input.svg");
-/* harmony import */ var _icon_text_input_svg__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_icon_text_input_svg__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _icon_label_svg__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./icon--label.svg */ "./src/components/custom-procedures/icon--label.svg");
-/* harmony import */ var _icon_label_svg__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_icon_label_svg__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _custom_procedures_css__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./custom-procedures.css */ "./src/components/custom-procedures/custom-procedures.css");
-/* harmony import */ var _custom_procedures_css__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_custom_procedures_css__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _icon_plus_svg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./icon--plus.svg */ "./src/components/custom-procedures/icon--plus.svg");
+/* harmony import */ var _icon_plus_svg__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_icon_plus_svg__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _icon_boolean_input_svg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./icon--boolean-input.svg */ "./src/components/custom-procedures/icon--boolean-input.svg");
+/* harmony import */ var _icon_boolean_input_svg__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_icon_boolean_input_svg__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _icon_text_input_svg__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./icon--text-input.svg */ "./src/components/custom-procedures/icon--text-input.svg");
+/* harmony import */ var _icon_text_input_svg__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_icon_text_input_svg__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _icon_label_svg__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./icon--label.svg */ "./src/components/custom-procedures/icon--label.svg");
+/* harmony import */ var _icon_label_svg__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_icon_label_svg__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _icon_stack_block_svg__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./icon--stack-block.svg */ "./src/components/custom-procedures/icon--stack-block.svg");
+/* harmony import */ var _icon_stack_block_svg__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_icon_stack_block_svg__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _icon_terminal_block_svg__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./icon--terminal-block.svg */ "./src/components/custom-procedures/icon--terminal-block.svg");
+/* harmony import */ var _icon_terminal_block_svg__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_icon_terminal_block_svg__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var _icon_reporter_block_svg__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./icon--reporter-block.svg */ "./src/components/custom-procedures/icon--reporter-block.svg");
+/* harmony import */ var _icon_reporter_block_svg__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_icon_reporter_block_svg__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var _icon_boolean_block_svg__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./icon--boolean-block.svg */ "./src/components/custom-procedures/icon--boolean-block.svg");
+/* harmony import */ var _icon_boolean_block_svg__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_icon_boolean_block_svg__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var _custom_procedures_css__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./custom-procedures.css */ "./src/components/custom-procedures/custom-procedures.css");
+/* harmony import */ var _custom_procedures_css__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_custom_procedures_css__WEBPACK_IMPORTED_MODULE_13__);
+
+
+
+
+
 
 
 
@@ -7245,216 +7267,290 @@ const messages = Object(react_intl__WEBPACK_IMPORTED_MODULE_4__["defineMessages"
     "defaultMessage": "Make a Block"
   }
 });
-
-// for some reason the arrow is just gone?
-// so we add our own :D
-const dropdownCaret = '►';
-const BlockColorSection = props => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("details", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("summary", null, dropdownCaret, " Block Color"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-  style: {
-    marginLeft: '10px'
-  }
-}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
-  value: props.blockColor,
-  type: "color",
-  onChange: props.onBlockColorChange,
-  style: {
-    marginRight: "6px"
-  }
-}), "Custom Color"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("b", null, "Presets")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
-  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_8___default.a.presetColor,
+const BlockColorSection = props => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_13___default.a.colorPickerArea
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
+  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_13___default.a.presetColor,
   style: {
     background: "#4C97FF"
   },
   onClick: () => props.setHexBlockColor("#4C97FF")
 }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
-  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_8___default.a.presetColor,
+  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_13___default.a.presetColor,
   style: {
     background: "#9966FF"
   },
   onClick: () => props.setHexBlockColor("#9966FF")
 }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
-  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_8___default.a.presetColor,
+  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_13___default.a.presetColor,
   style: {
     background: "#CF63CF"
   },
   onClick: () => props.setHexBlockColor("#CF63CF")
 }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
-  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_8___default.a.presetColor,
+  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_13___default.a.presetColor,
   style: {
     background: "#FFBF00"
   },
   onClick: () => props.setHexBlockColor("#FFBF00")
 }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
-  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_8___default.a.presetColor,
+  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_13___default.a.presetColor,
   style: {
     background: "#FFAB19"
   },
   onClick: () => props.setHexBlockColor("#FFAB19")
 }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
-  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_8___default.a.presetColor,
+  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_13___default.a.presetColor,
   style: {
     background: "#5CB1D6"
   },
   onClick: () => props.setHexBlockColor("#5CB1D6")
 }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
-  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_8___default.a.presetColor,
+  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_13___default.a.presetColor,
   style: {
     background: "#59C059"
   },
   onClick: () => props.setHexBlockColor("#59C059")
 }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
-  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_8___default.a.presetColor,
+  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_13___default.a.presetColor,
   style: {
     background: "#FF8C1A"
   },
   onClick: () => props.setHexBlockColor("#FF8C1A")
 }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
-  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_8___default.a.presetColor,
+  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_13___default.a.presetColor,
   style: {
     background: "#FF661A"
   },
   onClick: () => props.setHexBlockColor("#FF661A")
 }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
-  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_8___default.a.presetColor,
+  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_13___default.a.presetColor,
   style: {
     background: "#FF6680"
   },
   onClick: () => props.setHexBlockColor("#FF6680")
 }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
-  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_8___default.a.presetColor,
+  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_13___default.a.presetColor,
   style: {
     background: "#0FBD8C"
   },
   onClick: () => props.setHexBlockColor("#0FBD8C")
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
+  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_13___default.a.presetColor,
+  style: {
+    background: "#FF4C4C"
+  },
+  onClick: () => props.setHexBlockColor("#FF4C4C")
 })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
-  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_8___default.a.presetColor,
+  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_13___default.a.presetColor,
   style: {
     background: "#FF8080"
   },
   onClick: () => props.setHexBlockColor("#FF8080")
 }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
-  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_8___default.a.presetColor,
+  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_13___default.a.presetColor,
   style: {
     background: "#FFB980"
   },
   onClick: () => props.setHexBlockColor("#FFB980")
 }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
-  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_8___default.a.presetColor,
+  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_13___default.a.presetColor,
   style: {
     background: "#FFF480"
   },
   onClick: () => props.setHexBlockColor("#FFF480")
 }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
-  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_8___default.a.presetColor,
+  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_13___default.a.presetColor,
   style: {
     background: "#8EFF80"
   },
   onClick: () => props.setHexBlockColor("#8EFF80")
 }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
-  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_8___default.a.presetColor,
+  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_13___default.a.presetColor,
   style: {
     background: "#80FFBD"
   },
   onClick: () => props.setHexBlockColor("#80FFBD")
 }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
-  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_8___default.a.presetColor,
+  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_13___default.a.presetColor,
   style: {
     background: "#80EAFF"
   },
   onClick: () => props.setHexBlockColor("#80EAFF")
 }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
-  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_8___default.a.presetColor,
+  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_13___default.a.presetColor,
   style: {
     background: "#80C1FF"
   },
   onClick: () => props.setHexBlockColor("#80C1FF")
 }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
-  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_8___default.a.presetColor,
+  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_13___default.a.presetColor,
   style: {
     background: "#8084FF"
   },
   onClick: () => props.setHexBlockColor("#8084FF")
 }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
-  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_8___default.a.presetColor,
+  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_13___default.a.presetColor,
   style: {
     background: "#D375FF"
   },
   onClick: () => props.setHexBlockColor("#D375FF")
 }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
-  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_8___default.a.presetColor,
+  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_13___default.a.presetColor,
   style: {
     background: "#FF8AFF"
   },
   onClick: () => props.setHexBlockColor("#FF8AFF")
 }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
-  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_8___default.a.presetColor,
+  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_13___default.a.presetColor,
   style: {
     background: "#BBBBBB"
   },
   onClick: () => props.setHexBlockColor("#BBBBBB")
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_13___default.a.parentCustom
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
+  type: "color",
+  value: props.blockColor,
+  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_13___default.a.presetColor,
+  onChange: props.onBlockColorChange
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+  src: _icon_plus_svg__WEBPACK_IMPORTED_MODULE_5___default.a,
+  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_13___default.a.customPlus
 }))));
 const CustomProcedures = props => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_containers_modal_jsx__WEBPACK_IMPORTED_MODULE_2__["default"], {
-  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_8___default.a.modalContent,
+  scrollable: true,
+  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_13___default.a.modalContent,
   contentLabel: props.intl.formatMessage(messages.myblockModalTitle),
   onRequestClose: props.onCancel
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_3__["default"], {
-  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_8___default.a.workspace,
+  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_13___default.a.workspace,
   componentRef: props.componentRef
 }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_3__["default"], {
-  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_8___default.a.body
+  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_13___default.a.body
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_8___default.a.optionsRow
+  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_13___default.a.optionsRow
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_8___default.a.optionCard,
+  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_13___default.a.optionCard,
   role: "button",
   tabIndex: "0",
   onClick: props.onAddTextNumber
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
-  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_8___default.a.optionIcon,
-  src: _icon_text_input_svg__WEBPACK_IMPORTED_MODULE_6___default.a
+  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_13___default.a.optionIcon,
+  src: _icon_text_input_svg__WEBPACK_IMPORTED_MODULE_7___default.a
 }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_8___default.a.optionTitle
+  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_13___default.a.optionTitle
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_4__["FormattedMessage"], {
   defaultMessage: "Add an input",
   id: "gui.customProcedures.addAnInputNumberText"
 })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_8___default.a.optionDescription
+  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_13___default.a.optionDescription
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_4__["FormattedMessage"], {
   defaultMessage: "number or text",
   id: "gui.customProcedures.numberTextType"
 }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_8___default.a.optionCard,
+  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_13___default.a.optionCard,
   role: "button",
   tabIndex: "0",
   onClick: props.onAddBoolean
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
-  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_8___default.a.optionIcon,
-  src: _icon_boolean_input_svg__WEBPACK_IMPORTED_MODULE_5___default.a
+  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_13___default.a.optionIcon,
+  src: _icon_boolean_input_svg__WEBPACK_IMPORTED_MODULE_6___default.a
 }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_8___default.a.optionTitle
+  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_13___default.a.optionTitle
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_4__["FormattedMessage"], {
   defaultMessage: "Add an input",
   id: "gui.customProcedures.addAnInputBoolean"
 })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_8___default.a.optionDescription
+  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_13___default.a.optionDescription
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_4__["FormattedMessage"], {
   defaultMessage: "boolean",
   id: "gui.customProcedures.booleanType"
 }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_8___default.a.optionCard,
+  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_13___default.a.optionCard,
   role: "button",
   tabIndex: "0",
   onClick: props.onAddLabel
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
-  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_8___default.a.optionIcon,
-  src: _icon_label_svg__WEBPACK_IMPORTED_MODULE_7___default.a
+  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_13___default.a.optionIcon,
+  src: _icon_label_svg__WEBPACK_IMPORTED_MODULE_8___default.a
 }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_8___default.a.optionTitle
+  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_13___default.a.optionTitle
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_4__["FormattedMessage"], {
   defaultMessage: "Add a label",
   id: "gui.customProcedures.addALabel"
-})))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_8___default.a.checkboxRow
+})))), !props.editing && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_13___default.a.optionsRow,
+  style: {
+    marginTop: '1em'
+  }
+}, props.returns ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_13___default.a.optionCard,
+  role: "button",
+  tabIndex: "0",
+  onClick: () => props.onOutputTypeChanged('string')
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_13___default.a.optionIcon,
+  src: _icon_reporter_block_svg__WEBPACK_IMPORTED_MODULE_11___default.a
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_13___default.a.optionTitle
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_4__["FormattedMessage"], {
+  defaultMessage: "Return Text",
+  id: "gui.customProcedures.returnText"
+}))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_13___default.a.optionCard,
+  role: "button",
+  tabIndex: "0",
+  onClick: () => props.onOutputTypeChanged('number')
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_13___default.a.optionIcon,
+  src: _icon_reporter_block_svg__WEBPACK_IMPORTED_MODULE_11___default.a
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_13___default.a.optionTitle
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_4__["FormattedMessage"], {
+  defaultMessage: "Return a Number",
+  id: "gui.customProcedures.returnANumber"
+})))) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_13___default.a.optionCard,
+  role: "button",
+  tabIndex: "0",
+  onClick: () => props.onOutputTypeChanged('statement')
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_13___default.a.optionIcon,
+  src: _icon_stack_block_svg__WEBPACK_IMPORTED_MODULE_9___default.a
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_13___default.a.optionTitle
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_4__["FormattedMessage"], {
+  defaultMessage: "Normal block",
+  id: "gui.customProcedures.normalBlock"
+}))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_13___default.a.optionCard,
+  role: "button",
+  tabIndex: "0",
+  onClick: () => props.onOutputTypeChanged('end')
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_13___default.a.optionIcon,
+  src: _icon_terminal_block_svg__WEBPACK_IMPORTED_MODULE_10___default.a
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_13___default.a.optionTitle
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_4__["FormattedMessage"], {
+  defaultMessage: "Ending block",
+  id: "gui.customProcedures.endingBlock"
+})))), props.returns && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_13___default.a.optionCard,
+  role: "button",
+  tabIndex: "0",
+  onClick: () => props.onOutputTypeChanged('boolean')
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_13___default.a.optionIcon,
+  src: _icon_boolean_block_svg__WEBPACK_IMPORTED_MODULE_12___default.a
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_13___default.a.optionTitle
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_4__["FormattedMessage"], {
+  defaultMessage: "Return a Boolean",
+  id: "gui.customProcedures.returnABoolean"
+})))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(BlockColorSection, props), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_13___default.a.checkboxRow
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
   checked: props.warp,
   type: "checkbox",
@@ -7466,50 +7562,16 @@ const CustomProcedures = props => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1_
   checked: props.returns,
   type: "checkbox",
   onChange: props.onToggleReturns
-}), "Returns a value"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", null), props.returns ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
-  checked: props.selectedType === 'string',
-  name: "procReturnString",
-  type: "radio",
-  value: "string",
-  onChange: props.onOutputTypeChanged
-}), "Returns text"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
-  checked: props.selectedType === 'number',
-  name: "procReturnNumber",
-  type: "radio",
-  value: "number",
-  onChange: props.onOutputTypeChanged
-}), "Returns number"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
-  checked: props.selectedType === 'boolean',
-  name: "procReturnBoolean",
-  type: "radio",
-  value: "boolean",
-  onChange: props.onOutputTypeChanged
-}), "Returns boolean")) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
-  checked: props.selectedType === 'statement',
-  name: "procStatement",
-  type: "radio",
-  value: "statement",
-  onChange: props.onOutputTypeChanged
-}), "Normal"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
-  checked: props.selectedType === 'end',
-  name: "procStatementEnd",
-  type: "radio",
-  value: "end",
-  onChange: props.onOutputTypeChanged
-}), "End-cap"))) : null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("details", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("summary", null, dropdownCaret, " Coloring and Styling"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-  style: {
-    marginLeft: '10px'
-  }
-}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(BlockColorSection, props)))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_3__["default"], {
-  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_8___default.a.buttonRow
+}), "Returns a value")) : null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_13___default.a.buttonRow
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
-  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_8___default.a.cancelButton,
+  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_13___default.a.cancelButton,
   onClick: props.onCancel
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_4__["FormattedMessage"], {
   defaultMessage: "Cancel",
   id: "gui.customProcedures.cancel"
 })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
-  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_8___default.a.okButton,
+  className: _custom_procedures_css__WEBPACK_IMPORTED_MODULE_13___default.a.okButton,
   onClick: props.onOk
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_4__["FormattedMessage"], {
   defaultMessage: "OK",
@@ -7535,6 +7597,17 @@ CustomProcedures.propTypes = {
 
 /***/ }),
 
+/***/ "./src/components/custom-procedures/icon--boolean-block.svg":
+/*!******************************************************************!*\
+  !*** ./src/components/custom-procedures/icon--boolean-block.svg ***!
+  \******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/assets/88a3bec89367b65d176c22eef8c6ddcd.svg";
+
+/***/ }),
+
 /***/ "./src/components/custom-procedures/icon--boolean-input.svg":
 /*!******************************************************************!*\
   !*** ./src/components/custom-procedures/icon--boolean-input.svg ***!
@@ -7554,6 +7627,50 @@ module.exports = __webpack_require__.p + "static/assets/10811a978de201353d564df7
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/assets/8beb9da10f72d02b48baf0b24ac72449.svg";
+
+/***/ }),
+
+/***/ "./src/components/custom-procedures/icon--plus.svg":
+/*!*********************************************************!*\
+  !*** ./src/components/custom-procedures/icon--plus.svg ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/assets/c841d8156cb6460bafadb8e04b1ff70a.svg";
+
+/***/ }),
+
+/***/ "./src/components/custom-procedures/icon--reporter-block.svg":
+/*!*******************************************************************!*\
+  !*** ./src/components/custom-procedures/icon--reporter-block.svg ***!
+  \*******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/assets/58d1104d0922e424a0b0d4a27e6ed826.svg";
+
+/***/ }),
+
+/***/ "./src/components/custom-procedures/icon--stack-block.svg":
+/*!****************************************************************!*\
+  !*** ./src/components/custom-procedures/icon--stack-block.svg ***!
+  \****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/assets/999649b8d77ea4f04e0dca31326090c1.svg";
+
+/***/ }),
+
+/***/ "./src/components/custom-procedures/icon--terminal-block.svg":
+/*!*******************************************************************!*\
+  !*** ./src/components/custom-procedures/icon--terminal-block.svg ***!
+  \*******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/assets/acf8e02623682856899b55f10f66e212.svg";
 
 /***/ }),
 
@@ -11551,6 +11668,34 @@ class MenuBar extends react__WEBPACK_IMPORTED_MODULE_7___default.a.Component {
   handleLanguageMouseUp(e) {
     if (!this.props.languageMenuOpen) {
       this.props.onClickLanguage(e);
+    }
+  }
+  handleClickMode(effect) {
+    const body = document.body;
+    body.style = '';
+    if (!effect) return;
+
+    // fix some weird sizing, just applies on effects
+    body.style = "width:100%;height:100%;position:fixed;overflow:hidden;";
+    switch (effect) {
+      case 'night':
+        body.style.filter = 'brightness(90%) sepia(100%) hue-rotate(340deg) saturate(400%)';
+        break;
+      case 'blur':
+        body.style.filter = 'blur(4px)';
+        break;
+      case 'comic':
+        body.style.filter = 'brightness(70%) contrast(1000%) grayscale(100%)';
+        break;
+      case 'toxic':
+        body.style.filter = 'sepia(100%) hue-rotate(58deg) saturate(400%)';
+        break;
+      case 'uhd':
+        body.style.filter = 'url("./bloomfilter.svg#bloom")';
+        break;
+      case 'upsidedown':
+        body.style.transform = 'rotateX(180deg) rotateY(180deg)';
+        break;
     }
   }
   restoreOptionMessage(deletedItem) {
@@ -22667,13 +22812,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _lib_drop_area_hoc_jsx__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../lib/drop-area-hoc.jsx */ "./src/lib/drop-area-hoc.jsx");
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
 /* harmony import */ var _lib_storage__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../lib/storage */ "./src/lib/storage.js");
-/* harmony import */ var scratch_vm__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! scratch-vm */ "./node_modules/scratch-vm/src/index.js");
-/* harmony import */ var scratch_vm__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(scratch_vm__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var _lib_download_blob__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../lib/download-blob */ "./src/lib/download-blob.js");
+/* harmony import */ var scratch_vm__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! scratch-vm */ "./node_modules/scratch-vm/src/index.js");
+/* harmony import */ var scratch_vm__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(scratch_vm__WEBPACK_IMPORTED_MODULE_11__);
 function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
 function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { _defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
 function _defineProperty(obj, key, value) { key = _toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == typeof i ? i : String(i); }
 function _toPrimitive(t, r) { if ("object" != typeof t || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != typeof i) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
+
 
 
 
@@ -22696,7 +22843,7 @@ const messages = Object(react_intl__WEBPACK_IMPORTED_MODULE_3__["defineMessages"
 class Backpack extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
   constructor(props) {
     super(props);
-    lodash_bindall__WEBPACK_IMPORTED_MODULE_2___default()(this, ['handleDrop', 'handleToggle', 'handleDelete', 'handleRename', 'getBackpackAssetURL', 'getContents', 'handleMouseEnter', 'handleMouseLeave', 'handleBlockDragEnd', 'handleBlockDragUpdate', 'handleMore']);
+    lodash_bindall__WEBPACK_IMPORTED_MODULE_2___default()(this, ['handleDrop', 'handleToggle', 'handleDelete', 'handleExport', 'handleRename', 'getBackpackAssetURL', 'getContents', 'handleMouseEnter', 'handleMouseLeave', 'handleBlockDragEnd', 'handleBlockDragUpdate', 'handleMore']);
     this.state = {
       // While the DroppableHOC manages drop interactions for asset tiles,
       // we still need to micromanage drops coming from the block workspace.
@@ -22815,6 +22962,23 @@ class Backpack extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       });
     });
   }
+  handleExport(id) {
+    const item = this.findItemById(id);
+    if (!item) return;
+    if (!item.bodyData) return;
+    const buffer = item.bodyData;
+    const blob = new Blob([buffer], {
+      type: item.mime
+    });
+    let recommendedName = item.name;
+    if (item.type === 'sprite') {
+      recommendedName += '.pms';
+    }
+    if (item.type === 'script') {
+      recommendedName += '.pmb';
+    }
+    Object(_lib_download_blob__WEBPACK_IMPORTED_MODULE_10__["default"])(recommendedName, blob);
+  }
   findItemById(id) {
     return this.state.contents.find(i => i.id === id);
   }
@@ -22911,6 +23075,7 @@ class Backpack extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
       loading: this.state.loading,
       showMore: this.state.moreToLoad,
       onDelete: this.handleDelete,
+      onExport: this.handleExport,
       onRename: this.handleRename,
       onDrop: this.handleDrop,
       onMore: this.handleMore,
@@ -22925,7 +23090,7 @@ Backpack.propTypes = {
   host: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
   token: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
   username: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
-  vm: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.instanceOf(scratch_vm__WEBPACK_IMPORTED_MODULE_10___default.a)
+  vm: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.instanceOf(scratch_vm__WEBPACK_IMPORTED_MODULE_11___default.a)
 };
 const getTokenAndUsername = state => {
   // Look for the session state provided by scratch-www
@@ -25056,19 +25221,15 @@ class CustomProcedures extends react__WEBPACK_IMPORTED_MODULE_3___default.a.Comp
     if (this.mutationRoot) {
       const newReturns = !this.mutationRoot.getReturns();
       this.mutationRoot.setReturns(newReturns);
-      this.handleChangeType({
-        target: {
-          value: newReturns ? 'string' : 'statement'
-        }
-      });
+      this.handleChangeType(newReturns ? 'string' : 'statement');
       this.setState({
         returns: newReturns
       });
     }
   }
-  handleChangeType(element) {
+  handleChangeType(value) {
     if (this.mutationRoot) {
-      const newType = element.target.value;
+      const newType = value;
       this.mutationRoot.setType(newType);
       this.setState({
         type: newType
@@ -25385,7 +25546,7 @@ class DOMElementRenderer extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Co
     this.container.appendChild(this.props.domElement);
   }
   componentWillUnmount() {
-    if (this.props.domElement.parentNode !== this.container.childNodes[0]) return console.error('i dont fucking know how to solve this, all i know is the site just fucking keeps dieing with this exact issue');
+    if (this.props.domElement.parentNode !== this.container.childNodes[0]) return console.error('idk how to solve this, all i know is the site just keeps dieing with this exact issue');
     this.container.removeChild(this.props.domElement);
   }
   setContainer(c) {
@@ -42465,7 +42626,7 @@ const events = function events(isInitialSetup, isStage) {
   return "\n    <category name=\"%{BKY_CATEGORY_EVENTS}\" id=\"events\" colour=\"#FFD500\" secondaryColour=\"#CC9900\">\n        <block type=\"event_whenflagclicked\"/>\n        <block type=\"event_whenstopclicked\"/>\n        ".concat(blockSeparator, "\n        <block type=\"event_always\"></block>\n        <block type=\"event_whenanything\">\n            <value name=\"ANYTHING\"></value>\n        </block>\n        ").concat(blockSeparator, "\n        <block type=\"event_whenkeypressed\"></block>\n        <block type=\"event_whenkeyhit\"></block>\n        <block type=\"event_whenmousescrolled\"></block>\n        ").concat(isStage ? "\n            <block type=\"event_whenstageclicked\"/>\n        " : "\n            <block type=\"event_whenthisspriteclicked\"/>\n        ", "\n        <block type=\"event_whenbackdropswitchesto\">\n        </block>\n        ").concat(blockSeparator, "\n        <block type=\"event_whengreaterthan\">\n            <value name=\"VALUE\">\n                <shadow type=\"math_number\">\n                    <field name=\"NUM\">10</field>\n                </shadow>\n            </value>\n        </block>\n        ").concat(blockSeparator, "\n        <block type=\"event_whenbroadcastreceived\">\n        </block>\n        <block type=\"event_broadcast\">\n            <value name=\"BROADCAST_INPUT\">\n                <shadow type=\"event_broadcast_menu\"></shadow>\n            </value>\n        </block>\n        <block type=\"event_broadcastandwait\">\n            <value name=\"BROADCAST_INPUT\">\n              <shadow type=\"event_broadcast_menu\"></shadow>\n            </value>\n        </block>\n        ").concat(categorySeparator, "\n    </category>\n    ");
 };
 const control = function control(isInitialSetup, isStage) {
-  return "\n    <category name=\"%{BKY_CATEGORY_CONTROL}\" id=\"control\" colour=\"#FFAB19\" secondaryColour=\"#CF8B17\">\n        <block type=\"control_wait\">\n            <value name=\"DURATION\">\n                <shadow type=\"math_positive_number\">\n                    <field name=\"NUM\">1</field>\n                </shadow>\n            </value>\n        </block>\n        <block type=\"control_waitsecondsoruntil\">\n            <value name=\"DURATION\">\n                <shadow type=\"math_positive_number\">\n                    <field name=\"NUM\">1</field>\n                </shadow>\n            </value>\n        </block>\n        ".concat(blockSeparator, "\n        <block type=\"control_repeat\">\n            <value name=\"TIMES\">\n                <shadow type=\"math_whole_number\">\n                    <field name=\"NUM\">10</field>\n                </shadow>\n            </value>\n        </block>\n        <block id=\"forever\" type=\"control_forever\"/>\n        <block type=\"control_exitLoop\"/>\n        ").concat(blockSeparator, "\n        <block type=\"control_switch\"/>\n        <block type=\"control_switch_default\"/>\n        <block type=\"control_exitCase\"/>\n        <block type=\"control_case_next\">\n            <value name=\"CONDITION\">\n                <shadow type=\"text\">\n                    <field name=\"TEXT\">ello</field>\n                </shadow>\n            </value>\n        </block>\n        <block type=\"control_case\">\n            <value name=\"CONDITION\">\n                <shadow type=\"text\">\n                    <field name=\"TEXT\">ello</field>\n                </shadow>\n            </value>\n        </block>\n        ").concat(blockSeparator, "\n        <block type=\"control_if\"/>\n        <block type=\"control_if_else\"/>\n        <block id=\"wait_until\" type=\"control_wait_until\"/>\n        <block id=\"repeat_until\" type=\"control_repeat_until\"/>\n        <block id=\"while\" type=\"control_while\"/>\n        <block id=\"for_each\" type=\"control_for_each\">\n            <value name=\"VALUE\">\n                <shadow type=\"math_whole_number\">\n                    <field name=\"NUM\">10</field>\n                </shadow>\n            </value>\n        </block>\n        <block type=\"control_if_return_else_return\">\n            <value name=\"boolean\"></value>\n            <value name=\"TEXT1\">\n                <shadow type=\"text\">\n                    <field name=\"TEXT\">foo</field>\n                </shadow>\n            </value>\n            <value name=\"TEXT2\">\n                <shadow type=\"text\">\n                    <field name=\"TEXT\">bar</field>\n                </shadow>\n            </value>\n        </block>\n        ").concat(blockSeparator, "\n        <block type=\"control_all_at_once\"/>\n        ").concat(blockSeparator, "\n        <block type=\"control_backToGreenFlag\"></block>\n        <block type=\"control_stop_sprite\">\n            <value name=\"STOP_OPTION\">\n                <shadow type=\"control_stop_sprite_menu\"/>\n            </value>\n        </block>\n        <block type=\"control_stop\"/>\n        ").concat(blockSeparator, "\n        <block type=\"control_run_as_sprite\">\n            <value name=\"RUN_AS_OPTION\">\n                <shadow type=\"control_run_as_sprite_menu\"/>\n            </value>\n        </block>\n        ").concat(blockSeparator, "\n        ").concat(isStage ? "\n            <block type=\"control_create_clone_of\">\n                <value name=\"CLONE_OPTION\">\n                    <shadow type=\"control_create_clone_of_menu\"/>\n                </value>\n            </block>\n            <block type=\"control_delete_clones_of\">\n                <value name=\"CLONE_OPTION\">\n                    <shadow type=\"control_create_clone_of_menu\"/>\n                </value>\n            </block>\n        " : "\n            <block type=\"control_start_as_clone\"/>\n            <block type=\"control_create_clone_of\">\n                <value name=\"CLONE_OPTION\">\n                    <shadow type=\"control_create_clone_of_menu\"/>\n                </value>\n            </block>\n            <block type=\"control_delete_clones_of\">\n                <value name=\"CLONE_OPTION\">\n                    <shadow type=\"control_create_clone_of_menu\"/>\n                </value>\n            </block>\n            <block type=\"control_delete_this_clone\"/>\n        ", "\n        ").concat(_tw_lazy_scratch_blocks__WEBPACK_IMPORTED_MODULE_0__["default"].isNameUrMom() ? '<block type="your_mom"/>' : '', "\n        ").concat(categorySeparator, "\n    </category>\n    ");
+  return "\n    <category name=\"%{BKY_CATEGORY_CONTROL}\" id=\"control\" colour=\"#FFAB19\" secondaryColour=\"#CF8B17\">\n        <block type=\"control_wait\">\n            <value name=\"DURATION\">\n                <shadow type=\"math_positive_number\">\n                    <field name=\"NUM\">1</field>\n                </shadow>\n            </value>\n        </block>\n        <block type=\"control_waitsecondsoruntil\">\n            <value name=\"DURATION\">\n                <shadow type=\"math_positive_number\">\n                    <field name=\"NUM\">1</field>\n                </shadow>\n            </value>\n        </block>\n        ".concat(blockSeparator, "\n        <block type=\"control_repeat\">\n            <value name=\"TIMES\">\n                <shadow type=\"math_whole_number\">\n                    <field name=\"NUM\">10</field>\n                </shadow>\n            </value>\n        </block>\n        <block id=\"forever\" type=\"control_forever\"/>\n        <block type=\"control_exitLoop\"/>\n        ").concat(blockSeparator, "\n        <block type=\"control_switch\"/>\n        <block type=\"control_switch_default\"/>\n        <block type=\"control_exitCase\"/>\n        <block type=\"control_case_next\">\n            <value name=\"CONDITION\">\n                <shadow type=\"text\">\n                    <field name=\"TEXT\">ello</field>\n                </shadow>\n            </value>\n        </block>\n        <block type=\"control_case\">\n            <value name=\"CONDITION\">\n                <shadow type=\"text\">\n                    <field name=\"TEXT\">ello</field>\n                </shadow>\n            </value>\n        </block>\n        ").concat(blockSeparator, "\n        <block type=\"control_if\"/>\n        <block type=\"control_if_else\"/>\n        <block id=\"wait_until\" type=\"control_wait_until\"/>\n        <block id=\"repeat_until\" type=\"control_repeat_until\"/>\n        <block id=\"while\" type=\"control_while\"/>\n        <block id=\"for_each\" type=\"control_for_each\">\n            <value name=\"VALUE\">\n                <shadow type=\"math_whole_number\">\n                    <field name=\"NUM\">10</field>\n                </shadow>\n            </value>\n        </block>\n        <block type=\"control_if_return_else_return\">\n            <value name=\"boolean\"></value>\n            <value name=\"TEXT1\">\n                <shadow type=\"text\">\n                    <field name=\"TEXT\">foo</field>\n                </shadow>\n            </value>\n            <value name=\"TEXT2\">\n                <shadow type=\"text\">\n                    <field name=\"TEXT\">bar</field>\n                </shadow>\n            </value>\n        </block>\n        ").concat(blockSeparator, "\n        <block type=\"control_all_at_once\"/>\n        <block type=\"control_run_as_sprite\">\n            <value name=\"RUN_AS_OPTION\">\n                <shadow type=\"control_run_as_sprite_menu\"/>\n            </value>\n        </block>\n        ").concat(blockSeparator, "\n        <block type=\"control_try_catch\"/>\n        <block type=\"control_throw_error\">\n            <value name=\"ERROR\">\n                <shadow type=\"text\">\n                    <field name=\"TEXT\">Hello!</field>\n                </shadow>\n            </value>\n        </block>\n        <block type=\"control_error\"/>\n        ").concat(blockSeparator, "\n        <block type=\"control_backToGreenFlag\"></block>\n        <block type=\"control_stop_sprite\">\n            <value name=\"STOP_OPTION\">\n                <shadow type=\"control_stop_sprite_menu\"/>\n            </value>\n        </block>\n        <block type=\"control_stop\"/>\n        ").concat(blockSeparator, "\n        ").concat(isStage ? "\n            <block type=\"control_create_clone_of\">\n                <value name=\"CLONE_OPTION\">\n                    <shadow type=\"control_create_clone_of_menu\"/>\n                </value>\n            </block>\n            <block type=\"control_delete_clones_of\">\n                <value name=\"CLONE_OPTION\">\n                    <shadow type=\"control_create_clone_of_menu\"/>\n                </value>\n            </block>\n        " : "\n            <block type=\"control_start_as_clone\"/>\n            <block type=\"control_create_clone_of\">\n                <value name=\"CLONE_OPTION\">\n                    <shadow type=\"control_create_clone_of_menu\"/>\n                </value>\n            </block>\n            <block type=\"control_delete_clones_of\">\n                <value name=\"CLONE_OPTION\">\n                    <shadow type=\"control_create_clone_of_menu\"/>\n                </value>\n            </block>\n            <block type=\"control_delete_this_clone\"/>\n        ", "\n        ").concat(_tw_lazy_scratch_blocks__WEBPACK_IMPORTED_MODULE_0__["default"].isNameUrMom() ? '<block type="your_mom"/>' : '', "\n        ").concat(categorySeparator, "\n    </category>\n    ");
 };
 const sensing = function sensing(isInitialSetup, isStage) {
   const name = translate('SENSING_ASK_TEXT', 'What\'s your name?');
@@ -46165,6 +46326,50 @@ const isBrowserSupported = () => isNewFunctionSupported() && isRendererSupported
 
 /***/ }),
 
+/***/ "./src/lib/tw-extension-gui-api.js":
+/*!*****************************************!*\
+  !*** ./src/lib/tw-extension-gui-api.js ***!
+  \*****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _tw_lazy_scratch_blocks__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./tw-lazy-scratch-blocks */ "./src/lib/tw-lazy-scratch-blocks.js");
+
+
+/**
+ * Implements Scratch.gui API for unsandboxed extensions.
+ * @param {any} Scratch window.Scratch, mutated in place.
+ */
+const implementGuiAPI = Scratch => {
+  Scratch.gui = {
+    /**
+     * Lazily get the internal ScratchBlocks object when it becomes available. It may never be
+     * available if, for example, the user never enters the editor.
+     *
+     * ScratchBlocks becoming available does not necessarily mean the user is in the editor due
+     * to getBlocklyEagerly() also existing.
+     *
+     * @returns {Promise<any>} Promise that may eventually resolve to ScratchBlocks
+     */
+    getBlockly: () => new Promise(resolve => _tw_lazy_scratch_blocks__WEBPACK_IMPORTED_MODULE_0__["default"].onLoaded(resolve)),
+    /**
+     * Get the internal ScratchBlocks object as soon as possible. This lets you access it even
+     * if the user never enters the editor.
+     *
+     * This method is VERY SLOW and will cause A LOT OF CPU AND NETWORK ACTIVITY because it
+     * downloads and evaluates all of scratch-blocks, a multi-megabyte JavaScript bundle.
+     *
+     * @returns {Promise<any>} Promise that will resolve to ScratchBlocks.
+     */
+    getBlocklyEagerly: () => _tw_lazy_scratch_blocks__WEBPACK_IMPORTED_MODULE_0__["default"].load()
+  };
+};
+/* harmony default export */ __webpack_exports__["default"] = (implementGuiAPI);
+
+/***/ }),
+
 /***/ "./src/lib/tw-filesystem-api.js":
 /*!**************************************!*\
   !*** ./src/lib/tw-filesystem-api.js ***!
@@ -46397,20 +46602,25 @@ const wasNameYourmom = () => {
   _WasNameYourmom = isNameUrMom();
   return old;
 };
+const callbacks = [];
 const isLoaded = () => !!_ScratchBlocks && isNameUrMom() === wasNameYourmom();
 const get = () => {
-  if (!isLoaded()) {
+  if (!_ScratchBlocks) {
     throw new Error('scratch-blocks is not loaded yet');
   }
   return _ScratchBlocks;
 };
 const load = () => {
   if (_ScratchBlocks && isNameUrMom() === wasNameYourmom()) {
-    return Promise.resolve();
+    return Promise.resolve(_ScratchBlocks);
   }
   _ScratchBlocks = null;
   return __webpack_require__.e(/*! import() | sb */ "sb").then(__webpack_require__.t.bind(null, /*! scratch-blocks */ "./node_modules/scratch-blocks/dist/vertical.js", 7)).then(m => {
     _ScratchBlocks = m.default;
+    for (const callback of callbacks) {
+      callback(_ScratchBlocks);
+    }
+    callbacks.length = 0;
     if (isNameUrMom()) {
       _ScratchBlocks.Blocks.your_mom = {
         init() {
@@ -46489,12 +46699,20 @@ const load = () => {
     return _ScratchBlocks;
   });
 };
+const onLoaded = callback => {
+  if (_ScratchBlocks) {
+    callback(_ScratchBlocks);
+  } else {
+    callbacks.push(callback);
+  }
+};
 /* harmony default export */ __webpack_exports__["default"] = ({
   get,
   isLoaded,
   isNameUrMom,
   wasNameYourmom,
-  load
+  load,
+  onLoaded
 });
 
 /***/ }),
@@ -48939,9 +49157,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _reducers_mic_indicator__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../reducers/mic-indicator */ "./src/reducers/mic-indicator.js");
 /* harmony import */ var _reducers_tw__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../reducers/tw */ "./src/reducers/tw.js");
 /* harmony import */ var _reducers_custom_stage_size__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../reducers/custom-stage-size */ "./src/reducers/custom-stage-size.js");
+/* harmony import */ var _tw_extension_gui_api__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./tw-extension-gui-api */ "./src/lib/tw-extension-gui-api.js");
 const _excluded = ["attachKeyboardEvents", "projectChanged", "shouldUpdateTargets", "shouldUpdateProjectChanged", "onBlockDragUpdate", "onGreenFlag", "onKeyDown", "onKeyUp", "onMicListeningUpdate", "onMonitorsUpdate", "onTargetsUpdate", "onProjectChanged", "onProjectRunStart", "onProjectRunStop", "onProjectSaved", "onRuntimeStarted", "onRuntimeStopped", "onTurboModeOff", "onTurboModeOn", "hasCloudVariables", "onHasCloudVariablesChanged", "onFramerateChanged", "onInterpolationChanged", "onCompilerOptionsChanged", "onRuntimeOptionsChanged", "onStageSizeChanged", "onCompileError", "onClearCompileErrors", "onShowExtensionAlert"];
 function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
 function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
 
 
 
@@ -48999,6 +49219,7 @@ const vmListenerHOC = function vmListenerHOC(WrappedComponent) {
       this.props.vm.on('COMPILE_ERROR', this.handleCompileError);
       this.props.vm.on('RUNTIME_STARTED', this.props.onClearCompileErrors);
       this.props.vm.on('STAGE_SIZE_CHANGED', this.props.onStageSizeChanged);
+      this.props.vm.on('CREATE_UNSANDBOXED_EXTENSION_API', _tw_extension_gui_api__WEBPACK_IMPORTED_MODULE_14__["default"]);
     }
     componentDidMount() {
       if (this.props.attachKeyboardEvents) {
