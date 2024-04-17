@@ -996,7 +996,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "/* make sure to keep these in sync with other constants,\ne.g. STAGE_DIMENSION_DEFAULTS in lib/screen-utils.js */\n\n/* layout contants from `layout-constants.js` */\n\n/* #E5F0FF */\n\n/* #E9F1FC */\n\n/* #D9E3F2 */\n\n/* 90% transparent version of motion-primary */\n\n/* #FFFFFF */\n\n/* 25% transparent version of ui-white */\n\n/* 25% transparent version of ui-white */\n\n/* 25% transparent version of ui-white */\n\n/* 15% transparent version of black */\n\n/* #575E75 */\n\n/* #00c3ff */\n\n/* #007bc7 */\n\n/* 35% transparent version of motion-primary */\n\n/* 15% transparent version of motion-primary */\n\n/* opt-in theme overrides */\n\n/*top bar color when in dark mode*/\n\n/* #00c3ff */\n\n/* #007bc7 */\n\n/* #CF63CF */\n\n/* #BD42BD */\n\n/* #FFAB19 */\n\n/* #FF8C1A */\n\n/* #0FBD8C */\n\n/* #0FBD8C */\n\n/* #FF8C1A */\n\n/* #FFB366 */\n\n/* #FF8C1A */\n\n/* 35% transparent version of extensions-primary */\n\n/* opaque version of extensions-transparent, on white bg */\n\n/* lighter than motion-primary */\n\n/*\n    Contains constants for the z-index values of elements that are part of the global stack context.\n    In other words, z-index values that are \"inside\" a component are not added here.\n    This prevents conflicts between identical z-index values in different components.\n*/\n\n/* Toolbox z-index: 40; set in scratch-blocks */\n\n/* tooltips should go over add buttons if they overlap */\n\n/* monitors go over add buttons */\n\n/* \"ask\" block text input goes above monitors */\n\n/* menu-bar should go over monitors, alerts and tutorials */\n\n/* tw: show below menu bar normally */\n\n/* Block drag z-index: 1000; default 50 is overriden in blocks.css */\n\n/* so it is draggable into other panes */\n\n/* in most interfaces, the context menu is always on top */\n\n.gui_page-wrapper_r7IhT {\n    height: 100%;\n}\n\n.gui_body-wrapper_1T2l7 {\n    height: calc(100% - 3rem);\n    background-color: var(--ui-primary, hsla(215, 100%, 95%, 1));\n}\n\n.gui_body-wrapper-playground_1Ez_c {\n    height: 100%;\n}\n\n.gui_body-wrapper_1T2l7 * {\n    box-sizing: border-box;\n}\n\n.gui_flex-wrapper_2AgdD {\n    display: flex;\n\n    /*\n        Make 2 columns:\n        a) for the blocks + workspace panes, and\n        b) for combined stage menu + stage + sprite/stage selectors\n    */\n    flex-direction: row;\n    height: 100%;\n\n    /*\n        Stop scrollbar popping in and out from scratch-blocks border issue\n        https://github.com/LLK/scratch-gui/issues/318\n    */\n    overflow: hidden;\n}\n\n.gui_editor-wrapper_WspaC {\n    /*\n        This is carefully balanced--  the minimum width at which the GUI will be displayed is 1024px.\n        At that size, the stage pane is 408px wide, with $space of padding to each side.\n        However, we must also add the border width to the stage pane. All-in-all, the stage pane's final width is\n        408px + ($space + $stage-standard-border-width * 2) (one border & padding per left/right side).\n\n        @todo This is in place to prevent \"doubling up\" of horizontal scrollbars in narrow windows, but there are likely\n        much better ways to solve that (e.g. undo #2124, remove this flex-basis entirely). However, they run their own\n        risks of breaking things, so let's just leave this as-is for the time being.\n    */\n    flex-basis: calc(1024px - 408px - ((0.5rem + 0.0625rem) * 2));\n    flex-grow: 1;\n    flex-shrink: 0;\n    position: relative;\n\n    display: flex;\n    flex-direction: column;\n}\n\n.gui_tab-list_3r8RB {\n    height: 2.75rem;\n    width: 250px; /* Match width of the toolbox */\n    display: flex;\n    align-items: flex-end;\n    flex-shrink: 0;\n\n    font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n    font-weight: 500;\n    font-size: 0.80rem;\n\n    /* Overrides for react-tabs styling */\n    margin: 0 !important;\n    border-bottom: 0 !important;\n}\n\n.gui_tab_3k_DV {\n    flex-grow: 1;\n    height: 80%;\n    margin-bottom: 0;\n\n    border-radius: 1rem 1rem 0 0;\n    border: 1px solid var(--ui-black-transparent, hsla(0, 0%, 0%, 0.15));\n\n    padding: 0.125rem 1.25rem 0;\n    font-size: 0.75rem;\n\n    background-color: var(--ui-tertiary, hsla(215, 50%, 90%, 1));\n    color: hsla(225, 15%, 40%, 0.75);\n\n    display: flex;\n    justify-content: center;\n    align-items: center;\n\n    -webkit-user-select: none;\n\n       -moz-user-select: none;\n\n        -ms-user-select: none;\n\n            user-select: none;\n    white-space: nowrap;\n}\n\n[theme=\"dark\"] .gui_tab_3k_DV {\n    color: var(--text-primary, hsla(225, 15%, 40%, 1));\n}\n\n[dir=\"ltr\"] .gui_tab_3k_DV {\n    margin-left: -0.5rem;\n}\n\n[dir=\"rtl\"] .gui_tab_3k_DV {\n    margin-right: -0.5rem;\n}\n\n[dir=\"ltr\"] .gui_tab_3k_DV:nth-of-type(1) {\n    margin-left: 0;\n}\n\n[dir=\"rtl\"] .gui_tab_3k_DV:nth-of-type(1) {\n    margin-right: 0;\n}\n\n/* Use z-indices to force left-on-top for tabs */\n\n.gui_tab_3k_DV:nth-of-type(1) {\n    z-index: 3;\n}\n\n.gui_tab_3k_DV:nth-of-type(2) {\n    z-index: 2;\n}\n\n.gui_tab_3k_DV:nth-of-type(3) {\n    z-index: 1;\n}\n\n.gui_tab_3k_DV:hover {\n  background-color: var(--ui-primary, hsla(215, 100%, 95%, 1));\n}\n\n[theme=\"dark\"] .gui_tab_3k_DV:hover {\n    background-color: var(--ui-secondary, hsla(215, 75%, 95%, 1));\n}\n\n.gui_tab_3k_DV.gui_is-selected_3nXL3 {\n    height: 90%;\n    color: hsla(244, 23%, 48%, 1);\n    background-color: hsla(0, 100%, 100%, 1);\n    z-index: 4; /* Make sure selected is always above */\n}\n\n[theme=\"dark\"] .gui_tab_3k_DV.gui_is-selected_3nXL3 {\n    background-color: var(--ui-secondary, hsla(215, 75%, 95%, 1));\n}\n\n.gui_tab_3k_DV img {\n    width: 1.375rem;\n    filter: grayscale(100%);\n}\n\n[dir=\"ltr\"] .gui_tab_3k_DV img {\n    margin-right: 0.125rem;\n}\n\n[dir=\"rtl\"] .gui_tab_3k_DV img {\n    margin-left: 0.125rem;\n}\n\n/* mirror blocks and sound tab icons */\n\n[dir=\"rtl\"] .gui_tab_3k_DV:nth-of-type(1) img {\n    transform: scaleX(-1);\n}\n\n[dir=\"rtl\"] .gui_tab_3k_DV:nth-of-type(3) img {\n    transform: scaleX(-1);\n}\n\n.gui_tab_3k_DV.gui_is-selected_3nXL3 img {\n    filter: none;\n}\n\n/* Tab style overrides from react-tabs */\n\n.gui_tab_3k_DV.gui_is-selected_3nXL3:after {\n    display: none;\n}\n\n.gui_tab_3k_DV.gui_is-selected_3nXL3:focus {\n    outline: none;\n    box-shadow: none;\n    border-color: var(--ui-black-transparent, hsla(0, 0%, 0%, 0.15));\n}\n\n.gui_tab_3k_DV.gui_is-selected_3nXL3:focus:after {\n    display: none;\n}\n\n/* Body of the tabs */\n\n.gui_tabs_3Cns4 {\n    position: relative;\n    flex-grow: 1;\n    display: flex;\n    flex-direction: column;\n}\n\n.gui_tab-panel_12yVw {\n    position: relative;\n    flex-grow: 1;\n    display: none;\n}\n\n.gui_tab-panel_12yVw.gui_is-selected_3nXL3 {\n    display: flex;\n}\n\n.gui_blocks-wrapper_oRY_r {\n    flex-grow: 1;\n    position: relative;\n}\n\n.gui_stage-and-target-wrapper_2TUbW {\n    /*\n        Makes rows for children:\n          1) stage menu\n          2) stage\n          3) sprite/stage selectors\n        Only reason we need this, is so .targetWrapper, which holds the selectors,\n        goes to full vertical height of the window\n    */\n    display: flex;\n    flex-direction: column;\n    /* pad entire wrapper to the left and right; allow children to fill width */\n    padding-left: 0.5rem;\n    padding-right: 0.5rem;\n\n    /* this will only ever be as wide as the stage */\n    flex-basis: 0;\n}\n\n.gui_target-wrapper_2YpM2 {\n    display: flex;\n    flex-grow: 1;\n    flex-basis: 0;\n\n    padding-top: 0.5rem;\n    min-height: 0; /* this makes it work in Firefox */\n\n    /*\n        For making the sprite-selector a scrollable pane\n        @todo: Not working in Safari\n    */\n    /* TODO this also breaks the thermometer menu */\n    /* overflow: hidden; */\n}\n\n.gui_extension-button-container_sM98M {\n    width: 3.75rem;\n    height: 3.25rem;\n    position: absolute;\n    bottom: 0;\n    left: 0;\n    right: 0;\n    z-index: 42;\n    background: hsla(244, 23%, 48%, 1);\n\n    border: 1px solid hsla(244, 23%, 48%, 1);\n    box-sizing: content-box; /* To match scratch-block vertical toolbox borders */\n}\n\n.gui_extension-button-container_sM98M:before {\n    content: \"\";\n    position: absolute;\n    top: calc(calc(-1 * 15px) - 1px);\n    left: -1px;\n    background: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.15));\n    height: 15px;\n    width: calc(100% + 0.5px);\n}\n\n.gui_extension-button_3Z58M {\n    background: none;\n    border: none;\n    outline: none;\n    width: 100%;\n    height: 100%;\n    cursor: pointer;\n}\n\n.gui_extension-button-icon_3lDFf {\n    width: 1.75rem;\n    height: 1.75rem;\n}\n\n[dir=\"rtl\"] .gui_extension-button-icon_3lDFf {\n    transform: scaleX(-1);\n}\n\n.gui_extension-button_3Z58M > div {\n    margin-top: 0;\n}\n\n/* Sprite Selection Watermark */\n\n.gui_watermark_3oGgV {\n    position: absolute;\n    top: 1.25rem;\n    pointer-events: none;\n}\n\n[dir=\"ltr\"] .gui_watermark_3oGgV {\n    right: 1.25rem;\n}\n\n[dir=\"rtl\"] .gui_watermark_3oGgV {\n    left: 1.25rem;\n}\n\n/* Menu */\n\n.gui_menu-bar-position_6ejza {\n    position: relative;\n    z-index: 491;\n}\n\n/* Alerts */\n\n.gui_alerts-container_2cnr7 {\n    display: flex;\n    justify-content: center;\n    width: 100%;\n    z-index: 490;\n    position: absolute;\n    margin-top: 53px;\n    pointer-events: none;\n}\n\n/*\n    Make the (background) page not scrollable when modals are open\n    This CSS class is automatically added to the body when react-modal is open\n*/\n\n.ReactModal__Body--open {\n    overflow: hidden;\n}\n\n/* tw: tw: when window is fullscreen, put a solid white background behind the stage */\n\n.gui_fullscreen-background_2RW_a {\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n    /* if the user-specified background color can't be understood by the browser, default to white */\n    background-color: white;\n}\n", ""]);
+exports.push([module.i, "/* make sure to keep these in sync with other constants,\ne.g. STAGE_DIMENSION_DEFAULTS in lib/screen-utils.js */\n\n/* layout contants from `layout-constants.js` */\n\n/* #E5F0FF */\n\n/* #E9F1FC */\n\n/* #D9E3F2 */\n\n/* 90% transparent version of motion-primary */\n\n/* #FFFFFF */\n\n/* 25% transparent version of ui-white */\n\n/* 25% transparent version of ui-white */\n\n/* 25% transparent version of ui-white */\n\n/* 15% transparent version of black */\n\n/* #575E75 */\n\n/* #00c3ff */\n\n/* #007bc7 */\n\n/* 35% transparent version of motion-primary */\n\n/* 15% transparent version of motion-primary */\n\n/* opt-in theme overrides */\n\n/*top bar color when in dark mode*/\n\n/* #00c3ff */\n\n/* #007bc7 */\n\n/* #CF63CF */\n\n/* #BD42BD */\n\n/* #FFAB19 */\n\n/* #FF8C1A */\n\n/* #0FBD8C */\n\n/* #0FBD8C */\n\n/* #FF8C1A */\n\n/* #FFB366 */\n\n/* #FF8C1A */\n\n/* 35% transparent version of extensions-primary */\n\n/* opaque version of extensions-transparent, on white bg */\n\n/* lighter than motion-primary */\n\n/*\n    Contains constants for the z-index values of elements that are part of the global stack context.\n    In other words, z-index values that are \"inside\" a component are not added here.\n    This prevents conflicts between identical z-index values in different components.\n*/\n\n/* Toolbox z-index: 40; set in scratch-blocks */\n\n/* tooltips should go over add buttons if they overlap */\n\n/* monitors go over add buttons */\n\n/* \"ask\" block text input goes above monitors */\n\n/* menu-bar should go over monitors, alerts and tutorials */\n\n/* tw: show below menu bar normally */\n\n/* Block drag z-index: 1000; default 50 is overriden in blocks.css */\n\n/* so it is draggable into other panes */\n\n/* in most interfaces, the context menu is always on top */\n\n.gui_page-wrapper_r7IhT {\n    height: 100%;\n}\n\n.gui_body-wrapper_1T2l7 {\n    height: calc(100% - 3rem);\n    background-color: var(--ui-primary, hsla(215, 100%, 95%, 1));\n}\n\n.gui_body-wrapper-playground_1Ez_c {\n    height: 100%;\n}\n\n.gui_body-wrapper_1T2l7 * {\n    box-sizing: border-box;\n}\n\n.gui_flex-wrapper_2AgdD {\n    display: flex;\n\n    /*\n        Make 2 columns:\n        a) for the blocks + workspace panes, and\n        b) for combined stage menu + stage + sprite/stage selectors\n    */\n    flex-direction: row;\n    height: 100%;\n\n    /*\n        Stop scrollbar popping in and out from scratch-blocks border issue\n        https://github.com/LLK/scratch-gui/issues/318\n    */\n    overflow: hidden;\n}\n\n.gui_editor-wrapper_WspaC {\n    /*\n        This is carefully balanced--  the minimum width at which the GUI will be displayed is 1024px.\n        At that size, the stage pane is 408px wide, with $space of padding to each side.\n        However, we must also add the border width to the stage pane. All-in-all, the stage pane's final width is\n        408px + ($space + $stage-standard-border-width * 2) (one border & padding per left/right side).\n\n        @todo This is in place to prevent \"doubling up\" of horizontal scrollbars in narrow windows, but there are likely\n        much better ways to solve that (e.g. undo #2124, remove this flex-basis entirely). However, they run their own\n        risks of breaking things, so let's just leave this as-is for the time being.\n    */\n    flex-basis: calc(1024px - 408px - ((0.5rem + 0.0625rem) * 2));\n    flex-grow: 1;\n    flex-shrink: 0;\n    position: relative;\n\n    display: flex;\n    flex-direction: column;\n}\n\n.gui_tab-list_3r8RB {\n    height: 2.75rem;\n    width: 250px; /* Match width of the toolbox */\n    display: flex;\n    align-items: flex-end;\n    flex-shrink: 0;\n\n    font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n    font-weight: 500;\n    font-size: 0.80rem;\n\n    /* Overrides for react-tabs styling */\n    margin: 0 !important;\n    border-bottom: 0 !important;\n}\n\n.gui_tab_3k_DV {\n    flex-grow: 1;\n    height: 80%;\n    margin-bottom: 0;\n\n    border-radius: 1rem 1rem 0 0;\n    border: 1px solid var(--ui-black-transparent, hsla(0, 0%, 0%, 0.15));\n\n    padding: 0.125rem 1.25rem 0;\n    font-size: 0.75rem;\n\n    background-color: var(--ui-tertiary, hsla(215, 50%, 90%, 1));\n    color: hsla(225, 15%, 40%, 0.75);\n\n    display: flex;\n    justify-content: center;\n    align-items: center;\n\n    -webkit-user-select: none;\n\n       -moz-user-select: none;\n\n        -ms-user-select: none;\n\n            user-select: none;\n    white-space: nowrap;\n}\n\n[theme=\"dark\"] .gui_tab_3k_DV {\n    color: var(--text-primary, hsla(225, 15%, 40%, 1));\n}\n\n.gui_tab_3k_DV > div {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n}\n\n.gui_tab-disabled_1U6BP {\n    display: none;\n}\n\n.gui_add-tab-button_HyJUX {\n    margin: 8px 0;\n    margin-left: 4px;\n    padding: 4px;\n    font-size: larger;\n\n    background: white;\n    border: 1px solid rgba(0,0,0,.15);\n    border-radius: 4px;\n\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n    justify-content: center;\n\n    transform: translateY(6px);\n}\n\n[dir=\"rtl\"] .gui_add-tab-button_HyJUX {\n    margin-left: initial;\n    margin-right: 4px;\n}\n\n[theme=\"dark\"] .gui_add-tab-button_HyJUX {\n    background: none;\n    border-color: rgba(255,255,255,.15);\n}\n\n[theme=\"dark\"] .gui_add-tab-button_HyJUX img {\n    filter: invert(1);\n}\n\n.gui_add-tab-button-disabled_2PdXZ {\n    cursor: not-allowed;\n    opacity: 0.5;\n}\n\n.gui_tab-addition-item_3fuly {\n    display: flex;\n    align-items: center;\n}\n\n.gui_tab-addition-item_3fuly img {\n    width: 1.375rem;\n}\n\n[dir=\"ltr\"] .gui_tab_3k_DV {\n    margin-left: -0.5rem;\n}\n\n[dir=\"rtl\"] .gui_tab_3k_DV {\n    margin-right: -0.5rem;\n}\n\n[dir=\"ltr\"] .gui_tab_3k_DV:nth-of-type(1) {\n    margin-left: 0;\n}\n\n[dir=\"rtl\"] .gui_tab_3k_DV:nth-of-type(1) {\n    margin-right: 0;\n}\n\n/* Use z-indices to force left-on-top for tabs */\n\n.gui_tab_3k_DV:nth-of-type(1) {\n    z-index: 3;\n}\n\n.gui_tab_3k_DV:nth-of-type(2) {\n    z-index: 2;\n}\n\n.gui_tab_3k_DV:nth-of-type(3) {\n    z-index: 1;\n}\n\n.gui_tab_3k_DV:hover {\n  background-color: var(--ui-primary, hsla(215, 100%, 95%, 1));\n}\n\n[theme=\"dark\"] .gui_tab_3k_DV:hover {\n    background-color: var(--ui-secondary, hsla(215, 75%, 95%, 1));\n}\n\n.gui_tab_3k_DV.gui_is-selected_3nXL3 {\n    height: 90%;\n    color: hsla(244, 23%, 48%, 1);\n    background-color: hsla(0, 100%, 100%, 1);\n    z-index: 4; /* Make sure selected is always above */\n}\n\n[theme=\"dark\"] .gui_tab_3k_DV.gui_is-selected_3nXL3 {\n    background-color: var(--ui-secondary, hsla(215, 75%, 95%, 1));\n}\n\n.gui_tab_3k_DV img {\n    width: 1.375rem;\n    filter: grayscale(100%);\n}\n\n[dir=\"ltr\"] .gui_tab_3k_DV img {\n    margin-right: 0.125rem;\n}\n\n[dir=\"rtl\"] .gui_tab_3k_DV img {\n    margin-left: 0.125rem;\n}\n\n/* mirror blocks and sound tab icons */\n\n[dir=\"rtl\"] .gui_tab_3k_DV:nth-of-type(1) img {\n    transform: scaleX(-1);\n}\n\n[dir=\"rtl\"] .gui_tab_3k_DV:nth-of-type(3) img {\n    transform: scaleX(-1);\n}\n\n.gui_tab_3k_DV.gui_is-selected_3nXL3 img {\n    filter: none;\n}\n\n/* Tab style overrides from react-tabs */\n\n.gui_tab_3k_DV.gui_is-selected_3nXL3:after {\n    display: none;\n}\n\n.gui_tab_3k_DV.gui_is-selected_3nXL3:focus {\n    outline: none;\n    box-shadow: none;\n    border-color: var(--ui-black-transparent, hsla(0, 0%, 0%, 0.15));\n}\n\n.gui_tab_3k_DV.gui_is-selected_3nXL3:focus:after {\n    display: none;\n}\n\n/* Body of the tabs */\n\n.gui_tabs_3Cns4 {\n    position: relative;\n    flex-grow: 1;\n    display: flex;\n    flex-direction: column;\n}\n\n.gui_tab-panel_12yVw {\n    position: relative;\n    flex-grow: 1;\n    display: none;\n}\n\n.gui_tab-panel_12yVw.gui_is-selected_3nXL3 {\n    display: flex;\n}\n\n.gui_blocks-wrapper_oRY_r {\n    flex-grow: 1;\n    position: relative;\n}\n\n.gui_stage-and-target-wrapper_2TUbW {\n    /*\n        Makes rows for children:\n          1) stage menu\n          2) stage\n          3) sprite/stage selectors\n        Only reason we need this, is so .targetWrapper, which holds the selectors,\n        goes to full vertical height of the window\n    */\n    display: flex;\n    flex-direction: column;\n    /* pad entire wrapper to the left and right; allow children to fill width */\n    padding-left: 0.5rem;\n    padding-right: 0.5rem;\n\n    /* this will only ever be as wide as the stage */\n    flex-basis: 0;\n}\n\n.gui_target-wrapper_2YpM2 {\n    display: flex;\n    flex-grow: 1;\n    flex-basis: 0;\n\n    padding-top: 0.5rem;\n    min-height: 0; /* this makes it work in Firefox */\n\n    /*\n        For making the sprite-selector a scrollable pane\n        @todo: Not working in Safari\n    */\n    /* TODO this also breaks the thermometer menu */\n    /* overflow: hidden; */\n}\n\n.gui_extension-button-container_sM98M {\n    width: 3.75rem;\n    height: 3.25rem;\n    position: absolute;\n    bottom: 0;\n    left: 0;\n    right: 0;\n    z-index: 42;\n    background: hsla(244, 23%, 48%, 1);\n\n    border: 1px solid hsla(244, 23%, 48%, 1);\n    box-sizing: content-box; /* To match scratch-block vertical toolbox borders */\n}\n\n.gui_extension-button-container_sM98M:before {\n    content: \"\";\n    position: absolute;\n    top: calc(calc(-1 * 15px) - 1px);\n    left: -1px;\n    background: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.15));\n    height: 15px;\n    width: calc(100% + 0.5px);\n}\n\n.gui_extension-button_3Z58M {\n    background: none;\n    border: none;\n    outline: none;\n    width: 100%;\n    height: 100%;\n    cursor: pointer;\n}\n\n.gui_extension-button-icon_3lDFf {\n    width: 1.75rem;\n    height: 1.75rem;\n}\n\n[dir=\"rtl\"] .gui_extension-button-icon_3lDFf {\n    transform: scaleX(-1);\n}\n\n.gui_extension-button_3Z58M > div {\n    margin-top: 0;\n}\n\n/* Sprite Selection Watermark */\n\n.gui_watermark_3oGgV {\n    position: absolute;\n    top: 1.25rem;\n    pointer-events: none;\n}\n\n[dir=\"ltr\"] .gui_watermark_3oGgV {\n    right: 1.25rem;\n}\n\n[dir=\"rtl\"] .gui_watermark_3oGgV {\n    left: 1.25rem;\n}\n\n/* Menu */\n\n.gui_menu-bar-position_6ejza {\n    position: relative;\n    z-index: 491;\n}\n\n/* Alerts */\n\n.gui_alerts-container_2cnr7 {\n    display: flex;\n    justify-content: center;\n    width: 100%;\n    z-index: 490;\n    position: absolute;\n    margin-top: 53px;\n    pointer-events: none;\n}\n\n/*\n    Make the (background) page not scrollable when modals are open\n    This CSS class is automatically added to the body when react-modal is open\n*/\n\n.ReactModal__Body--open {\n    overflow: hidden;\n}\n\n/* tw: tw: when window is fullscreen, put a solid white background behind the stage */\n\n.gui_fullscreen-background_2RW_a {\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n    /* if the user-specified background color can't be understood by the browser, default to white */\n    background-color: white;\n}\n", ""]);
 
 // exports
 exports.locals = {
@@ -1013,6 +1013,14 @@ exports.locals = {
 	"tab-list": "gui_tab-list_3r8RB",
 	"tabList": "gui_tab-list_3r8RB",
 	"tab": "gui_tab_3k_DV",
+	"tab-disabled": "gui_tab-disabled_1U6BP",
+	"tabDisabled": "gui_tab-disabled_1U6BP",
+	"add-tab-button": "gui_add-tab-button_HyJUX",
+	"addTabButton": "gui_add-tab-button_HyJUX",
+	"add-tab-button-disabled": "gui_add-tab-button-disabled_2PdXZ",
+	"addTabButtonDisabled": "gui_add-tab-button-disabled_2PdXZ",
+	"tab-addition-item": "gui_tab-addition-item_3fuly",
+	"tabAdditionItem": "gui_tab-addition-item_3fuly",
 	"is-selected": "gui_is-selected_3nXL3",
 	"isSelected": "gui_is-selected_3nXL3",
 	"tabs": "gui_tabs_3Cns4",
@@ -2986,6 +2994,40 @@ exports.locals = {
 	"mustChange": "username-modal_must-change_3SKT6",
 	"reset-link": "username-modal_reset-link_37lrN",
 	"resetLink": "username-modal_reset-link_37lrN"
+};
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/components/variables-tab/variables-tab.css":
+/*!***************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--5-1!./node_modules/postcss-loader/src??postcss!./src/components/variables-tab/variables-tab.css ***!
+  \***************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var escape = __webpack_require__(/*! ../../../node_modules/css-loader/lib/url/escape.js */ "./node_modules/css-loader/lib/url/escape.js");
+exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "/* #E5F0FF */ /* #E9F1FC */ /* #D9E3F2 */ /* 90% transparent version of motion-primary */ /* #FFFFFF */ /* 25% transparent version of ui-white */ /* 25% transparent version of ui-white */ /* 25% transparent version of ui-white */ /* 15% transparent version of black */ /* #575E75 */ /* #00c3ff */ /* #007bc7 */ /* 35% transparent version of motion-primary */ /* 15% transparent version of motion-primary */ /* opt-in theme overrides */ /*top bar color when in dark mode*/ /* #00c3ff */ /* #007bc7 */ /* #CF63CF */ /* #BD42BD */ /* #FFAB19 */ /* #FF8C1A */ /* #0FBD8C */ /* #0FBD8C */ /* #FF8C1A */ /* #FFB366 */ /* #FF8C1A */ /* 35% transparent version of extensions-primary */ /* opaque version of extensions-transparent, on white bg */ /* lighter than motion-primary */ /* make sure to keep these in sync with other constants,\ne.g. STAGE_DIMENSION_DEFAULTS in lib/screen-utils.js */ /* layout contants from `layout-constants.js` */ .variables-tab_editor-wrapper_3efRe {\n    display: flex;\n    flex-direction: column;\n    flex-grow: 1;\n} .variables-tab_editor-container_1sORY {\n    position: absolute;\n    left: 0;\n    top: 0;\n    width: 100%;\n    height: 100%;\n    overflow: auto;\n    \n    background: white;\n    border-top-right-radius: 0.5rem;\n    border-bottom-right-radius: 0.5rem;\n    border: 1px solid var(--ui-black-transparent, hsla(0, 0%, 0%, 0.15));\n    padding: calc(2 * 0.5rem);\n} [theme=\"dark\"] .variables-tab_editor-container_1sORY {\n    background: var(--ui-primary, hsla(215, 100%, 95%, 1));\n} .variables-tab_search-bar_3Bebc {\n    background-image: url(" + escape(__webpack_require__(/*! ./icon--search.svg */ "./src/components/variables-tab/icon--search.svg")) + ");\n    width: 25%;\n    margin-bottom: 4px;\n    padding: 8px;\n    padding-right: 32px; /* for the text to not overlap the image */\n    border-radius: 4px;\n    background-repeat: no-repeat;\n    background-size: 18px 18px;\n    background-position: calc(100% - 7px) center;\n    font-size: 0.75rem;\n} .variables-tab_heading_20EV3 {\n    display: block;\n    font-weight: bold;\n    font-size: large;\n    margin-top: 6px;\n    margin-bottom: 6px;\n} .variables-tab_editor-container_1sORY * > input {\n    background: none;\n    border: none;\n    padding: 8px;\n    width: 100%;\n    height: 100%;\n} .variables-tab_variable-name_N4-cG {\n    word-break: break-word;\n} .variables-tab_variable-value_1lKGz {\n    width: 75%;\n} .variables-tab_variable-value_1lKGz > textarea {\n    background: none;\n    border: none;\n    padding: 8px;\n    width: 100%;\n    min-height: 36px;\n    height: calc(36px * 2);\n    line-height: 1em;\n    resize: vertical;\n} .variables-tab_value-too-big_2EbIc {\n    cursor: pointer;\n    font: inherit;\n    font-style: italic;\n    color: inherit;\n    background: none;\n    border: none;\n    margin: 0;\n    padding: 8px;\n    opacity: 0.8;\n    width: 100%;\n    text-align: left;\n} .variables-tab_value-too-big_2EbIc:hover {\n    text-decoration: underline;\n} .variables-tab_editor-container_1sORY table {\n    border-radius: 5px;\n    border-collapse: collapse;\n    width: 100%;\n} .variables-tab_editor-container_1sORY td {\n    border: 1px solid rgba(0, 0, 0, 0.15);\n    text-align: left;\n} [theme=\"dark\"] .variables-tab_editor-container_1sORY td {\n    border-color: #333;\n}", ""]);
+
+// exports
+exports.locals = {
+	"editor-wrapper": "variables-tab_editor-wrapper_3efRe",
+	"editorWrapper": "variables-tab_editor-wrapper_3efRe",
+	"editor-container": "variables-tab_editor-container_1sORY",
+	"editorContainer": "variables-tab_editor-container_1sORY",
+	"search-bar": "variables-tab_search-bar_3Bebc",
+	"searchBar": "variables-tab_search-bar_3Bebc",
+	"heading": "variables-tab_heading_20EV3",
+	"variable-name": "variables-tab_variable-name_N4-cG",
+	"variableName": "variables-tab_variable-name_N4-cG",
+	"variable-value": "variables-tab_variable-value_1lKGz",
+	"variableValue": "variables-tab_variable-value_1lKGz",
+	"value-too-big": "variables-tab_value-too-big_2EbIc",
+	"valueTooBig": "variables-tab_value-too-big_2EbIc"
 };
 
 /***/ }),
@@ -8830,6 +8872,17 @@ GreenFlagComponent.defaultProps = {
 
 /***/ }),
 
+/***/ "./src/components/gui/add-tab.svg":
+/*!****************************************!*\
+  !*** ./src/components/gui/add-tab.svg ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/assets/622321b437cc79dd9ed885540a94505a.svg";
+
+/***/ }),
+
 /***/ "./src/components/gui/gui.css":
 /*!************************************!*\
   !*** ./src/components/gui/gui.css ***!
@@ -8877,60 +8930,72 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var react_intl__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-intl */ "./node_modules/react-intl/lib/index.es.js");
-/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
-/* harmony import */ var react_responsive__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-responsive */ "./node_modules/react-responsive/dist/react-responsive.js");
-/* harmony import */ var react_responsive__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react_responsive__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var react_tabs__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-tabs */ "./node_modules/react-tabs/esm/index.js");
-/* harmony import */ var react_tabs_style_react_tabs_css__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-tabs/style/react-tabs.css */ "./node_modules/react-tabs/style/react-tabs.css");
-/* harmony import */ var react_tabs_style_react_tabs_css__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react_tabs_style_react_tabs_css__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var scratch_vm__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! scratch-vm */ "./node_modules/scratch-vm/src/index.js");
-/* harmony import */ var scratch_vm__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(scratch_vm__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var scratch_render__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! scratch-render */ "./node_modules/scratch-render/src/index.js");
-/* harmony import */ var scratch_render__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(scratch_render__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var _containers_blocks_jsx__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../containers/blocks.jsx */ "./src/containers/blocks.jsx");
-/* harmony import */ var _containers_costume_tab_jsx__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../../containers/costume-tab.jsx */ "./src/containers/costume-tab.jsx");
-/* harmony import */ var _containers_target_pane_jsx__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../../containers/target-pane.jsx */ "./src/containers/target-pane.jsx");
-/* harmony import */ var _containers_sound_tab_jsx__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../../containers/sound-tab.jsx */ "./src/containers/sound-tab.jsx");
-/* harmony import */ var _containers_files_tab_jsx__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../../containers/files-tab.jsx */ "./src/containers/files-tab.jsx");
-/* harmony import */ var _containers_stage_wrapper_jsx__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../../containers/stage-wrapper.jsx */ "./src/containers/stage-wrapper.jsx");
-/* harmony import */ var _loader_loader_jsx__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../loader/loader.jsx */ "./src/components/loader/loader.jsx");
-/* harmony import */ var _box_box_jsx__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../box/box.jsx */ "./src/components/box/box.jsx");
-/* harmony import */ var _menu_bar_menu_bar_jsx__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ../menu-bar/menu-bar.jsx */ "./src/components/menu-bar/menu-bar.jsx");
-/* harmony import */ var _containers_costume_library_jsx__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ../../containers/costume-library.jsx */ "./src/containers/costume-library.jsx");
-/* harmony import */ var _containers_backdrop_library_jsx__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ../../containers/backdrop-library.jsx */ "./src/containers/backdrop-library.jsx");
-/* harmony import */ var _containers_watermark_jsx__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ../../containers/watermark.jsx */ "./src/containers/watermark.jsx");
-/* harmony import */ var _containers_backpack_jsx__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ../../containers/backpack.jsx */ "./src/containers/backpack.jsx");
-/* harmony import */ var _browser_modal_browser_modal_jsx__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ../browser-modal/browser-modal.jsx */ "./src/components/browser-modal/browser-modal.jsx");
-/* harmony import */ var _containers_tips_library_jsx__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ../../containers/tips-library.jsx */ "./src/containers/tips-library.jsx");
-/* harmony import */ var _containers_cards_jsx__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ../../containers/cards.jsx */ "./src/containers/cards.jsx");
-/* harmony import */ var _containers_alerts_jsx__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ../../containers/alerts.jsx */ "./src/containers/alerts.jsx");
-/* harmony import */ var _containers_drag_layer_jsx__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ../../containers/drag-layer.jsx */ "./src/containers/drag-layer.jsx");
-/* harmony import */ var _containers_connection_modal_jsx__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ../../containers/connection-modal.jsx */ "./src/containers/connection-modal.jsx");
-/* harmony import */ var _telemetry_modal_telemetry_modal_jsx__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ../telemetry-modal/telemetry-modal.jsx */ "./src/components/telemetry-modal/telemetry-modal.jsx");
-/* harmony import */ var _containers_tw_username_modal_jsx__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ../../containers/tw-username-modal.jsx */ "./src/containers/tw-username-modal.jsx");
-/* harmony import */ var _containers_tw_settings_modal_jsx__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ../../containers/tw-settings-modal.jsx */ "./src/containers/tw-settings-modal.jsx");
-/* harmony import */ var _containers_tw_security_manager_jsx__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ../../containers/tw-security-manager.jsx */ "./src/containers/tw-security-manager.jsx");
-/* harmony import */ var _containers_tw_custom_extension_modal_jsx__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ../../containers/tw-custom-extension-modal.jsx */ "./src/containers/tw-custom-extension-modal.jsx");
-/* harmony import */ var _containers_tw_restore_point_manager_jsx__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ../../containers/tw-restore-point-manager.jsx */ "./src/containers/tw-restore-point-manager.jsx");
-/* harmony import */ var _containers_tw_fonts_modal_jsx__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ../../containers/tw-fonts-modal.jsx */ "./src/containers/tw-fonts-modal.jsx");
-/* harmony import */ var _containers_pm_extension_modals_jsx__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ../../containers/pm-extension-modals.jsx */ "./src/containers/pm-extension-modals.jsx");
-/* harmony import */ var _lib_layout_constants__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ../../lib/layout-constants */ "./src/lib/layout-constants.js");
-/* harmony import */ var _lib_screen_utils__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ../../lib/screen-utils */ "./src/lib/screen-utils.js");
-/* harmony import */ var _lib_tw_environment_support_prober__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! ../../lib/tw-environment-support-prober */ "./src/lib/tw-environment-support-prober.js");
-/* harmony import */ var _gui_css__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ./gui.css */ "./src/components/gui/gui.css");
-/* harmony import */ var _gui_css__WEBPACK_IMPORTED_MODULE_41___default = /*#__PURE__*/__webpack_require__.n(_gui_css__WEBPACK_IMPORTED_MODULE_41__);
-/* harmony import */ var _icon_extensions_svg__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! ./icon--extensions.svg */ "./src/components/gui/icon--extensions.svg");
-/* harmony import */ var _icon_extensions_svg__WEBPACK_IMPORTED_MODULE_42___default = /*#__PURE__*/__webpack_require__.n(_icon_extensions_svg__WEBPACK_IMPORTED_MODULE_42__);
-/* harmony import */ var _icon_code_svg__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(/*! ./icon--code.svg */ "./src/components/gui/icon--code.svg");
-/* harmony import */ var _icon_code_svg__WEBPACK_IMPORTED_MODULE_43___default = /*#__PURE__*/__webpack_require__.n(_icon_code_svg__WEBPACK_IMPORTED_MODULE_43__);
-/* harmony import */ var _icon_costumes_svg__WEBPACK_IMPORTED_MODULE_44__ = __webpack_require__(/*! ./icon--costumes.svg */ "./src/components/gui/icon--costumes.svg");
-/* harmony import */ var _icon_costumes_svg__WEBPACK_IMPORTED_MODULE_44___default = /*#__PURE__*/__webpack_require__.n(_icon_costumes_svg__WEBPACK_IMPORTED_MODULE_44__);
-/* harmony import */ var _icon_sounds_svg__WEBPACK_IMPORTED_MODULE_45__ = __webpack_require__(/*! ./icon--sounds.svg */ "./src/components/gui/icon--sounds.svg");
-/* harmony import */ var _icon_sounds_svg__WEBPACK_IMPORTED_MODULE_45___default = /*#__PURE__*/__webpack_require__.n(_icon_sounds_svg__WEBPACK_IMPORTED_MODULE_45__);
-/* harmony import */ var _icon_files_svg__WEBPACK_IMPORTED_MODULE_46__ = __webpack_require__(/*! ./icon--files.svg */ "./src/components/gui/icon--files.svg");
-/* harmony import */ var _icon_files_svg__WEBPACK_IMPORTED_MODULE_46___default = /*#__PURE__*/__webpack_require__.n(_icon_files_svg__WEBPACK_IMPORTED_MODULE_46__);
-const _excluded = ["accountNavOpen", "activeTabIndex", "alertsVisible", "authorId", "authorThumbnailUrl", "authorUsername", "basePath", "backdropLibraryVisible", "backpackHost", "backpackVisible", "blocksTabVisible", "cardsVisible", "canChangeLanguage", "canCreateNew", "canEditTitle", "canManageFiles", "canRemix", "canSave", "canCreateCopy", "canShare", "canUseCloud", "children", "connectionModalVisible", "costumeLibraryVisible", "costumesTabVisible", "customStageSize", "enableCommunity", "intl", "isCreating", "isDark", "isEmbedded", "isFullScreen", "isPlayerOnly", "isRtl", "isShared", "isWindowFullScreen", "isTelemetryEnabled", "loading", "logo", "renderLogin", "onClickAbout", "onClickAccountNav", "onCloseAccountNav", "onClickAddonSettings", "onClickNewWindow", "onClickTheme", "onClickPackager", "onLogOut", "onOpenRegistration", "onToggleLoginOpen", "onActivateCostumesTab", "onActivateSoundsTab", "onActivateFilesTab", "onActivateTab", "onClickLogo", "onExtensionButtonClick", "onProjectTelemetryEvent", "onRequestCloseBackdropLibrary", "onRequestCloseCostumeLibrary", "onRequestCloseTelemetryModal", "onSeeCommunity", "onShare", "onShowPrivacyPolicy", "onStartSelectingFileUpload", "onTelemetryModalCancel", "onTelemetryModalOptIn", "onTelemetryModalOptOut", "showComingSoon", "soundsTabVisible", "filesTabVisible", "stageSizeMode", "targetIsStage", "telemetryModalVisible", "tipsLibraryVisible", "usernameModalVisible", "settingsModalVisible", "customExtensionModalVisible", "fontsModalVisible", "isPlayground", "vm"];
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var react_draggable__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-draggable */ "./node_modules/react-draggable/dist/react-draggable.js");
+/* harmony import */ var react_draggable__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react_draggable__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var react_contextmenu__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-contextmenu */ "./node_modules/react-contextmenu/es6/index.js");
+/* harmony import */ var _context_menu_context_menu_jsx__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../context-menu/context-menu.jsx */ "./src/components/context-menu/context-menu.jsx");
+/* harmony import */ var react_intl__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-intl */ "./node_modules/react-intl/lib/index.es.js");
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
+/* harmony import */ var react_responsive__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! react-responsive */ "./node_modules/react-responsive/dist/react-responsive.js");
+/* harmony import */ var react_responsive__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(react_responsive__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var react_tabs__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! react-tabs */ "./node_modules/react-tabs/esm/index.js");
+/* harmony import */ var react_tabs_style_react_tabs_css__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! react-tabs/style/react-tabs.css */ "./node_modules/react-tabs/style/react-tabs.css");
+/* harmony import */ var react_tabs_style_react_tabs_css__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(react_tabs_style_react_tabs_css__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var scratch_vm__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! scratch-vm */ "./node_modules/scratch-vm/src/index.js");
+/* harmony import */ var scratch_vm__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(scratch_vm__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var scratch_render__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! scratch-render */ "./node_modules/scratch-render/src/index.js");
+/* harmony import */ var scratch_render__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(scratch_render__WEBPACK_IMPORTED_MODULE_14__);
+/* harmony import */ var _containers_blocks_jsx__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../../containers/blocks.jsx */ "./src/containers/blocks.jsx");
+/* harmony import */ var _containers_costume_tab_jsx__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../../containers/costume-tab.jsx */ "./src/containers/costume-tab.jsx");
+/* harmony import */ var _containers_target_pane_jsx__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../../containers/target-pane.jsx */ "./src/containers/target-pane.jsx");
+/* harmony import */ var _containers_sound_tab_jsx__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../../containers/sound-tab.jsx */ "./src/containers/sound-tab.jsx");
+/* harmony import */ var _containers_variables_tab_jsx__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ../../containers/variables-tab.jsx */ "./src/containers/variables-tab.jsx");
+/* harmony import */ var _containers_files_tab_jsx__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ../../containers/files-tab.jsx */ "./src/containers/files-tab.jsx");
+/* harmony import */ var _containers_stage_wrapper_jsx__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ../../containers/stage-wrapper.jsx */ "./src/containers/stage-wrapper.jsx");
+/* harmony import */ var _loader_loader_jsx__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ../loader/loader.jsx */ "./src/components/loader/loader.jsx");
+/* harmony import */ var _box_box_jsx__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ../box/box.jsx */ "./src/components/box/box.jsx");
+/* harmony import */ var _menu_bar_menu_bar_jsx__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ../menu-bar/menu-bar.jsx */ "./src/components/menu-bar/menu-bar.jsx");
+/* harmony import */ var _containers_costume_library_jsx__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ../../containers/costume-library.jsx */ "./src/containers/costume-library.jsx");
+/* harmony import */ var _containers_backdrop_library_jsx__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ../../containers/backdrop-library.jsx */ "./src/containers/backdrop-library.jsx");
+/* harmony import */ var _containers_watermark_jsx__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ../../containers/watermark.jsx */ "./src/containers/watermark.jsx");
+/* harmony import */ var _containers_backpack_jsx__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ../../containers/backpack.jsx */ "./src/containers/backpack.jsx");
+/* harmony import */ var _browser_modal_browser_modal_jsx__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ../browser-modal/browser-modal.jsx */ "./src/components/browser-modal/browser-modal.jsx");
+/* harmony import */ var _containers_tips_library_jsx__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ../../containers/tips-library.jsx */ "./src/containers/tips-library.jsx");
+/* harmony import */ var _containers_cards_jsx__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ../../containers/cards.jsx */ "./src/containers/cards.jsx");
+/* harmony import */ var _containers_alerts_jsx__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ../../containers/alerts.jsx */ "./src/containers/alerts.jsx");
+/* harmony import */ var _containers_drag_layer_jsx__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ../../containers/drag-layer.jsx */ "./src/containers/drag-layer.jsx");
+/* harmony import */ var _containers_connection_modal_jsx__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ../../containers/connection-modal.jsx */ "./src/containers/connection-modal.jsx");
+/* harmony import */ var _telemetry_modal_telemetry_modal_jsx__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ../telemetry-modal/telemetry-modal.jsx */ "./src/components/telemetry-modal/telemetry-modal.jsx");
+/* harmony import */ var _containers_tw_username_modal_jsx__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ../../containers/tw-username-modal.jsx */ "./src/containers/tw-username-modal.jsx");
+/* harmony import */ var _containers_tw_settings_modal_jsx__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ../../containers/tw-settings-modal.jsx */ "./src/containers/tw-settings-modal.jsx");
+/* harmony import */ var _containers_tw_security_manager_jsx__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ../../containers/tw-security-manager.jsx */ "./src/containers/tw-security-manager.jsx");
+/* harmony import */ var _containers_tw_custom_extension_modal_jsx__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ../../containers/tw-custom-extension-modal.jsx */ "./src/containers/tw-custom-extension-modal.jsx");
+/* harmony import */ var _containers_tw_restore_point_manager_jsx__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! ../../containers/tw-restore-point-manager.jsx */ "./src/containers/tw-restore-point-manager.jsx");
+/* harmony import */ var _containers_tw_fonts_modal_jsx__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ../../containers/tw-fonts-modal.jsx */ "./src/containers/tw-fonts-modal.jsx");
+/* harmony import */ var _containers_pm_extension_modals_jsx__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! ../../containers/pm-extension-modals.jsx */ "./src/containers/pm-extension-modals.jsx");
+/* harmony import */ var _lib_layout_constants__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(/*! ../../lib/layout-constants */ "./src/lib/layout-constants.js");
+/* harmony import */ var _lib_screen_utils__WEBPACK_IMPORTED_MODULE_44__ = __webpack_require__(/*! ../../lib/screen-utils */ "./src/lib/screen-utils.js");
+/* harmony import */ var _lib_tw_environment_support_prober__WEBPACK_IMPORTED_MODULE_45__ = __webpack_require__(/*! ../../lib/tw-environment-support-prober */ "./src/lib/tw-environment-support-prober.js");
+/* harmony import */ var _gui_css__WEBPACK_IMPORTED_MODULE_46__ = __webpack_require__(/*! ./gui.css */ "./src/components/gui/gui.css");
+/* harmony import */ var _gui_css__WEBPACK_IMPORTED_MODULE_46___default = /*#__PURE__*/__webpack_require__.n(_gui_css__WEBPACK_IMPORTED_MODULE_46__);
+/* harmony import */ var _add_tab_svg__WEBPACK_IMPORTED_MODULE_47__ = __webpack_require__(/*! ./add-tab.svg */ "./src/components/gui/add-tab.svg");
+/* harmony import */ var _add_tab_svg__WEBPACK_IMPORTED_MODULE_47___default = /*#__PURE__*/__webpack_require__.n(_add_tab_svg__WEBPACK_IMPORTED_MODULE_47__);
+/* harmony import */ var _icon_extensions_svg__WEBPACK_IMPORTED_MODULE_48__ = __webpack_require__(/*! ./icon--extensions.svg */ "./src/components/gui/icon--extensions.svg");
+/* harmony import */ var _icon_extensions_svg__WEBPACK_IMPORTED_MODULE_48___default = /*#__PURE__*/__webpack_require__.n(_icon_extensions_svg__WEBPACK_IMPORTED_MODULE_48__);
+/* harmony import */ var _icon_code_svg__WEBPACK_IMPORTED_MODULE_49__ = __webpack_require__(/*! ./icon--code.svg */ "./src/components/gui/icon--code.svg");
+/* harmony import */ var _icon_code_svg__WEBPACK_IMPORTED_MODULE_49___default = /*#__PURE__*/__webpack_require__.n(_icon_code_svg__WEBPACK_IMPORTED_MODULE_49__);
+/* harmony import */ var _icon_costumes_svg__WEBPACK_IMPORTED_MODULE_50__ = __webpack_require__(/*! ./icon--costumes.svg */ "./src/components/gui/icon--costumes.svg");
+/* harmony import */ var _icon_costumes_svg__WEBPACK_IMPORTED_MODULE_50___default = /*#__PURE__*/__webpack_require__.n(_icon_costumes_svg__WEBPACK_IMPORTED_MODULE_50__);
+/* harmony import */ var _icon_sounds_svg__WEBPACK_IMPORTED_MODULE_51__ = __webpack_require__(/*! ./icon--sounds.svg */ "./src/components/gui/icon--sounds.svg");
+/* harmony import */ var _icon_sounds_svg__WEBPACK_IMPORTED_MODULE_51___default = /*#__PURE__*/__webpack_require__.n(_icon_sounds_svg__WEBPACK_IMPORTED_MODULE_51__);
+/* harmony import */ var _icon_variables_svg__WEBPACK_IMPORTED_MODULE_52__ = __webpack_require__(/*! ./icon--variables.svg */ "./src/components/gui/icon--variables.svg");
+/* harmony import */ var _icon_variables_svg__WEBPACK_IMPORTED_MODULE_52___default = /*#__PURE__*/__webpack_require__.n(_icon_variables_svg__WEBPACK_IMPORTED_MODULE_52__);
+/* harmony import */ var _icon_files_svg__WEBPACK_IMPORTED_MODULE_53__ = __webpack_require__(/*! ./icon--files.svg */ "./src/components/gui/icon--files.svg");
+/* harmony import */ var _icon_files_svg__WEBPACK_IMPORTED_MODULE_53___default = /*#__PURE__*/__webpack_require__.n(_icon_files_svg__WEBPACK_IMPORTED_MODULE_53__);
+const _excluded = ["accountNavOpen", "activeTabIndex", "alertsVisible", "authorId", "authorThumbnailUrl", "authorUsername", "basePath", "backdropLibraryVisible", "backpackHost", "backpackVisible", "blocksTabVisible", "cardsVisible", "canChangeLanguage", "canCreateNew", "canEditTitle", "canManageFiles", "canRemix", "canSave", "canCreateCopy", "canShare", "canUseCloud", "children", "connectionModalVisible", "costumeLibraryVisible", "costumesTabVisible", "customStageSize", "enableCommunity", "intl", "isCreating", "isDark", "isEmbedded", "isFullScreen", "isPlayerOnly", "isRtl", "isShared", "isWindowFullScreen", "isTelemetryEnabled", "loading", "logo", "renderLogin", "onClickAbout", "onClickAccountNav", "onCloseAccountNav", "onClickAddonSettings", "onClickNewWindow", "onClickTheme", "onClickPackager", "onLogOut", "onOpenRegistration", "onToggleLoginOpen", "onActivateCostumesTab", "onActivateSoundsTab", "onActivateVariablesTab", "onActivateFilesTab", "onActivateTab", "onClickLogo", "onExtensionButtonClick", "onProjectTelemetryEvent", "onRequestCloseBackdropLibrary", "onRequestCloseCostumeLibrary", "onRequestCloseTelemetryModal", "onSeeCommunity", "onShare", "onShowPrivacyPolicy", "onStartSelectingFileUpload", "onTelemetryModalCancel", "onTelemetryModalOptIn", "onTelemetryModalOptOut", "showComingSoon", "soundsTabVisible", "variablesTabVisible", "filesTabVisible", "stageSizeMode", "targetIsStage", "telemetryModalVisible", "tipsLibraryVisible", "usernameModalVisible", "settingsModalVisible", "customExtensionModalVisible", "fontsModalVisible", "isPlayground", "vm"],
+  _excluded2 = ["children"];
 function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
 function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
@@ -8981,10 +9046,17 @@ function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) r
 
 
 
+
+
+
+
+
+
+
 const urlParams = new URLSearchParams(location.search);
 const IsLocal = String(window.location.href).startsWith("http://localhost:");
 const IsLiveTests = urlParams.has('livetests');
-const messages = Object(react_intl__WEBPACK_IMPORTED_MODULE_4__["defineMessages"])({
+const messages = Object(react_intl__WEBPACK_IMPORTED_MODULE_8__["defineMessages"])({
   addExtension: {
     "id": "gui.gui.addExtension",
     "defaultMessage": "Add Extension"
@@ -8999,6 +9071,15 @@ const getFullscreenBackgroundColor = () => {
     return '#111';
   }
   return 'white';
+};
+const safeJSONParse = (json, defaul, mustBeArray) => {
+  try {
+    const parsed = JSON.parse(json);
+    if (mustBeArray && !Array.isArray(parsed)) throw 'Not array';
+    return parsed;
+  } catch (_unused) {
+    return defaul;
+  }
 };
 const fullscreenBackgroundColor = getFullscreenBackgroundColor();
 const GUIComponent = props => {
@@ -9056,6 +9137,7 @@ const GUIComponent = props => {
       onToggleLoginOpen,
       onActivateCostumesTab,
       onActivateSoundsTab,
+      onActivateVariablesTab,
       onActivateFilesTab,
       onActivateTab,
       onClickLogo,
@@ -9073,6 +9155,7 @@ const GUIComponent = props => {
       onTelemetryModalOptOut,
       showComingSoon,
       soundsTabVisible,
+      variablesTabVisible,
       filesTabVisible,
       stageSizeMode,
       targetIsStage,
@@ -9087,43 +9170,194 @@ const GUIComponent = props => {
     } = _omit,
     componentProps = _objectWithoutProperties(_omit, _excluded);
   if (children) {
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_18__["default"], componentProps, children);
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_23__["default"], componentProps, children);
   }
   const tabClassNames = {
-    tabs: _gui_css__WEBPACK_IMPORTED_MODULE_41___default.a.tabs,
-    tab: classnames__WEBPACK_IMPORTED_MODULE_0___default()(react_tabs_style_react_tabs_css__WEBPACK_IMPORTED_MODULE_8___default.a.reactTabsTab, _gui_css__WEBPACK_IMPORTED_MODULE_41___default.a.tab),
-    tabList: classnames__WEBPACK_IMPORTED_MODULE_0___default()(react_tabs_style_react_tabs_css__WEBPACK_IMPORTED_MODULE_8___default.a.reactTabsTabList, _gui_css__WEBPACK_IMPORTED_MODULE_41___default.a.tabList),
-    tabPanel: classnames__WEBPACK_IMPORTED_MODULE_0___default()(react_tabs_style_react_tabs_css__WEBPACK_IMPORTED_MODULE_8___default.a.reactTabsTabPanel, _gui_css__WEBPACK_IMPORTED_MODULE_41___default.a.tabPanel),
-    tabPanelSelected: classnames__WEBPACK_IMPORTED_MODULE_0___default()(react_tabs_style_react_tabs_css__WEBPACK_IMPORTED_MODULE_8___default.a.reactTabsTabPanelSelected, _gui_css__WEBPACK_IMPORTED_MODULE_41___default.a.isSelected),
-    tabSelected: classnames__WEBPACK_IMPORTED_MODULE_0___default()(react_tabs_style_react_tabs_css__WEBPACK_IMPORTED_MODULE_8___default.a.reactTabsTabSelected, _gui_css__WEBPACK_IMPORTED_MODULE_41___default.a.isSelected)
+    tabs: _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.tabs,
+    tab: classnames__WEBPACK_IMPORTED_MODULE_0___default()(react_tabs_style_react_tabs_css__WEBPACK_IMPORTED_MODULE_12___default.a.reactTabsTab, _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.tab),
+    tabList: classnames__WEBPACK_IMPORTED_MODULE_0___default()(react_tabs_style_react_tabs_css__WEBPACK_IMPORTED_MODULE_12___default.a.reactTabsTabList, _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.tabList),
+    tabPanel: classnames__WEBPACK_IMPORTED_MODULE_0___default()(react_tabs_style_react_tabs_css__WEBPACK_IMPORTED_MODULE_12___default.a.reactTabsTabPanel, _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.tabPanel),
+    tabPanelSelected: classnames__WEBPACK_IMPORTED_MODULE_0___default()(react_tabs_style_react_tabs_css__WEBPACK_IMPORTED_MODULE_12___default.a.reactTabsTabPanelSelected, _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.isSelected),
+    tabSelected: classnames__WEBPACK_IMPORTED_MODULE_0___default()(react_tabs_style_react_tabs_css__WEBPACK_IMPORTED_MODULE_12___default.a.reactTabsTabSelected, _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.isSelected)
   };
-  const minWidth = _lib_layout_constants__WEBPACK_IMPORTED_MODULE_38__["default"].fullSizeMinWidth + Math.max(0, customStageSize.width - _lib_layout_constants__WEBPACK_IMPORTED_MODULE_38__["default"].referenceWidth);
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react_responsive__WEBPACK_IMPORTED_MODULE_6___default.a, {
+
+  // We can't move this into it's own component or it'll break the selected tab styles & disable switching to the code tab
+  // Moving the whole TabList element will also break the code panel from resizing properly
+  const getTabOrder = () => {
+    const tabOrderStr = localStorage.getItem('pm:taborder') || '["code", "costume", "sound"]';
+    const tabOrder = safeJSONParse(tabOrderStr, [], true);
+    return tabOrder;
+  };
+  const tabOrder = getTabOrder();
+  const ContextMenuWrapTab = _ref => {
+    let {
+        children
+      } = _ref,
+      props = _objectWithoutProperties(_ref, _excluded2);
+    const {
+      tabId
+    } = props;
+    const disabled = tabId === 'code';
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_3___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react_contextmenu__WEBPACK_IMPORTED_MODULE_6__["ContextMenuTrigger"], {
+      disable: disabled,
+      id: "remove-editor-tab-".concat(tabId)
+    }, children), /*#__PURE__*/react_dom__WEBPACK_IMPORTED_MODULE_4___default.a.createPortal( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_context_menu_context_menu_jsx__WEBPACK_IMPORTED_MODULE_7__["ContextMenu"], {
+      id: "remove-editor-tab-".concat(tabId)
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_context_menu_context_menu_jsx__WEBPACK_IMPORTED_MODULE_7__["DangerousMenuItem"], {
+      onClick: () => removeTabFromEditor(tabId)
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_8__["FormattedMessage"], {
+      defaultMessage: "delete",
+      id: "gui.spriteSelectorItem.contextMenuDelete"
+    }))), document.body));
+  };
+
+  // currently each tab can decide whether or not its hidden, remove this once rearranging tabs is supported
+  const codeTab = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_11__["Tab"], {
+    className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(tabClassNames.tab, tabOrder.includes('code') ? null : _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.tabDisabled)
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(ContextMenuWrapTab, {
+    tabId: "code"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("img", {
+    draggable: false,
+    src: _icon_code_svg__WEBPACK_IMPORTED_MODULE_49___default.a
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_8__["FormattedMessage"], {
+    defaultMessage: "Code",
+    id: "gui.gui.codeTab"
+  })));
+  const costumesTab = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_11__["Tab"], {
+    className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(tabClassNames.tab, tabOrder.includes('costume') ? null : _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.tabDisabled),
+    onClick: onActivateCostumesTab
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(ContextMenuWrapTab, {
+    tabId: "costume"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("img", {
+    draggable: false,
+    src: _icon_costumes_svg__WEBPACK_IMPORTED_MODULE_50___default.a
+  }), targetIsStage ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_8__["FormattedMessage"], {
+    defaultMessage: "Backdrops",
+    id: "gui.gui.backdropsTab"
+  }) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_8__["FormattedMessage"], {
+    defaultMessage: "Costumes",
+    id: "gui.gui.costumesTab"
+  })));
+  const soundsTab = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_11__["Tab"], {
+    className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(tabClassNames.tab, tabOrder.includes('sound') ? null : _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.tabDisabled),
+    onClick: onActivateSoundsTab
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(ContextMenuWrapTab, {
+    tabId: "sound"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("img", {
+    draggable: false,
+    src: _icon_sounds_svg__WEBPACK_IMPORTED_MODULE_51___default.a
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_8__["FormattedMessage"], {
+    defaultMessage: "Sounds",
+    id: "gui.gui.soundsTab"
+  })));
+  const variablesTab = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_11__["Tab"], {
+    className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(tabClassNames.tab, tabOrder.includes('variable') ? null : _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.tabDisabled),
+    onClick: onActivateVariablesTab
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(ContextMenuWrapTab, {
+    tabId: "variable"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("img", {
+    draggable: false,
+    src: _icon_variables_svg__WEBPACK_IMPORTED_MODULE_52___default.a
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_8__["FormattedMessage"], {
+    defaultMessage: "Variables",
+    id: "gui.gui.variablesTab"
+  })));
+  const filesTab = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_11__["Tab"], {
+    className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(tabClassNames.tab, tabOrder.includes('file') ? null : _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.tabDisabled),
+    onClick: onActivateFilesTab
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(ContextMenuWrapTab, {
+    tabId: "file"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("img", {
+    draggable: false,
+    src: _icon_files_svg__WEBPACK_IMPORTED_MODULE_53___default.a
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_8__["FormattedMessage"], {
+    defaultMessage: "Files",
+    id: "gui.gui.filesTab"
+  })));
+  const tabPairs = {
+    code: codeTab,
+    costume: costumesTab,
+    sound: soundsTab,
+    variable: variablesTab
+    // file: filesTab,
+  };
+
+  // For now, rearranging tabs is not supported
+  const organizedTabs = Object.values(tabPairs);
+  // const organizedTabs = (() => {
+  //     const enabledTabs = [];
+  //     // Either add in rearranged order
+  //     // for (const tabId of tabOrder) {
+  //     //     enabledTabs.push(tabPairs[tabId] || codeTab)
+  //     // }
+  //     // or we can add tabs in order of table inclusion
+  //     // for (const key in tabPairs) {
+  //     //     const tab = tabPairs[key];
+  //     //     if (tabOrder.includes(key)) {
+  //     //         enabledTabs.push(tab);
+  //     //     }
+  //     // }
+
+  //     return enabledTabs;
+  // })();
+  const addTabButtonDisabled = tabOrder.length >= Object.keys(tabPairs).length;
+  const addTabToEditor = tabId => {
+    const tabOrder = getTabOrder();
+    tabOrder.push(tabId);
+    localStorage.setItem('pm:taborder', JSON.stringify(tabOrder));
+    const tabKeys = Object.keys(tabPairs);
+    const tabIndex = tabKeys.indexOf(tabId);
+    if (tabIndex === -1) {
+      return onActivateTab(0);
+    }
+    onActivateTab(tabIndex);
+  };
+  const removeTabFromEditor = tabId => {
+    setTimeout(() => {
+      // sometimes clicking delete will switch to the deleted tab
+      const tabOrder = getTabOrder();
+      const idx = tabOrder.indexOf(tabId);
+      if (idx === -1) return;
+      tabOrder.splice(idx, 1);
+      localStorage.setItem('pm:taborder', JSON.stringify(tabOrder));
+      if (tabId !== 'code') {
+        return onActivateTab(0);
+      }
+      const tabKeys = Object.keys(tabPairs);
+      const firstTab = tabOrder[0];
+      const firstTabIdx = tabKeys.indexOf(firstTab);
+      if (firstTabIdx !== -1) {
+        onActivateTab(firstTabIdx);
+      }
+    });
+  };
+  const minWidth = _lib_layout_constants__WEBPACK_IMPORTED_MODULE_43__["default"].fullSizeMinWidth + Math.max(0, customStageSize.width - _lib_layout_constants__WEBPACK_IMPORTED_MODULE_43__["default"].referenceWidth);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react_responsive__WEBPACK_IMPORTED_MODULE_10___default.a, {
     minWidth: minWidth
   }, isFullSize => {
-    const stageSize = Object(_lib_screen_utils__WEBPACK_IMPORTED_MODULE_39__["resolveStageSize"])(stageSizeMode, isFullSize);
-    const alwaysEnabledModals = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_3___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_tw_security_manager_jsx__WEBPACK_IMPORTED_MODULE_33__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_tw_restore_point_manager_jsx__WEBPACK_IMPORTED_MODULE_35__["default"], null), usernameModalVisible && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_tw_username_modal_jsx__WEBPACK_IMPORTED_MODULE_31__["default"], null), settingsModalVisible && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_tw_settings_modal_jsx__WEBPACK_IMPORTED_MODULE_32__["default"], null), customExtensionModalVisible && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_tw_custom_extension_modal_jsx__WEBPACK_IMPORTED_MODULE_34__["default"], null), fontsModalVisible && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_tw_fonts_modal_jsx__WEBPACK_IMPORTED_MODULE_36__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_pm_extension_modals_jsx__WEBPACK_IMPORTED_MODULE_37__["default"], {
+    const stageSize = Object(_lib_screen_utils__WEBPACK_IMPORTED_MODULE_44__["resolveStageSize"])(stageSizeMode, isFullSize);
+    const alwaysEnabledModals = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_3___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_tw_security_manager_jsx__WEBPACK_IMPORTED_MODULE_38__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_tw_restore_point_manager_jsx__WEBPACK_IMPORTED_MODULE_40__["default"], null), usernameModalVisible && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_tw_username_modal_jsx__WEBPACK_IMPORTED_MODULE_36__["default"], null), settingsModalVisible && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_tw_settings_modal_jsx__WEBPACK_IMPORTED_MODULE_37__["default"], null), customExtensionModalVisible && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_tw_custom_extension_modal_jsx__WEBPACK_IMPORTED_MODULE_39__["default"], null), fontsModalVisible && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_tw_fonts_modal_jsx__WEBPACK_IMPORTED_MODULE_41__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_pm_extension_modals_jsx__WEBPACK_IMPORTED_MODULE_42__["default"], {
       vm: vm
     }));
     return isPlayerOnly ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_3___default.a.Fragment, null, isWindowFullScreen ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_41___default.a.fullscreenBackground,
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.fullscreenBackground,
       style: {
         backgroundColor: fullscreenBackgroundColor
       }
-    }) : null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_stage_wrapper_jsx__WEBPACK_IMPORTED_MODULE_16__["default"], {
+    }) : null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_stage_wrapper_jsx__WEBPACK_IMPORTED_MODULE_21__["default"], {
       isFullScreen: isFullScreen,
       isEmbedded: isEmbedded,
-      isRendererSupported: Object(_lib_tw_environment_support_prober__WEBPACK_IMPORTED_MODULE_40__["isRendererSupported"])(),
+      isRendererSupported: Object(_lib_tw_environment_support_prober__WEBPACK_IMPORTED_MODULE_45__["isRendererSupported"])(),
       isRtl: isRtl,
       loading: loading,
-      stageSize: _lib_layout_constants__WEBPACK_IMPORTED_MODULE_38__["STAGE_SIZE_MODES"].large,
+      stageSize: _lib_layout_constants__WEBPACK_IMPORTED_MODULE_43__["STAGE_SIZE_MODES"].large,
       vm: vm
-    }, alertsVisible ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_alerts_jsx__WEBPACK_IMPORTED_MODULE_27__["default"], {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_41___default.a.alertsContainer
-    }) : null), alwaysEnabledModals) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_18__["default"], _extends({
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_41___default.a.pageWrapper,
+    }, alertsVisible ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_alerts_jsx__WEBPACK_IMPORTED_MODULE_32__["default"], {
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.alertsContainer
+    }) : null), alwaysEnabledModals) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_23__["default"], _extends({
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.pageWrapper,
       dir: isRtl ? 'rtl' : 'ltr'
-    }, componentProps), alwaysEnabledModals, telemetryModalVisible ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_telemetry_modal_telemetry_modal_jsx__WEBPACK_IMPORTED_MODULE_30__["default"], {
+    }, componentProps), alwaysEnabledModals, telemetryModalVisible ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_telemetry_modal_telemetry_modal_jsx__WEBPACK_IMPORTED_MODULE_35__["default"], {
       isRtl: isRtl,
       isTelemetryEnabled: isTelemetryEnabled,
       onCancel: onTelemetryModalCancel,
@@ -9131,24 +9365,24 @@ const GUIComponent = props => {
       onOptOut: onTelemetryModalOptOut,
       onRequestClose: onRequestCloseTelemetryModal,
       onShowPrivacyPolicy: onShowPrivacyPolicy
-    }) : null, loading ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_loader_loader_jsx__WEBPACK_IMPORTED_MODULE_17__["default"], {
+    }) : null, loading ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_loader_loader_jsx__WEBPACK_IMPORTED_MODULE_22__["default"], {
       isFullScreen: true
-    }) : null, isCreating ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_loader_loader_jsx__WEBPACK_IMPORTED_MODULE_17__["default"], {
+    }) : null, isCreating ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_loader_loader_jsx__WEBPACK_IMPORTED_MODULE_22__["default"], {
       isFullScreen: true,
       messageId: isPlayground ? "gui.loader.playground" : "gui.loader.creating"
-    }) : null, Object(_lib_tw_environment_support_prober__WEBPACK_IMPORTED_MODULE_40__["isBrowserSupported"])() ? null : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_browser_modal_browser_modal_jsx__WEBPACK_IMPORTED_MODULE_24__["default"], {
+    }) : null, Object(_lib_tw_environment_support_prober__WEBPACK_IMPORTED_MODULE_45__["isBrowserSupported"])() ? null : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_browser_modal_browser_modal_jsx__WEBPACK_IMPORTED_MODULE_29__["default"], {
       isRtl: isRtl
-    }), tipsLibraryVisible ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_tips_library_jsx__WEBPACK_IMPORTED_MODULE_25__["default"], null) : null, cardsVisible ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_cards_jsx__WEBPACK_IMPORTED_MODULE_26__["default"], null) : null, alertsVisible ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_alerts_jsx__WEBPACK_IMPORTED_MODULE_27__["default"], {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_41___default.a.alertsContainer
-    }) : null, connectionModalVisible ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_connection_modal_jsx__WEBPACK_IMPORTED_MODULE_29__["default"], {
+    }), tipsLibraryVisible ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_tips_library_jsx__WEBPACK_IMPORTED_MODULE_30__["default"], null) : null, cardsVisible ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_cards_jsx__WEBPACK_IMPORTED_MODULE_31__["default"], null) : null, alertsVisible ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_alerts_jsx__WEBPACK_IMPORTED_MODULE_32__["default"], {
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.alertsContainer
+    }) : null, connectionModalVisible ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_connection_modal_jsx__WEBPACK_IMPORTED_MODULE_34__["default"], {
       vm: vm
-    }) : null, costumeLibraryVisible ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_costume_library_jsx__WEBPACK_IMPORTED_MODULE_20__["default"], {
+    }) : null, costumeLibraryVisible ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_costume_library_jsx__WEBPACK_IMPORTED_MODULE_25__["default"], {
       vm: vm,
       onRequestClose: onRequestCloseCostumeLibrary
-    }) : null, backdropLibraryVisible ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_backdrop_library_jsx__WEBPACK_IMPORTED_MODULE_21__["default"], {
+    }) : null, backdropLibraryVisible ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_backdrop_library_jsx__WEBPACK_IMPORTED_MODULE_26__["default"], {
       vm: vm,
       onRequestClose: onRequestCloseBackdropLibrary
-    }) : null, !isPlayground ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_menu_bar_menu_bar_jsx__WEBPACK_IMPORTED_MODULE_19__["default"], {
+    }) : null, !isPlayground ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_menu_bar_menu_bar_jsx__WEBPACK_IMPORTED_MODULE_24__["default"], {
       accountNavOpen: accountNavOpen,
       authorId: authorId,
       authorThumbnailUrl: authorThumbnailUrl,
@@ -9161,7 +9395,7 @@ const GUIComponent = props => {
       canRemix: canRemix,
       canSave: canSave,
       canShare: canShare,
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_41___default.a.menuBarPosition,
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.menuBarPosition,
       enableCommunity: enableCommunity,
       isShared: isShared,
       logo: logo,
@@ -9182,55 +9416,79 @@ const GUIComponent = props => {
       onShare: onShare,
       onStartSelectingFileUpload: onStartSelectingFileUpload,
       onToggleLoginOpen: onToggleLoginOpen
-    }) : null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_18__["default"], {
-      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_gui_css__WEBPACK_IMPORTED_MODULE_41___default.a.bodyWrapper, isPlayground ? _gui_css__WEBPACK_IMPORTED_MODULE_41___default.a.bodyWrapperPlayground : null)
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_18__["default"], {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_41___default.a.flexWrapper
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_18__["default"], {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_41___default.a.editorWrapper
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_7__["Tabs"], {
+    }) : null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_23__["default"], {
+      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.bodyWrapper, isPlayground ? _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.bodyWrapperPlayground : null)
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_23__["default"], {
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.flexWrapper
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_23__["default"], {
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.editorWrapper
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_11__["Tabs"], {
       forceRenderTabPanel: true,
       className: tabClassNames.tabs,
       selectedIndex: activeTabIndex,
       selectedTabClassName: tabClassNames.tabSelected,
       selectedTabPanelClassName: tabClassNames.tabPanelSelected,
       onSelect: onActivateTab
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_7__["TabList"], {
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_11__["TabList"], {
       className: tabClassNames.tabList
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_7__["Tab"], {
-      className: tabClassNames.tab
+    }, organizedTabs, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react_contextmenu__WEBPACK_IMPORTED_MODULE_6__["ContextMenuTrigger"], {
+      disable: addTabButtonDisabled,
+      holdToDisplay: 0,
+      id: "add-editor-tab-button"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("button", {
+      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.addTabButton, addTabButtonDisabled ? _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.addTabButtonDisabled : null)
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("img", {
       draggable: false,
-      src: _icon_code_svg__WEBPACK_IMPORTED_MODULE_43___default.a
-    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_4__["FormattedMessage"], {
+      src: _add_tab_svg__WEBPACK_IMPORTED_MODULE_47___default.a
+    }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_context_menu_context_menu_jsx__WEBPACK_IMPORTED_MODULE_7__["ContextMenu"], {
+      id: "add-editor-tab-button"
+    }, !tabOrder.includes('code') && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_context_menu_context_menu_jsx__WEBPACK_IMPORTED_MODULE_7__["MenuItem"], {
+      onClick: () => addTabToEditor('code')
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.tabAdditionItem
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("img", {
+      draggable: false,
+      src: _icon_code_svg__WEBPACK_IMPORTED_MODULE_49___default.a
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_8__["FormattedMessage"], {
       defaultMessage: "Code",
       id: "gui.gui.codeTab"
-    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_7__["Tab"], {
-      className: tabClassNames.tab,
-      onClick: onActivateCostumesTab
+    }))), !tabOrder.includes('costume') && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_context_menu_context_menu_jsx__WEBPACK_IMPORTED_MODULE_7__["MenuItem"], {
+      onClick: () => addTabToEditor('costume')
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.tabAdditionItem
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("img", {
       draggable: false,
-      src: _icon_costumes_svg__WEBPACK_IMPORTED_MODULE_44___default.a
-    }), targetIsStage ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_4__["FormattedMessage"], {
-      defaultMessage: "Backdrops",
-      id: "gui.gui.backdropsTab"
-    }) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_4__["FormattedMessage"], {
+      src: _icon_costumes_svg__WEBPACK_IMPORTED_MODULE_50___default.a
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_8__["FormattedMessage"], {
       defaultMessage: "Costumes",
       id: "gui.gui.costumesTab"
-    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_7__["Tab"], {
-      className: tabClassNames.tab,
-      onClick: onActivateSoundsTab
+    }))), !tabOrder.includes('sound') && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_context_menu_context_menu_jsx__WEBPACK_IMPORTED_MODULE_7__["MenuItem"], {
+      onClick: () => addTabToEditor('sound')
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.tabAdditionItem
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("img", {
       draggable: false,
-      src: _icon_sounds_svg__WEBPACK_IMPORTED_MODULE_45___default.a
-    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_4__["FormattedMessage"], {
+      src: _icon_sounds_svg__WEBPACK_IMPORTED_MODULE_51___default.a
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_8__["FormattedMessage"], {
       defaultMessage: "Sounds",
       id: "gui.gui.soundsTab"
-    }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_7__["TabPanel"], {
+    }))), !tabOrder.includes('variable') && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_context_menu_context_menu_jsx__WEBPACK_IMPORTED_MODULE_7__["MenuItem"], {
+      onClick: () => addTabToEditor('variable')
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.tabAdditionItem
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("img", {
+      draggable: false,
+      src: _icon_variables_svg__WEBPACK_IMPORTED_MODULE_52___default.a
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react_intl__WEBPACK_IMPORTED_MODULE_8__["FormattedMessage"], {
+      defaultMessage: "Variables",
+      id: "gui.gui.variablesTab"
+    })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
+      id: "sa_addons_after_add_tab_anchor"
+    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_11__["TabPanel"], {
       className: tabClassNames.tabPanel
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_18__["default"], {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_41___default.a.blocksWrapper
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_blocks_jsx__WEBPACK_IMPORTED_MODULE_11__["default"], {
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_23__["default"], {
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.blocksWrapper
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_blocks_jsx__WEBPACK_IMPORTED_MODULE_15__["default"], {
       canUseCloud: canUseCloud,
       grow: 1,
       isVisible: blocksTabVisible,
@@ -9239,43 +9497,47 @@ const GUIComponent = props => {
       },
       stageSize: stageSize,
       vm: vm
-    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_18__["default"], {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_41___default.a.extensionButtonContainer
+    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_23__["default"], {
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.extensionButtonContainer
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("button", {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_41___default.a.extensionButton,
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.extensionButton,
       title: intl.formatMessage(messages.addExtension),
       onClick: onExtensionButtonClick
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("img", {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_41___default.a.extensionButtonIcon,
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.extensionButtonIcon,
       draggable: false,
-      src: _icon_extensions_svg__WEBPACK_IMPORTED_MODULE_42___default.a
-    }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_18__["default"], {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_41___default.a.watermark
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_watermark_jsx__WEBPACK_IMPORTED_MODULE_22__["default"], null))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_7__["TabPanel"], {
+      src: _icon_extensions_svg__WEBPACK_IMPORTED_MODULE_48___default.a
+    }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_23__["default"], {
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.watermark
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_watermark_jsx__WEBPACK_IMPORTED_MODULE_27__["default"], null))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_11__["TabPanel"], {
       className: tabClassNames.tabPanel
-    }, costumesTabVisible ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_costume_tab_jsx__WEBPACK_IMPORTED_MODULE_12__["default"], {
+    }, costumesTabVisible ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_costume_tab_jsx__WEBPACK_IMPORTED_MODULE_16__["default"], {
       vm: vm,
       isDark: isDark
-    }) : null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_7__["TabPanel"], {
+    }) : null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_11__["TabPanel"], {
       className: tabClassNames.tabPanel
-    }, soundsTabVisible ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_sound_tab_jsx__WEBPACK_IMPORTED_MODULE_14__["default"], {
+    }, soundsTabVisible ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_sound_tab_jsx__WEBPACK_IMPORTED_MODULE_18__["default"], {
       vm: vm
-    }) : null)), backpackVisible ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_backpack_jsx__WEBPACK_IMPORTED_MODULE_23__["default"], {
+    }) : null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react_tabs__WEBPACK_IMPORTED_MODULE_11__["TabPanel"], {
+      className: tabClassNames.tabPanel
+    }, variablesTabVisible ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_variables_tab_jsx__WEBPACK_IMPORTED_MODULE_19__["default"], {
+      vm: vm
+    }) : null)), backpackVisible ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_backpack_jsx__WEBPACK_IMPORTED_MODULE_28__["default"], {
       host: backpackHost
-    }) : null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_18__["default"], {
-      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_gui_css__WEBPACK_IMPORTED_MODULE_41___default.a.stageAndTargetWrapper, _gui_css__WEBPACK_IMPORTED_MODULE_41___default.a[stageSize])
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_stage_wrapper_jsx__WEBPACK_IMPORTED_MODULE_16__["default"], {
+    }) : null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_23__["default"], {
+      className: classnames__WEBPACK_IMPORTED_MODULE_0___default()(_gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.stageAndTargetWrapper, _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a[stageSize])
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_stage_wrapper_jsx__WEBPACK_IMPORTED_MODULE_21__["default"], {
       isFullScreen: isFullScreen,
-      isRendererSupported: Object(_lib_tw_environment_support_prober__WEBPACK_IMPORTED_MODULE_40__["isRendererSupported"])(),
+      isRendererSupported: Object(_lib_tw_environment_support_prober__WEBPACK_IMPORTED_MODULE_45__["isRendererSupported"])(),
       isRtl: isRtl,
       stageSize: stageSize,
       vm: vm
-    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_18__["default"], {
-      className: _gui_css__WEBPACK_IMPORTED_MODULE_41___default.a.targetWrapper
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_target_pane_jsx__WEBPACK_IMPORTED_MODULE_13__["default"], {
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_23__["default"], {
+      className: _gui_css__WEBPACK_IMPORTED_MODULE_46___default.a.targetWrapper
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_target_pane_jsx__WEBPACK_IMPORTED_MODULE_17__["default"], {
       stageSize: stageSize,
       vm: vm
-    }))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_drag_layer_jsx__WEBPACK_IMPORTED_MODULE_28__["default"], null));
+    }))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_containers_drag_layer_jsx__WEBPACK_IMPORTED_MODULE_33__["default"], null));
   });
 };
 GUIComponent.propTypes = {
@@ -9309,7 +9571,7 @@ GUIComponent.propTypes = {
     height: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number
   }),
   enableCommunity: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
-  intl: react_intl__WEBPACK_IMPORTED_MODULE_4__["intlShape"].isRequired,
+  intl: react_intl__WEBPACK_IMPORTED_MODULE_8__["intlShape"].isRequired,
   isCreating: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
   isDark: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
   isEmbedded: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
@@ -9322,6 +9584,7 @@ GUIComponent.propTypes = {
   logo: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.string,
   onActivateCostumesTab: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.func,
   onActivateSoundsTab: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.func,
+  onActivateVariablesTab: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.func,
   onActivateFilesTab: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.func,
   onActivateTab: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.func,
   onClickAccountNav: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.func,
@@ -9349,8 +9612,9 @@ GUIComponent.propTypes = {
   renderLogin: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.func,
   showComingSoon: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
   soundsTabVisible: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
+  variablesTabVisible: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
   filesTabVisible: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
-  stageSizeMode: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.oneOf(Object.keys(_lib_layout_constants__WEBPACK_IMPORTED_MODULE_38__["STAGE_SIZE_MODES"])),
+  stageSizeMode: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.oneOf(Object.keys(_lib_layout_constants__WEBPACK_IMPORTED_MODULE_43__["STAGE_SIZE_MODES"])),
   targetIsStage: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
   telemetryModalVisible: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
   tipsLibraryVisible: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
@@ -9358,7 +9622,7 @@ GUIComponent.propTypes = {
   settingsModalVisible: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
   customExtensionModalVisible: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
   fontsModalVisible: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.bool,
-  vm: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.instanceOf(scratch_vm__WEBPACK_IMPORTED_MODULE_9___default.a).isRequired
+  vm: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.instanceOf(scratch_vm__WEBPACK_IMPORTED_MODULE_13___default.a).isRequired
 };
 GUIComponent.defaultProps = {
   backpackHost: null,
@@ -9378,7 +9642,7 @@ GUIComponent.defaultProps = {
   isShared: false,
   loading: false,
   showComingSoon: false,
-  stageSizeMode: _lib_layout_constants__WEBPACK_IMPORTED_MODULE_38__["STAGE_SIZE_MODES"].large
+  stageSizeMode: _lib_layout_constants__WEBPACK_IMPORTED_MODULE_43__["STAGE_SIZE_MODES"].large
 };
 const mapStateToProps = state => ({
   customStageSize: state.scratchGui.customStageSize,
@@ -9386,7 +9650,7 @@ const mapStateToProps = state => ({
   // This is the button's mode, as opposed to the actual current state
   stageSizeMode: state.scratchGui.stageSize.stageSize
 });
-/* harmony default export */ __webpack_exports__["default"] = (Object(react_intl__WEBPACK_IMPORTED_MODULE_4__["injectIntl"])(Object(react_redux__WEBPACK_IMPORTED_MODULE_5__["connect"])(mapStateToProps)(GUIComponent)));
+/* harmony default export */ __webpack_exports__["default"] = (Object(react_intl__WEBPACK_IMPORTED_MODULE_8__["injectIntl"])(Object(react_redux__WEBPACK_IMPORTED_MODULE_9__["connect"])(mapStateToProps)(GUIComponent)));
 
 /***/ }),
 
@@ -9442,6 +9706,17 @@ module.exports = __webpack_require__.p + "static/assets/ece0b0d18256834e7f7f3a3b
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "static/assets/4d0adfe4fa9f620d0f0eeed63d7dcc9d.svg";
+
+/***/ }),
+
+/***/ "./src/components/gui/icon--variables.svg":
+/*!************************************************!*\
+  !*** ./src/components/gui/icon--variables.svg ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/assets/c133e3463fb1e67596c781605680adf0.svg";
 
 /***/ }),
 
@@ -22059,6 +22334,166 @@ UsernameModalComponent.propTypes = {
 
 /***/ }),
 
+/***/ "./src/components/variables-tab/icon--search.svg":
+/*!*******************************************************!*\
+  !*** ./src/components/variables-tab/icon--search.svg ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/assets/33152e09f092ce18fe776f1d670ac99f.svg";
+
+/***/ }),
+
+/***/ "./src/components/variables-tab/variables-tab.css":
+/*!********************************************************!*\
+  !*** ./src/components/variables-tab/variables-tab.css ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--5-1!../../../node_modules/postcss-loader/src??postcss!./variables-tab.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/components/variables-tab/variables-tab.css");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
+/***/ "./src/components/variables-tab/variables-tab.jsx":
+/*!********************************************************!*\
+  !*** ./src/components/variables-tab/variables-tab.jsx ***!
+  \********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! classnames */ "./node_modules/classnames/index.js");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
+/* harmony import */ var react_intl__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-intl */ "./node_modules/react-intl/lib/index.es.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var lodash_bindall__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! lodash.bindall */ "./node_modules/lodash.bindall/index.js");
+/* harmony import */ var lodash_bindall__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(lodash_bindall__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _forms_input_jsx__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../forms/input.jsx */ "./src/components/forms/input.jsx");
+/* harmony import */ var _box_box_jsx__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../box/box.jsx */ "./src/components/box/box.jsx");
+/* harmony import */ var _variables_tab_css__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./variables-tab.css */ "./src/components/variables-tab/variables-tab.css");
+/* harmony import */ var _variables_tab_css__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_variables_tab_css__WEBPACK_IMPORTED_MODULE_8__);
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+
+
+
+
+
+
+
+
+class ShareButton extends react__WEBPACK_IMPORTED_MODULE_4___default.a.Component {
+  constructor(props) {
+    super(props);
+    lodash_bindall__WEBPACK_IMPORTED_MODULE_5___default()(this, ["handleSearch", "renderVariable"]);
+    this.state = {
+      query: ''
+    };
+  }
+  handleSearch(event) {
+    this.setState({
+      query: String(event.target.value).toLowerCase()
+    });
+  }
+  renderVariable(variable) {
+    const isTooBig = (variable.type === 'list' ? variable.value.join('\n').length > 5000000 : String(variable.value).length > 1000000) && !this.props.showLargeValue[variable.id];
+    const isEditing = variable.id === this.props.editingVariableId;
+    const isEditingName = isEditing && this.props.editingVariableInput === 'name';
+    const isEditingValue = isEditing && this.props.editingVariableInput === 'value';
+    const displayVariableValue = isEditingValue ? this.props.editingVariableEditValue : variable.type === 'list' ? variable.value.join('\n') : variable.value;
+    const inputValueProps = {
+      onFocus: () => this.props.onClickVariableValue(variable),
+      onBlur: event => this.props.onEditVariableValue(event, variable),
+      onChange: this.props.onTypeVariableValue,
+      onKeyDown: event => this.props.onTypeVariableValue(event, variable)
+    };
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("td", {
+      className: _variables_tab_css__WEBPACK_IMPORTED_MODULE_8___default.a.variableName
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("input", {
+      onFocus: () => this.props.onClickVariableName(variable),
+      onBlur: event => this.props.onEditVariableName(event, variable),
+      onChange: this.props.onTypeVariableName,
+      onKeyDown: event => this.props.onTypeVariableName(event, variable),
+      value: isEditingName ? this.props.editingVariableEditName : variable.name
+    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("td", {
+      className: _variables_tab_css__WEBPACK_IMPORTED_MODULE_8___default.a.variableValue
+    }, isTooBig ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("button", {
+      onClick: () => this.props.onClickShowLarge(variable.id),
+      className: _variables_tab_css__WEBPACK_IMPORTED_MODULE_8___default.a.valueTooBig
+    }, "Click to display very large value.") : variable.type === 'list' ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("textarea", _extends({}, inputValueProps, {
+      value: displayVariableValue
+    })) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("input", _extends({}, inputValueProps, {
+      value: displayVariableValue
+    }))));
+  }
+  render() {
+    const {
+      localVariables,
+      globalVariables
+    } = this.props;
+    const filteredLocal = localVariables.filter(varr => varr.name.toLowerCase().includes(this.state.query));
+    const filteredGlobal = globalVariables.filter(varr => varr.name.toLowerCase().includes(this.state.query));
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
+      className: _variables_tab_css__WEBPACK_IMPORTED_MODULE_8___default.a.editorWrapper
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_box_box_jsx__WEBPACK_IMPORTED_MODULE_7__["default"], {
+      className: _variables_tab_css__WEBPACK_IMPORTED_MODULE_8___default.a.editorContainer
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_forms_input_jsx__WEBPACK_IMPORTED_MODULE_6__["default"], {
+      placeholder: "Search",
+      className: _variables_tab_css__WEBPACK_IMPORTED_MODULE_8___default.a.searchBar,
+      onChange: this.handleSearch
+    }), filteredLocal.length > 0 && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("span", {
+      className: _variables_tab_css__WEBPACK_IMPORTED_MODULE_8___default.a.heading
+    }, "Variables for this sprite"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("table", null, filteredLocal.map(this.renderVariable))), filteredGlobal.length > 0 && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("span", {
+      className: _variables_tab_css__WEBPACK_IMPORTED_MODULE_8___default.a.heading
+    }, "Variables for all sprites"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("table", null, filteredGlobal.map(this.renderVariable)))));
+  }
+}
+ShareButton.propTypes = {
+  localVariables: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.any,
+  globalVariables: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.any,
+  showLargeValue: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.any,
+  editingVariableId: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.string,
+  editingVariableInput: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.string,
+  editingVariableEditName: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.string,
+  editingVariableEditValue: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.string,
+  onClickShowLarge: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.func.isRequired,
+  onClickVariableName: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.func.isRequired,
+  onClickVariableValue: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.func.isRequired,
+  onEditVariableName: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.func.isRequired,
+  onEditVariableValue: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.func.isRequired,
+  onTypeVariableName: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.func.isRequired,
+  onTypeVariableValue: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.func.isRequired
+};
+/* harmony default export */ __webpack_exports__["default"] = (Object(react_intl__WEBPACK_IMPORTED_MODULE_2__["injectIntl"])(ShareButton));
+
+/***/ }),
+
 /***/ "./src/components/watermark/watermark.css":
 /*!************************************************!*\
   !*** ./src/components/watermark/watermark.css ***!
@@ -25741,7 +26176,9 @@ const messages = Object(react_intl__WEBPACK_IMPORTED_MODULE_4__["defineMessages"
 // For user-made libraries.
 const TRUSTED_LOADEXT_ORIGINS = ['https://studio.penguinmod.com',
 // for development
-'https://extensions.penguinmod.com', 'https://electramod-extensions-gallery.vercel.app', 'https://sharkpools-extensions.vercel.app', 'https://pen-group.github.io'];
+'https://extensions.penguinmod.com', 'https://sharkpools-extensions.vercel.app', 'https://raw.githubusercontent.com/SharkPool-SP/SharkPools-Extensions/main',
+// Some people cant connect to vercel
+'https://pen-group.github.io'];
 class ExtensionLibrary extends react__WEBPACK_IMPORTED_MODULE_2___default.a.PureComponent {
   constructor(props) {
     super(props);
@@ -26462,6 +26899,7 @@ const mapStateToProps = state => {
     loadingStateVisible: state.scratchGui.modals.loadingProject,
     projectId: state.scratchGui.projectState.projectId,
     soundsTabVisible: state.scratchGui.editorTab.activeTabIndex === _reducers_editor_tab__WEBPACK_IMPORTED_MODULE_9__["SOUNDS_TAB_INDEX"],
+    variablesTabVisible: state.scratchGui.editorTab.activeTabIndex === _reducers_editor_tab__WEBPACK_IMPORTED_MODULE_9__["VARIABLES_TAB_INDEX"],
     filesTabVisible: state.scratchGui.editorTab.activeTabIndex === _reducers_editor_tab__WEBPACK_IMPORTED_MODULE_9__["FILES_TAB_INDEX"],
     targetIsStage: state.scratchGui.targets.stage && state.scratchGui.targets.stage.id === state.scratchGui.targets.editingTarget,
     telemetryModalVisible: state.scratchGui.modals.telemetryModal,
@@ -26478,6 +26916,7 @@ const mapDispatchToProps = dispatch => ({
   onActivateTab: tab => dispatch(Object(_reducers_editor_tab__WEBPACK_IMPORTED_MODULE_9__["activateTab"])(tab)),
   onActivateCostumesTab: () => dispatch(Object(_reducers_editor_tab__WEBPACK_IMPORTED_MODULE_9__["activateTab"])(_reducers_editor_tab__WEBPACK_IMPORTED_MODULE_9__["COSTUMES_TAB_INDEX"])),
   onActivateSoundsTab: () => dispatch(Object(_reducers_editor_tab__WEBPACK_IMPORTED_MODULE_9__["activateTab"])(_reducers_editor_tab__WEBPACK_IMPORTED_MODULE_9__["SOUNDS_TAB_INDEX"])),
+  onActivateVariablesTab: () => dispatch(Object(_reducers_editor_tab__WEBPACK_IMPORTED_MODULE_9__["activateTab"])(_reducers_editor_tab__WEBPACK_IMPORTED_MODULE_9__["VARIABLES_TAB_INDEX"])),
   onActivateFilesTab: () => dispatch(Object(_reducers_editor_tab__WEBPACK_IMPORTED_MODULE_9__["activateTab"])(_reducers_editor_tab__WEBPACK_IMPORTED_MODULE_9__["FILES_TAB_INDEX"])),
   onRequestCloseBackdropLibrary: () => dispatch(Object(_reducers_modals__WEBPACK_IMPORTED_MODULE_10__["closeBackdropLibrary"])()),
   onRequestCloseCostumeLibrary: () => dispatch(Object(_reducers_modals__WEBPACK_IMPORTED_MODULE_10__["closeCostumeLibrary"])()),
@@ -34494,6 +34933,273 @@ const mapDispatchToProps = dispatch => ({
   }
 });
 /* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_3__["connect"])(mapStateToProps, mapDispatchToProps)(UsernameModal));
+
+/***/ }),
+
+/***/ "./src/containers/variables-tab.jsx":
+/*!******************************************!*\
+  !*** ./src/containers/variables-tab.jsx ***!
+  \******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var lodash_bindall__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lodash.bindall */ "./node_modules/lodash.bindall/index.js");
+/* harmony import */ var lodash_bindall__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(lodash_bindall__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react_intl__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-intl */ "./node_modules/react-intl/lib/index.es.js");
+/* harmony import */ var scratch_vm__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! scratch-vm */ "./node_modules/scratch-vm/src/index.js");
+/* harmony import */ var scratch_vm__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(scratch_vm__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _components_variables_tab_variables_tab_jsx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/variables-tab/variables-tab.jsx */ "./src/components/variables-tab/variables-tab.jsx");
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
+/* harmony import */ var _lib_error_boundary_hoc_jsx__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../lib/error-boundary-hoc.jsx */ "./src/lib/error-boundary-hoc.jsx");
+/* harmony import */ var _reducers_editor_tab__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../reducers/editor-tab */ "./src/reducers/editor-tab.js");
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+
+
+
+
+
+
+
+
+class VariablesTab extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
+  constructor(props) {
+    super(props);
+    lodash_bindall__WEBPACK_IMPORTED_MODULE_2___default()(this, ['_fullReload', '_quickReload', 'fullReload', 'quickReload', 'handleShowLarge', 'handleClickVariableName', 'handleClickVariableValue', 'handleEditVariableName', 'handleEditVariableValue', 'handleTypeVariableName', 'handleTypeVariableValue', 'wasSubmit']);
+    this.state = {
+      globalVariables: [],
+      localVariables: [],
+      globalMapping: [],
+      localMapping: [],
+      showLargeValue: {},
+      editingVariableId: '',
+      editingVariableInput: '',
+      editingVariableEditName: '',
+      editingVariableEditValue: ''
+    };
+  }
+  componentDidUpdate(prevProps) {
+    if (prevProps.editingTarget !== this.props.editingTarget) {
+      this.fullReload();
+    }
+  }
+  componentDidMount() {
+    this.props.vm.runtime.on('RUNTIME_STEP_START', this.quickReload);
+    this.props.vm.runtime.on('PROJECT_LOADED', this.fullReload);
+    this.props.vm.runtime.on('TOOLBOX_EXTENSIONS_NEED_UPDATE', this.fullReload);
+    this.fullReload();
+  }
+  componentWillUnmount() {
+    this.props.vm.runtime.off('RUNTIME_STEP_START', this.quickReload);
+    this.props.vm.runtime.off('PROJECT_LOADED', this.fullReload);
+    this.props.vm.runtime.off('TOOLBOX_EXTENSIONS_NEED_UPDATE', this.fullReload);
+  }
+  handleShowLarge(varId) {
+    const newObj = this.state.showLargeValue;
+    newObj[varId] = true;
+    this.setState({
+      showLargeValue: newObj
+    });
+  }
+  _fullReload() {
+    const vm = this.props.vm;
+    const id = this.props.editingTarget;
+    const editingTarget = vm.runtime.getTargetById(id);
+    const stage = vm.runtime.getTargetForStage();
+    if (!editingTarget) return;
+    if (!stage) return;
+
+    // TODO: Support custom variable types created by extensions.
+    if (editingTarget.isStage) {
+      this.setState({
+        localVariables: [],
+        localMapping: []
+      });
+    } else {
+      const variables = Object.values(editingTarget.variables).filter(i => i.type === "" || i.type === "list");
+      this.setState({
+        localVariables: variables,
+        localMapping: structuredClone(variables)
+      });
+    }
+    const globalVariables = Object.values(stage.variables).filter(i => i.type === "" || i.type === "list");
+    this.setState({
+      globalVariables: globalVariables,
+      globalMapping: structuredClone(globalVariables)
+    });
+  }
+  _quickReload() {
+    // TODO: Lists are not properly accounted for.
+    for (const prevVariable of this.state.localMapping) {
+      const newVariable = this.state.localVariables.find(v => v.id === prevVariable.id);
+      if (!newVariable) {
+        return this.fullReload();
+      }
+      if (prevVariable.value !== newVariable.value || prevVariable.name !== newVariable.name) {
+        return this.fullReload();
+      }
+    }
+    for (const prevVariable of this.state.globalMapping) {
+      const newVariable = this.state.globalVariables.find(v => v.id === prevVariable.id);
+      if (!newVariable) {
+        return this.fullReload();
+      }
+      if (prevVariable.value !== newVariable.value || prevVariable.name !== newVariable.name) {
+        return this.fullReload();
+      }
+    }
+  }
+  fullReload() {
+    try {
+      this._fullReload(...arguments);
+    } catch (e) {
+      console.log(e);
+    }
+  }
+  quickReload() {
+    try {
+      this._quickReload(...arguments);
+    } catch (e) {
+      console.log(e);
+    }
+  }
+  wasSubmit(event) {
+    if (event.type !== 'keydown') return false;
+    if (event.target.nodeName !== 'INPUT') return false;
+    return event.key === 'Enter';
+  }
+  handleClickVariableName(variable) {
+    this.setState({
+      editingVariableId: variable.id,
+      editingVariableInput: 'name',
+      editingVariableEditName: variable.name
+    });
+  }
+  handleClickVariableValue(variable) {
+    this.setState({
+      editingVariableId: variable.id,
+      editingVariableInput: 'value',
+      editingVariableEditValue: variable.type === 'list' ? variable.value.join('\n') : variable.value
+    });
+  }
+  handleEditVariableName(event, variable) {
+    event.preventDefault();
+    const vm = this.props.vm;
+    const workspace = Blockly.getMainWorkspace();
+    const variableId = this.state.editingVariableId;
+    if (!variableId) return;
+    if (variableId !== variable.id) return;
+    const target = vm.runtime.targets.find(t => t.variables[variableId]);
+    if (!target) return;
+    let newName = this.state.editingVariableEditName;
+    if (!newName.trim()) return;
+    const CLOUD_SYMBOL = "☁";
+    const CLOUD_PREFIX = CLOUD_SYMBOL + " ";
+    if (variable.isCloud) {
+      if (newName.startsWith(CLOUD_SYMBOL)) {
+        if (!newName.startsWith(CLOUD_PREFIX)) {
+          // There isn't a space between the cloud symbol and the name, so add one.
+          newName = newName.substring(0, 1) + " " + newName.substring(1);
+        }
+      } else {
+        newName = CLOUD_PREFIX + newName;
+      }
+    }
+    let nameAlreadyUsed = false;
+    if (target.isStage) {
+      // Global variables must not conflict with any global variables or local variables in any sprite.
+      const existingNames = vm.runtime.getAllVarNamesOfType(variable.type);
+      nameAlreadyUsed = existingNames.includes(newName);
+    } else {
+      // Local variables must not conflict with any global variables or local variables in this sprite.
+      nameAlreadyUsed = !!workspace.getVariable(newName, variable.type);
+    }
+    if (nameAlreadyUsed) return;
+    workspace.renameVariableById(variable.id, newName);
+    this.setState({
+      editingVariableId: '',
+      editingVariableInput: ''
+    });
+    this.fullReload();
+    event.target.blur();
+  }
+  handleEditVariableValue(event, variable) {
+    event.preventDefault();
+    const vm = this.props.vm;
+    const variableId = this.state.editingVariableId;
+    if (!variableId) return;
+    if (variableId !== variable.id) return;
+    const target = vm.runtime.targets.find(t => t.variables[variableId]);
+    if (!target) return;
+    const newValue = this.state.editingVariableEditValue;
+    if (variable.type === "list") {
+      const makeSureNotEmpty = newValue === '' ? [] : newValue.split("\n");
+      vm.setVariableValue(target.id, variableId, makeSureNotEmpty);
+    } else {
+      vm.setVariableValue(target.id, variableId, newValue);
+    }
+    this.setState({
+      editingVariableId: '',
+      editingVariableInput: ''
+    });
+    this.fullReload();
+    event.target.blur();
+  }
+  handleTypeVariableName(event, variable) {
+    const submitted = this.wasSubmit(event);
+    if (submitted) return this.handleEditVariableName(event, variable);
+    this.setState({
+      editingVariableEditName: event.target.value
+    });
+  }
+  handleTypeVariableValue(event, variable) {
+    const submitted = this.wasSubmit(event);
+    if (submitted) return this.handleEditVariableValue(event, variable);
+    this.setState({
+      editingVariableEditValue: event.target.value
+    });
+  }
+  render() {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_variables_tab_variables_tab_jsx__WEBPACK_IMPORTED_MODULE_5__["default"], _extends({}, this.props, {
+      globalVariables: this.state.globalVariables,
+      localVariables: this.state.localVariables,
+      showLargeValue: this.state.showLargeValue,
+      onClickShowLarge: this.handleShowLarge,
+      editingVariableId: this.state.editingVariableId,
+      editingVariableInput: this.state.editingVariableInput,
+      editingVariableEditName: this.state.editingVariableEditName,
+      editingVariableEditValue: this.state.editingVariableEditValue,
+      onClickVariableName: this.handleClickVariableName,
+      onClickVariableValue: this.handleClickVariableValue,
+      onEditVariableName: this.handleEditVariableName,
+      onEditVariableValue: this.handleEditVariableValue,
+      onTypeVariableName: this.handleTypeVariableName,
+      onTypeVariableValue: this.handleTypeVariableValue
+    }));
+  }
+}
+VariablesTab.propTypes = {
+  editingTarget: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.string,
+  sprites: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.any,
+  intl: react_intl__WEBPACK_IMPORTED_MODULE_3__["intlShape"],
+  isRtl: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.bool,
+  vm: prop_types__WEBPACK_IMPORTED_MODULE_0___default.a.instanceOf(scratch_vm__WEBPACK_IMPORTED_MODULE_4___default.a)
+};
+const mapStateToProps = state => ({
+  isRtl: state.locales.isRtl,
+  editingTarget: state.scratchGui.targets.editingTarget,
+  sprites: state.scratchGui.targets.sprites
+});
+const mapDispatchToProps = dispatch => ({
+  onActivateVariablesTab: () => dispatch(Object(_reducers_editor_tab__WEBPACK_IMPORTED_MODULE_8__["activateTab"])(_reducers_editor_tab__WEBPACK_IMPORTED_MODULE_8__["VARIABLES_TAB_INDEX"]))
+});
+/* harmony default export */ __webpack_exports__["default"] = (Object(_lib_error_boundary_hoc_jsx__WEBPACK_IMPORTED_MODULE_7__["default"])('Variables Tab')(Object(react_intl__WEBPACK_IMPORTED_MODULE_3__["injectIntl"])(Object(react_redux__WEBPACK_IMPORTED_MODULE_6__["connect"])(mapStateToProps, mapDispatchToProps)(VariablesTab))));
 
 /***/ }),
 
@@ -50404,7 +51110,7 @@ const setCustomStageSize = function setCustomStageSize(width, height) {
 /*!************************************!*\
   !*** ./src/reducers/editor-tab.js ***!
   \************************************/
-/*! exports provided: default, editorTabInitialState, activateTab, BLOCKS_TAB_INDEX, COSTUMES_TAB_INDEX, SOUNDS_TAB_INDEX, FILES_TAB_INDEX */
+/*! exports provided: default, editorTabInitialState, activateTab, BLOCKS_TAB_INDEX, COSTUMES_TAB_INDEX, SOUNDS_TAB_INDEX, VARIABLES_TAB_INDEX, FILES_TAB_INDEX */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -50415,6 +51121,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BLOCKS_TAB_INDEX", function() { return BLOCKS_TAB_INDEX; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "COSTUMES_TAB_INDEX", function() { return COSTUMES_TAB_INDEX; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SOUNDS_TAB_INDEX", function() { return SOUNDS_TAB_INDEX; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "VARIABLES_TAB_INDEX", function() { return VARIABLES_TAB_INDEX; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FILES_TAB_INDEX", function() { return FILES_TAB_INDEX; });
 const ACTIVATE_TAB = 'scratch-gui/navigation/ACTIVATE_TAB';
 
@@ -50422,7 +51129,8 @@ const ACTIVATE_TAB = 'scratch-gui/navigation/ACTIVATE_TAB';
 const BLOCKS_TAB_INDEX = 0;
 const COSTUMES_TAB_INDEX = 1;
 const SOUNDS_TAB_INDEX = 2;
-const FILES_TAB_INDEX = 3;
+const VARIABLES_TAB_INDEX = 3;
+const FILES_TAB_INDEX = 4;
 const initialState = {
   activeTabIndex: BLOCKS_TAB_INDEX
 };
