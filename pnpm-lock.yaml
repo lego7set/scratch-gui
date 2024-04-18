@@ -3937,7 +3937,7 @@ packages:
       node-fetch: 2.7.0
       ws: 7.5.9
     optionalDependencies:
-      register-scheme: github.com/devsnek/node-register-scheme/e7cc9a63a1f512565da44cb57316d9fb10750e17
+      register-scheme: git@github.com+devsnek/node-register-scheme/e7cc9a63a1f512565da44cb57316d9fb10750e17
     transitivePeerDependencies:
       - bufferutil
       - encoding
@@ -3960,7 +3960,7 @@ packages:
   /dns-packet@1.3.4:
     resolution: {integrity: sha512-BQ6F4vycLXBvdrJZ6S3gZewt6rcrks9KBgM9vrhW+knGRqc8uEdT7fuCwloc7nny5xNoMJ17HGH0R/6fpo8ECA==}
     dependencies:
-      ip: 1.1.8
+      ip: 1.1.9
       safe-buffer: 5.2.1
     dev: true
 
@@ -6172,8 +6172,8 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /ip@1.1.8:
-    resolution: {integrity: sha512-PuExPYUiu6qMBQb4l06ecm6T6ujzhmh+MeJcW9wa89PoAz5pvd4zPgN5WJV104mb6S2T1AwNIAaB70JNrLQWhg==}
+  /ip@1.1.9:
+    resolution: {integrity: sha512-cyRxvOEpNHNtchU3Ln9KC/auJgup87llfQpQ+t5ghoC/UhL16SWzbueiCsdTnWmqAWl7LadfuwhlqmtOaqMHdQ==}
     dev: true
 
   /ipaddr.js@1.9.1:
@@ -11012,7 +11012,7 @@ packages:
       http-proxy-middleware: 0.19.1(debug@4.3.4)(supports-color@6.1.0)
       import-local: 2.0.0
       internal-ip: 4.3.0
-      ip: 1.1.8
+      ip: 1.1.9
       is-absolute-url: 3.0.3
       killable: 1.0.1
       loglevel: 1.8.1
@@ -11380,6 +11380,35 @@ packages:
     engines: {node: '>=10'}
     dev: false
 
+  git@github.com+TurboWarp/scratch-svg-renderer/179d88810b6a3c581d2d9d0f924dc0ab1e0d0b82(scratch-render-fonts@1.0.0):
+    resolution: {commit: 179d88810b6a3c581d2d9d0f924dc0ab1e0d0b82, repo: git@github.com:TurboWarp/scratch-svg-renderer.git, type: git}
+    id: git@github.com+TurboWarp/scratch-svg-renderer/179d88810b6a3c581d2d9d0f924dc0ab1e0d0b82
+    name: '@turbowarp/scratch-svg-renderer'
+    version: 1.0.0
+    peerDependencies:
+      scratch-render-fonts: github:TurboWarp/scratch-render-fonts#master
+    dependencies:
+      '@turbowarp/nanolog': 0.2.0
+      base64-js: 1.2.1
+      base64-loader: 1.0.0
+      css-tree: 1.1.3
+      dompurify: 2.2.7
+      fastestsmallesttextencoderdecoder: 1.0.22
+      scratch-render-fonts: github.com/ElectraMod/scratch-render-fonts/2d494863509572246aa3bb37628273e88c2b4f39
+      transformation-matrix: 1.15.0
+    dev: false
+
+  git@github.com+devsnek/node-register-scheme/e7cc9a63a1f512565da44cb57316d9fb10750e17:
+    resolution: {commit: e7cc9a63a1f512565da44cb57316d9fb10750e17, repo: git@github.com:devsnek/node-register-scheme.git, type: git}
+    name: register-scheme
+    version: 0.0.2
+    requiresBuild: true
+    dependencies:
+      bindings: 1.5.0
+      node-addon-api: 1.7.2
+    dev: false
+    optional: true
+
   github.com/ElectraMod/scratch-blocks/b4b8132f7c4cc680fc145c6575a2623af116af10:
     resolution: {tarball: https://codeload.github.com/ElectraMod/scratch-blocks/tar.gz/b4b8132f7c4cc680fc145c6575a2623af116af10}
     name: scratch-blocks
@@ -11487,7 +11516,7 @@ packages:
       minilog: 3.1.0
       raw-loader: 0.5.1
       scratch-render-fonts: github.com/ElectraMod/scratch-render-fonts/2d494863509572246aa3bb37628273e88c2b4f39
-      scratch-svg-renderer: github.com/TurboWarp/scratch-svg-renderer/179d88810b6a3c581d2d9d0f924dc0ab1e0d0b82(scratch-render-fonts@1.0.0)
+      scratch-svg-renderer: git@github.com+TurboWarp/scratch-svg-renderer/179d88810b6a3c581d2d9d0f924dc0ab1e0d0b82(scratch-render-fonts@1.0.0)
       twgl.js: 4.4.0
     dev: false
 
@@ -11507,24 +11536,6 @@ packages:
       - webpack
     dev: false
 
-  github.com/TurboWarp/scratch-svg-renderer/179d88810b6a3c581d2d9d0f924dc0ab1e0d0b82(scratch-render-fonts@1.0.0):
-    resolution: {tarball: https://codeload.github.com/TurboWarp/scratch-svg-renderer/tar.gz/179d88810b6a3c581d2d9d0f924dc0ab1e0d0b82}
-    id: github.com/TurboWarp/scratch-svg-renderer/179d88810b6a3c581d2d9d0f924dc0ab1e0d0b82
-    name: '@turbowarp/scratch-svg-renderer'
-    version: 1.0.0
-    peerDependencies:
-      scratch-render-fonts: github:TurboWarp/scratch-render-fonts#master
-    dependencies:
-      '@turbowarp/nanolog': 0.2.0
-      base64-js: 1.2.1
-      base64-loader: 1.0.0
-      css-tree: 1.1.3
-      dompurify: 2.2.7
-      fastestsmallesttextencoderdecoder: 1.0.22
-      scratch-render-fonts: github.com/ElectraMod/scratch-render-fonts/2d494863509572246aa3bb37628273e88c2b4f39
-      transformation-matrix: 1.15.0
-    dev: false
-
   github.com/TurboWarp/scratch-svg-renderer/62fe825405a451ab981c33d601d5c6c3581ced69(scratch-render-fonts@1.0.0):
     resolution: {tarball: https://codeload.github.com/TurboWarp/scratch-svg-renderer/tar.gz/62fe825405a451ab981c33d601d5c6c3581ced69}
     id: github.com/TurboWarp/scratch-svg-renderer/62fe825405a451ab981c33d601d5c6c3581ced69
@@ -11542,14 +11553,3 @@ packages:
       scratch-render-fonts: github.com/ElectraMod/scratch-render-fonts/2d494863509572246aa3bb37628273e88c2b4f39
       transformation-matrix: 1.15.0
     dev: false
-
-  github.com/devsnek/node-register-scheme/e7cc9a63a1f512565da44cb57316d9fb10750e17:
-    resolution: {tarball: https://codeload.github.com/devsnek/node-register-scheme/tar.gz/e7cc9a63a1f512565da44cb57316d9fb10750e17}
-    name: register-scheme
-    version: 0.0.2
-    requiresBuild: true
-    dependencies:
-      bindings: 1.5.0
-      node-addon-api: 1.7.2
-    dev: false
-    optional: true
