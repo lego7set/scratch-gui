@@ -158,7 +158,8 @@ const emDevelopers = [
 
 const emPullRequestDevelopers = [
     'Ianyourgod',
-    'RedMan13'
+    'RedMan13',
+    'jwklong'
     // add more people probably
 ].map(fromHardcodedGithub);
 
