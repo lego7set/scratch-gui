@@ -422,49 +422,31 @@ const Credits = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.
   className: _credits_css__WEBPACK_IMPORTED_MODULE_4___default.a.headerContainer
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
   className: _credits_css__WEBPACK_IMPORTED_MODULE_4___default.a.headerText
-}, "PenguinMod Credits")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "PenguinMod")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Thank you"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Without TurboWarp, PenguinMod may have never existed. Thank you to everyone who worked on Scratch and TurboWarp, you have made many people finally be able to make whatever they can imagine."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+}, "ElectraMod Credits")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "ElectraMod")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Thank you"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Without TurboWarp and PenguinMod, Snail IDE, Gandi IDE, ElectraMod may have never existed. Thank you to everyone who worked on Scratch, TurboWarp, PenguinMod? Snail IDE and Gandi IDE you have made many people finally be able to make whatever they can imagine."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
   href: "https://scratch.mit.edu/donate"
 }, "Donate to support Scratch."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
   href: "https://github.com/sponsors/GarboMuffin"
-}, "Donate to support TurboWarp."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Contributors"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "PenguinMod is made by a small bunch of developers. A list is below, but you can also check ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-  href: "https://github.com/orgs/PenguinMod/people"
+}, "Donate to support TurboWarp."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+  href: "https://penguinmod.com/donate"
+}, "Donate to support PenguinMod."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Contributors"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "ElectraMod is made by a small bunch of developers. A list is below, but you can also check ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+  href: "https://github.com/orgs/ElectraMod/people"
 }, "our GitHub"), " incase this one is out of date."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(UserList, {
+  users: _users__WEBPACK_IMPORTED_MODULE_6__["default"].emDevelopers
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "The list order is randomized on each refresh.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "There are even community members who have helped develop ElectraMod. People like ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "you!")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(UserList, {
+  users: _users__WEBPACK_IMPORTED_MODULE_6__["default"].emPullRequestDevelopers
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "The list order is randomized on each refresh.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "\u2665 Without PenguinMod, ElectraMod would never exist, here the PenguinMod Dev Team is listed \u2665 A list is below, but you can also check their GitHub incase this one is out of date. But not all devs are listed there."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(UserList, {
   users: _users__WEBPACK_IMPORTED_MODULE_6__["default"].pmDevelopers
 }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "The list order is randomized on each refresh.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "There are even community members who have helped develop PenguinMod. People like ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "you!")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(UserList, {
   users: _users__WEBPACK_IMPORTED_MODULE_6__["default"].pmPullRequestDevelopers
-}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "The list order is randomized on each refresh."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "GitHub Pages"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "We currently use ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-  href: "https://pages.github.com/"
-}, "GitHub Pages"), " to host PenguinMod."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-  href: "https://pages.github.com/"
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "The list order is randomized on each refresh."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Vercel"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "We currently use ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+  href: "https://vercel.com/"
+}, "Vercel"), " to host ElectraMod."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+  href: "https://vercel.com/"
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-  src: "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/collections/github-pages-examples/github-pages-examples.png",
+  src: "https://raw.githubusercontent.com/github/explore/3c66f1237835e0b877190fbea528d0ebece7bccf/topics/vercel/vercel.png",
   width: "160",
   height: "160"
-})), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Domain Provider"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-  href: "https://penguinmod.com"
-}, "penguinmod.com"), " (and any subdomains) are currently provided by ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-  href: "https://github.com/enderhacker"
-}, "NotHouse"), ".", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-  href: "https://github.com/enderhacker"
-}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-  src: "https://avatars.githubusercontent.com/u/61245488?v=4",
-  style: {
-    width: "128px"
-  }
-}))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Server Host"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "PenguinMod's Project Sharing server is currently hosted by ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-  href: "https://github.com/JoshAtticus"
-}, "JoshAtticus"), ".", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-  href: "https://github.com/JoshAtticus"
-}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-  src: "https://avatars.githubusercontent.com/u/72828296?v=4",
-  style: {
-    width: "128px"
-  }
-}))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "The PenguinMod Server API is maintained by many people. A list is below, but you can also check ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-  href: "https://github.com/PenguinMod/PenguinMod-IntermediateBackendApi/graphs/contributors"
-}, "the GitHub repository"), " incase this one is out of date."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(UserList, {
-  users: _users__WEBPACK_IMPORTED_MODULE_6__["default"].pmApiDevelopers
-}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "The list order is randomized on each refresh.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Sound Effects"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "PenguinMod has added some more sounds to the Sound Library. All PenguinMod sounds are from ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+})), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Sound Effects"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "PenguinMod (not ElectraMod) has added some more sounds to the Sound Library. All PenguinMod sounds are from ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
   href: "https://freesound.org/"
 }, "https://freesound.org/"), " and ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
   href: "https://archive.org/"
@@ -472,12 +454,14 @@ const Credits = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.
   href: "https://auth.itinerary.eu.org/"
 }, "Scratch Auth"), " created by ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
   href: "https://scratch.mit.edu/users/Looky1173/"
-}, "Looky1173"), ". (thanks for adding us to the user list!)", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "\"Scratch Auth\" is not actually affiliated with Scratch, the Scratch Team, or the Scratch Foundation."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "PenguinMod is also not owned or managed by Looky1173, please only comment on his profile", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "if the Scratch Auth page tells you that it failed, not if PenguinMod fails to load."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "PenguinMod & TurboWarp")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Extensions"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "If you are an extension developer who wants their extension removed from PenguinMod's extensions list, contact us as soon as you can. We'll get it removed as soon as we are able to.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "We use some MIT licensed extensions from TurboWarp as they are really useful! Check out the full list of TurboWarp extensions ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+}, "Looky1173"), ". (thanks for adding us to the user list!)", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "\"Scratch Auth\" is not actually affiliated with Scratch, the Scratch Team, or the Scratch Foundation."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "ElectraMod is also not owned or managed by Looky1173, please only comment on his profile", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "if the Scratch Auth page tells you that it failed, not if PenguinMod fails to load."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "ElectraMod, PenguinMod & TurboWarp")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Extensions"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "If you are an extension developer who wants their extension removed from ElectraMod's extensions list, contact us as soon as you can. We'll get it removed as soon as we are able to.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "We use some MIT licensed extensions from TurboWarp as they are really useful! Check out the full list of TurboWarp extensions ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
   href: "https://extensions.turbowarp.org/"
 }, "here"), ", but we still need to credit these people! Check them out below:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(UserList, {
   users: _users__WEBPACK_IMPORTED_MODULE_6__["default"].extensionDevelopers
-}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "The list order is randomized on each refresh.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "PenguinMod also has a few people who made and submitted extensions too! This list may get outdated sometimes, but here they are listed below:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(UserList, {
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(UserList, {
   users: _users__WEBPACK_IMPORTED_MODULE_6__["default"].pmExtensionDevelopers
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "The list order is randomized on each refresh.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "ElectraMod also has a few people who made and submitted extensions too! This list may get outdated sometimes, but here they are listed below:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(UserList, {
+  users: _users__WEBPACK_IMPORTED_MODULE_6__["default"].emExtensionDevelopers
 }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", null, "The list order is randomized on each refresh."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Addons"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Addons are mostly taken from ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
   href: "https://scratchaddons.com/"
 }, "Scratch Addons"), ", but we hope to have some PenguinMod addons in the future. Here are the developers that made the current addons available."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(UserList, {
@@ -613,6 +597,10 @@ const addonDevelopers = [{
 }].map(fromHardcoded);
 const pmDevelopers = ['enderhacker', 'FreshPenguin112', 'Ianyourgod', 'JoshAtticus', 'JeremyGamer13', 'jwklong', 'tnix100', 'RedMan13', 'SharkPool-SP', 'showierdata9978'].map(fromHardcodedGithub);
 const pmPullRequestDevelopers = ['NexusKitten', 'LilyMakesThings', 'MikeDev101', 'kokofixcomputers', 'PPPDUD', 'qbjl', 'minidogg'
+// add more people probably
+].map(fromHardcodedGithub);
+const emDevelopers = ['Aness6040', 'AshimeeAlt', 'CharcoalAfterlife', 'cicerorph', 'FurryR', 'lego7set', 'Mistium'].map(fromHardcodedGithub);
+const emPullRequestDevelopers = ['Ianyourgod', 'RedMan13', 'jwklong'
 // add more people probably
 ].map(fromHardcodedGithub);
 const pmApiDevelopers = ['JeremyGamer13', 'RedMan13', 'tnix100', 'Ianyourgod', 'JoshAtticus', 'enderhacker'].map(fromHardcodedGithub);
@@ -768,16 +756,36 @@ const logoArtists = Promise.all(['593554048188416001'].map(fromHardcodedDiscord)
 const extensionDevelopers = ['GarboMuffin', 'griffpatch', 'DT-is-not-available', 'Vadik1', 'MikeDev101', 'LilyMakesThings'].map(fromHardcodedGithub);
 const pmExtensionDevelopers = ['qbjl', 'NexusKitten', 'Gen1x-ALT', 'SharkPool-SP', 'DogeisCut',
 // listed as a collaborator on a SharkPool extension
-'David-Orangemoon', 'pooiod', 'WAYLIVES', 'MrRedstonia', 'MikeDev101', 'BopShoes', 'AlexSchoolOH', 'Monochromasity', 'LilyMakesThings', 'TheShovel', 'skyhigh173', 'Ruby-Devs', 'oc9x97', 'lego7set', 'mariocraft987', 'Ashimee'].map(fromHardcodedGithub);
+'David-Orangemoon', 'pooiod', 'WAYLIVES', 'MrRedstonia', 'MikeDev101', 'BopShoes', 'AlexSchoolOH', 'Monochromasity', 'TheShovel', 'skyhigh173', 'Ruby-Devs', 'oc9x97', 'lego7set', 'mariocraft987', 'Ashimee'].map(fromHardcodedGithub);
+const emExtensionDevelopers = [{
+  text: 'Aness6040',
+  image: "https://avatars.githubusercontent.com/u/96918407?v=4",
+  href: "https://github.com/Aness6040"
+}, {
+  text: 'MubiLop',
+  image: "https://trampoline.turbowarp.org/avatars/by-username/MubiLop",
+  href: "https://penguinmod.com/profile?user=MubiLop"
+}, {
+  text: 'Jul Mik',
+  image: "https://trampoline.turbowarp.org/avatars/by-username/julmik6478",
+  href: "https://scratch.mit.edu/users/julmik6478/"
+}, {
+  text: 'MikeDev101',
+  image: "https://avatars.githubusercontent.com/u/12957745?v=4",
+  href: "https://github.com/MikeDev101/"
+}];
 /* harmony default export */ __webpack_exports__["default"] = ({
   addonDevelopers: shuffle(addonDevelopers),
   pmDevelopers: shuffle(pmDevelopers),
+  emDevelopers: shuffle(emDevelopers),
   logoArtists: shuffle(logoArtists),
   extensionDevelopers: shuffle(extensionDevelopers),
   pmExtensionDevelopers: shuffle(pmExtensionDevelopers),
+  emExtensionDevelopers: shuffle(emExtensionDevelopers),
   pmApiDevelopers: shuffle(pmApiDevelopers),
   pmTranslators: shuffle(pmTranslators),
-  pmPullRequestDevelopers: shuffle(pmPullRequestDevelopers)
+  pmPullRequestDevelopers: shuffle(pmPullRequestDevelopers),
+  emPullRequestDevelopers: shuffle(emPullRequestDevelopers)
 });
 
 /***/ })
