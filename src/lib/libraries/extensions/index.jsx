@@ -143,6 +143,7 @@ import sharkpoolPrintingIcon from './penguinmod/extensions/printing.png';
 import jgStorageExtensionIcon from './penguinmod/extensions/storage.png';
 import jgTimersExtensionIcon from './penguinmod/extensions/multipletimers.png';
 import jgAdvancedTextExtensionIcon from './penguinmod/extensions/advancedtext.png';
+import jgScriptsExtensionIcon from './penguinmod/extensions/scripts.svg';
 
 import jgJavascriptExtensionIcon from './penguinmod/extensions/javascript.png';
 import jgPathfindingExtensionIcon from './penguinmod/extensions/pathfinding.png';
@@ -584,6 +585,14 @@ const menuItems = [
         featured: true,
         extDeveloper: 'MikeDev',
         internetConnectionRequired: true
+    },
+    {
+        name: 'Scripts',
+        extensionId: 'jgScripts',
+        iconURL: jgScriptsExtensionIcon,
+        tags: ['penguinmod', 'datamgmt'],
+        description: 'Create compiled scripts with blocks while the project is running.',
+        featured: true
     },
     {
         name: 'Pang API',
