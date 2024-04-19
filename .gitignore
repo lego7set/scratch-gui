@@ -11,8 +11,8 @@ npm-*
 
 # Build
 /.opt-in
-!build/Note.md
 build/
+!build/Note.md
 !dist/
 
 # Generated translation files
