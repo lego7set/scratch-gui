@@ -587,7 +587,7 @@ const menuItems = [
         internetConnectionRequired: true
     },
     {
-        name: 'Scripts',
+        name: 'Scripts ',
         extensionId: 'jgScripts',
         iconURL: jgScriptsExtensionIcon,
         tags: ['penguinmod', 'datamgmt'],
