@@ -381,7 +381,7 @@ const pmExtensionDevelopers = [
     'MikeDev101',
     'BopShoes',
     'AlexSchoolOH',
-    'Monochromasity',   
+    'Monochromasity',
     'TheShovel',
     'skyhigh173',
     'Ruby-Devs',
