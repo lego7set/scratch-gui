@@ -152,6 +152,7 @@ const emDevelopers = [
     'CharcoalAfterlife',
     'cicerorph',
     'FurryR',
+    'MikeDev101',
     'lego7set',
     'Mistium'
 ].map(fromHardcodedGithub);
