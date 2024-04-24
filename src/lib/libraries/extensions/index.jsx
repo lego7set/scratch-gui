@@ -87,6 +87,8 @@ import pmCameraExtensionIcon from './penguinmod/extensions/pmcamera_thumbnail.pn
 // cl waw
 // import cloudlinkThumb from './penguinmod/extensions/cloudlinkThumb.png';
 import cloudlinkIcon from './penguinmod/extensions/cloudlinkIcon.svg';
+import clfiveIcon from './cloudlink/cl5.svg';
+import clomegaIcon from './cloudlink/clomega.svg';
 
 // thx jeremey
 import canvasExtensionBanner from './penguinmod/extensions/CanvasExtensionMenu.png';
@@ -586,6 +588,27 @@ const menuItems = [
         featured: true,
         extDeveloper: 'MikeDev',
         internetConnectionRequired: true
+    },
+    {
+        name: 'CloudLink Ω',
+        extensionId: 'https://electramod-extensions-gallery.vercel.app/internal_extensions/clomega.js',
+        tags: ['penguinmod', 'turbowarp'],
+        iconURL: clomegaIcon,
+        description: 'Register and login to accounts via Cloud Link 5 (WIP Extension!!!)',
+        featured: true,
+        extDeveloper: 'MikeDev',
+        internetConnectionRequired: false
+    },
+    {
+        name: 'CloudLink 5',
+        extensionId: 'https://electramod-extensions-gallery.vercel.app/internal_extensions/cl5.js',
+        tags: ['penguinmod', 'turbowarp'],
+        insetIconURL: cloudlinkIcon,
+        iconURL: clfiveIcon,
+        description: 'A powerful websocket extension for Scratch with account systems, and much more to offer. (WIP Extension!!!)',
+        featured: true,
+        extDeveloper: 'MikeDev',
+        internetConnectionRequired: false
     },
     {
         name: 'Scripts ',
