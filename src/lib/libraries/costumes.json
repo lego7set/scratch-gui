@@ -7923,6 +7923,78 @@
         "rotationCenterY": 120
     },
     {
+        "name": "Nyat-a",
+        "tags": [
+            "animals",
+            "cat",
+            "kitten",
+            "kitty",
+            "mammal",
+            "blue",
+            "electramod cat"
+        ],
+        "assetId": "0f66c4ee285c9f1447c9c20b7d85320f",
+        "bitmapResolution": 1,
+        "dataFormat": "svg",
+        "md5ext": "0f66c4ee285c9f1447c9c20b7d85320f.svg",
+        "rotationCenterX": 39.013887740735186,
+        "rotationCenterY": 59.52613466756951
+    },
+    {
+        "name": "Nyat-b",
+        "tags": [
+            "animals",
+            "cat",
+            "kitten",
+            "kitty",
+            "mammal",
+            "blue",
+            "electramod cat"
+        ],
+        "assetId": "92bee6e344e8fbe86aa3de547b60389b",
+        "bitmapResolution": 1,
+        "dataFormat": "svg",
+        "md5ext": "92bee6e344e8fbe86aa3de547b60389b.svg",
+        "rotationCenterX":41.876765686924614,
+        "rotationCenterY":60.172908959561695
+    },
+    {
+        "name": "Nyat-c",
+        "tags": [
+            "animals",
+            "cat",
+            "kitten",
+            "kitty",
+            "mammal",
+            "blue",
+            "electramod cat"
+        ],
+        "assetId": "a2d1eb24a60077741436148baa8debe7",
+        "bitmapResolution": 1,
+        "dataFormat": "svg",
+        "md5ext": "a2d1eb24a60077741436148baa8debe7.svg",
+        "rotationCenterX":39.01388342799106,
+        "rotationCenterY":59.667020176602705
+    },
+    {
+        "name": "nyat penguin",
+        "tags": [
+            "animals",
+            "cat",
+            "kitten",
+            "kitty",
+            "mammal",
+            "blue",
+            "electramod cat"
+        ],
+        "assetId": "875b975cfe3c82a056a194dee2fc70b9",
+        "bitmapResolution": 1,
+        "dataFormat": "svg",
+        "md5ext": "875b975cfe3c82a056a194dee2fc70b9.svg",
+        "rotationCenterX":37.97989015719304,
+        "rotationCenterY":59.52608535320542
+    },
+    {
         "name": "Octopus-a",
         "tags": [
             "animals",
