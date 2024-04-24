@@ -59,6 +59,7 @@ import turbowarpIcon from './penguinmod/extensions/turbowarp_icon.svg';
 import penguinmodLibraryExtensionIcon from './penguinmod/library.svg';
 import electramodLibraryExtensionIcon from './electramod/library.svg';
 import callumLibraryExtensionIcon from './callumjt/library.svg';
+import mistiumLibraryExtensionIcon from './mistium/library.svg';
 import sharkpoolGalleryIcon from './penguinmod/sharkpool-library.svg';
 import rubyIcon from './snail-ide/ruby.png';
 
@@ -1257,7 +1258,16 @@ const menuItems = [
         extensionId: 'special_callumExtensionLibrary',
         iconURL: callumLibraryExtensionIcon,
         description: 'A massive gallery for all known tw extensions',
-        tags: ['othermod', 'library'],
+        tags: ['turbowarp', 'tw', 'penguinmod', 'electramod', 'othermod', 'library'],
+        featured: true
+    },
+    {
+        name: 'Mistium\'s Extensions Gallery',
+        href: 'https://extensions.mistium.com/',
+        extensionId: 'special_mistiumExtensionLibrary',
+        iconURL: mistiumLibraryExtensionIcon,
+        description: 'Extensions made by Mistium',
+        tags: ['othermod', 'electramod', 'library'],
         featured: true
     },
     {
