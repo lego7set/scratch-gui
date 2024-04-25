@@ -27,7 +27,7 @@ jobs:
       with:
         node-version: 20.x
     - name: Install dependencies and build site
-      run: run: npm i -g pnpm@v8 && pnpm up && pnpm i --shamefully-hoist --force && NODE_ENV=production webpack --bail
+      run: npm i -g pnpm@v8 && pnpm up && pnpm i --shamefully-hoist --force && NODE_ENV=production webpack --bail
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v1
       with:
