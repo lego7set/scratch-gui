@@ -693,16 +693,6 @@ const control = function (isInitialSetup, isStage) {
             </value>
         </block>
         ${blockSeparator}
-        <block type="control_try_catch"/>
-        <block type="control_throw_error">
-            <value name="ERROR">
-                <shadow type="text">
-                    <field name="TEXT">Hello!</field>
-                </shadow>
-            </value>
-        </block>
-        <block type="control_error"/>
-        ${blockSeparator}
         <block type="control_backToGreenFlag"></block>
         <block type="control_stop_sprite">
             <value name="STOP_OPTION">
