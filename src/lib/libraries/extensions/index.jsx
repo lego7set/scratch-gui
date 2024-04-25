@@ -591,7 +591,6 @@ const menuItems = [
         internetConnectionRequired: true
     },
     {
-<<<<<<< HEAD
         name: 'CloudLink Ω',
         extensionId: 'https://electramod-extensions-gallery.vercel.app/internal_extensions/clomega.js',
         tags: ['electramod', 'penguinmod', 'turbowarp'],
@@ -614,9 +613,6 @@ const menuItems = [
     },
     {
         name: 'Scripts ',
-=======
-        name: 'Scripts',
->>>>>>> a08c6df361c3cf42c4a5cc1a0234afff72896efa
         extensionId: 'jgScripts',
         iconURL: jgScriptsExtensionIcon,
         tags: ['penguinmod', 'datamgmt'],
