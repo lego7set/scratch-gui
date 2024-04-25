@@ -592,7 +592,7 @@ const menuItems = [
     {
         name: 'CloudLink Ω',
         extensionId: 'https://electramod-extensions-gallery.vercel.app/internal_extensions/clomega.js',
-        tags: ['penguinmod', 'turbowarp'],
+        tags: ['electramod', 'penguinmod', 'turbowarp'],
         iconURL: clomegaIcon,
         description: 'Register and login to accounts via Cloud Link 5 (WIP Extension!!!)',
         featured: true,
@@ -602,7 +602,7 @@ const menuItems = [
     {
         name: 'CloudLink 5',
         extensionId: 'https://electramod-extensions-gallery.vercel.app/internal_extensions/cl5.js',
-        tags: ['penguinmod', 'turbowarp'],
+        tags: ['electramod', 'penguinmod', 'turbowarp'],
         insetIconURL: cloudlinkIcon,
         iconURL: clfiveIcon,
         description: 'A powerful websocket extension for Scratch with account systems, and much more to offer. (WIP Extension!!!)',
