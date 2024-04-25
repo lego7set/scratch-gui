@@ -91,6 +91,7 @@
     "scratch-render-fonts": "github:ElectraMod/scratch-render-fonts#master",
     "scratch-storage": "github:PenguinMod/PenguinMod-Storage#develop",
     "scratch-svg-renderer": "github:TurboWarp/scratch-svg-renderer#develop",
+    "scratch-vm": "github:ElectraMod/scratch-vm#develop",
     "startaudiocontext": "1.2.1",
     "style-loader": "^0.23.1",
     "text-encoding": "0.7.0",
