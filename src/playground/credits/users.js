@@ -364,7 +364,7 @@ const extensionDevelopers = [
     'GarboMuffin',
     'griffpatch',
     'DT-is-not-available',
-    'Vadik1',
+    'Xeltalliv',
     'MikeDev101',
     'LilyMakesThings'
 ].map(fromHardcodedGithub);

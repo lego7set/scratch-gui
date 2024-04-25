@@ -2868,6 +2868,7 @@
         "rotationCenterY": 44
     },
     {
+<<<<<<< HEAD
         "name": "Snail",
         "tags": [
             "animals"
@@ -2892,6 +2893,8 @@
         "rotationCenterY": 54.5393334434151
     },
     {
+=======
+>>>>>>> a08c6df361c3cf42c4a5cc1a0234afff72896efa
         "name": "Dani-a",
         "tags": [
             "people"
