@@ -11184,6 +11184,49 @@
         "blocks": {}
     },
     {
+        "name": "Rice Cracker",
+        "tags": [
+            "food"
+        ],
+        "isStage": false,
+        "variables": {},
+        "costumes": [
+            {
+                "assetId": "d93bf5280fd44e194ab7656d185514c3",
+                "name": "rice cracker",
+                "bitmapResolution": 1,
+                "md5ext": "d93bf5280fd44e194ab7656d185514c3.svg",
+                "dataFormat": "svg",
+                "rotationCenterX":44.987205505371094,
+                "rotationCenterY":44.18758010864258
+            }
+        ],
+        "sounds": [],
+        "blocks": {}
+    },
+    {
+        "name": "Rice Cracker Hamster",
+        "tags": [
+            "food",
+            "animals"
+        ],
+        "isStage": false,
+        "variables": {},
+        "costumes": [
+            {
+                "assetId": "90af95f746f066087d4dad8c072fb0b2",
+                "name": "rice cracker hamster",
+                "bitmapResolution": 1,
+                "md5ext": "90af95f746f066087d4dad8c072fb0b2.svg",
+                "dataFormat": "svg",
+                "rotationCenterX":44.987205505371094,
+                "rotationCenterY":44.18758010864258
+            }
+        ],
+        "sounds": [],
+        "blocks": {}
+    },
+    {
         "name": "Ripley",
         "tags": [
             "space",

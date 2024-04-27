@@ -9335,6 +9335,31 @@
         "rotationCenterY": 90.3795
     },
     {
+        "name": "Rice Cracker",
+        "tags": [
+            "food"
+        ],
+        "assetId": "d93bf5280fd44e194ab7656d185514c3",
+        "bitmapResolution": 1,
+        "dataFormat": "svg",
+        "md5ext": "d93bf5280fd44e194ab7656d185514c3.svg",
+        "rotationCenterX":44.987205505371094,
+        "rotationCenterY":44.18758010864258
+    },
+    {
+        "name": "Rice Cracker Hamster",
+        "tags": [
+            "food",
+            "animals"
+        ],
+        "assetId": "90af95f746f066087d4dad8c072fb0b2",
+        "bitmapResolution": 1,
+        "dataFormat": "svg",
+        "md5ext": "90af95f746f066087d4dad8c072fb0b2.svg",
+        "rotationCenterX":44.987205505371094,
+        "rotationCenterY":44.18758010864258
+    },
+    {
         "name": "Ripley-a",
         "tags": [
             "space",
