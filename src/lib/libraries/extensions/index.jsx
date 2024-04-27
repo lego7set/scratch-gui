@@ -60,6 +60,7 @@ import penguinmodLibraryExtensionIcon from './penguinmod/library.svg';
 import electramodLibraryExtensionIcon from './electramod/library.svg';
 import callumLibraryExtensionIcon from './callumjt/library.svg';
 import mistiumLibraryExtensionIcon from './mistium/library.svg';
+import mubiLibraryExtensionIcon from './electramod/mubi_gallery.svg';
 import sharkpoolGalleryIcon from './penguinmod/sharkpool-library.svg';
 import rubyIcon from './snail-ide/ruby.png';
 
@@ -1290,6 +1291,15 @@ const menuItems = [
         extensionId: 'special_mistiumExtensionLibrary',
         iconURL: mistiumLibraryExtensionIcon,
         description: 'Extensions made by Mistium',
+        tags: ['othermod', 'electramod', 'library'],
+        featured: true
+    },
+    {
+        name: 'MubiLop Extension Gallery',
+        href: 'https://mubi.tech/gallery.html',
+        extensionId: 'special_mubimExtensionLibrary',
+        iconURL: mubiLibraryExtensionIcon,
+        description: 'Extensions made by MubiLop',
         tags: ['othermod', 'electramod', 'library'],
         featured: true
     },
