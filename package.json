@@ -4,7 +4,7 @@
   "description": "GraphicaL User Interface for creating and running Scratch 3.0 projects",
   "main": "./dist/scratch-gui.js",
   "scripts": {
-    "link": "npm link scratch-vm scratch-paint scratch-render-fonts --force",
+    "link": "npm link scratch-vm scratch-paint scratch-render-fonts scratch-blocks --force",
     "buildall": "npm run build && npm run deploy",
     "build": "npm run link && webpack --colors --bail",
     "clean": "rimraf ./build && mkdirp build && rimraf ./dist && mkdirp dist",
