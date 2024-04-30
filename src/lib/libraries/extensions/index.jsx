@@ -371,7 +371,7 @@ const menuItems = [
     },
     {
         name: 'Pen+',
-        extensionId: 'https://extensions.penguinmod.com/extensions/ObviousAlexC/PenPlus.js',
+        extensionId: 'https://pen-group.github.io/extensions/extensions/PenP/v7.js',
         tags: ['categoryexpansion', 'graphics'],
         iconURL: 'https://extensions.penguinmod.com/images/ObviousAlexC/PenPlus.svg',
         description: 'An extension to the Pen category! Adds blocks for drawing triangles using textures and tints, drawing images and editing their pixels, etc.',
