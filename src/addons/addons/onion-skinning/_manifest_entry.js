@@ -23,7 +23,7 @@ const manifest = {
       "id": "default",
       "name": "Enable by default",
       "type": "boolean",
-      "default": false
+      "default": true
     },
     {
       "id": "previous",
