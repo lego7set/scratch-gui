@@ -53,6 +53,7 @@ import gdxforConnectionSmallIconURL from './gdxfor/gdxfor-small.svg';
 
 // turbowarp & gallery icons
 import twIcon from './tw/tw.svg';
+import electramodIcon from './electramod/electramod_icon.png';
 import galleryIcon from './gallery/gallery.svg';
 import customExtensionIcon from './custom/custom.svg';
 import turbowarpIcon from './penguinmod/extensions/turbowarp_icon.svg';
@@ -67,6 +68,8 @@ import rubyIcon from './snail-ide/ruby.png';
 import turboBuilderIcon from './penguinmod/turbobuilder.png';
 import extCreateIcon from './ext-create/logo.svg';
 import extCreateInset from './ext-create/inset.svg';
+import ElectraBuilderIcon from './electramod/electrabuilder.svg';
+import ElectraBuilderInset from './electramod/electrabuilder.png';
 
 import filesExtensionIcon from './penguinmod/extensions/files.png';
 import jgJSONExtensionIcon from './penguinmod/extensions/json.png';
@@ -155,6 +158,7 @@ import jgAnimationExtensionIcon from './penguinmod/extensions/animation.png';
 import typeScratchExtensionIcon from './snail-ide/typescript.svg';
 import blocklyIconURL from './blockly/blockly.png';
 import LppExtensionIcon from './lpp/banner.svg';
+import PythonExtensionIcon from './electramod/py.svg';
 import DebuggerConsoleExtensionIcon from './electramod/debuggerconsole.svg';
 import DiscordIcon from './discord/icon.svg';
 import DiscordRPCIcon from './discord/rpc.png';
@@ -901,9 +905,11 @@ const menuItems = [
         name: 'Debugger Console',
         extensionId: 'https://electramod-extensions-gallery.vercel.app/extensions/Aness6040/debuggerconsole.js',
         iconURL: DebuggerConsoleExtensionIcon,
+        insetIconURL: electramodIcon,
+        customInsetColor: '#2D2C3F',
         tags: ['electramod'],
         description: 'Based on Turbowarp CN\'s Debugger by NOname',
-        credits: 'Started by NOname, modified by Aness6040',
+        credits: 'Started by NOname, continued by Aness6040',
         featured: true
     },
     /* {
@@ -1387,7 +1393,7 @@ const menuItems = [
         iconURL: turboBuilderIcon,
         description: 'Create your own amazing extensions using a scratch-based UI!',
         credits: 'Started by JeremyGamer13, continued by jwklong',
-        tags: ['extcreate'],
+        tags: ['extcreate', 'electrabuilder'],
         featured: true
     },
     {
@@ -1396,9 +1402,21 @@ const menuItems = [
         extensionId: 'special_ExtCreate',
         iconURL: extCreateIcon,
         insetIconURL: extCreateInset,
+        customInsetColor: '#FFF',
         description: 'Snail IDE version of TurboBuilder',
         credits: 'Started by JeremyGamer13, continued by jwklong, modified by nmsderp',
         tags: ['builders', 'extcreate', 'snailide'],
+        featured: true
+    },
+    {
+        name: 'ElectraBuilder',
+        href: 'https://electrabuilder.vercel.app/',
+        extensionId: 'special_electraBuilder',
+        iconURL: ElectraBuilderIcon,
+        insetIconURL: ElectraBuilderInset,
+        description: 'ElectraMod version of TurboBuilder',
+        credits: 'Started by JeremyGamer13, continued by jwklong, modified by Aness6040',
+        tags: ['builders', 'extcreate', 'electramod'],
         featured: true
     },
     {
