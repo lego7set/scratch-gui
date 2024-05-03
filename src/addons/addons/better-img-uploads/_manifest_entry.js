@@ -62,6 +62,7 @@ const manifest = {
       ],
       "default": "fit"
     }
-  ]
+  ],
+  "enabledByDefault": true
 };
 export default manifest;
