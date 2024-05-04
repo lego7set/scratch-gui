@@ -168,7 +168,7 @@ class ShareButton extends React.Component {
                 <div className={classNames(styles.shareContent)}>
                     {isEdit ? <FormattedMessage
                             defaultMessage="Upload Edits"
-                            description="Text for uploading edits for projects on PenguinMod"
+                            description="Text for uploading edits for projects on ElectraMod"
                             id="gui.menuBar.pmedit"
                         /> :
                         (isRemix ?

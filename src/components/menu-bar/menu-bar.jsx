@@ -76,7 +76,8 @@ import dropdownCaret from './dropdown-caret.svg';
 import languageIcon from '../language-selector/language-icon.svg';
 import aboutIcon from './icon--about.svg';
 import errorIcon from './tw-error.svg';
-import themeIcon from './tw-moon.svg';
+import moonIcon from './tw-moon.svg';
+import sunIcon from './tw-sun.svg';
 
 import fileIcon from './icon--file.svg';
 import editIcon from './icon--edit.svg';
@@ -517,10 +518,20 @@ class MenuBar extends React.Component {
                                 onMouseUp={this.props.onClickTheme}
                             >
                                 <img
-                                    src={themeIcon}
+                                    src={moonIcon}
                                     width="24"
                                     height="24"
                                     draggable={false}
+                                    alt="Icon"
+                                    className={styles.moonIcon}
+                                />
+                                <img
+                                    src={sunIcon}
+                                    width="24"
+                                    height="24"
+                                    draggable={false}
+                                    alt="Icon"
+                                    className={styles.sunIcon}
                                 />
                             </div>
                         )}
