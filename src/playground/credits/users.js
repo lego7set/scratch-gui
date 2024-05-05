@@ -286,7 +286,7 @@ const pmTranslators = [
     {
         text: 'MubiLop',
         image: `https://trampoline.turbowarp.org/avatars/by-username/MubiLop`,
-        href: "https://penguinmod.com/profile?user=MubiLop",
+        href: "https://electramod-home.vercel.app/profile?user=MubiLop",
     },
     {
         text: 'TLP136',
@@ -400,12 +400,12 @@ const emExtensionDevelopers = [
     {
         text: 'MubiLop',
         image: `https://trampoline.turbowarp.org/avatars/by-username/MubiLop`,
-        href: "https://penguinmod.com/profile?user=MubiLop",
+        href: "https://electramod-home.vercel.app/profile?user=MubiLop",
     },
     {
         text: 'Jul Mik',
         image: `https://trampoline.turbowarp.org/avatars/by-username/julmik6478`,
-        href: "https://scratch.mit.edu/users/julmik6478/",
+        href: "https://electramod-home.vercel.app/profile?user=julmik6478",
     },
     {
         text: 'MikeDev101',

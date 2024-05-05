@@ -117,12 +117,13 @@ const Credits = () => (
                     <img src="https://avatars.githubusercontent.com/u/61245488?v=4" style={{ width: "128px" }}></img>
                 </a>
             </p>
+            */}
             <h2>Server Host</h2>
             <p>
-                PenguinMod's Project Sharing server is currently hosted by <a href="https://github.com/JoshAtticus">JoshAtticus</a>.
+                ElectraMod's Project Sharing server is currently hosted by <a href="https://electramod-home.vercel.app/profile?user=MubiLop">MubiLop</a>.
                 <br></br>
-                <a href="https://github.com/JoshAtticus">
-                    <img src="https://avatars.githubusercontent.com/u/72828296?v=4" style={{ width: "128px" }}></img>
+                <a href="https://electramod-home.vercel.app/profile?user=MubiLop">
+                    <img src="https://trampoline.turbowarp.org/avatars/by-username/MubiLop" style={{ width: "128px" }}></img>
                 </a>
             </p>
             <p>
@@ -131,7 +132,7 @@ const Credits = () => (
             </p>
             <UserList users={UserData.pmApiDevelopers} />
             <p><i>The list order is randomized on each refresh.</i></p>
-            */}
+            
             <h2>Sound Effects</h2>
             <p>
                 PenguinMod (not ElectraMod) has added some more sounds to the Sound Library.
