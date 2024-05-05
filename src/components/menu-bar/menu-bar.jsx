@@ -85,6 +85,7 @@ import addonsIcon from './addons.svg';
 import advancedIcon from './tw-advanced.svg';
 
 import scratchLogo from './scratch-logo.svg';
+import EMTitle from './Title.png';
 
 import sharedMessages from '../../lib/shared-messages';
 
@@ -479,19 +480,18 @@ class MenuBar extends React.Component {
             >
                 <div className={styles.mainMenu}>
                     <div className={styles.fileGroup}>
-                        {this.props.onClickLogo ? (
                             <div className={classNames(styles.menuBarItem)}>
+                                <a href="https://electramod-home.vercel.app">
                                 <img
                                     alt="Scratch"
                                     className={classNames(styles.scratchLogo, {
                                         [styles.clickable]: typeof this.props.onClickLogo !== 'undefined'
                                     })}
                                     draggable={false}
-                                    src={this.props.logo}
-                                    onClick={this.props.onClickLogo}
+                                    src={EMTitle}
                                 />
+                                </a>
                             </div>
-                        ) : null}
                         {(this.props.canChangeLanguage) && (<div
                             className={classNames(styles.menuBarItem, styles.hoverable, styles.languageMenu)}
                         >
