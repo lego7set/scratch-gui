@@ -17,9 +17,9 @@ const BufferedInput = BufferedInputHOC(Input);
 
 const messages = defineMessages({
     title: {
-        defaultMessage: 'Settings',
+        defaultMessage: 'Advanced Settings',
         description: 'Title of settings modal',
-        id: 'pm.settingsModal.title'
+        id: 'tw.settingsModal.title'
     },
     help: {
         defaultMessage: 'Click for help',
@@ -337,8 +337,16 @@ const CustomStageSize = ({
                 <div>
                     <button
                         className={styles.customStageSizeButton}
+                        data-selected={stageWidth === 360 && stageHeight === 360}
+                        data-square={true}
+                        onClick={() => onStagePresetUsed(2)}
+                    >
+                        1:1
+                    </button>
+                    <button
+                        className={styles.customStageSizeButton}
                         data-selected={stageWidth === 480 && stageHeight === 360}
-                        onClick={() => onStagePresetUsed(false)}
+                        onClick={() => onStagePresetUsed(0)}
                     >
                         4:3
                     </button>
@@ -346,9 +354,33 @@ const CustomStageSize = ({
                         className={styles.customStageSizeButton}
                         data-selected={stageWidth === 640 && stageHeight === 360}
                         data-widescreen={true}
-                        onClick={() => onStagePresetUsed(true)}
+                        onClick={() => onStagePresetUsed(1)}
                     >
                         16:9
+                    </button>
+                    <button
+                        className={styles.customStageSizeButton}
+                        data-selected={stageWidth === 360 && stageHeight === 640}
+                        data-mobile={true}
+                        onClick={() => onStagePresetUsed(3)}
+                    >
+                        9:16
+                    </button>
+                    <button
+                        className={styles.customStageSizeButton}
+                        data-selected={stageWidth === 360 && stageHeight === 720}
+                        data-mobile-alt={true}
+                        onClick={() => onStagePresetUsed(4)}
+                    >
+                        9:18
+                    </button>
+                    <button
+                        className={styles.customStageSizeButton}
+                        data-selected={stageWidth === 360 && stageHeight === 450}
+                        data-mobile-small={true}
+                        onClick={() => onStagePresetUsed(5)}
+                    >
+                        4:5
                     </button>
                 </div>
                 <div className={styles.customStageSizeContainer}>
