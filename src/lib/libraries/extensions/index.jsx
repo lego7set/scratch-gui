@@ -633,6 +633,15 @@ const menuItems = [
         featured: true
     },
     {
+        name: 'ElectraAPI',
+        extensionId: 'https://electramod-extensions-gallery.vercel.app/extensions/Aness6040/electraapi.js',
+        iconURL: 'https://electramod-extensions-gallery.vercel.app/images/Aness6040/electraapi.svg',
+        tags: ['electramod'],
+        description: 'Based on Pang API for ElectraMod.',
+        extDeveloper: 'Aness6040',
+        featured: true
+    },
+    {
         name: '3D Math',
         extensionId: 'https://extensions.penguinmod.com/extensions/ObviousAlexC/3DMath.js',
         iconURL: 'https://extensions.penguinmod.com/images/ObviousAlexC/3DMath.svg',
@@ -686,12 +695,12 @@ const menuItems = [
         extDeveloper: 'silvxrcat'
     },
     {
-        name: 'PenguinGPT',
-        extensionId: 'https://extensions.penguinmod.com/extensions/MubiLop/penguingpt.js',
-        iconURL: 'https://extensions.penguinmod.com/images/MubiLop/penguingpt.png',
-        tags: ['penguinmod'],
-        description: 'Talk to ChatGPT! Use models like DALL-E 3, Midjourney, and GPT 4. Please read PenguinMod\'s Privacy Policy before use.',
-        extDeveloper: 'MubiLop',
+        name: 'ElectraGPT',
+        extensionId: 'https://electramod-extensions-gallery.vercel.app/extensions/MubiLop/electragpt.js',
+        iconURL: 'https://electramod-extensions-gallery.vercel.app/images/MubiLop/electragpt.png',
+        tags: ['electramod'],
+        description: 'ElectraMod modification of PenguinGPT! Adds more prompts like Mishael or Slixbot! ElectraGPT banner by Aness6040',
+        credits: 'MubiLop and Aness6040',
         internetConnectionRequired: true,
         featured: true
     },
