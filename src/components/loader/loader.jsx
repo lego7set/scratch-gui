@@ -126,7 +126,7 @@ class LoaderComponent extends React.Component {
     messageRef (element) {
         this.message = element;
     }
-    render () {
+    render() {
         return (
             <div
                 className={classNames(styles.background, {
@@ -135,12 +135,11 @@ class LoaderComponent extends React.Component {
             >
                 <div className={styles.container}>
                     <div className={styles.blockAnimation}>
-                        <img src={anvil} />
+                        <img src={anvil} alt="Anvil" />
                     </div>
                     <div className={styles.title}>
                         {mainMessages[this.props.messageId]}
                     </div>
-                    <p dangerouslySetInnerHTML={{__html: this.unhelpfulTip}}/>
                     <div className={styles.messageContainerOuter}>
                         <div
                             className={styles.messageContainerInner}
@@ -153,11 +152,12 @@ class LoaderComponent extends React.Component {
                             ref={this.barInnerRef}
                         />
                     </div>
-
+                    <br /><br />
+                    Tips:<p dangerouslySetInnerHTML={{__html: this.unhelpfulTip}} />
                 </div>
             </div>
         );
-    }
+    }    
 }
 
 LoaderComponent.propTypes = {

@@ -22,6 +22,7 @@ const categories = {
     motion: '#4C97FF',
     list: '#FC662C',
     control: '#FFAB19',
+    json: '#5755D4',
     extension: '#0FBD8C'
 };
 

@@ -72,7 +72,7 @@ import ElectraBuilderIcon from './electramod/electrabuilder.svg';
 import ElectraBuilderInset from './electramod/electrabuilder.png';
 
 import filesExtensionIcon from './penguinmod/extensions/files.png';
-import jgJSONExtensionIcon from './penguinmod/extensions/json.png';
+import emJSONExtensionIcon from './electramod/json.png';
 import jgTailgatingExtensionIcon from './penguinmod/extensions/tailgating.png';
 import jgRuntimeExtensionIcon from './penguinmod/extensions/runtime.png';
 import jgPrismExtensionIcon from './penguinmod/extensions/prism.png';
@@ -445,9 +445,9 @@ const menuItems = [
     },
     {
         name: 'JSON',
-        extensionId: 'jgJSON',
-        iconURL: jgJSONExtensionIcon,
-        tags: ['penguinmod', 'datamgmt'],
+        extensionId: 'emJSON',
+        iconURL: emJSONExtensionIcon,
+        tags: ['electramod', 'datamgmt'],
         description: 'Blocks for handling JSON objects and Arrays.',
         featured: true
     },
@@ -893,15 +893,6 @@ const menuItems = [
         featured: true
     },
     {
-        name: 'TypeScript',
-        extensionId: 'typescratch',
-        iconURL: typeScratchExtensionIcon,
-        tags: ['snailide', 'programminglanguage'],
-        description: 'Similar to JavaScript extension but for TypeScript.',
-        credits: 'jwklong',
-        featured: true
-    },
-    {
         name: 'Lpp',
         extensionId: 'https://electramod-extensions-gallery.vercel.app/internal_extensions/lpp/index.global.js',
         iconURL: LppExtensionIcon,
@@ -1120,45 +1111,6 @@ const menuItems = [
         iconURL: pmInlineBlocksExtensionIcon,
         tags: ['penguinmod'],
         description: 'Create quick blocks for simple tasks. Insert them into any circle spot and have them return any value you want.',
-        featured: true
-    },
-    {
-        name: '3D',
-        extensionId: 'jg3d',
-        iconURL: jg3dExtensionIcon,
-        tags: ['penguinmod', '3d'],
-        customInsetColor: '#B200FF',
-        insetIconURL: jg3dInsetExtensionIcon,
-        description: 'Use the magic of 3D to spice up your project.',
-        featured: true
-    },
-    {
-        name: '3D Physics',
-        extensionId: 'fr3d',
-        iconURL: fr3dPhysicsExtensionIcon,
-        tags: ['penguinmod', '3d'],
-        customInsetColor: '#D066FE',
-        insetIconURL: fr3dPhysicsInsetExtensionIcon,
-        description: 'Physics for the 3D extension.',
-        featured: true
-    },
-    {
-        name: '3D Virtual Reality',
-        extensionId: 'jg3dVr',
-        iconURL: jg3dVrExtensionIcon,
-        tags: ['penguinmod', 'hardware', '3d'],
-        customInsetColor: '#B200FF',
-        insetIconURL: jg3dVrInsetExtensionIcon,
-        description: 'In development. May break compatibility. Allow players to really jump into your world!',
-        featured: true
-    },
-    {
-        name: 'Virtual Reality',
-        extensionId: 'jgVr',
-        iconURL: jgVrExtensionIcon,
-        tags: ['penguinmod', 'hardware'],
-        description: 'In development.',
-        credits: 'Vadik1',
         featured: true
     },
     {
@@ -1544,12 +1496,60 @@ if (IsLocal || IsLiveTests) {
             featured: true
         },
         {
+            name: '3D',
+            extensionId: 'jg3d',
+            iconURL: jg3dExtensionIcon,
+            tags: ['penguinmod', '3d'],
+            customInsetColor: '#B200FF',
+            insetIconURL: jg3dInsetExtensionIcon,
+            description: 'Use the magic of 3D to spice up your project.',
+            featured: true
+        },
+        {
+            name: '3D Physics',
+            extensionId: 'fr3d',
+            iconURL: fr3dPhysicsExtensionIcon,
+            tags: ['penguinmod', '3d'],
+            customInsetColor: '#D066FE',
+            insetIconURL: fr3dPhysicsInsetExtensionIcon,
+            description: 'Physics for the 3D extension.',
+            featured: true
+        },
+        {
+            name: '3D Virtual Reality',
+            extensionId: 'jg3dVr',
+            iconURL: jg3dVrExtensionIcon,
+            tags: ['penguinmod', 'hardware', '3d'],
+            customInsetColor: '#B200FF',
+            insetIconURL: jg3dVrInsetExtensionIcon,
+            description: 'In development. May break compatibility. Allow players to really jump into your world!',
+            featured: true
+        },
+        {
+            name: 'Virtual Reality',
+            extensionId: 'jgVr',
+            iconURL: jgVrExtensionIcon,
+            tags: ['penguinmod', 'hardware'],
+            description: 'In development.',
+            credits: 'Vadik1',
+            featured: true
+        },
+        {
             name: 'XML',
             extensionId: 'jwXml',
             iconURL: jwXmlExtensionIcon,
             tags: ['penguinmod', 'datamgmt'],
             description: 'Enables the creation and getting of XML data. Not yet able to modify data.',
             extDeveloper: 'jwklong',
+            featured: true
+        },
+        {
+            name: 'TypeScript',
+            extensionId: 'typescratch',
+            iconURL: typeScratchExtensionIcon,
+            tags: ['snailide', 'programminglanguage'],
+            description: 'Similar to JavaScript extension but for TypeScript.',
+            credits: 'jwklong',
             featured: true
         },
         {

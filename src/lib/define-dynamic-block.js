@@ -72,6 +72,14 @@ const defineDynamicBlock = (ScratchBlocks, categoryInfo, staticBlockInfo, extend
             this.setOutput(true);
             this.setOutputShape(ScratchBlocks.OUTPUT_SHAPE_HEXAGONAL);
             break;
+        case BlockType.ARRAY:
+            this.setOutput(true);
+            this.setOutputShape(ScratchBlocks.OUTPUT_SHAPE_SQUARE);
+            break;
+        case BlockType.OBJECT:
+            this.setOutput(true);
+            this.setOutputShape(ScratchBlocks.OUTPUT_SHAPE_OBJECT);
+            break;
         case BlockType.HAT:
         case BlockType.EVENT:
             this.setOutputShape(ScratchBlocks.OUTPUT_SHAPE_SQUARE);
@@ -97,6 +105,12 @@ const defineDynamicBlock = (ScratchBlocks, categoryInfo, staticBlockInfo, extend
                 break;
             case ArgumentType.BOOLEAN:
                 args.push({type: 'input_value', name: argName, check: 'Boolean'});
+                break;
+            case ArgumentType.ARRAY:
+                args.push({type: 'input_value', name: argName, check: 'Array'});
+                break;
+            case ArgumentType.OBJECT:
+                args.push({type: 'input_value', name: argName, check: 'Object'});
                 break;
             }
             return `%${++argCount}`;
