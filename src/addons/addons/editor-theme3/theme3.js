@@ -6,6 +6,8 @@ import {
   recolorFilter,
 } from "../../libraries/common/cs/text-color.esm.js";
 
+import {hex2hsv, hsv2hex} from '../../../lib/tw-color-utils';
+
 const dataUriRegex = new RegExp("^data:image/svg\\+xml;base64,([A-Za-z0-9+/=]*)$");
 const extensionsCategory = {
   id: null,
@@ -101,6 +103,12 @@ export default async function ({ addon, console }) {
     // Colored on white: can't use #ffffff because of editor-dark-mode dropdown div handling
     if (textMode() === "colorOnWhite") return "#feffff";
     if (textMode() === "colorOnBlack") return "#282828";
+    if (textMode() === "blackOnContrast"){
+      const hsv = hex2hsv(addon.settings.get(category.settingId));
+      hsv[1] = Math.max(hsv[1] - 20, 0);
+      hsv[2] = Math.min(hsv[2] + 20, 100);
+      return hsv2hex(hsv);
+    };
     return addon.settings.get(category.settingId);
   };
   const secondaryColor = (category) => {
@@ -108,12 +116,18 @@ export default async function ({ addon, console }) {
     if (isColoredTextMode())
       return alphaBlend(primaryColor(category), multiply(addon.settings.get(category.settingId), { a: 0.15 }));
     if (textMode() === "black") return brighten(addon.settings.get(category.settingId), { r: 0.6, g: 0.6, b: 0.6 });
+    if (textMode() === "blackOnContrast"){
+      const hsv = hex2hsv(addon.settings.get(category.settingId));
+      hsv[1] = Math.max(hsv[1] - 40, 0);
+        hsv[2] = Math.min(hsv[2] + 20, 100);
+        return hsv2hex(hsv);
+    };
     return multiply(addon.settings.get(category.settingId), { r: 0.9, g: 0.9, b: 0.9 });
   };
   const tertiaryColor = (category) => {
     if (addon.self.disabled) return originalColors[category.colorId].tertiary;
     if (isColoredTextMode()) return addon.settings.get(category.settingId);
-    if (textMode() === "black") return multiply(addon.settings.get(category.settingId), { r: 0.65, g: 0.65, b: 0.65 });
+    if (textMode() === "black" || textMode() === "blackOnContrast") return multiply(addon.settings.get(category.settingId), { r: 0.65, g: 0.65, b: 0.65 });
     return multiply(addon.settings.get(category.settingId), { r: 0.8, g: 0.8, b: 0.8 });
   };
   const fieldBackground = (category) => {
@@ -121,7 +135,7 @@ export default async function ({ addon, console }) {
     // The argument can be a block, field, or category
     if (category instanceof Blockly.Block || category instanceof Blockly.Field) {
       const block = category instanceof Blockly.Block ? category : category.sourceBlock_;
-      if (isColoredTextMode() || textMode() === "black") {
+      if (isColoredTextMode() || textMode() === "black" || textMode() === "blackOnContrast") {
         let primary;
         if (block.isShadow() && block.getParent()) primary = block.getParent().getColour();
         else primary = block.getColour();
@@ -132,12 +146,12 @@ export default async function ({ addon, console }) {
     }
     if (isColoredTextMode())
       return alphaBlend(primaryColor(category), multiply(addon.settings.get(category.settingId), { a: 0.25 }));
-    if (textMode() === "black") return brighten(primaryColor(category), { r: 0.4, g: 0.4, b: 0.4 });
+    if (textMode() === "black" || textMode() === "blackOnContrast") return brighten(primaryColor(category), { r: 0.4, g: 0.4, b: 0.4 });
     return tertiaryColor(category);
   };
   const textColor = (field) => {
     if (addon.self.disabled || textMode() === "white") return "#ffffff";
-    if (textMode() === "black") return "#000000";
+    if (textMode() === "black" || textMode() === "blackOnContrast") return "#000000";
     if (field) return field.sourceBlock_.getColourTertiary();
     return "#000000";
   };
@@ -310,7 +324,7 @@ export default async function ({ addon, console }) {
   Blockly.FieldVerticalSeparator.prototype.init = function () {
     // Vertical line between extension icon and block label
     oldFieldVerticalSeparatorInit.call(this);
-    if (textMode() === "black") this.lineElement_.setAttribute("stroke", this.sourceBlock_.getColourTertiary());
+    if (textMode() === "black" || textMode() === "blackOnContrast") this.lineElement_.setAttribute("stroke", this.sourceBlock_.getColourTertiary());
   };
 
   const updateColors = () => {
@@ -359,8 +373,8 @@ export default async function ({ addon, console }) {
     workspace.toolboxRefreshEnabled_ = true;
   };
 
-  updateColors();
   addon.settings.addEventListener("change", updateColors);
   addon.self.addEventListener("disabled", updateColors);
   addon.self.addEventListener("reenabled", updateColors);
+  updateColors();
 }

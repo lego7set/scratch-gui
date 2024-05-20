@@ -130,6 +130,14 @@ const manifest = {
       }
     },
     {
+      "url": "black_text.css",
+      "if": {
+        "settings": {
+          "text": "blackOnContrast"
+        }
+      }
+    },
+    {
       "url": "color_on_white.css",
       "if": {
         "settings": {
@@ -293,6 +301,10 @@ const manifest = {
         {
           "id": "colorOnBlack",
           "name": "Colored on black background"
+        },
+        {
+          "id": "blackOnContrast",
+          "name": "Black on high contrast background"
         }
       ]
     }
@@ -303,8 +315,30 @@ const manifest = {
   "enabledByDefault": false,
   "presets": [
     {
+      "name": "Original",
+      "id": "original_3.0",
+      "description": "Original 3.0 Colors",
+      "values": {
+        "motion-color": "#4C97FF",
+        "looks-color": "#9966FF",
+        "sounds-color": "#CF63CF",
+        "events-color": "#FFBF00",
+        "control-color": "#FFAB19",
+        "sensing-color": "#5CB1D6",
+        "operators-color": "#59C059",
+        "data-color": "#FF8C1A",
+        "data-lists-color": "#FF661A",
+        "custom-color": "#FF6680",
+        "Pen-color": "#0FBD8C",
+        "sa-color": "#29BEB8",
+        "comment-color": "#FEF49C",
+        "input-color": "#FFFFFF",
+        "text": "white"
+      }
+    },
+    {
       "name": "3.0 Tweaks",
-      "id": "tweaks",
+      "id": "tweaks_",
       "description": "Events, Control, and Custom blocks with 2.0 inspired colors",
       "values": {
         "motion-color": "#4C97FF",
@@ -329,6 +363,28 @@ const manifest = {
       "id": "contrast",
       "description": "Scratch 3.0's high contrast block color palette",
       "values": {
+        "motion-color": "#4C97FF",
+        "looks-color": "#9966FF",
+        "sounds-color": "#AD4CAD",
+        "events-color": "#FFCB3D",
+        "control-color": "#FFAB19",
+        "sensing-color": "#4C93B2",
+        "operators-color": "#409940",
+        "data-color": "#FF8C1A",
+        "data-lists-color": "#FF661A",
+        "custom-color": "#FF6680",
+        "Pen-color": "#0FBD8C",
+        "sa-color": "#29BEB8",
+        "comment-color": "#FEF49C",
+        "input-color": "#FFFFFF",
+        "text": "blackOnContrast"
+      }
+    },
+    {
+      "name": "High contrast Prototype",
+      "id": "contrastProt",
+      "description": "Scratch 3.0's high contrast (prototype) block color palette",
+      "values": {
         "motion-color": "#80B5FF",
         "looks-color": "#CCB3FF",
         "sounds-color": "#E19DE1",
@@ -348,7 +404,7 @@ const manifest = {
     },
     {
       "name": "Dark",
-      "id": "new-dark",
+      "id": "dark",
       "description": "Dark versions of the default colors that look good in dark themes",
       "values": {
         "motion-color": "#2461B7",
@@ -370,7 +426,7 @@ const manifest = {
     },
     {
       "name": "Darker",
-      "id": "dark",
+      "id": "darker",
       "description": "Even darker versions of the default colors",
       "values": {
         "motion-color": "#004099",
