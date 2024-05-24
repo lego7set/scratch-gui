@@ -81,7 +81,7 @@
     "redux": "3.7.2",
     "redux-throttle": "0.1.1",
     "scratch-audio": "github:PenguinMod/PenguinMod-Audio#develop",
-    "scratch-blocks": "github:PenguinMod/PenguinMod-Blocks#develop-builds",
+    "scratch-blocks": "github:flash-redux/flash-blocks#develop-builds",
     "scratch-paint": "github:flash-redux/flash-paint#develop",
     "scratch-render": "github:PenguinMod/PenguinMod-Render#develop",
     "scratch-render-fonts": "github:PenguinMod/penguinmod-render-fonts#master",
