@@ -167,35 +167,35 @@ module.exports = [
                 chunks: ['editor'],
                 template: 'src/playground/index.ejs',
                 filename: 'editor.html',
-                title: 'PenguinMod - Editor',
+                title: 'Flash Redux - Editor',
                 ...htmlWebpackPluginCommon
             }),
             new HtmlWebpackPlugin({
                 chunks: ['playground'],
                 template: 'src/playground/index.ejs',
                 filename: 'playground.html',
-                title: 'PenguinMod - Playground',
+                title: 'Flash Redux - Playground',
                 ...htmlWebpackPluginCommon
             }),
             new HtmlWebpackPlugin({
                 chunks: ['player'],
                 template: 'src/playground/index.ejs',
                 filename: 'index.html',
-                title: 'PenguinMod - A mod of TurboWarp',
+                title: 'Flash Redux - A mod of PenguinMod',
                 ...htmlWebpackPluginCommon
             }),
             new HtmlWebpackPlugin({
                 chunks: ['fullscreen'],
                 template: 'src/playground/index.ejs',
                 filename: 'fullscreen.html',
-                title: 'PenguinMod - A mod of TurboWarp',
+                title: 'Flash Redux - A mod of PenguinMod',
                 ...htmlWebpackPluginCommon
             }),
             new HtmlWebpackPlugin({
                 chunks: ['embed'],
                 template: 'src/playground/index.ejs',
                 filename: 'embed.html',
-                title: 'Embedded Project - PenguinMod',
+                title: 'Embedded Project - Flash Redux',
                 noTheme: true,
                 ...htmlWebpackPluginCommon
             }),
@@ -203,14 +203,14 @@ module.exports = [
                 chunks: ['addon-settings'],
                 template: 'src/playground/simple.ejs',
                 filename: 'addons.html',
-                title: 'Addon Settings - PenguinMod',
+                title: 'Addon Settings - Flash Redux',
                 ...htmlWebpackPluginCommon
             }),
             new HtmlWebpackPlugin({
                 chunks: ['credits'],
                 template: 'src/playground/simple.ejs',
                 filename: 'credits.html',
-                title: 'PenguinMod & TurboWarp Credits',
+                title: 'PenguinMod, Flash Redux & TurboWarp Credits',
                 noSplash: true,
                 ...htmlWebpackPluginCommon
             }),
