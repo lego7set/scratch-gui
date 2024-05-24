@@ -14,7 +14,7 @@ const manifest = {
       "name": "Music",
       "id": "music",
       "type": "boolean",
-      "default": true
+      "default": false
     },
     {
       "name": "Pen",
@@ -36,6 +36,7 @@ const manifest = {
     }
   ],
   "dynamicDisable": true,
+  "enabledByDefault": true,
   "tags": []
 };
 export default manifest;
