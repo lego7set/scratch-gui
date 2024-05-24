@@ -22,7 +22,7 @@ const showOpenFilePicker = async () => {
                 accept: {
                     'application/x.scratch.sb3': ['.sb2r']
                 }
-            }
+            },
             {
                 description: 'PenguinMod Project',
                 accept: {
