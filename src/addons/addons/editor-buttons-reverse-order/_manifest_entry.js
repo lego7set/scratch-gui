@@ -6,6 +6,7 @@ const manifest = {
     "theme"
   ],
   "dynamicDisable": true,
+  "enabledByDefault": true,
   "userstyles": [
     {
       "url": "userstyle.css"
