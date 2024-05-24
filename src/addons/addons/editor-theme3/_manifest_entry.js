@@ -160,7 +160,7 @@ const manifest = {
       "name": "looks",
       "id": "looks-color",
       "type": "color",
-      "default": "8a55d7",
+      "default": "#8a55d7",
       "allowTransparency": true
     },
     {
