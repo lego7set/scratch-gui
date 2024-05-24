@@ -60,7 +60,7 @@ class ShareButton extends React.Component {
         this.handleMessageEvent(e);
     }
     async handleMessageEvent(e) {
-        if (!e.origin.startsWith(`https://penguinmod.com`)) {
+        if (!e.origin.startsWith(`https://electramod.vercel.app`)) {
             return;
         }
 
