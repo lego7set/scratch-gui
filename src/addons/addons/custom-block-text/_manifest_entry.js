@@ -36,17 +36,17 @@ const manifest = {
       "name": "Bold text",
       "id": "bold",
       "type": "boolean",
-      "default": false
+      "default": true
     },
     {
       "dynamic": true,
       "name": "Shadow under text",
       "id": "shadow",
       "type": "boolean",
-      "default": false
+      "default": true
     }
   ],
   "dynamicDisable": true,
-  "enabledByDefault": false
+  "enabledByDefault": true
 };
 export default manifest;
