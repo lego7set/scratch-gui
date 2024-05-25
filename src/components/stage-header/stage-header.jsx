@@ -108,6 +108,19 @@ const StageHeaderComponent = function (props) {
                 />
             </Button>
         ) : null;
+
+         {this.props.canEditTitle ? (
+                        <div className={classNames(styles.menuBarItem, styles.growable)}>
+                            <MenuBarItemTooltip
+                                enable
+                                id="title-field"
+                            >
+                                <ProjectTitleInput
+                                    className={classNames(styles.titleFieldGrowable)}
+                                />
+                            </MenuBarItemTooltip>
+                        </div>
+                    ) : null}
         const fullscreenButton = isFullScreen ? (
             <Button
                 className={styles.stageButton}
