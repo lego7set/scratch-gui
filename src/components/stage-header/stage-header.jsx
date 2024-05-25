@@ -16,6 +16,7 @@ import largeStageIcon from './icon--large-stage.svg';
 import smallStageIcon from './icon--small-stage.svg';
 import unFullScreenIcon from './icon--unfullscreen.svg';
 import settingsIcon from './icon--settings.svg';
+import ProjectTitleInput from '../menu-bar/project-title-input.jsx';
 
 // import popoutIcon from './icon--popout.svg';
 // import bringBackIcon from './icon--popin.svg';
