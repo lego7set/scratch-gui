@@ -865,18 +865,7 @@ class MenuBar extends React.Component {
                             username={this.props.authorUsername}
                         />
                     ) : null} */}
-                    {this.props.canEditTitle ? (
-                        <div className={classNames(styles.menuBarItem, styles.growable)}>
-                            <MenuBarItemTooltip
-                                enable
-                                id="title-field"
-                            >
-                                <ProjectTitleInput
-                                    className={classNames(styles.titleFieldGrowable)}
-                                />
-                            </MenuBarItemTooltip>
-                        </div>
-                    ) : null}
+                   
                     <div className={classNames(styles.menuBarItem)}>
                         {this.props.canRemix ? remixButton : []}
                     </div>
