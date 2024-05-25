@@ -37,6 +37,7 @@ class StageHeader extends React.Component {
         return (
             <StageHeaderComponent
                 {...props}
+                canEditTitle={true}
                 onKeyPress={this.handleKeyPress}
             />
         );
