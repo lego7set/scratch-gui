@@ -156,7 +156,6 @@ import jgJavascriptExtensionIcon from './penguinmod/extensions/javascript.png';
 import jgPathfindingExtensionIcon from './penguinmod/extensions/pathfinding.png';
 import jgAnimationExtensionIcon from './penguinmod/extensions/animation.png';
 import typeScratchExtensionIcon from './snail-ide/typescript.svg';
-import blocklyIconURL from './blockly/blockly.png';
 import LppExtensionIcon from './lpp/banner.svg';
 import PythonExtensionIcon from './electramod/py.svg';
 import DebuggerConsoleExtensionIcon from './electramod/debuggerconsole.svg';
@@ -935,16 +934,6 @@ const menuItems = [
         featured: true
     }, */  // Will be deleted soon for recreation to gallery to I18n DX because Gandi IDE API is not supported
     {
-        name: 'Blockly2Math',
-        extensionId: 'blockly2math',
-        iconURL: blocklyIconURL,
-        collaborator: 'Google',
-        credits: 'jwklong',
-        tags: ['snailide'],
-        description: "Blockly math blocks.",
-        featured: true
-    },
-    {
         name: 'micro:bit',
         extensionId: 'microbit',
         collaborator: 'micro:bit',
@@ -1541,15 +1530,6 @@ if (IsLocal || IsLiveTests) {
             tags: ['penguinmod', 'datamgmt'],
             description: 'Enables the creation and getting of XML data. Not yet able to modify data.',
             extDeveloper: 'jwklong',
-            featured: true
-        },
-        {
-            name: 'TypeScript',
-            extensionId: 'typescratch',
-            iconURL: typeScratchExtensionIcon,
-            tags: ['snailide', 'programminglanguage'],
-            description: 'Similar to JavaScript extension but for TypeScript.',
-            credits: 'jwklong',
             featured: true
         },
         {
