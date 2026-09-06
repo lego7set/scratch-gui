@@ -118,6 +118,7 @@ class Blocks extends React.Component {
             'handleCreateCustomPromptUtility',
             'handleCommentEditorClose',
             'handleCustomProceduresClose',
+            'handleCategoryReorder',
             'handleBeforeEditCustomProcedure',
             'onScriptGlowOn',
             'onScriptGlowOff',
@@ -160,6 +161,7 @@ class Blocks extends React.Component {
         this.ScratchBlocks.FieldColourSlider.activateEyedropper_ = this.props.onActivateColorPicker;
         this.ScratchBlocks.Procedures.externalProcedureDefCallback = this.props.onActivateCustomProcedures;
         this.ScratchBlocks.Procedures.beforeEditCallback = this.handleBeforeEditCustomProcedure;
+        this.ScratchBlocks.Toolbox.categoryReorderCallback = this.handleCategoryReorder;
         this.ScratchBlocks.ScratchMsgs.setLocale(this.props.locale);
 
         const Msg = this.ScratchBlocks.Msg;
@@ -349,6 +351,8 @@ class Blocks extends React.Component {
     updateToolbox () {
         this.toolboxUpdateTimeout = false;
 
+        this.ScratchBlocks.Toolbox.CATEGORY_ORDERING = this.props.vm._categoryOrdering;
+
         const categoryId = this.workspace.toolbox_.getSelectedCategoryId();
         const offset = this.workspace.toolbox_.getCategoryScrollOffset();
         this.workspace.updateToolbox(this.props.toolboxXML);
@@ -422,6 +426,8 @@ class Blocks extends React.Component {
         this.props.vm.removeListener('BLOCKSINFO_UPDATE', this.handleBlocksInfoUpdate);
         this.props.vm.removeListener('PERIPHERAL_CONNECTED', this.handleStatusButtonUpdate);
         this.props.vm.removeListener('PERIPHERAL_DISCONNECTED', this.handleStatusButtonUpdate);
+
+        this.props.vm.runtime.removeListener("RUNTIME_DISPOSED", this.onProjectDispose);
     }
 
     updateToolboxBlockValue (id, value) {
@@ -478,6 +484,7 @@ class Blocks extends React.Component {
     onProjectDispose() {
         // Clear some data when the project is disposed.
         this.ScratchBlocks.Procedures.GLOBAL_BLOCKS.clear();
+        this.ScratchBlocks.Toolbox.CATEGORY_ORDERING = [];
 
         this.props.vm.setFramerate(30);
         this.props.vm.setRuntimeOptions({
@@ -778,10 +785,13 @@ class Blocks extends React.Component {
         ws.refreshToolboxSelection_();
         ws.toolbox_.scrollToCategoryById('myBlocks');
     }
+    handleCategoryReorder () {
+        this.props.vm._categoryOrdering = this.ScratchBlocks.Toolbox.CATEGORY_ORDERING;
+        this.updateToolbox();
+    }
     handleBeforeEditCustomProcedure (block) {
         if (block.type === 'procedures_call' && block.global_) {
-            // If this global block is not being edited from the source
-            // sprite, switch workspaces.
+            // If this global block is not being edited from the source sprite, switch workspaces.
             const proccode = block.procCode_;
             const editingTargetId = this.props.vm.editingTarget.id;
             const targetId = this.props.vm.runtime._globalProcedureSourceMap[proccode];

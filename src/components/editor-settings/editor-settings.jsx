@@ -90,6 +90,8 @@ class EditorSettingsModal extends React.Component {
                         <Separator />
                         <settings.projectBlockCounter />
                         <settings.blockCounter />
+                        <Separator />
+                        <settings.categoryReordering />
                     </React.Fragment>
                 },
                 {

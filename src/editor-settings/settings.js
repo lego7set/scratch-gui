@@ -9,6 +9,7 @@ export default Object.fromEntries([
     'outputBubbleAutoTyping',
     'projectBlockCounter',
     'blockCounter',
+    'categoryReordering',
     'paintMultiTool',
     'paintScrollZoom',
     'soundDisplayDetail',
