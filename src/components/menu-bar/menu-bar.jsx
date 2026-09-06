@@ -448,8 +448,13 @@ class MenuBar extends React.Component {
         };
     }
     getBlockCount () {
-        console.log(SettingsStore, this);
-        return `0 Blocks`;
+        // Listen for the next project change event.
+        this.props.vm.once("PROJECT_CHANGED", () => queueMicrotask(() => {
+            this.render();
+        }));
+
+        const count = this.props.vm.runtime._projectBlockCount;
+        return `${count} Block${count === 1 ? "" : "s"}`;
     }
     render () {
         const saveNowMessage = (
@@ -1093,7 +1098,7 @@ class MenuBar extends React.Component {
                 </div>
 
                 <div className={styles.accountInfoGroup}>
-                    {SettingsStore/*.blocks.projectBlockCounter*/ ? (
+                    {SettingsStore.store.projectBlockCounter && !this.props.isPlayerOnly ? (
                         <div className={styles.menuBarItem}>
                             <span>{this.getBlockCount()}</span>
                         </div>
