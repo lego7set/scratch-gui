@@ -113,7 +113,7 @@ import SeeInsideButton from './tw-see-inside.jsx';
 import {notScratchDesktop} from '../../lib/isScratchDesktop.js';
 import {APP_NAME} from '../../lib/brand.js';
 
-import SettingsStore from '../editor-settings/settings-store-singleton';
+import SettingsStore from '../../editor-settings/settings-store-singleton';
 
 const ariaMessages = defineMessages({
     tutorials: {
