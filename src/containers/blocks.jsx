@@ -119,6 +119,7 @@ class Blocks extends React.Component {
             'handleCommentEditorClose',
             'handleCustomProceduresClose',
             'handleCategoryReorder',
+            'handlePinCallback',
             'handleBeforeEditCustomProcedure',
             'onScriptGlowOn',
             'onScriptGlowOff',
@@ -162,6 +163,7 @@ class Blocks extends React.Component {
         this.ScratchBlocks.Procedures.externalProcedureDefCallback = this.props.onActivateCustomProcedures;
         this.ScratchBlocks.Procedures.beforeEditCallback = this.handleBeforeEditCustomProcedure;
         this.ScratchBlocks.Toolbox.categoryReorderCallback = this.handleCategoryReorder;
+        this.ScratchBlocks.BlockSvg.pinCallback = this.handlePinCallback;
         this.ScratchBlocks.ScratchMsgs.setLocale(this.props.locale);
 
         const Msg = this.ScratchBlocks.Msg;
@@ -364,6 +366,17 @@ class Blocks extends React.Component {
         this.toolboxUpdateTimeout = false;
 
         this.ScratchBlocks.Toolbox.CATEGORY_ORDERING = this.props.vm._categoryOrdering;
+
+        if (this.ScratchBlocks.BlockSvg.PINS_ENABLED)
+        try {
+            const NAMESPACE = "PM_BLOCK-PINS";
+            const stored = localStorage.getItem(NAMESPACE);
+
+            const parsed = JSON.parse(stored);
+            if (parsed && typeof parsed === "object" && Array.isArray(parsed)) {
+                this.ScratchBlocks.BlockSvg.PINS = parsed;
+            }
+        } catch {}
 
         const categoryId = this.workspace.toolbox_.getSelectedCategoryId();
         const offset = this.workspace.toolbox_.getCategoryScrollOffset();
@@ -800,6 +813,12 @@ class Blocks extends React.Component {
     handleCategoryReorder () {
         this.props.vm._categoryOrdering = this.ScratchBlocks.Toolbox.CATEGORY_ORDERING;
         this.updateToolbox();
+    }
+    handlePinCallback () {
+        const toolboxXML = this.getToolboxXML();
+        if (toolboxXML) {
+            this.props.updateToolboxState(toolboxXML);
+        }
     }
     handleBeforeEditCustomProcedure (block) {
         if (block.type === 'procedures_call' && block.global_) {

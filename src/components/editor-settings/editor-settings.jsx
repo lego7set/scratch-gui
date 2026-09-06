@@ -91,6 +91,7 @@ class EditorSettingsModal extends React.Component {
                         <settings.projectBlockCounter />
                         <settings.blockCounter />
                         <Separator />
+                        <settings.blockPinning />
                         <settings.categoryReordering />
                     </React.Fragment>
                 },
