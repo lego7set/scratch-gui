@@ -815,6 +815,10 @@ class Blocks extends React.Component {
         this.updateToolbox();
     }
     handlePinCallback () {
+        if (!this.props.toolboxXML) return;
+
+        // TODO inject/load extension urls here.
+
         const toolboxXML = this.getToolboxXML();
         if (toolboxXML) {
             this.props.updateToolboxState(toolboxXML);
