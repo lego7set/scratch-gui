@@ -18,4 +18,8 @@ export default (class extends BooleanSetting {
             id="pm.editorSettings.projectBlockCounter.help"
         />)
     }
+
+    async setValue(value) {
+        window.vm.emit("PROJECT_CHANGED");
+    }
 });

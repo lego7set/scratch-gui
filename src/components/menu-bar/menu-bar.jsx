@@ -235,14 +235,17 @@ class MenuBar extends React.Component {
             'handleRestoreOption',
             'getSaveToComputerHandler',
             'restoreOptionMessage',
+            'handleProjectChanged',
             'getBlockCount'
         ]);
     }
     componentDidMount () {
         document.addEventListener('keydown', this.handleKeyPress);
+        this.props.vm.on('PROJECT_CHANGED', this.handleProjectChanged);
     }
     componentWillUnmount () {
         document.removeEventListener('keydown', this.handleKeyPress);
+        this.props.vm.removeListener('PROJECT_CHANGED', this.handleProjectChanged);
     }
     handleClickNew () {
         // if the project is dirty, and user owns the project, we will autosave.
@@ -356,6 +359,9 @@ class MenuBar extends React.Component {
             }
         }
     }
+    handleProjectChanged () {
+        this.forceUpdate();
+    }
     getSaveToComputerHandler (downloadProjectCallback) {
         return () => {
             this.props.onRequestCloseFile();
@@ -448,11 +454,6 @@ class MenuBar extends React.Component {
         };
     }
     getBlockCount () {
-        // Listen for the next project change event.
-        this.props.vm.once("PROJECT_CHANGED", () => queueMicrotask(() => {
-            this.render();
-        }));
-
         const count = this.props.vm.runtime._projectBlockCount;
         return `${count} Block${count === 1 ? "" : "s"}`;
     }
