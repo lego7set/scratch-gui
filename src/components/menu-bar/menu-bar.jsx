@@ -113,6 +113,8 @@ import SeeInsideButton from './tw-see-inside.jsx';
 import {notScratchDesktop} from '../../lib/isScratchDesktop.js';
 import {APP_NAME} from '../../lib/brand.js';
 
+import SettingsStore from '../editor-settings/settings-store-singleton';
+
 const ariaMessages = defineMessages({
     tutorials: {
         id: 'gui.menuBar.tutorialsLibrary',
@@ -232,7 +234,8 @@ class MenuBar extends React.Component {
             'handleKeyPress',
             'handleRestoreOption',
             'getSaveToComputerHandler',
-            'restoreOptionMessage'
+            'restoreOptionMessage',
+            'getBlockCount'
         ]);
     }
     componentDidMount () {
@@ -443,6 +446,10 @@ class MenuBar extends React.Component {
             callback();
             this.props.onRequestCloseAbout();
         };
+    }
+    getBlockCount () {
+        console.log(this);
+        return `0 Blocks`;
     }
     render () {
         const saveNowMessage = (
@@ -1086,6 +1093,11 @@ class MenuBar extends React.Component {
                 </div>
 
                 <div className={styles.accountInfoGroup}>
+                    {SettingsStore.blocks.projectBlockCounter; ? (
+                        <div {styles.menuBarItem}>
+                            <span>{this.getBlockCount()}</span>
+                        </div>
+                    ) : null}
                     <TWSaveStatus
                         showSaveFilePicker={this.props.showSaveFilePicker}
                     />
