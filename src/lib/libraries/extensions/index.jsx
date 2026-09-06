@@ -574,6 +574,25 @@ export const penguinmodGallery = [
     {
         name: (
             <FormattedMessage
+                defaultMessage="Algebraic Types"
+                description="Name for the vgsAdt extension"
+                id="pm.gui.extension.vgsAdt.name"
+            />
+        ),
+        extensionId: 'vgsAdt',
+        iconURL: require('../extensions/penguinmod/vgsAdt.svg'),
+        description: (
+            <FormattedMessage
+                defaultMessage="Advanced extension for sum and product types and predictable data composition. "
+                description="Description for the vgsAdt extension"
+                id="pm.gui.extension.vgsAdt.description"
+            />
+        ),
+        tags: ['pm', 'type']
+    },
+    {
+        name: (
+            <FormattedMessage
                 defaultMessage="Integers"
                 description="Name for the jwInt extension"
                 id="pm.gui.extension.jwInt.name"
