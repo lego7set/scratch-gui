@@ -1094,7 +1094,7 @@ class MenuBar extends React.Component {
 
                 <div className={styles.accountInfoGroup}>
                     {SettingsStore.blocks.projectBlockCounter ? (
-                        <div {styles.menuBarItem}>
+                        <div className={styles.menuBarItem}>
                             <span>{this.getBlockCount()}</span>
                         </div>
                     ) : null}
