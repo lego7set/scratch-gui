@@ -1472,8 +1472,7 @@ const pins = function (isInitialSetup) {
         colour="#ffffff"
         secondaryColour="#00000044"
         textColour="#000000"
-        iconURI="${pinCategoryIcon}"
-        custom="PIN">
+        iconURI="${pinCategoryIcon}">
         ${getPinsXml()}
     </category>
     `;
