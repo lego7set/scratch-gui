@@ -384,12 +384,10 @@ class Blocks extends React.Component {
     attachVM () {
         this.workspace.addChangeListener(this.props.vm.blockListener);
         this.workspace.addChangeListener((event) => {
-            // Dispatch block counter updates.
             this.ScratchBlocks.Toolbox.Category.blockCounterDispatcher(
                 event,
                 this.workspace
             );
-            this.props.vm.runtime.updateProjectBlockCounter();
         });
         this.flyoutWorkspace = this.workspace
             .getFlyout()

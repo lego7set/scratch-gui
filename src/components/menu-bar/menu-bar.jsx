@@ -454,6 +454,7 @@ class MenuBar extends React.Component {
         };
     }
     getBlockCount () {
+        this.props.vm.runtime.updateProjectBlockCounter();
         const count = this.props.vm.runtime._projectBlockCount;
         return `${count} Block${count === 1 ? "" : "s"}`;
     }
