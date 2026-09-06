@@ -320,7 +320,11 @@ class Blocks extends React.Component {
     componentWillUnmount () {
         this.detachVM();
         this.unmounted = true;
-        this.workspace.dispose();
+        try {
+            // Sometimes will error when changing themes.
+            this.workspace.dispose();
+        } catch {}
+
         clearTimeout(this.toolboxUpdateTimeout);
 
         // Clear the flyout blocks so that they can be recreated on mount.
