@@ -258,6 +258,14 @@ class Blocks extends React.Component {
             this.handleExtensionAdded(category);
         }
 
+        // pm: override this function to connect it to blockly.
+        this.props.vm.runtime.updateFlyoutCheckbox = (blockId, checked) => {
+            if (!this.workspace) return;
+
+            const flyout = this.workspace.getFlyout();
+            if (flyout) flyout.setCheckboxState(blockId, checked);
+        }
+
         gentlyRequestPersistentStorage();
     }
     shouldComponentUpdate (nextProps, nextState) {
