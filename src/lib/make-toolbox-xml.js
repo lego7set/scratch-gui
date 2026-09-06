@@ -1467,11 +1467,11 @@ const pins = function (isInitialSetup) {
 
     return `
     <category
-        name="Pinned Blocks"
+        name="Pinned"
         id="pins"
-        colour="#fff"
+        colour="#ffffff"
         secondaryColour="#00000044"
-        textColour="#000"
+        textColour="#000000"
         iconURI="${pinCategoryIcon}">
         custom="PIN">
         ${getPinsXml()}
