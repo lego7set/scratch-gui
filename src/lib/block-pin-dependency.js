@@ -1,6 +1,6 @@
-const XML_TYPE_REGEX = /type="([^"]+)"/;
-const XML_BUILTIN_EXT = /pin-builtin="([^"]+)"/;
-const XML_CUSTOM_EXT = /pin-custom="([^"]+)"/;
+const XML_TYPE_REGEX = /type="([^"]+)"/g;
+const XML_BUILTIN_EXT = /pin-builtin="([^"]+)"/g;
+const XML_CUSTOM_EXT = /pin-custom="([^"]+)"/g;
 
 /**
  * Saves extension dependencies into a given pin list.
@@ -13,29 +13,41 @@ const saveExtensionPinDependencies = function (pinList, vm) {
     const loadedExtensions = manager._loadedExtensions;
 
     for (let i = 0; i < pinList.length; i++) {
-        const xml = pinList[i];
-        const match = xml.match(XML_TYPE_REGEX);
-        if (!match) continue;
+        let xml = pinList[i];
+        const typeMatches = [...xml.matchAll(XML_TYPE_REGEX)];
 
-        const categoryId = match[1].split("_")[0];
-        if (loadedExtensions.has(categoryId)) {
+        for (const match of typeMatches) {
+            const type = match[1];
+            const categoryId = type.split("_")[0];
+            if (!loadedExtensions.has(categoryId)) continue;
+
             const extensionMetaData = loadedExtensions.get(categoryId);
             let extSrcTag;
 
             if (extensionMetaData.startsWith("extension_")) {
-                // This is a built-in extension
+                // Built-in extension
                 extSrcTag = ` pin-builtin="${categoryId}"`;
             } else {
-                // This is a custom extension
+                // Custom extension
                 const srcCodeIndex = Number(extensionMetaData.split(".")[1]);
                 const srcCode = manager.workerURLs[srcCodeIndex];
                 extSrcTag = ` pin-custom="${srcCode}"`;
             }
 
-            if (!xml.includes(extSrcTag)) {
-                pinList[i] = xml.replace(match[0], match[0] + extSrcTag);
-            }
+            // Find the opening tag containing this specific type attribute.
+            const tagStart = xml.lastIndexOf("<", match.index);
+            const tagEnd = xml.indexOf(">", match.index);
+            if (tagStart === -1 || tagEnd === -1) continue;
+
+            const openingTag = xml.slice(tagStart, tagEnd);
+
+            // Don't add the same dependency twice to this tag.
+            if (openingTag.includes(extSrcTag)) continue;
+
+            xml = xml.slice(0, tagEnd) + extSrcTag + xml.slice(tagEnd);
         }
+
+        pinList[i] = xml;
     }
 
     return pinList;
@@ -56,14 +68,12 @@ const loadExtensionPinDependencies = function (pinList, vm) {
     // Collect all extensions that need loading.
     for (let i = 0; i < pinList.length; i++) {
         const xml = pinList[i];
-        const builtinExtMatch = xml.match(XML_BUILTIN_EXT);
-        const customExtMatch = xml.match(XML_CUSTOM_EXT);
 
-        if (builtinExtMatch) {
-            builtInExts.add(builtinExtMatch[1]);
+        for (const match of xml.matchAll(XML_BUILTIN_EXT)) {
+            builtInExts.add(match[1]);
         }
-        if (customExtMatch) {
-            customExts.add(customExtMatch[1]);
+        for (const match of xml.matchAll(XML_CUSTOM_EXT)) {
+            customExts.add(match[1]);
         }
     }
 
