@@ -50,6 +50,7 @@ import LoadScratchBlocksHOC from '../lib/tw-load-scratch-blocks-hoc.jsx';
 import uid from "../lib/uid.js";
 import {findTopBlock} from '../lib/backpack/code-payload.js';
 import {gentlyRequestPersistentStorage} from '../lib/tw-persistent-storage.js';
+import {saveExtensionPinDependencies, loadExtensionPinDependencies} from '../lib/block-pin-dependency.js';
 
 // TW: Strings we add to scratch-blocks are localized here
 const messages = defineMessages({
@@ -368,15 +369,17 @@ class Blocks extends React.Component {
         this.ScratchBlocks.Toolbox.CATEGORY_ORDERING = this.props.vm._categoryOrdering;
 
         if (this.ScratchBlocks.BlockSvg.PINS_ENABLED)
-        try {
-            const NAMESPACE = "PM_BLOCK-PINS";
-            const stored = localStorage.getItem(NAMESPACE);
+            try {
+                const NAMESPACE = "PM_BLOCK-PINS";
+                const stored = localStorage.getItem(NAMESPACE);
 
-            const parsed = JSON.parse(stored);
-            if (parsed && typeof parsed === "object" && Array.isArray(parsed)) {
-                this.ScratchBlocks.BlockSvg.PINS = parsed;
-            }
-        } catch {}
+                const parsed = JSON.parse(stored);
+                if (parsed && typeof parsed === "object" && Array.isArray(parsed)) {
+                    this.ScratchBlocks.BlockSvg.PINS = parsed;
+                    loadExtensionPinDependencies(parsed, this.props.vm);
+                }
+            } catch {}
+        }
 
         const categoryId = this.workspace.toolbox_.getSelectedCategoryId();
         const offset = this.workspace.toolbox_.getCategoryScrollOffset();
@@ -815,7 +818,15 @@ class Blocks extends React.Component {
         this.updateToolbox();
     }
     handlePinCallback () {
-        // TODO inject/load extension urls here.
+        const pins = saveExtensionPinDependencies(
+            this.ScratchBlocks.BlockSvg.PINS,
+            this.props.vm
+        );
+
+        try {
+            const NAMESPACE = "PM_BLOCK-PINS";
+            localStorage.setItem(NAMESPACE, JSON.stringify(pins));
+        } catch {}
 
         const toolboxXML = this.getToolboxXML();
         if (toolboxXML) {
