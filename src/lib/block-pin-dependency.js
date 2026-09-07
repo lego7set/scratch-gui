@@ -47,6 +47,7 @@ const loadExtensionPinDependencies = function (pinList, vm) {
     const builtInExts = new Set();
     const customExts = new Set();
 
+    // Collect all extensions that need loading.
     for (let i = 0; i < pinList.length; i++) {
         const xml = pinList[i];
         const builtinExtMatch = xml.match(XML_BUILTIN_EXT);
@@ -60,15 +61,18 @@ const loadExtensionPinDependencies = function (pinList, vm) {
         }
     }
 
+    // Load the extensions.
     for (const ext of builtInExts) {
-        manager.loadExtensionIdSync(ext);
+        if (!manager.isExtensionLoaded(ext)) {
+            manager.loadExtensionIdSync(ext);
+        }
     }
     for (const ext of customExts) {
-        manager.securityManager.canLoadExtensionFromProject(ext).then(isUnsandbox => {
-            if (isUnsandbox) {
+        if (!manager.workerURLs.includes(ext)) {
+            manager.securityManager.canLoadExtensionFromProject(ext).then(() => {
                 manager.loadExtensionURL(ext);
-            }
-        });
+            });
+        }
     }
 };
 

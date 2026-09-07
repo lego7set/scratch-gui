@@ -221,7 +221,6 @@ class ExtensionLibrary extends React.PureComponent {
                 return;
             }
 
-            console.log("EXTERNAL GALLERY LOAD")
             this.pendingExtensions.add(extensionSource);
             this.props.vm.extensionManager.loadExtensionURL(extensionSource)
                 .then(() => {
