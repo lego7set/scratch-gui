@@ -368,7 +368,7 @@ class Blocks extends React.Component {
 
         this.ScratchBlocks.Toolbox.CATEGORY_ORDERING = this.props.vm._categoryOrdering;
 
-        if (this.ScratchBlocks.BlockSvg.PINS_ENABLED)
+        if (this.ScratchBlocks.BlockSvg.PINS_ENABLED) {
             try {
                 const NAMESPACE = "PM_BLOCK-PINS";
                 const stored = localStorage.getItem(NAMESPACE);
