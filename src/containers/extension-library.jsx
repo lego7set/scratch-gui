@@ -206,8 +206,8 @@ class ExtensionLibrary extends React.PureComponent {
 
         // Load the extension like any other custom extension url (this means sandboxing for some urls)
         if (
-            this.pendingExtensions.has(extensionSource) ||
-            this.props.vm.extensionManager.isExtensionLoaded(extensionSource)
+            this.props.vm.extensionManager.isExtensionLoaded(extensionSource) ||
+            this.props.vm.extensionManager.workerURLs.includes(extensionSource)
         ) {
             this.props.onCategorySelected(extensionSource);
             e.source.postMessage({
@@ -216,6 +216,11 @@ class ExtensionLibrary extends React.PureComponent {
                 }
             }, e.origin);
         } else {
+            if (this.pendingExtensions.has(extensionSource)) {
+                // Prevent dual loading.
+                return;
+            }
+
             this.pendingExtensions.add(extensionSource);
             this.props.vm.extensionManager.loadExtensionURL(extensionSource)
                 .then(() => {

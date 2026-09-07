@@ -50,6 +50,7 @@ import LoadScratchBlocksHOC from '../lib/tw-load-scratch-blocks-hoc.jsx';
 import uid from "../lib/uid.js";
 import {findTopBlock} from '../lib/backpack/code-payload.js';
 import {gentlyRequestPersistentStorage} from '../lib/tw-persistent-storage.js';
+import {saveExtensionPinDependencies, loadExtensionPinDependencies} from '../lib/block-pin-dependency.js';
 
 // TW: Strings we add to scratch-blocks are localized here
 const messages = defineMessages({
@@ -118,6 +119,8 @@ class Blocks extends React.Component {
             'handleCreateCustomPromptUtility',
             'handleCommentEditorClose',
             'handleCustomProceduresClose',
+            'handleCategoryReorder',
+            'handlePinCallback',
             'handleBeforeEditCustomProcedure',
             'onScriptGlowOn',
             'onScriptGlowOff',
@@ -160,6 +163,8 @@ class Blocks extends React.Component {
         this.ScratchBlocks.FieldColourSlider.activateEyedropper_ = this.props.onActivateColorPicker;
         this.ScratchBlocks.Procedures.externalProcedureDefCallback = this.props.onActivateCustomProcedures;
         this.ScratchBlocks.Procedures.beforeEditCallback = this.handleBeforeEditCustomProcedure;
+        this.ScratchBlocks.Toolbox.categoryReorderCallback = this.handleCategoryReorder;
+        this.ScratchBlocks.BlockSvg.pinCallback = this.handlePinCallback;
         this.ScratchBlocks.ScratchMsgs.setLocale(this.props.locale);
 
         const Msg = this.ScratchBlocks.Msg;
@@ -256,6 +261,14 @@ class Blocks extends React.Component {
             this.handleExtensionAdded(category);
         }
 
+        // pm: override this function to connect it to blockly.
+        this.props.vm.runtime.updateFlyoutCheckbox = (blockId, checked) => {
+            if (!this.workspace) return;
+
+            const flyout = this.workspace.getFlyout();
+            if (flyout) flyout.setCheckboxState(blockId, checked);
+        }
+
         gentlyRequestPersistentStorage();
     }
     shouldComponentUpdate (nextProps, nextState) {
@@ -318,7 +331,11 @@ class Blocks extends React.Component {
     componentWillUnmount () {
         this.detachVM();
         this.unmounted = true;
-        this.workspace.dispose();
+        try {
+            // Sometimes will error when changing themes.
+            this.workspace.dispose();
+        } catch {}
+
         clearTimeout(this.toolboxUpdateTimeout);
 
         // Clear the flyout blocks so that they can be recreated on mount.
@@ -348,6 +365,21 @@ class Blocks extends React.Component {
 
     updateToolbox () {
         this.toolboxUpdateTimeout = false;
+
+        this.ScratchBlocks.Toolbox.CATEGORY_ORDERING = this.props.vm._categoryOrdering;
+
+        if (this.ScratchBlocks.BlockSvg.PINS_ENABLED) {
+            try {
+                const NAMESPACE = "PM_BLOCK-PINS";
+                const stored = localStorage.getItem(NAMESPACE);
+
+                const parsed = JSON.parse(stored);
+                if (parsed && typeof parsed === "object" && Array.isArray(parsed)) {
+                    this.ScratchBlocks.BlockSvg.PINS = parsed;
+                    loadExtensionPinDependencies(parsed, this.props.vm);
+                }
+            } catch {}
+        }
 
         const categoryId = this.workspace.toolbox_.getSelectedCategoryId();
         const offset = this.workspace.toolbox_.getCategoryScrollOffset();
@@ -422,6 +454,8 @@ class Blocks extends React.Component {
         this.props.vm.removeListener('BLOCKSINFO_UPDATE', this.handleBlocksInfoUpdate);
         this.props.vm.removeListener('PERIPHERAL_CONNECTED', this.handleStatusButtonUpdate);
         this.props.vm.removeListener('PERIPHERAL_DISCONNECTED', this.handleStatusButtonUpdate);
+
+        this.props.vm.runtime.removeListener("RUNTIME_DISPOSED", this.onProjectDispose);
     }
 
     updateToolboxBlockValue (id, value) {
@@ -478,6 +512,7 @@ class Blocks extends React.Component {
     onProjectDispose() {
         // Clear some data when the project is disposed.
         this.ScratchBlocks.Procedures.GLOBAL_BLOCKS.clear();
+        this.ScratchBlocks.Toolbox.CATEGORY_ORDERING = [];
 
         this.props.vm.setFramerate(30);
         this.props.vm.setRuntimeOptions({
@@ -778,10 +813,29 @@ class Blocks extends React.Component {
         ws.refreshToolboxSelection_();
         ws.toolbox_.scrollToCategoryById('myBlocks');
     }
+    handleCategoryReorder () {
+        this.props.vm._categoryOrdering = this.ScratchBlocks.Toolbox.CATEGORY_ORDERING;
+        this.updateToolbox();
+    }
+    handlePinCallback () {
+        const pins = saveExtensionPinDependencies(
+            this.ScratchBlocks.BlockSvg.PINS,
+            this.props.vm
+        );
+
+        try {
+            const NAMESPACE = "PM_BLOCK-PINS";
+            localStorage.setItem(NAMESPACE, JSON.stringify(pins));
+        } catch {}
+
+        const toolboxXML = this.getToolboxXML();
+        if (toolboxXML) {
+            this.props.updateToolboxState(toolboxXML);
+        }
+    }
     handleBeforeEditCustomProcedure (block) {
         if (block.type === 'procedures_call' && block.global_) {
-            // If this global block is not being edited from the source
-            // sprite, switch workspaces.
+            // If this global block is not being edited from the source sprite, switch workspaces.
             const proccode = block.procCode_;
             const editingTargetId = this.props.vm.editingTarget.id;
             const targetId = this.props.vm.runtime._globalProcedureSourceMap[proccode];

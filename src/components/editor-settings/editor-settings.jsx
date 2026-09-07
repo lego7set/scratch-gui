@@ -87,7 +87,12 @@ class EditorSettingsModal extends React.Component {
                         <settings.outputBubbleAutoTyping />
                         <settings.swatches />
                         <settings.disableExpandables />
+                        <Separator />
+                        <settings.projectBlockCounter />
                         <settings.blockCounter />
+                        <Separator />
+                        <settings.blockPinning />
+                        <settings.categoryReordering />
                     </React.Fragment>
                 },
                 {

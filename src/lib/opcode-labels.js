@@ -115,6 +115,16 @@ const messages = defineMessages({
         description: 'Label for the effect monitor when shown on the stage',
         id: 'pm.gui.opcodeLabels.getEffectValue.vertiShear'
     },
+    looks_getEffectValue_repeatX: {
+        defaultMessage: 'repeat x',
+        description: 'Label for the effect monitor when shown on the stage',
+        id: 'pm.gui.opcodeLabels.getEffectValue.repeatX'
+    },
+    looks_getEffectValue_repeatY: {
+        defaultMessage: 'repeat y',
+        description: 'Label for the effect monitor when shown on the stage',
+        id: 'pm.gui.opcodeLabels.getEffectValue.repeatY'
+    },
     looks_getSpriteVisible: {
         defaultMessage: 'visible?',
         description: 'Label for the visibility monitor when shown on the stage',
@@ -435,6 +445,8 @@ class OpcodeLabels {
                 case 'opaque': return this._translator(messages.looks_getEffectValue_opaque);
                 case 'horizontal_shear': return this._translator(messages.looks_getEffectValue_horizShear);
                 case 'vertical_shear': return this._translator(messages.looks_getEffectValue_vertiShear);
+                case 'repeat_x': return this._translator(messages.looks_getEffectValue_repeatX);
+                case 'repeat_y': return this._translator(messages.looks_getEffectValue_repeatY);
             }
         }
         this._opcodeMap.looks_getSpriteVisible.labelFn = () => this._translator(messages.looks_getSpriteVisible);
