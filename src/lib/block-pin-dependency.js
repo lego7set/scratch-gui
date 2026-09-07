@@ -20,14 +20,20 @@ const saveExtensionPinDependencies = function (pinList, vm) {
         const categoryId = match[1].split("_")[0];
         if (loadedExtensions.has(categoryId)) {
             const extensionMetaData = loadedExtensions.get(categoryId);
+            let extSrcTag;
+
             if (extensionMetaData.startsWith("extension_")) {
                 // This is a built-in extension
-                pinList[i] = xml.replace(match[0], match[0] + ` pin-builtin="${categoryId}"`)
+                extSrcTag = ` pin-builtin="${categoryId}"`;
             } else {
                 // This is a custom extension
                 const srcCodeIndex = Number(extensionMetaData.split(".")[1]);
                 const srcCode = manager.workerURLs[srcCodeIndex];
-                pinList[i] = xml.replace(match[0], match[0] + ` pin-custom="${srcCode}"`)
+                extSrcTag = ` pin-custom="${srcCode}"`;
+            }
+
+            if (!xml.includes(extSrcTag)) {
+                pinList[i] = xml.replace(match[0], match[0] + extSrcTag);
             }
         }
     }
