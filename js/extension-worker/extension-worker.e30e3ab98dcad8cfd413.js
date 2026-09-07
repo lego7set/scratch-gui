@@ -93,20 +93,15 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(global) {function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
-function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
-function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t.return && (u = t.return(), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
-function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
-/* eslint-env worker */
+/* WEBPACK VAR INJECTION */(function(global) {/* eslint-env worker */
 
 const ScratchCommon = __webpack_require__(/*! ./tw-extension-api-common */ "./node_modules/scratch-vm/src/extension-support/tw-extension-api-common.js");
 const createScratchX = __webpack_require__(/*! ./tw-scratchx-compatibility-layer */ "./node_modules/scratch-vm/src/extension-support/tw-scratchx-compatibility-layer.js");
 const dispatch = __webpack_require__(/*! ../dispatch/worker-dispatch */ "./node_modules/scratch-vm/src/dispatch/worker-dispatch.js");
 const log = __webpack_require__(/*! ../util/log */ "./node_modules/scratch-vm/src/util/log.js");
-const _require = __webpack_require__(/*! ./tw-extension-worker-context */ "./node_modules/scratch-vm/src/extension-support/tw-extension-worker-context.js"),
-  isWorker = _require.isWorker;
+const {
+  isWorker
+} = __webpack_require__(/*! ./tw-extension-worker-context */ "./node_modules/scratch-vm/src/extension-support/tw-extension-worker-context.js");
 const createTranslate = __webpack_require__(/*! ./tw-l10n */ "./node_modules/scratch-vm/src/extension-support/tw-l10n.js");
 const translate = createTranslate(null);
 const loadScripts = url => {
@@ -133,9 +128,7 @@ class ExtensionWorker {
     });
     dispatch.waitForConnection.then(() => {
       dispatch.call('extensions', 'allocateWorker').then(async x => {
-        const _x = _slicedToArray(x, 2),
-          id = _x[0],
-          extension = _x[1];
+        const [id, extension] = x;
         this.workerId = id;
         try {
           await loadScripts(extension);
@@ -167,7 +160,7 @@ global.Scratch = global.Scratch || {};
 Object.assign(global.Scratch, ScratchCommon, {
   canFetch: () => Promise.resolve(true),
   fetch: function (_fetch) {
-    function fetch(_x2, _x3) {
+    function fetch(_x, _x2) {
       return _fetch.apply(this, arguments);
     }
     fetch.toString = function () {
@@ -1966,12 +1959,6 @@ module.exports = function lookupClosestLocale (locale/*: string | string[] | voi
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
-function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
-function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t.return && (u = t.return(), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
-function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 const log = __webpack_require__(/*! ../util/log */ "./node_modules/scratch-vm/src/util/log.js");
 
 /**
@@ -2053,9 +2040,10 @@ class SharedDispatch {
    */
   transferCall(service, method, transfer) {
     try {
-      const _this$_getServiceProv = this._getServiceProvider(service),
-        provider = _this$_getServiceProv.provider,
-        isRemote = _this$_getServiceProv.isRemote;
+      const {
+        provider,
+        isRemote
+      } = this._getServiceProvider(service);
       if (provider) {
         for (var _len2 = arguments.length, args = new Array(_len2 > 3 ? _len2 - 3 : 0), _key2 = 3; _key2 < _len2; _key2++) {
           args[_key2 - 3] = arguments[_key2];
@@ -2163,9 +2151,7 @@ class SharedDispatch {
    */
   _deliverResponse(responseId, message) {
     try {
-      const _this$callbacks$respo = _slicedToArray(this.callbacks[responseId], 2),
-        resolve = _this$callbacks$respo[0],
-        reject = _this$callbacks$respo[1];
+      const [resolve, reject] = this.callbacks[responseId];
       delete this.callbacks[responseId];
       if (message.error) {
         reject(message.error);
@@ -2250,8 +2236,9 @@ module.exports = SharedDispatch;
 
 const SharedDispatch = __webpack_require__(/*! ./shared-dispatch */ "./node_modules/scratch-vm/src/dispatch/shared-dispatch.js");
 const log = __webpack_require__(/*! ../util/log */ "./node_modules/scratch-vm/src/util/log.js");
-const _require = __webpack_require__(/*! ../extension-support/tw-extension-worker-context */ "./node_modules/scratch-vm/src/extension-support/tw-extension-worker-context.js"),
-  centralDispatchService = _require.centralDispatchService;
+const {
+  centralDispatchService
+} = __webpack_require__(/*! ../extension-support/tw-extension-worker-context */ "./node_modules/scratch-vm/src/extension-support/tw-extension-worker-context.js");
 
 /**
  * This class provides a Worker with the means to participate in the message dispatch system managed by CentralDispatch.
@@ -2974,9 +2961,10 @@ module.exports = createTranslate;
 
 const ArgumentType = __webpack_require__(/*! ./argument-type */ "./node_modules/scratch-vm/src/extension-support/argument-type.js");
 const BlockType = __webpack_require__(/*! ./block-type */ "./node_modules/scratch-vm/src/extension-support/block-type.js");
-const _require = __webpack_require__(/*! ./tw-scratchx-utilities */ "./node_modules/scratch-vm/src/extension-support/tw-scratchx-utilities.js"),
-  argumentIndexToId = _require.argumentIndexToId,
-  generateExtensionId = _require.generateExtensionId;
+const {
+  argumentIndexToId,
+  generateExtensionId
+} = __webpack_require__(/*! ./tw-scratchx-utilities */ "./node_modules/scratch-vm/src/extension-support/tw-scratchx-utilities.js");
 
 /**
  * @typedef ScratchXDescriptor
@@ -3316,19 +3304,19 @@ class Cast {
   }
 
   /**
-   * Cast any Scratch argument to an RGB color array to be used for the renderer.
-   * @param {*} value Value to convert to RGB color array.
-   * @return {Array.<number>} [r,g,b], values between 0-255.
+   * Cast any Scratch argument to an RGB(?A) color array to be used for the renderer.
+   * @param {*} value Value to convert to RGB(?A) color array.
+   * @return {Array.<number>} [r,g,b,?a], values between 0-255.
    */
   static toRgbColorList(value) {
     const color = Cast.toRgbColorObject(value);
-    return [color.r, color.g, color.b];
+    return [color.r, color.g, color.b, color.a];
   }
 
   /**
-   * Cast any Scratch argument to an RGB color object to be used for the renderer.
-   * @param {*} value Value to convert to RGB color object.
-   * @return {RGBOject} [r,g,b], values between 0-255.
+   * Cast any Scratch argument to an RGB(A?) color object to be used for the renderer.
+   * @param {*} value Value to convert to RGB(?A) color object.
+   * @return {RGBOject} [r,g,b,?a], values between 0-255.
    */
   static toRgbColorObject(value) {
     let color;
@@ -3503,6 +3491,14 @@ class Color {
    */
 
   /**
+   * @typedef {object} RGBAObject - An object representing a color in RGBA format.
+   * @property {number} r - the red component, in the range [0, 255].
+   * @property {number} g - the green component, in the range [0, 255].
+   * @property {number} b - the blue component, in the range [0, 255].
+   * @property {number} a - the alpha component, in the range [0, 255].
+   */
+
+  /**
    * @typedef {object} HSVObject - An object representing a color in HSV format.
    * @property {number} h - hue, in the range [0-359).
    * @property {number} s - saturation, in the range [0,1].
@@ -3560,9 +3556,9 @@ class Color {
   }
 
   /**
-   * Convert a hex color (e.g., F00, #03F, #0033FF) to an RGB color object.
+   * Convert a hex color (e.g., F00, #03F, #0033FF) to an RGBA color object.
    * @param {!string} hex Hex representation of the color.
-   * @return {RGBObject} null on failure, or rgb: {r: red [0,255], g: green [0,255], b: blue [0,255]}.
+   * @return {RGBAObject} null on failure, or rgba: {r: red [0,255], g: green [0,255], b: blue [0,255], a: alpha [0,255]}.
    */
   static hexToRgb(hex) {
     if (hex.startsWith('#')) {
@@ -3572,23 +3568,32 @@ class Color {
     if (isNaN(parsed)) {
       return null;
     }
-    if (hex.length === 6) {
-      return {
-        r: parsed >> 16 & 0xff,
-        g: parsed >> 8 & 0xff,
-        b: parsed & 0xff
+    if (hex.length === 3 || hex.length === 4) {
+      const r = parseInt(hex[0] + hex[0], 16);
+      const g = parseInt(hex[1] + hex[1], 16);
+      const b = parseInt(hex[2] + hex[2], 16);
+      const result = {
+        r,
+        g,
+        b
       };
-    } else if (hex.length === 3) {
-      const r = parsed >> 8 & 0xf;
-      const g = parsed >> 4 & 0xf;
-      const b = parsed & 0xf;
-      return {
-        r: r << 4 | r,
-        g: g << 4 | g,
-        b: b << 4 | b
-      };
+      if (hex.length === 4) {
+        result.a = parseInt(hex[3] + hex[3], 16);
+      }
+      return result;
     }
-    return null;
+    const r = parseInt(hex.substring(0, 2), 16);
+    const g = parseInt(hex.substring(2, 4), 16);
+    const b = parseInt(hex.substring(4, 6), 16);
+    const result = {
+      r,
+      g,
+      b
+    };
+    if (hex.length === 8) {
+      result.a = parseInt(hex.substring(6, 8), 16);
+    }
+    return result;
   }
 
   /**
@@ -3771,4 +3776,4 @@ module.exports = g;
 /***/ })
 
 /******/ });
-//# sourceMappingURL=extension-worker.b4ca7e6901183155861b.js.map
+//# sourceMappingURL=extension-worker.e30e3ab98dcad8cfd413.js.map

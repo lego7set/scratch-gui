@@ -1058,12 +1058,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _addons_hooks__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../addons/hooks */ "./src/addons/hooks.js");
 /* harmony import */ var _global_styles_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./global-styles.css */ "./src/lib/themes/global-styles.css");
 /* harmony import */ var _global_styles_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_global_styles_css__WEBPACK_IMPORTED_MODULE_2__);
-function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
-function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
-function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t.return && (u = t.return(), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
-function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 
 
 
@@ -1089,17 +1083,11 @@ const evaluateCSS = css => {
 const applyGuiColors = theme => {
   const doc = document.documentElement;
   const defaultGuiColors = ___WEBPACK_IMPORTED_MODULE_0__["Theme"].light.getGuiColors();
-  for (const _ref of Object.entries(defaultGuiColors)) {
-    var _ref2 = _slicedToArray(_ref, 2);
-    const name = _ref2[0];
-    const value = _ref2[1];
+  for (const [name, value] of Object.entries(defaultGuiColors)) {
     doc.style.setProperty("--".concat(name, "-default"), value);
   }
   const guiColors = theme.getGuiColors();
-  for (const _ref3 of Object.entries(guiColors)) {
-    var _ref4 = _slicedToArray(_ref3, 2);
-    const name = _ref4[0];
-    const value = _ref4[1];
+  for (const [name, value] of Object.entries(guiColors)) {
     doc.style.setProperty("--".concat(name), value);
   }
   const blockColors = theme.getBlockColors();
@@ -1430,12 +1418,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "hsv2hex", function() { return hsv2hex; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "hex2hsl", function() { return hex2hsl; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "hsl2hex", function() { return hsl2hex; });
-function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
-function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
-function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t.return && (u = t.return(), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
-function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 /*
     Parts of this file are from https://github.com/Qix-/color-convert/blob/6b7dee5a168f76bf42c084fefa7bbe1a0941ad7e/conversions.js
 
@@ -1554,18 +1536,12 @@ const hsv2rgb = hsv => {
 // Posted by Kamil Kiełczewski, modified by community. See post 'Timeline' for change history
 // Retrieved 2026-07-26, License - CC BY-SA 4.0
 let hsl2hsv = function hsl2hsv(_ref) {
-  let _ref2 = _slicedToArray(_ref, 3),
-    h = _ref2[0],
-    s = _ref2[1],
-    l = _ref2[2];
+  let [h, s, l] = _ref;
   let v = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : s * Math.min(l, 100 - l) + l;
   return [h, v ? 200 - 200 * l / v : 0, v];
 };
-let hsv2hsl = function hsv2hsl(_ref3) {
-  let _ref4 = _slicedToArray(_ref3, 3),
-    h = _ref4[0],
-    s = _ref4[1],
-    v = _ref4[2];
+let hsv2hsl = function hsv2hsl(_ref2) {
+  let [h, s, v] = _ref2;
   let l = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : v - v * s / 2 / 100;
   let m = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : Math.min(l, 100 - l);
   return [h, m ? (v - l) / m : 0, l];
@@ -1676,9 +1652,11 @@ function _extends() { return _extends = Object.assign ? Object.assign.bind() : f
 Object(_lib_themes_guiHelpers__WEBPACK_IMPORTED_MODULE_5__["applyGuiColors"])(Object(_lib_themes_themePersistance__WEBPACK_IMPORTED_MODULE_6__["detectTheme"])());
 document.documentElement.lang = 'en';
 const User = _ref => {
-  let image = _ref.image,
-    text = _ref.text,
-    href = _ref.href;
+  let {
+    image,
+    text,
+    href
+  } = _ref;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     href: href,
     target: "_blank",
@@ -1700,7 +1678,9 @@ User.propTypes = {
   href: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string
 };
 const UserList = _ref2 => {
-  let users = _ref2.users;
+  let {
+    users
+  } = _ref2;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: _credits_css__WEBPACK_IMPORTED_MODULE_3___default.a.users
   }, users.map((data, index) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(User, _extends({
@@ -1757,9 +1737,10 @@ const shuffle = list => {
   return list;
 };
 const fromHardcoded = _ref => {
-  let _ref$userID = _ref.userID,
-    userID = _ref$userID === void 0 ? '0' : _ref$userID,
-    username = _ref.username;
+  let {
+    userID = '0',
+    username
+  } = _ref;
   const result = {
     image: "https://trampoline.turbowarp.org/avatars/".concat(userID),
     text: username
